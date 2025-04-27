@@ -1,0 +1,55 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "gasbi": [
+    {
+    "amount": 100,
+    "chance": 1.0,
+    "gas": "electrodynamics:hydrogen",
+    "pressure": 1,
+    "temp": 293
+  }
+  ],
+
+  "fluidbi": [
+    {
+      "amount": 50,
+      "chance": 0.2,
+      "fluid": "chemicalscience:sodiumperchlorate"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 12,
+      "ingredient": {
+        "tag": "c:dusts/salt"
+      }
+    }
+  ],
+
+  "gasoutput": {
+    "amount": 100,
+    "gas": "chemicalscience:chlorine",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+  "fluidoutput": {
+    "amount": 500,
+    "id": "chemicalscience:sodiumhydroxide"
+  },
+  "ticks": 200,
+  "usagepertick": 1000.0
+}

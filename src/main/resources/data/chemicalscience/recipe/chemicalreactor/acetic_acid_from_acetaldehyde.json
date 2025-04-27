@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:acetaldehyde"
+      }
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/chromium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:acetaldehyde"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 500,
+      "pressure":1,
+      "tag": "c:oxygen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:dustchromium"
+  },
+
+  "fluidoutput": {
+    "amount": 400,
+    "id": "chemicalscience:aceticacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

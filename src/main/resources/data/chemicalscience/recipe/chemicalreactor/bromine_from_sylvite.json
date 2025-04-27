@@ -1,0 +1,44 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ores/potassiumchloride"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 20,
+    "id": "chemicalscience:bromine"
+  },
+
+  "gasoutput": {
+    "amount": 20,
+    "gas": "chemicalscience:chlorine",
+    "pressure": 1,
+    "temp": 293
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

@@ -1,0 +1,41 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:coal"
+      }
+    },
+
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_palladiumchloride"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:nitric_acid"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:palladium_carbon_catalyst"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

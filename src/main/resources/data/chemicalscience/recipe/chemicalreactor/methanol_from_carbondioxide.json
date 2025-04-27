@@ -1,0 +1,37 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 10,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 10,
+      "pressure": 1,
+      "tag": "c:carbondioxide",
+      "temp": 293
+    },
+    {
+      "amount": 30,
+      "pressure": 1,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 10,
+    "id": "chemicalscience:methanol"
+  },
+
+
+  "ticks": 2000,
+  "usagepertick": 200.0
+}

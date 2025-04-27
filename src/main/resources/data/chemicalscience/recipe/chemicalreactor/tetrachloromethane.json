@@ -1,0 +1,42 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "electrodynamics:fluidhydrochloricacid"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:methanol"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:tetrachloromethane"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

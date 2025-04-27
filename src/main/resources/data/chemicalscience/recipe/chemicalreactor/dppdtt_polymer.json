@@ -1,0 +1,65 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "fluidbi": [
+    {
+      "amount": 90,
+      "chance": 1.0,
+      "fluid": "chemicalscience:palladiumphosphate"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dpp_polymer"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dtt_polymer"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:chlorobenzene"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:palladium_phosphate"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:nitrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dppdtt_polymer"
+  },
+
+  "gasoutput": {
+    "amount": 100,
+    "gas": "electrodynamics:nitrogen",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+  "ticks": 10000,
+  "usagepertick": 200.0
+}

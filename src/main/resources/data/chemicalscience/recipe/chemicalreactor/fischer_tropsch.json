@@ -1,0 +1,58 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 10,
+      "chance": 0.1,
+      "fluid": "electrodynamics:fluidethanol"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:iron_carbon_catalyst"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":16,
+      "tag": "c:carbonmonoxide",
+      "temp": 293
+    },
+
+    {
+      "amount": 300,
+      "pressure":16,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 10,
+    "id": "chemicalscience:diesel"
+  },
+
+  "gasoutput": {
+    "amount": 5,
+    "gas": "chemicalscience:butane",
+    "pressure": 16,
+    "temp": 293
+  },
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:iron_carbon_catalyst"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 2000.0
+}

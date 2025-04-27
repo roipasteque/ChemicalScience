@@ -1,0 +1,4 @@
+// 1.21.1	2025-04-23T19:00:07.850026	Tags for minecraft:block mod id chemicalscience
+d849210fd1344a1e29a5134f063ce80d504e5277 data/minecraft/tags/block/mineable/hoe.json
+1b79fcbdd6ef4a932043a3c5df8118a19d68bf28 data/minecraft/tags/block/mineable/pickaxe.json
+92a8de7efa56641fca30b742e21429880319f068 data/minecraft/tags/block/needs_iron_tool.json

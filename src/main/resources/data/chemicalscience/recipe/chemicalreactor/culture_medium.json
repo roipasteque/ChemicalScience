@@ -1,0 +1,38 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:petri_dish"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 20,
+      "tag": "c:phosphoric_acid"
+    },
+    {
+      "amount": 10,
+      "tag": "c:sulfates/magnesium"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:culture_medium"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

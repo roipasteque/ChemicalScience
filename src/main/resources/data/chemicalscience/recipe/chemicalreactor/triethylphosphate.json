@@ -1,0 +1,33 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 50,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 300,
+      "tag": "c:ethanol"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:triethylphosphate"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

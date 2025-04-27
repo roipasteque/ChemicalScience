@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:arsenic_trichloride"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/gallium"
+      }
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:ingot_galliumarsenide"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

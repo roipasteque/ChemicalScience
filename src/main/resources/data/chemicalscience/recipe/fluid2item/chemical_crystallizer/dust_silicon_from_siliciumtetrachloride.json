@@ -1,0 +1,16 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:silicium_tetrachloride"
+    }
+  ],
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:dust_silicon"
+  },
+  "ticks": 200,
+  "usagepertick": 800.0
+}

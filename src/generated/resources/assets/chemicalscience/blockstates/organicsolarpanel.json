@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/organicsolarpanel"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/organicsolarpanel",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/organicsolarpanel",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/organicsolarpanel",
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "electrodynamics:fluidhydrochloricacid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:copper_aluminate_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:methanol"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:carbonmonoxide",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:copper_aluminate_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:aceticacid"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_silicon",
+    "chemicalscience:ore_deepslate_silicon",
+    "chemicalscience:ore_silicon_moon",
+    "chemicalscience:ore_silicon_mars",
+    "chemicalscience:ore_silicon_venus",
+    "chemicalscience:ore_silicon_mercury"
+  ]
+}

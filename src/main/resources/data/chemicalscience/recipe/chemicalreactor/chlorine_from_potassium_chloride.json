@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "gasbi": [
+    {
+    "amount": 100,
+    "chance": 1.0,
+    "gas": "electrodynamics:hydrogen",
+    "pressure": 1,
+    "temp": 293
+  }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:potassium_chloride"
+    }
+  ],
+
+  "group": "chemicalscience",
+
+  "gasoutput": {
+    "amount": 50,
+    "gas": "chemicalscience:chlorine",
+    "pressure": 1,
+    "temp": 293
+  },
+
+  "ticks": 200,
+  "usagepertick": 1000.0
+}

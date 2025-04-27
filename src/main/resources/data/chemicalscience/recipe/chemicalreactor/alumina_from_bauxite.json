@@ -1,0 +1,40 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_gallium"
+      }
+    },
+    {
+      "chance": 0.05,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustvanadium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:sodium_hydroxide"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ores/aluminum"
+      }
+    }
+  ],
+  "itemoutput": {
+    "count": 6,
+    "id": "electrodynamics:impuredustaluminum"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

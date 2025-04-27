@@ -1,0 +1,18 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/silica"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:impuredust_silicon"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

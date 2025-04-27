@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/sodiumcarbonate"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:chloroacetic_acid"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:sodium_hydroxide"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:malonicacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

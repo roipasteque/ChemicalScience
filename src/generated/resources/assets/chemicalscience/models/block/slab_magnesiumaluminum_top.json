@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "chemicalscience:block/block_magnesiumaluminum",
+    "side": "chemicalscience:block/block_magnesiumaluminum",
+    "top": "chemicalscience:block/block_magnesiumaluminum"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "tag": "c:leathers"
+    },
+    "G": {
+      "tag": "c:glass_panes"
+    },
+    "P": {
+      "item": "chemicalscience:dppdtt_polymer"
+    },
+    "C": {
+      "item": "electrodynamics:circuitbasic"
+    },
+    "T": {
+      "item": "electrodynamics:thermoelectricgenerator"
+    },
+    "W": {
+      "tag": "c:wires/insulated_copper"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "GPG",
+    "TWC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:organicnightvisiongoggles"
+  }
+}

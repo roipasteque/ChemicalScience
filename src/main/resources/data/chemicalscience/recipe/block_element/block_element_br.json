@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:yellow_concrete"
+    },
+    "E": {
+      "item": "chemicalscience:dust_chromiumbromide"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CEC",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:block_element_br"
+  }
+}

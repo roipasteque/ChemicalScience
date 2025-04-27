@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemicalscience:item/catalyst/ruthenium_sulfur_catalyst"
+  }
+}

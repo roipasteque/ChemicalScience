@@ -1,0 +1,47 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "electrodynamics:oxidedititanium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:methanol"
+    },
+    {
+      "amount": 100,
+      "tag": "c:benzene"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:oxidedititanium"
+  },
+
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:toluene"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 500.0
+}

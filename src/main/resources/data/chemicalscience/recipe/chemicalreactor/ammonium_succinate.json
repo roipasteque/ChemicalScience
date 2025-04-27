@@ -1,0 +1,38 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "chemicalscience:dust_ammoniumcarbonate"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:succinic_acid"
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:ammoniumsuccinate"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

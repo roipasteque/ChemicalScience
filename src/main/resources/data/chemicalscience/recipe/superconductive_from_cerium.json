@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:oxides/cerium"
+    },
+    {
+      "tag": "c:dusts/ironarsenide"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrodynamics:dustsuperconductive"
+  }
+}

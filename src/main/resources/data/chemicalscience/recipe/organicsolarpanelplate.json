@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "tag": "c:plastic"
+    },
+    "G": {
+      "tag": "c:glass_panes"
+    },
+    "P": {
+      "item": "chemicalscience:dppdtt_polymer"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "T": {
+      "tag": "c:dusts/tin"
+    },
+    "M": {
+      "tag": "c:ingots/magnesiumaluminum"
+    }
+  },
+  "pattern": [
+    "GPG",
+    "AEA",
+    "MTM"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chemicalscience:organicsolarpanelplate"
+  }
+}

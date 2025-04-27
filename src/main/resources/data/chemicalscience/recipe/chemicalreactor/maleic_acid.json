@@ -1,0 +1,58 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 400,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/vanadium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:benzene"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 700,
+      "pressure":1,
+      "tag": "c:oxygen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:oxidevanadium"
+  },
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:maleicacid"
+  },
+
+  "gasoutput": {
+    "amount": 400,
+    "gas": "electrodynamics:carbondioxide",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

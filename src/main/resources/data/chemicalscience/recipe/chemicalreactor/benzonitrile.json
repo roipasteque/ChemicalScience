@@ -1,0 +1,42 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 60,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:toluene"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:ammonia"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 300,
+      "pressure":1,
+      "tag": "c:oxygen",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:benzonitrile"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

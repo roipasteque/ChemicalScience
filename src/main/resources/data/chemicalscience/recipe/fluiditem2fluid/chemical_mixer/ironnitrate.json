@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_mixer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/iron"
+      }
+    }
+  ],
+  "output": {
+    "amount": 100,
+    "id": "chemicalscience:ironnitrate"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

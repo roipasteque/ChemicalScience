@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/magnesiumaluminum"
+    },
+    "C": {
+      "item": "electrodynamics:circuitelite"
+    },
+    "T": {
+      "tag": "c:ingots/tungsten"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    }
+  },
+  "pattern": [
+    "ICI",
+    "TBT",
+    "ICI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrodynamics:electricarcfurnacetriple"
+  }
+}

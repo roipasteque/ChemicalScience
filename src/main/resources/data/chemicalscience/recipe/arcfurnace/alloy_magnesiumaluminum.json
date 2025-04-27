@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/magnesiumaluminum"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/magnesium"
+      }
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:ingots/magnesium"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "tag": "c:ingots/aluminum"
+  },
+  "results": [
+    {
+      "basePredicate": {
+        "tag": "c:ingots/magnesiumaluminum"
+      },
+      "count": 2
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,27 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:acetic_acid"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:bromine"
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:bromoaceticacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

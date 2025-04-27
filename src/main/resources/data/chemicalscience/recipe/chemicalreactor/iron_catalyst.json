@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "minecraft:leaves"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:iron_nitrate"
+    },
+    {
+      "amount": 100,
+      "tag": "c:ethanol"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:iron_carbon_catalyst"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

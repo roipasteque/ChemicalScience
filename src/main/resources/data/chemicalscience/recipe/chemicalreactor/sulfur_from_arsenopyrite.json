@@ -1,0 +1,37 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "itembi": [
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "c:raw_materials/arsenopyrite"
+      }
+    }
+  ],
+  "itemoutput": {
+    "count": 16,
+    "id": "electrodynamics:dustsulfur"
+  },
+  "fluidoutput": {
+    "amount": 200,
+    "id": "electrodynamics:fluidsulfuricacid"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

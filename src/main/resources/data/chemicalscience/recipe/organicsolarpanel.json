@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "chemicalscience:organicsolarpanelplate"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "W": {
+      "item": "electrodynamics:wiresilver"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "POP",
+    "IWI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:organicsolarpanel"
+  }
+}

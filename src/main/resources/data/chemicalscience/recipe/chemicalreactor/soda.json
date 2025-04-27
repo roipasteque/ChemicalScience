@@ -1,0 +1,49 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 16,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_caffeine"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 80,
+      "tag": "c:phosphoric_acid"
+    },
+
+    {
+      "amount": 1600,
+      "tag": "c:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 320,
+      "pressure":1,
+      "tag": "c:carbondioxide",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 8,
+    "id": "chemicalscience:soda"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

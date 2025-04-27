@@ -1,0 +1,39 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "item": "chemicalscience:dust_nbromosuccinimide"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/magnesium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 300,
+      "tag": "c:thiophene"
+    },
+
+    {
+      "amount": 300,
+      "tag": "c:tetrachloromethane"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dtt_polymer"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

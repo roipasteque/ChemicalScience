@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_succinimide"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:bromine"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:sodium_hydroxide"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_nbromosuccinimide"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

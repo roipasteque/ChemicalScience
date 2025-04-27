@@ -1,0 +1,37 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "itembi": [
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:raworethorium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 600,
+      "tag": "c:sodium_hydroxide"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "c:dusts/monazite"
+      }
+    }
+  ],
+  "itemoutput": {
+    "count": 2,
+    "id": "chemicalscience:impuredust_ceriumoxide"
+  },
+  "fluidoutput": {
+    "amount": 500,
+    "id": "chemicalscience:phosphoricacid"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

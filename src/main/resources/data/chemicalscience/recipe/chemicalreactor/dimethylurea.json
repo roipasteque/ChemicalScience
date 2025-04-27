@@ -1,0 +1,31 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_urea"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":1,
+      "tag": "c:bromomethane",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_dimethylurea"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

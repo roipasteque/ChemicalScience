@@ -1,0 +1,16 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:chloroplatinic_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:dust_platinumchloride"
+  },
+  "ticks": 200,
+  "usagepertick": 800.0
+}

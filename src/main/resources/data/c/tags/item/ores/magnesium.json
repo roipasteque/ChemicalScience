@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_magnesium",
+    "chemicalscience:ore_deepslate_magnesium",
+    "chemicalscience:ore_magnesium_moon",
+    "chemicalscience:ore_magnesium_mars",
+    "chemicalscience:ore_magnesium_venus",
+    "chemicalscience:ore_magnesium_mercury"
+  ]
+}

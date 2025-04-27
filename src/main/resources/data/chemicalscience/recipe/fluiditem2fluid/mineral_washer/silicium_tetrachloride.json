@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:mineral_washer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:potassium_chloride"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:impuredusts/silicon"
+      }
+    }
+  ],
+  "output": {
+    "amount": 250,
+    "id": "chemicalscience:siliciumtetrachloride"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

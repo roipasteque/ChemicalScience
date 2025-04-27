@@ -1,0 +1,46 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 3000,
+      "chance": 1.0,
+      "fluid": "chemicalscience:impurediesel"
+    }
+  ],
+
+  "gasbi": [
+    {
+      "amount": 580,
+      "chance": 1.0,
+      "gas": "chemicalscience:impurepetroleumgas",
+      "pressure": 2,
+      "temp": 350
+    },
+
+    {
+      "amount": 3600,
+      "chance": 1.0,
+      "gas": "chemicalscience:impurenaphta",
+      "pressure": 2,
+      "temp": 450
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 9999,
+      "tag": "c:crude_oil"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1400,
+    "id": "chemicalscience:impureheavyoil"
+  },
+
+
+  "ticks": 1200,
+  "usagepertick": 500.0
+}

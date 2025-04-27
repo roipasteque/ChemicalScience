@@ -1,0 +1,38 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_palladiumchloride"
+      }
+    },
+    {
+      "chance": 0.01,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_ruthenium"
+      }
+    }
+  ],
+
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:chloroplatinic_acid"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_platinumchloride"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

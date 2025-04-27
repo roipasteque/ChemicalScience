@@ -1,0 +1,43 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "electrodynamics:dustchromium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:toluene"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":32,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:dustchromium"
+  },
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:benzene"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

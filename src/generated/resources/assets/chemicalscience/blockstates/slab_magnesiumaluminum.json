@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chemicalscience:block/slab_magnesiumaluminum"
+    },
+    "type=double": {
+      "model": "chemicalscience:block/block_magnesiumaluminum"
+    },
+    "type=top": {
+      "model": "chemicalscience:block/slab_magnesiumaluminum_top"
+    }
+  }
+}

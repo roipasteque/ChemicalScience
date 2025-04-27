@@ -1,0 +1,30 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:acetic_acid"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:chloroaceticacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

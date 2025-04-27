@@ -1,0 +1,50 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/sulfur"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 300,
+      "tag": "c:bromine"
+    },
+
+    {
+      "amount": 600,
+      "tag": "c:methanol"
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "electrodynamics:fluidsulfuricacid"
+  },
+
+  "gasoutput": {
+    "amount": 600,
+    "gas": "chemicalscience:bromomethane",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}
