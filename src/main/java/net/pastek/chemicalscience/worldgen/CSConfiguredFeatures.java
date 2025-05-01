@@ -22,6 +22,7 @@ public class CSConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ARSENOPYRITE_ORE_KEY = registerKey("arsenopyrite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_WOLFRAMITE_ORE_KEY = registerKey("wolframite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COOPERITE_ORE_KEY = registerKey("cooperite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_OIL_ORE_KEY = registerKey("oil_ore");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -59,6 +60,12 @@ public class CSConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, CSBlocks.ORE_DEEPSLATE_COOPERITE.get().defaultBlockState()));
 
         register(context, OVERWORLD_COOPERITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCooperiteOres, 4));
+
+        List<OreConfiguration.TargetBlockState> overworldOilOres = List.of(
+                OreConfiguration.target(stoneReplaceables, CSBlocks.ORE_OIL.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, CSBlocks.ORE_DEEPSLATE_OIL.get().defaultBlockState()));
+
+        register(context, OVERWORLD_OIL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOilOres, 48));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

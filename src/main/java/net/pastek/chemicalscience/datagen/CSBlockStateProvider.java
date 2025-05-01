@@ -1,6 +1,7 @@
 package net.pastek.chemicalscience.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -29,6 +30,8 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockWithItem(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE);
         blockWithItem(CSBlocks.ORE_COOPERITE);
         blockWithItem(CSBlocks.ORE_DEEPSLATE_COOPERITE);
+        blockWithItem(CSBlocks.ORE_OIL);
+        blockWithItem(CSBlocks.ORE_DEEPSLATE_OIL);
 
         //Stellaris
         blockWithItem(CSBlocks.ORE_ARSENOPYRITE_MOON);blockWithItem(CSBlocks.ORE_ARSENOPYRITE_MARS);blockWithItem(CSBlocks.ORE_ARSENOPYRITE_VENUS);blockWithItem(CSBlocks.ORE_ARSENOPYRITE_MERCURY);blockWithItem(CSBlocks.ORE_COOPERITE_MOON);blockWithItem(CSBlocks.ORE_COOPERITE_MARS);blockWithItem(CSBlocks.ORE_COOPERITE_VENUS);blockWithItem(CSBlocks.ORE_COOPERITE_MERCURY);blockWithItem(CSBlocks.ORE_MAGNESIUM_MOON);blockWithItem(CSBlocks.ORE_MAGNESIUM_MARS);blockWithItem(CSBlocks.ORE_MAGNESIUM_VENUS);blockWithItem(CSBlocks.ORE_MAGNESIUM_MERCURY);blockWithItem(CSBlocks.ORE_SILICON_MOON);blockWithItem(CSBlocks.ORE_SILICON_MARS);blockWithItem(CSBlocks.ORE_SILICON_VENUS);blockWithItem(CSBlocks.ORE_SILICON_MERCURY);blockWithItem(CSBlocks.ORE_WOLFRAMITE_MOON);blockWithItem(CSBlocks.ORE_WOLFRAMITE_MARS);blockWithItem(CSBlocks.ORE_WOLFRAMITE_VENUS);blockWithItem(CSBlocks.ORE_WOLFRAMITE_MERCURY);blockWithItem(CSBlocks.ORE_ALUMINUM_MOON);blockWithItem(CSBlocks.ORE_ALUMINUM_MARS);blockWithItem(CSBlocks.ORE_ALUMINUM_VENUS);blockWithItem(CSBlocks.ORE_ALUMINUM_MERCURY);blockWithItem(CSBlocks.ORE_CHROMIUM_MOON);blockWithItem(CSBlocks.ORE_CHROMIUM_MARS);blockWithItem(CSBlocks.ORE_CHROMIUM_VENUS);blockWithItem(CSBlocks.ORE_CHROMIUM_MERCURY);blockWithItem(CSBlocks.ORE_FLUORITE_MOON);blockWithItem(CSBlocks.ORE_FLUORITE_MARS);blockWithItem(CSBlocks.ORE_FLUORITE_VENUS);blockWithItem(CSBlocks.ORE_FLUORITE_MERCURY);blockWithItem(CSBlocks.ORE_LEAD_MOON);blockWithItem(CSBlocks.ORE_LEAD_MARS);blockWithItem(CSBlocks.ORE_LEAD_VENUS);blockWithItem(CSBlocks.ORE_LEAD_MERCURY);blockWithItem(CSBlocks.ORE_LITHIUM_MOON);blockWithItem(CSBlocks.ORE_LITHIUM_MARS);blockWithItem(CSBlocks.ORE_LITHIUM_VENUS);blockWithItem(CSBlocks.ORE_LITHIUM_MERCURY);blockWithItem(CSBlocks.ORE_MOLYBDENUM_MOON);blockWithItem(CSBlocks.ORE_MOLYBDENUM_MARS);blockWithItem(CSBlocks.ORE_MOLYBDENUM_VENUS);blockWithItem(CSBlocks.ORE_MOLYBDENUM_MERCURY);blockWithItem(CSBlocks.ORE_MONAZITE_MOON);blockWithItem(CSBlocks.ORE_MONAZITE_MARS);blockWithItem(CSBlocks.ORE_MONAZITE_VENUS);blockWithItem(CSBlocks.ORE_MONAZITE_MERCURY);blockWithItem(CSBlocks.ORE_NITER_MOON);blockWithItem(CSBlocks.ORE_NITER_MARS);blockWithItem(CSBlocks.ORE_NITER_VENUS);blockWithItem(CSBlocks.ORE_NITER_MERCURY);blockWithItem(CSBlocks.ORE_SALT_MOON);blockWithItem(CSBlocks.ORE_SALT_MARS);blockWithItem(CSBlocks.ORE_SALT_VENUS);blockWithItem(CSBlocks.ORE_SALT_MERCURY);blockWithItem(CSBlocks.ORE_SILVER_MOON);blockWithItem(CSBlocks.ORE_SILVER_MARS);blockWithItem(CSBlocks.ORE_SILVER_VENUS);blockWithItem(CSBlocks.ORE_SILVER_MERCURY);blockWithItem(CSBlocks.ORE_SULFUR_MOON);blockWithItem(CSBlocks.ORE_SULFUR_MARS);blockWithItem(CSBlocks.ORE_SULFUR_VENUS);blockWithItem(CSBlocks.ORE_SULFUR_MERCURY);blockWithItem(CSBlocks.ORE_SYLVITE_MOON);blockWithItem(CSBlocks.ORE_SYLVITE_MARS);blockWithItem(CSBlocks.ORE_SYLVITE_VENUS);blockWithItem(CSBlocks.ORE_SYLVITE_MERCURY);blockWithItem(CSBlocks.ORE_TIN_MOON);blockWithItem(CSBlocks.ORE_TIN_MARS);blockWithItem(CSBlocks.ORE_TIN_VENUS);blockWithItem(CSBlocks.ORE_TIN_MERCURY);blockWithItem(CSBlocks.ORE_TITANIUM_MOON);blockWithItem(CSBlocks.ORE_TITANIUM_MARS);blockWithItem(CSBlocks.ORE_TITANIUM_VENUS);blockWithItem(CSBlocks.ORE_TITANIUM_MERCURY);blockWithItem(CSBlocks.ORE_THORIUM_MOON);blockWithItem(CSBlocks.ORE_THORIUM_MARS);blockWithItem(CSBlocks.ORE_THORIUM_VENUS);blockWithItem(CSBlocks.ORE_THORIUM_MERCURY);blockWithItem(CSBlocks.ORE_URANIUM_MOON);blockWithItem(CSBlocks.ORE_URANIUM_MARS);blockWithItem(CSBlocks.ORE_URANIUM_VENUS);blockWithItem(CSBlocks.ORE_URANIUM_MERCURY);blockWithItem(CSBlocks.ORE_VANADIUM_MOON);blockWithItem(CSBlocks.ORE_VANADIUM_MARS);blockWithItem(CSBlocks.ORE_VANADIUM_VENUS);blockWithItem(CSBlocks.ORE_VANADIUM_MERCURY);
@@ -45,6 +48,16 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         slabBlock(CSBlocks.MAGNESIUM_GA9Z1_SLAB.get(), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()));
         blockItem(CSBlocks.MAGNESIUM_GA9Z1_SLAB);
         blockWithItem(CSBlocks.MAGNESIUM_GA9Z1_LAMP);
+
+        blockWithItem(CSBlocks.ASPHALT_BLOCK);
+        stairsBlock(CSBlocks.ASPHALT_STAIR.get(),blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_STAIR);
+        slabBlock(CSBlocks.ASPHALT_SLAB.get(), blockTexture(CSBlocks.ASPHALT_BLOCK.get()), blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_SLAB);
+        logBlock(((RotatedPillarBlock) CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK);
+        logBlock(((RotatedPillarBlock) CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK);
+        blockWithItem(CSBlocks.MARKED_CROSS_WHITE_ASPHALT_BLOCK);
+        logBlock(((RotatedPillarBlock) CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK);
+        logBlock(((RotatedPillarBlock) CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
+        blockWithItem(CSBlocks.MARKED_CROSS_YELLOW_ASPHALT_BLOCK);
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
 

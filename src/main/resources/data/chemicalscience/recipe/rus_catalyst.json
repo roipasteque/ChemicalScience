@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "tag": "c:dusts/ruthenium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:ruthenium_sulfur_catalyst"
+  }
+}

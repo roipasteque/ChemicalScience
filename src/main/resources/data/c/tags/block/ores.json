@@ -1,6 +1,27 @@
 {
     "values": [
       "#c:ores/magnesium",
-      "#c:ores/silicon"
+      "#c:ores/silicon",
+      "#c:ores/arsenopyrite",
+      "#c:ores/wolframite",
+      "#c:ores/cooperite",
+      "#c:ores/oil",
+      "#c:ores/aluminum",
+      "#c:ores/chromium",
+      "#c:ores/fluorite",
+      "#c:ores/lead",
+      "#c:ores/lithium",
+      "#c:ores/molybdenum",
+      "#c:ores/monazite",
+      "#c:ores/potassiumchloride",
+      "#c:ores/salt",
+      "#c:ores/saltpeter",
+      "#c:ores/silver",
+      "#c:ores/sulfur",
+      "#c:ores/thorium",
+      "#c:ores/tin",
+      "#c:ores/titanium",
+      "#c:ores/uranium",
+      "#c:ores/vanadium"
     ]
-  }
+}

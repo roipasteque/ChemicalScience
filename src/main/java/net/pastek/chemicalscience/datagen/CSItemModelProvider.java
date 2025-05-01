@@ -1,8 +1,11 @@
 package net.pastek.chemicalscience.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSItems;
 
@@ -89,6 +92,5 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.CULTURE_MEDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/culture_medium");
         withExistingParent(CSItems.E_COLI.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/escherichia_coli");
         withExistingParent(CSItems.SODA.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/soda");
-
     }
 }

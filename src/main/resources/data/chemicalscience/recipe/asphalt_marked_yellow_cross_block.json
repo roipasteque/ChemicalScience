@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "chemicalscience:asphalt"
+    },
+    "Y": {
+      "tag": "c:dyes/yellow"
+    }
+  },
+  "pattern": [
+    "AYA",
+    "YYY",
+    "AYA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chemicalscience:block_marked_yellow_cross_asphalt"
+  }
+}

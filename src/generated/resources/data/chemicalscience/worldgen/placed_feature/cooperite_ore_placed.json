@@ -1,5 +1,5 @@
 {
-  "feature": "chemicalscience:wolframite_ore",
+  "feature": "chemicalscience:cooperite_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -11,7 +11,7 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
+        "type": "minecraft:uniform",
         "max_inclusive": {
           "absolute": 48
         },

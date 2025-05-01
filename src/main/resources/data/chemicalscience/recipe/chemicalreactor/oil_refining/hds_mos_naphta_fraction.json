@@ -1,0 +1,55 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "gasbi": [
+    {
+      "amount": 1,
+      "chance": 0.2,
+      "gas": "chemicalscience:hydrogensulfide",
+      "pressure": 16,
+      "temp": 293
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:molybdenum_sulfur_catalyst"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 10,
+      "pressure":16,
+      "gas": "chemicalscience:impurenaphta",
+      "temp": 350
+    },
+
+    {
+      "amount": 30,
+      "pressure":16,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:molybdenum_sulfur_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 140,
+    "id": "chemicalscience:naphta"
+  },
+
+
+
+
+  "ticks": 1000,
+  "usagepertick": 500.0
+}

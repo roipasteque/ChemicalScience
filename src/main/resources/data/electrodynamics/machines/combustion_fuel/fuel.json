@@ -1,0 +1,5 @@
+{
+  "fluid_tag": "c:fuel",
+  "power_multiplier": 3.0,
+  "usage_per_burn": 10
+}

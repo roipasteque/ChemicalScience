@@ -1,0 +1,35 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:coalcoke"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 500,
+      "fluid": "chemicalscience:impureheavyoil"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 16,
+    "id": "chemicalscience:asphalt"
+  },
+
+  "fluidoutput": {
+    "amount": 300,
+    "id": "chemicalscience:heavyoil"
+  },
+
+
+  "ticks": 800,
+  "usagepertick": 500.0
+}

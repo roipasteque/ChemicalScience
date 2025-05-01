@@ -36,6 +36,9 @@ public class CSBlocks {
     public static final DeferredBlock<Block> ORE_DEEPSLATE_WOLFRAMITE = registerBlock("ore_deepslate_wolframite", () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> ORE_COOPERITE = registerBlock("ore_cooperite", () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> ORE_DEEPSLATE_COOPERITE = registerBlock("ore_deepslate_cooperite", () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> ORE_OIL = registerBlock("ore_sourcerock", () -> new Block(BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+    public static final DeferredBlock<Block> ORE_DEEPSLATE_OIL = registerBlock("ore_deepslate_sourcerock", () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
+
 
     // Stellaris, Ad Astra, Galacticraft
     public static final DeferredBlock<Block> ORE_ARSENOPYRITE_MOON = registerBlock("ore_arsenopyrite_moon", () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -140,16 +143,31 @@ public class CSBlocks {
 
     // Decorative
     public static final DeferredBlock<Block> MAGNESIUM_GA9Z1_BLOCK = registerBlock("block_magnesiumaluminum",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
     public static final DeferredBlock<Block> MAGNESIUM_GA9Z1_LAMP = registerBlock("lamp_magnesiumaluminum",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER).lightLevel(BlockState -> 15)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER).lightLevel(BlockState -> 15)));
     public static final DeferredBlock<StairBlock> MAGNESIUM_GA9Z1_STAIR = registerBlock("stair_magnesiumaluminum",
-            () -> new StairBlock(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+            () -> new StairBlock(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
     public static final DeferredBlock<SlabBlock> MAGNESIUM_GA9Z1_SLAB = registerBlock("slab_magnesiumaluminum",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+    public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<StairBlock> ASPHALT_STAIR = registerBlock("stair_asphalt",
+            () -> new StairBlock(CSBlocks.ASPHALT_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<SlabBlock> ASPHALT_SLAB = registerBlock("slab_asphalt",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_LINE_WHITE_ASPHALT_BLOCK = registerBlock("block_marked_white_line_asphalt",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_DOT_WHITE_ASPHALT_BLOCK = registerBlock("block_marked_white_dot_asphalt",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_CROSS_WHITE_ASPHALT_BLOCK = registerBlock("block_marked_white_cross_asphalt",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_LINE_YELLOW_ASPHALT_BLOCK = registerBlock("block_marked_yellow_line_asphalt",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_DOT_YELLOW_ASPHALT_BLOCK = registerBlock("block_marked_yellow_dot_asphalt",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MARKED_CROSS_YELLOW_ASPHALT_BLOCK = registerBlock("block_marked_yellow_cross_asphalt",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     // periodic table
     public static final DeferredBlock<Block> ELEMENT_H =  registerBlock("block_element_h",  () -> new Block(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.BONE_BLOCK)));

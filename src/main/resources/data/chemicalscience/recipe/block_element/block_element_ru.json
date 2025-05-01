@@ -6,7 +6,7 @@
       "item": "minecraft:brown_concrete"
     },
     "E": {
-      "item": "minecraft:dripstone_block"
+      "item": "chemicalscience:dust_ruthenium"
     }
   },
   "pattern": [

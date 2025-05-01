@@ -2,18 +2,10 @@
   "type": "electrodynamics:chemical_reactor_recipe",
   "group": "chemicalscience",
 
-  "fluidbi": [
-    {
-      "amount": 400,
-      "chance": 1.0,
-      "fluid": "chemicalscience:propane"
-    }
-  ],
-
   "gasbi": [
     {
       "amount": 1,
-      "chance": 0.2,
+      "chance": 0.4,
       "gas": "chemicalscience:hydrogensulfide",
       "pressure": 16,
       "temp": 293
@@ -29,16 +21,16 @@
     }
   ],
 
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:impurediesel"
+    }
+  ],
+
   "gasinputs": [
     {
-      "amount": 10,
-      "pressure":16,
-      "gas": "chemicalscience:impurepetroleumgas",
-      "temp": 350
-    },
-
-    {
-      "amount": 20,
+      "amount": 100,
       "pressure":16,
       "tag": "c:hydrogen",
       "temp": 293
@@ -51,15 +43,8 @@
   },
 
   "fluidoutput": {
-    "amount": 400,
-    "id": "chemicalscience:butane"
-  },
-
-  "gasoutput": {
-    "amount": 4,
-    "gas": "chemicalscience:methane",
-    "pressure": 16,
-    "temp": 293
+    "amount": 600,
+    "id": "chemicalscience:diesel"
   },
 
 

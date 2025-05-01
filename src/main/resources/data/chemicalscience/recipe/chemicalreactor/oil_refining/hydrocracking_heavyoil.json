@@ -1,0 +1,60 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 50,
+      "chance": 1.0,
+      "fluid": "chemicalscience:diesel"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:silica_alumina_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:heavy_oil"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 50,
+      "pressure":1,
+      "tag": "c:steam",
+      "temp": 373
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:silica_alumina_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 150,
+    "id": "chemicalscience:fuel"
+  },
+
+  "gasoutput": {
+    "amount": 50,
+    "gas": "chemicalscience:butane",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+
+  "ticks": 300,
+  "usagepertick": 500.0
+}

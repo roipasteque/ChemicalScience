@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_arsenopyrite",
+    "chemicalscience:ore_deepslate_arsenopyrite",
+    "chemicalscience:ore_arsenopyrite_moon",
+    "chemicalscience:ore_arsenopyrite_mars",
+    "chemicalscience:ore_arsenopyrite_venus",
+    "chemicalscience:ore_arsenopyrite_mercury"
+  ]
+}

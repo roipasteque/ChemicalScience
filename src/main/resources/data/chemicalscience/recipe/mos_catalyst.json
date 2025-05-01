@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "tag": "c:dusts/molybdenum"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:molybdenum_sulfur_catalyst"
+  }
+}

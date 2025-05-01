@@ -17,14 +17,6 @@
       "gas": "chemicalscience:impurepetroleumgas",
       "pressure": 2,
       "temp": 350
-    },
-
-    {
-      "amount": 3600,
-      "chance": 1.0,
-      "gas": "chemicalscience:impurenaphta",
-      "pressure": 2,
-      "temp": 450
     }
   ],
 
@@ -38,6 +30,13 @@
   "fluidoutput": {
     "amount": 1400,
     "id": "chemicalscience:impureheavyoil"
+  },
+
+  "gasoutput": {
+    "amount": 3600,
+    "gas": "chemicalscience:impurenaphta",
+    "pressure": 2,
+    "temp": 450
   },
 
 

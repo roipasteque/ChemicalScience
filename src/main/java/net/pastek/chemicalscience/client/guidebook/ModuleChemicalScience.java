@@ -3,10 +3,7 @@ package net.pastek.chemicalscience.client.guidebook;
 
 import net.minecraft.network.chat.MutableComponent;
 import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.client.guidebook.chapters.ChapterGeneralChemistry;
-import net.pastek.chemicalscience.client.guidebook.chapters.ChapterIntroduction;
-import net.pastek.chemicalscience.client.guidebook.chapters.ChapterOres;
-import net.pastek.chemicalscience.client.guidebook.chapters.ChapterOrganicChemistry;
+import net.pastek.chemicalscience.client.guidebook.chapters.*;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import voltaic.client.guidebook.utils.components.Module;
 import voltaic.client.guidebook.utils.pagedata.graphics.ImageWrapperObject;
@@ -28,9 +25,10 @@ public class ModuleChemicalScience extends Module {
     @Override
     public void addChapters() {
         chapters.add(new ChapterIntroduction(this));
-        chapters.add(new ChapterOres(this));
         chapters.add(new ChapterGeneralChemistry(this));
         chapters.add(new ChapterOrganicChemistry(this));
+        chapters.add(new ChapterOres(this));
+        chapters.add(new ChapterMolecules(this));
 
     }
 

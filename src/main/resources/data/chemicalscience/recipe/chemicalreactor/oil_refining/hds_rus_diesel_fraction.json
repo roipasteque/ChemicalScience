@@ -1,0 +1,55 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "gasbi": [
+    {
+      "amount": 1,
+      "chance": 0.4,
+      "gas": "chemicalscience:hydrogensulfide",
+      "pressure": 16,
+      "temp": 293
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:ruthenium_sulfur_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:impurediesel"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":16,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:ruthenium_sulfur_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:diesel"
+  },
+
+
+
+
+  "ticks": 100,
+  "usagepertick": 500.0
+}

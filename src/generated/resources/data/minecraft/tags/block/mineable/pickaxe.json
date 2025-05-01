@@ -10,6 +10,8 @@
     "chemicalscience:ore_deepslate_wolframite",
     "chemicalscience:ore_cooperite",
     "chemicalscience:ore_deepslate_cooperite",
+    "chemicalscience:ore_sourcerock",
+    "chemicalscience:ore_deepslate_sourcerock",
     "chemicalscience:ore_arsenopyrite_moon",
     "chemicalscience:ore_arsenopyrite_mars",
     "chemicalscience:ore_arsenopyrite_venus",
@@ -105,6 +107,15 @@
     "chemicalscience:lamp_magnesiumaluminum",
     "chemicalscience:slab_magnesiumaluminum",
     "chemicalscience:stair_magnesiumaluminum",
+    "chemicalscience:block_asphalt",
+    "chemicalscience:stair_asphalt",
+    "chemicalscience:slab_asphalt",
+    "chemicalscience:block_marked_white_line_asphalt",
+    "chemicalscience:block_marked_white_dot_asphalt",
+    "chemicalscience:block_marked_white_cross_asphalt",
+    "chemicalscience:block_marked_yellow_line_asphalt",
+    "chemicalscience:block_marked_yellow_dot_asphalt",
+    "chemicalscience:block_marked_yellow_cross_asphalt",
     "chemicalscience:organicsolarpanel"
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:silica_alumina_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:naphta"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 50,
+      "pressure":1,
+      "tag": "c:steam",
+      "temp": 373
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:silica_alumina_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:fuel"
+  },
+
+
+
+
+  "ticks": 300,
+  "usagepertick": 500.0
+}

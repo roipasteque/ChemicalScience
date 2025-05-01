@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_wolframite",
+    "chemicalscience:ore_deepslate_wolframite",
+    "chemicalscience:ore_wolframite_moon",
+    "chemicalscience:ore_wolframite_mars",
+    "chemicalscience:ore_wolframite_venus",
+    "chemicalscience:ore_wolframite_mercury"
+  ]
+}

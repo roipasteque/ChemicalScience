@@ -45,6 +45,8 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         add(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_COOPERITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_COOPERITE.get(), CSItems.RAW_ORE_COOPERITE.get(), 1, 1));
         add(CSBlocks.ORE_DEEPSLATE_COOPERITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_COOPERITE.get(), CSItems.RAW_ORE_COOPERITE.get(), 1, 1));
+        dropSelf(CSBlocks.ORE_OIL.get());
+        dropSelf(CSBlocks.ORE_DEEPSLATE_OIL.get());
 
         // Stellaris
         add(CSBlocks.ORE_COOPERITE_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_COOPERITE_MOON.get(), CSItems.RAW_ORE_COOPERITE.get(), 1, 1));
@@ -149,6 +151,17 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_SLAB.get());
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_LAMP.get());
 
+        dropSelf(CSBlocks.ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.ASPHALT_STAIR.get());
+        dropSelf(CSBlocks.ASPHALT_SLAB.get());
+        dropSelf(CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.MARKED_CROSS_WHITE_ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get());
+        dropSelf(CSBlocks.MARKED_CROSS_YELLOW_ASPHALT_BLOCK.get());
+
+        // Machines
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());
 
             // Periodic table

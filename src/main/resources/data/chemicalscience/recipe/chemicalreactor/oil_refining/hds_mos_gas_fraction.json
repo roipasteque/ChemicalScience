@@ -4,7 +4,7 @@
 
   "fluidbi": [
     {
-      "amount": 500,
+      "amount": 140,
       "chance": 1.0,
       "fluid": "chemicalscience:propane"
     }
@@ -24,7 +24,7 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:ruthenium_sulfur_catalyst"
+        "item": "chemicalscience:molybdenum_sulfur_catalyst"
       }
     }
   ],
@@ -47,16 +47,16 @@
 
   "itemoutput": {
     "count": 1,
-    "id": "chemicalscience:ruthenium_sulfur_catalyst"
+    "id": "chemicalscience:molybdenum_sulfur_catalyst"
   },
 
   "fluidoutput": {
-    "amount": 500,
+    "amount": 140,
     "id": "chemicalscience:butane"
   },
 
   "gasoutput": {
-    "amount": 5,
+    "amount": 4,
     "gas": "chemicalscience:methane",
     "pressure": 16,
     "temp": 293
@@ -65,6 +65,6 @@
 
 
 
-  "ticks": 100,
+  "ticks": 1000,
   "usagepertick": 500.0
 }

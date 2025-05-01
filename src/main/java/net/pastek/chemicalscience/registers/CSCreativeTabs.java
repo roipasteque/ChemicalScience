@@ -19,7 +19,7 @@ public class CSCreativeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ChemicalScience.MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHEMICAL_SCIENCE_TAB = CREATIVE_MODE_TAB.register("chemicalscience_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CSItems.INGOT_MAGNESIUM.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(CSBlocks.ORGANIC_SOLAR_PANEL.get()))
                     .title(Component.translatable("creativetab.chemicalscience"))
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -31,15 +31,15 @@ public class CSCreativeTabs {
                         output.accept(CSBlocks.ORE_SILICON);
                         output.accept(CSBlocks.ORE_WOLFRAMITE);
                         output.accept(CSBlocks.ORE_COOPERITE);
+                        output.accept(CSBlocks.ORE_OIL);
                         output.accept(CSBlocks.ORE_DEEPSLATE_ARSENOPYRITE);
                         output.accept(CSBlocks.ORE_DEEPSLATE_MAGNESIUM);
                         output.accept(CSBlocks.ORE_DEEPSLATE_SILICON);
                         output.accept(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE);
                         output.accept(CSBlocks.ORE_DEEPSLATE_COOPERITE);
+                        output.accept(CSBlocks.ORE_DEEPSLATE_OIL);
 
                         // Stellaris, Ad Astra, Galacticraft
-
-
                         if (ModList.get().isLoaded("stellaris"))
                         {
                         output.accept(CSBlocks.ORE_ARSENOPYRITE_MOON);output.accept(CSBlocks.ORE_ARSENOPYRITE_MARS);output.accept(CSBlocks.ORE_ARSENOPYRITE_VENUS);output.accept(CSBlocks.ORE_ARSENOPYRITE_MERCURY);output.accept(CSBlocks.ORE_COOPERITE_MOON);output.accept(CSBlocks.ORE_COOPERITE_MARS);output.accept(CSBlocks.ORE_COOPERITE_VENUS);output.accept(CSBlocks.ORE_COOPERITE_MERCURY);output.accept(CSBlocks.ORE_MAGNESIUM_MOON);output.accept(CSBlocks.ORE_MAGNESIUM_MARS);output.accept(CSBlocks.ORE_MAGNESIUM_VENUS);output.accept(CSBlocks.ORE_MAGNESIUM_MERCURY);output.accept(CSBlocks.ORE_SILICON_MOON);output.accept(CSBlocks.ORE_SILICON_MARS);output.accept(CSBlocks.ORE_SILICON_VENUS);output.accept(CSBlocks.ORE_SILICON_MERCURY);output.accept(CSBlocks.ORE_WOLFRAMITE_MOON);output.accept(CSBlocks.ORE_WOLFRAMITE_MARS);output.accept(CSBlocks.ORE_WOLFRAMITE_VENUS);output.accept(CSBlocks.ORE_WOLFRAMITE_MERCURY);output.accept(CSBlocks.ORE_ALUMINUM_MOON);output.accept(CSBlocks.ORE_ALUMINUM_MARS);output.accept(CSBlocks.ORE_ALUMINUM_VENUS);output.accept(CSBlocks.ORE_ALUMINUM_MERCURY);output.accept(CSBlocks.ORE_CHROMIUM_MOON);output.accept(CSBlocks.ORE_CHROMIUM_MARS);output.accept(CSBlocks.ORE_CHROMIUM_VENUS);output.accept(CSBlocks.ORE_CHROMIUM_MERCURY);output.accept(CSBlocks.ORE_FLUORITE_MOON);output.accept(CSBlocks.ORE_FLUORITE_MARS);output.accept(CSBlocks.ORE_FLUORITE_VENUS);output.accept(CSBlocks.ORE_FLUORITE_MERCURY);output.accept(CSBlocks.ORE_LEAD_MOON);output.accept(CSBlocks.ORE_LEAD_MARS);output.accept(CSBlocks.ORE_LEAD_VENUS);output.accept(CSBlocks.ORE_LEAD_MERCURY);output.accept(CSBlocks.ORE_LITHIUM_MOON);output.accept(CSBlocks.ORE_LITHIUM_MARS);output.accept(CSBlocks.ORE_LITHIUM_VENUS);output.accept(CSBlocks.ORE_LITHIUM_MERCURY);output.accept(CSBlocks.ORE_MOLYBDENUM_MOON);output.accept(CSBlocks.ORE_MOLYBDENUM_MARS);output.accept(CSBlocks.ORE_MOLYBDENUM_VENUS);output.accept(CSBlocks.ORE_MOLYBDENUM_MERCURY);output.accept(CSBlocks.ORE_MONAZITE_MOON);output.accept(CSBlocks.ORE_MONAZITE_MARS);output.accept(CSBlocks.ORE_MONAZITE_VENUS);output.accept(CSBlocks.ORE_MONAZITE_MERCURY);output.accept(CSBlocks.ORE_NITER_MOON);output.accept(CSBlocks.ORE_NITER_MARS);output.accept(CSBlocks.ORE_NITER_VENUS);output.accept(CSBlocks.ORE_NITER_MERCURY);output.accept(CSBlocks.ORE_SALT_MOON);output.accept(CSBlocks.ORE_SALT_MARS);output.accept(CSBlocks.ORE_SALT_VENUS);output.accept(CSBlocks.ORE_SALT_MERCURY);output.accept(CSBlocks.ORE_SILVER_MOON);output.accept(CSBlocks.ORE_SILVER_MARS);output.accept(CSBlocks.ORE_SILVER_VENUS);output.accept(CSBlocks.ORE_SILVER_MERCURY);output.accept(CSBlocks.ORE_SULFUR_MOON);output.accept(CSBlocks.ORE_SULFUR_MARS);output.accept(CSBlocks.ORE_SULFUR_VENUS);output.accept(CSBlocks.ORE_SULFUR_MERCURY);output.accept(CSBlocks.ORE_SYLVITE_MOON);output.accept(CSBlocks.ORE_SYLVITE_MARS);output.accept(CSBlocks.ORE_SYLVITE_VENUS);output.accept(CSBlocks.ORE_SYLVITE_MERCURY);output.accept(CSBlocks.ORE_TIN_MOON);output.accept(CSBlocks.ORE_TIN_MARS);output.accept(CSBlocks.ORE_TIN_VENUS);output.accept(CSBlocks.ORE_TIN_MERCURY);output.accept(CSBlocks.ORE_TITANIUM_MOON);output.accept(CSBlocks.ORE_TITANIUM_MARS);output.accept(CSBlocks.ORE_TITANIUM_VENUS);output.accept(CSBlocks.ORE_TITANIUM_MERCURY);output.accept(CSBlocks.ORE_THORIUM_MOON);output.accept(CSBlocks.ORE_THORIUM_MARS);output.accept(CSBlocks.ORE_THORIUM_VENUS);output.accept(CSBlocks.ORE_THORIUM_MERCURY);output.accept(CSBlocks.ORE_URANIUM_MOON);output.accept(CSBlocks.ORE_URANIUM_MARS);output.accept(CSBlocks.ORE_URANIUM_VENUS);output.accept(CSBlocks.ORE_URANIUM_MERCURY);output.accept(CSBlocks.ORE_VANADIUM_MOON);output.accept(CSBlocks.ORE_VANADIUM_MARS);output.accept(CSBlocks.ORE_VANADIUM_VENUS);output.accept(CSBlocks.ORE_VANADIUM_MERCURY);
@@ -123,14 +123,24 @@ public class CSCreativeTabs {
                         output.accept(CSItems.ORGANICNIGHTVISIONGOGGLES);
 
                         // BLOCKS
+                        // Machines
+                        output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
                         // Decorative
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_BLOCK);
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_LAMP);
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_STAIR);
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_SLAB);
 
-                        // Machines
-                        output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
+                        output.accept(CSBlocks.ASPHALT_BLOCK);
+                        output.accept(CSBlocks.ASPHALT_STAIR);
+                        output.accept(CSBlocks.ASPHALT_SLAB);
+                        output.accept(CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK);
+                        output.accept(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK);
+                        output.accept(CSBlocks.MARKED_CROSS_WHITE_ASPHALT_BLOCK);
+                        output.accept(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK);
+                        output.accept(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
+                        output.accept(CSBlocks.MARKED_CROSS_YELLOW_ASPHALT_BLOCK);
+
 
 
                     }).build());

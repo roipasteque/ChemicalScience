@@ -4,6 +4,7 @@ import net.neoforged.bus.api.IEventBus;
 import electrodynamics.registers.ElectrodynamicsItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.Fluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
