@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:plutoniumnitrate"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1200,
+      "fluid": "chemicalscience:organicuraniumsolution"
+    },
+    {
+      "amount": 800,
+      "tag": "c:nitric_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1900,
+    "id": "chemicalscience:uraniumnitrate"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

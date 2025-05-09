@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:fuel_rods/spent"
+      }
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:fuel_rods/spent"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:nitric_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:impureuraniumsolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

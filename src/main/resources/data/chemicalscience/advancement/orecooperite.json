@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:ores",
+  "criteria": {
+    "HasOre": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:rawore_cooperite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.orecooperite.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:ore_deepslate_cooperite"
+    },
+    "title": {
+      "color": "yellow",
+      "translate": "advancement.chemicalscience.orecooperite.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasOre"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

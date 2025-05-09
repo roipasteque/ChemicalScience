@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "T": {
+      "item": "chemicalscience:trinitrotoluene"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PTP",
+    " P "
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:tnt"
+  }
+}

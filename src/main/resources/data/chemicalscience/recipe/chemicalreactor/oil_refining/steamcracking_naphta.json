@@ -1,0 +1,57 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 30,
+      "chance": 1.0,
+      "fluid": "chemicalscience:toluene"
+    }
+  ],
+
+  "gasbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "gas": "chemicalscience:propylene",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:naphta"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":1,
+      "tag": "c:steam",
+      "temp": 1000
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:benzene"
+  },
+
+  "gasoutput": {
+    "amount": 150,
+    "gas": "chemicalscience:ethylene",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 1000.0
+}

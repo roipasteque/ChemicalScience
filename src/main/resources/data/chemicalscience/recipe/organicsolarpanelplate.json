@@ -9,7 +9,7 @@
       "tag": "c:glass_panes"
     },
     "P": {
-      "item": "chemicalscience:dppdtt_polymer"
+      "item": "chemicalscience:polymer_dppdtt"
     },
     "A": {
       "tag": "c:plates/aluminum"

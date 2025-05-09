@@ -1,0 +1,41 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:polymer_propylene"
+      }
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:titanium_magnesium_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:propylene"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:titanium_magnesium_catalyst"
+  },
+
+
+
+
+  "ticks": 500,
+  "usagepertick": 200.0
+}

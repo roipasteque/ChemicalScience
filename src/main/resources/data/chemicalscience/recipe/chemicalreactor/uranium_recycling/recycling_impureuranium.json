@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:impureuraniumsolution"
+    },
+    {
+      "amount": 200,
+      "tag": "c:tributylphosphate"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1200,
+    "id": "chemicalscience:organicuraniumsolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

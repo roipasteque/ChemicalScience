@@ -1,0 +1,26 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 800,
+      "tag": "c:uranium_nitrate"
+    },
+
+    {
+      "amount": 800,
+      "tag": "c:ammonia"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 2,
+    "id": "chemicalscience:dust_ammoniumdiuranate"
+  },
+
+
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

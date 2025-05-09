@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:root",
+  "criteria": {
+    "HasElectricDrill": {
+      "conditions": {
+        "items": [
+          {
+            "items": "electrodynamics:electricdrill"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.ores.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "electrodynamics:electricdrill"
+    },
+    "title": {
+      "color": "gray",
+      "translate": "advancement.chemicalscience.ores.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasElectricDrill"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

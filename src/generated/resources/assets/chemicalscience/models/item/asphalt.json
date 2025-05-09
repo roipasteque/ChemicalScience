@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chemicalscience:item/misc/asphalt"
+    "layer0": "chemicalscience:item/materials/asphalt"
   }
 }

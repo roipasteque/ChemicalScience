@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:ores",
+  "criteria": {
+    "HasOre": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:impuredust_magnesium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.oremagnesium.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:ore_deepslate_magnesium"
+    },
+    "title": {
+      "color": "white",
+      "translate": "advancement.chemicalscience.oremagnesium.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasOre"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

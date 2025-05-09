@@ -1,0 +1,47 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "c:ores/titanium"
+      }
+    },
+    {
+      "count": 6,
+      "ingredient": {
+        "tag": "minecraft:coals"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 700,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:titaniumchloride"
+  },
+
+  "gasoutput": {
+    "amount": 600,
+    "gas": "chemicalscience:carbonmonoxide",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+
+  "ticks": 300,
+  "usagepertick": 1000.0
+}

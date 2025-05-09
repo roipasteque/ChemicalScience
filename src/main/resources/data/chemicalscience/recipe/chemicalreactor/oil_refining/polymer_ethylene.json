@@ -1,0 +1,36 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:titanium_magnesium_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:ethylene"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:titanium_magnesium_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 500,
+    "id": "electrodynamics:fluidpolyethylene"
+  },
+
+
+
+
+  "ticks": 500,
+  "usagepertick": 200.0
+}

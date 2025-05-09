@@ -1,0 +1,36 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:palladium_carbon_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:ethylbenzene"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:palladium_carbon_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:styrene"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

@@ -18,6 +18,7 @@ public class CSBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ARSENOPYRITE_ORE = registerKey("add_arsenopyrite_ore");
     public static final ResourceKey<BiomeModifier> ADD_WOLFRAMITE_ORE = registerKey("add_wolframite_ore");
     public static final ResourceKey<BiomeModifier> ADD_COOPERITE_ORE = registerKey("add_cooperite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_PYROLUSITE_ORE = registerKey("add_pyrolusite_ore");
     public static final ResourceKey<BiomeModifier> ADD_OIL_ORE = registerKey("add_oil_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
@@ -43,6 +44,10 @@ public class CSBiomeModifiers {
         context.register(ADD_COOPERITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(CSPlacedFeatures.COOPERITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_PYROLUSITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(CSPlacedFeatures.PYROLUSITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
         context.register(ADD_OIL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),

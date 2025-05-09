@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:culture_medium",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:escherichia_coli"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.escherichia_coli.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:escherichia_coli"
+    },
+    "title": {
+      "color": "light_purple",
+      "translate": "advancement.chemicalscience.escherichia_coli.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

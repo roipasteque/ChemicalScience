@@ -22,6 +22,7 @@ public class CSConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ARSENOPYRITE_ORE_KEY = registerKey("arsenopyrite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_WOLFRAMITE_ORE_KEY = registerKey("wolframite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COOPERITE_ORE_KEY = registerKey("cooperite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PYROLUSITE_ORE_KEY = registerKey("pyrolusite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_OIL_ORE_KEY = registerKey("oil_ore");
 
 
@@ -53,13 +54,19 @@ public class CSConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, CSBlocks.ORE_WOLFRAMITE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, CSBlocks.ORE_DEEPSLATE_WOLFRAMITE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_WOLFRAMITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldWolframiteOres, 4));
+        register(context, OVERWORLD_WOLFRAMITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldWolframiteOres, 5));
 
         List<OreConfiguration.TargetBlockState> overworldCooperiteOres = List.of(
                 OreConfiguration.target(stoneReplaceables, CSBlocks.ORE_COOPERITE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, CSBlocks.ORE_DEEPSLATE_COOPERITE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_COOPERITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCooperiteOres, 4));
+        register(context, OVERWORLD_COOPERITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCooperiteOres, 3));
+
+        List<OreConfiguration.TargetBlockState> overworldPyrolusiteOres = List.of(
+                OreConfiguration.target(stoneReplaceables, CSBlocks.ORE_PYROLUSITE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, CSBlocks.ORE_DEEPSLATE_PYROLUSITE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_PYROLUSITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPyrolusiteOres, 6));
 
         List<OreConfiguration.TargetBlockState> overworldOilOres = List.of(
                 OreConfiguration.target(stoneReplaceables, CSBlocks.ORE_OIL.get().defaultBlockState()),

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "group": "chemicalscience",
+  "ingredient": {
+    "item": "chemicalscience:dust_ammoniumdiuranate"
+  },
+  "result": {
+    "count": 2,
+    "id": "chemicalscience:dust_uraniumoxide"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:root",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:soda"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.soda.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:soda"
+    },
+    "title": {
+      "color": "red",
+      "translate": "advancement.chemicalscience.soda.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

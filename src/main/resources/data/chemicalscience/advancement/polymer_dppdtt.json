@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:root",
+  "criteria": {
+    "HasPolymer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:polymer_dppdtt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.polymer_dppdtt.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:polymer_dppdtt"
+    },
+    "title": {
+      "color": "red",
+      "translate": "advancement.chemicalscience.polymer_dppdtt.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasPolymer"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

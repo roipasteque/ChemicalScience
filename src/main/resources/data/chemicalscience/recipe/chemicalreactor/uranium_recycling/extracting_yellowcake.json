@@ -1,0 +1,46 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:yellow_cake_uranium"
+      }
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "chemicalscience:dust_uraniumoxide"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:sodium_hydroxide"
+    },
+
+    {
+      "amount": 1800,
+      "tag": "minecraft:water"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "nuclearscience:yellowcake"
+  },
+
+
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

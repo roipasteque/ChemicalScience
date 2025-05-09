@@ -92,7 +92,7 @@ public class ChapterOres extends Chapter {
         }));
 
         //Wolframite
-        pageData.add(new ItemWrapperObject(7, 10, 32, 32, 50, 2.0F, CSBlocks.ORE_WOLFRAMITE.asItem(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 0, CSBlocks.ORE_WOLFRAMITE.asItem().getDescription().copy().withStyle(ChatFormatting.ITALIC)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSTextUtils.guidebook("chapter.ores.material", CSTextUtils.guidebook("chapter.ores.material_wolframite"))), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20, CSTextUtils.guidebook("chapter.ores.spawnrange", "-64", "8")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 30, CSTextUtils.guidebook("chapter.ores.veinsperchunk", "6")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 40, CSTextUtils.guidebook("chapter.ores.veinsize", "4")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 50, CSTextUtils.guidebook("chapter.ores.miningtier", "Iron"))).onTooltip(new OnTooltip() {
+        pageData.add(new ItemWrapperObject(7, 10, 32, 32, 50, 2.0F, CSBlocks.ORE_WOLFRAMITE.asItem(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 0, CSBlocks.ORE_WOLFRAMITE.asItem().getDescription().copy().withStyle(ChatFormatting.ITALIC)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSTextUtils.guidebook("chapter.ores.material", CSTextUtils.guidebook("chapter.ores.material_wolframite"))), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20, CSTextUtils.guidebook("chapter.ores.spawnrange", "-64", "8")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 30, CSTextUtils.guidebook("chapter.ores.veinsperchunk", "4")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 40, CSTextUtils.guidebook("chapter.ores.veinsize", "5")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 50, CSTextUtils.guidebook("chapter.ores.miningtier", "Iron"))).onTooltip(new OnTooltip() {
             @Override
             public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {
                 if (JeiBuffer.isJeiInstalled()) {
@@ -110,7 +110,7 @@ public class ChapterOres extends Chapter {
         }));
 
         //Cooperite
-        pageData.add(new ItemWrapperObject(7, 10, 32, 32, 50, 2.0F, CSBlocks.ORE_COOPERITE.asItem(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 0, CSBlocks.ORE_COOPERITE.asItem().getDescription().copy().withStyle(ChatFormatting.ITALIC)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSTextUtils.guidebook("chapter.ores.material", CSTextUtils.guidebook("chapter.ores.material_cooperite"))), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20, CSTextUtils.guidebook("chapter.ores.spawnrange", "-8", "48")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 30, CSTextUtils.guidebook("chapter.ores.veinsperchunk", "6")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 40, CSTextUtils.guidebook("chapter.ores.veinsize", "4")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 50, CSTextUtils.guidebook("chapter.ores.miningtier", "Iron"))).onTooltip(new OnTooltip() {
+        pageData.add(new ItemWrapperObject(7, 10, 32, 32, 50, 2.0F, CSBlocks.ORE_COOPERITE.asItem(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 0, CSBlocks.ORE_COOPERITE.asItem().getDescription().copy().withStyle(ChatFormatting.ITALIC)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSTextUtils.guidebook("chapter.ores.material", CSTextUtils.guidebook("chapter.ores.material_cooperite"))), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20, CSTextUtils.guidebook("chapter.ores.spawnrange", "-8", "48")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 30, CSTextUtils.guidebook("chapter.ores.veinsperchunk", "4")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 40, CSTextUtils.guidebook("chapter.ores.veinsize", "3")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 50, CSTextUtils.guidebook("chapter.ores.miningtier", "Iron"))).onTooltip(new OnTooltip() {
             @Override
             public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {
                 if (JeiBuffer.isJeiInstalled()) {
@@ -124,6 +124,24 @@ public class ChapterOres extends Chapter {
             @Override
             public Object getJeiLookup() {
                 return new ItemStack(CSBlocks.ORE_COOPERITE);
+            }
+        }));
+
+        //Pyrolusite
+        pageData.add(new ItemWrapperObject(7, 10, 32, 32, 50, 2.0F, CSBlocks.ORE_PYROLUSITE.asItem(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 0, CSBlocks.ORE_PYROLUSITE.asItem().getDescription().copy().withStyle(ChatFormatting.ITALIC)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSTextUtils.guidebook("chapter.ores.material", CSTextUtils.guidebook("chapter.ores.material_pyrolusite"))), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20, CSTextUtils.guidebook("chapter.ores.spawnrange", "-8", "80")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 30, CSTextUtils.guidebook("chapter.ores.veinsperchunk", "6")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 40, CSTextUtils.guidebook("chapter.ores.veinsize", "6")), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 50, CSTextUtils.guidebook("chapter.ores.miningtier", "Stone"))).onTooltip(new OnTooltip() {
+            @Override
+            public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {
+                if (JeiBuffer.isJeiInstalled()) {
+                    graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);
+                }
+            }
+        }).onKeyPress(new OnKeyPress() {
+            @Override
+            public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {
+            }
+            @Override
+            public Object getJeiLookup() {
+                return new ItemStack(CSBlocks.ORE_PYROLUSITE);
             }
         }));
 

@@ -59,6 +59,20 @@ public class CSFluidTypes {
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_HEAVYOIL = FLUID_TYPES.register("heavyoil", () -> CSFluids.FLUID_HEAVYOIL.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_FUEL = FLUID_TYPES.register("fuel", () -> CSFluids.FLUID_FUEL.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_HYDROGENSULFIDE = FLUID_TYPES.register("hydrogensulfide", () -> CSFluids.FLUID_HYDROGENSULFIDE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_TRINITROTOLUENE = FLUID_TYPES.register("trinitrotoluene", () -> CSFluids.FLUID_TRINITROTOLUENE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ETHYLENE = FLUID_TYPES.register("ethylene", () -> CSFluids.FLUID_ETHYLENE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PROPYLENE = FLUID_TYPES.register("propylene", () -> CSFluids.FLUID_PROPYLENE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ETHYLBENZENE = FLUID_TYPES.register("ethylbenzene", () -> CSFluids.FLUID_ETHYLBENZENE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_STYRENE = FLUID_TYPES.register("styrene", () -> CSFluids.FLUID_STYRENE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_TITANIUMCHLORIDE = FLUID_TYPES.register("titaniumchloride", () -> CSFluids.FLUID_TITANIUMCHLORIDE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_VINYLCHLORIDE = FLUID_TYPES.register("vinylchloride", () -> CSFluids.FLUID_VINYLCHLORIDE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREURANIUMSOLUTION = FLUID_TYPES.register("impureuraniumsolution", () -> CSFluids.FLUID_IMPUREURANIUMSOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ORGANICURANIUMSOLUTION = FLUID_TYPES.register("organicuraniumsolution", () -> CSFluids.FLUID_ORGANICURANIUMSOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_TRIBUTYLPHOSPHATE = FLUID_TYPES.register("tributylphosphate", () -> CSFluids.FLUID_TRIBUTYLPHOSPHATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_URANIUMNITRATE = FLUID_TYPES.register("uraniumnitrate", () -> CSFluids.FLUID_URANIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PLUTONIUMNITRATE = FLUID_TYPES.register("plutoniumnitrate", () -> CSFluids.FLUID_PLUTONIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_BUTANOL = FLUID_TYPES.register("butanol", () -> CSFluids.FLUID_BUTANOL.get().getFluidType());
+
 
 
     public static void register(IEventBus eventBus) {

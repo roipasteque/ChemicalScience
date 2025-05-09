@@ -1,0 +1,26 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 500,
+      "tag": "c:plutonium_nitrate"
+    },
+
+    {
+      "amount": 2000,
+      "tag": "c:sodium_hydroxide"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_plutoniumhydroxide"
+  },
+
+
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

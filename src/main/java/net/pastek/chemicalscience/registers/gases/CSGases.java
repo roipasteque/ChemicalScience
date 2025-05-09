@@ -23,6 +23,9 @@ public class CSGases {
     public static final DeferredHolder<Gas, Gas> PROPANE = GASES.register("propane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propane"), 231, CSFluids.FLUID_PROPANE));
     public static final DeferredHolder<Gas, Gas> METHANE = GASES.register("methane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("methane"), 112, CSFluids.FLUID_METHANE));
     public static final DeferredHolder<Gas, Gas> HYDROGENSULFIDE = GASES.register("hydrogensulfide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("hydrogensulfide"), 213, CSFluids.FLUID_HYDROGENSULFIDE));
+    public static final DeferredHolder<Gas, Gas> ETHYLENE = GASES.register("ethylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("ethylene"), 170, CSFluids.FLUID_ETHYLENE));
+    public static final DeferredHolder<Gas, Gas> PROPYLENE = GASES.register("propylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propylene"), 226, CSFluids.FLUID_PROPYLENE));
+    public static final DeferredHolder<Gas, Gas> VINYLCHLORIDE = GASES.register("vinylchloride", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("vinylchloride"), 260, CSFluids.FLUID_VINYLCHLORIDE));
 
 
 

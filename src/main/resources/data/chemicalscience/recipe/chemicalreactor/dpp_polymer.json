@@ -2,6 +2,16 @@
   "type": "electrodynamics:chemical_reactor_recipe",
   "group": "chemicalscience",
 
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:polymer_dpp"
+      }
+    }
+  ],
+
   "iteminputs": [
     {
       "count": 1,
@@ -25,7 +35,7 @@
 
   "itemoutput": {
     "count": 1,
-    "id": "chemicalscience:dpp_polymer"
+    "id": "chemicalscience:copper_aluminate_catalyst"
   },
 
   "ticks": 200,

@@ -45,6 +45,8 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         add(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_COOPERITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_COOPERITE.get(), CSItems.RAW_ORE_COOPERITE.get(), 1, 1));
         add(CSBlocks.ORE_DEEPSLATE_COOPERITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_COOPERITE.get(), CSItems.RAW_ORE_COOPERITE.get(), 1, 1));
+        add(CSBlocks.ORE_PYROLUSITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
+        add(CSBlocks.ORE_DEEPSLATE_PYROLUSITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_PYROLUSITE.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
         dropSelf(CSBlocks.ORE_OIL.get());
         dropSelf(CSBlocks.ORE_DEEPSLATE_OIL.get());
 
@@ -61,10 +63,14 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         add(CSBlocks.ORE_WOLFRAMITE_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_MARS.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_WOLFRAMITE_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_VENUS.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_WOLFRAMITE_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_MERCURY.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
-        add(CSBlocks.ORE_MAGNESIUM_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MOON.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 1));
-        add(CSBlocks.ORE_MAGNESIUM_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MARS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 1));
-        add(CSBlocks.ORE_MAGNESIUM_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_VENUS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 1));
-        add(CSBlocks.ORE_MAGNESIUM_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MERCURY.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_MAGNESIUM_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MOON.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
+        add(CSBlocks.ORE_MAGNESIUM_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MARS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
+        add(CSBlocks.ORE_MAGNESIUM_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_VENUS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
+        add(CSBlocks.ORE_MAGNESIUM_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MERCURY.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
+        add(CSBlocks.ORE_PYROLUSITE_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_MOON.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
+        add(CSBlocks.ORE_PYROLUSITE_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_MARS.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
+        add(CSBlocks.ORE_PYROLUSITE_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_VENUS.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
+        add(CSBlocks.ORE_PYROLUSITE_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_MERCURY.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
         add(CSBlocks.ORE_SILICON_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_SILICON_MOON.get(), CSItems.RAW_ORE_SILICON.get(), 1, 1));
         add(CSBlocks.ORE_SILICON_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_SILICON_MARS.get(), CSItems.RAW_ORE_SILICON.get(), 1, 1));
         add(CSBlocks.ORE_SILICON_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_SILICON_VENUS.get(), CSItems.RAW_ORE_SILICON.get(), 1, 1));
@@ -150,16 +156,16 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_STAIR.get());
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_SLAB.get());
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_LAMP.get());
+        dropSelf(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get());
+        add(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), block -> createDoorTable(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get()));
 
         dropSelf(CSBlocks.ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.ASPHALT_STAIR.get());
         dropSelf(CSBlocks.ASPHALT_SLAB.get());
         dropSelf(CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK.get());
-        dropSelf(CSBlocks.MARKED_CROSS_WHITE_ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get());
-        dropSelf(CSBlocks.MARKED_CROSS_YELLOW_ASPHALT_BLOCK.get());
 
         // Machines
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());

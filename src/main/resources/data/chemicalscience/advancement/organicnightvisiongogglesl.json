@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:polymer_dppdtt",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:organicnightvisiongoggles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.organicnightvisiongoggles.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:organicnightvisiongoggles"
+    },
+    "title": {
+      "color": "dark_blue",
+      "translate": "advancement.chemicalscience.organicnightvisiongoggles.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

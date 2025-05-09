@@ -15,13 +15,13 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:dpp_polymer"
+        "item": "chemicalscience:polymer_dpp"
       }
     },
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:dtt_polymer"
+        "item": "chemicalscience:polymer_dtt"
       }
     }
   ],
@@ -49,7 +49,7 @@
 
   "itemoutput": {
     "count": 1,
-    "id": "chemicalscience:dppdtt_polymer"
+    "id": "chemicalscience:polymer_dppdtt"
   },
 
   "gasoutput": {

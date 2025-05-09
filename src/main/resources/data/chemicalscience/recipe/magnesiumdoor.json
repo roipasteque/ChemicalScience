@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/magnesiumaluminum"
+    }
+  },
+  "pattern": [
+    "II ",
+    "II ",
+    "II "
+  ],
+  "result": {
+    "count": 3,
+    "id": "chemicalscience:door_magnesiumaluminum"
+  }
+}

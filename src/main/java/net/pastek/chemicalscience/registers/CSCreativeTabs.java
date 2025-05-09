@@ -31,18 +31,20 @@ public class CSCreativeTabs {
                         output.accept(CSBlocks.ORE_SILICON);
                         output.accept(CSBlocks.ORE_WOLFRAMITE);
                         output.accept(CSBlocks.ORE_COOPERITE);
+                        output.accept(CSBlocks.ORE_PYROLUSITE);
                         output.accept(CSBlocks.ORE_OIL);
                         output.accept(CSBlocks.ORE_DEEPSLATE_ARSENOPYRITE);
                         output.accept(CSBlocks.ORE_DEEPSLATE_MAGNESIUM);
                         output.accept(CSBlocks.ORE_DEEPSLATE_SILICON);
                         output.accept(CSBlocks.ORE_DEEPSLATE_WOLFRAMITE);
                         output.accept(CSBlocks.ORE_DEEPSLATE_COOPERITE);
+                        output.accept(CSBlocks.ORE_DEEPSLATE_PYROLUSITE);
                         output.accept(CSBlocks.ORE_DEEPSLATE_OIL);
 
                         // Stellaris, Ad Astra, Galacticraft
                         if (ModList.get().isLoaded("stellaris"))
                         {
-                        output.accept(CSBlocks.ORE_ARSENOPYRITE_MOON);output.accept(CSBlocks.ORE_ARSENOPYRITE_MARS);output.accept(CSBlocks.ORE_ARSENOPYRITE_VENUS);output.accept(CSBlocks.ORE_ARSENOPYRITE_MERCURY);output.accept(CSBlocks.ORE_COOPERITE_MOON);output.accept(CSBlocks.ORE_COOPERITE_MARS);output.accept(CSBlocks.ORE_COOPERITE_VENUS);output.accept(CSBlocks.ORE_COOPERITE_MERCURY);output.accept(CSBlocks.ORE_MAGNESIUM_MOON);output.accept(CSBlocks.ORE_MAGNESIUM_MARS);output.accept(CSBlocks.ORE_MAGNESIUM_VENUS);output.accept(CSBlocks.ORE_MAGNESIUM_MERCURY);output.accept(CSBlocks.ORE_SILICON_MOON);output.accept(CSBlocks.ORE_SILICON_MARS);output.accept(CSBlocks.ORE_SILICON_VENUS);output.accept(CSBlocks.ORE_SILICON_MERCURY);output.accept(CSBlocks.ORE_WOLFRAMITE_MOON);output.accept(CSBlocks.ORE_WOLFRAMITE_MARS);output.accept(CSBlocks.ORE_WOLFRAMITE_VENUS);output.accept(CSBlocks.ORE_WOLFRAMITE_MERCURY);output.accept(CSBlocks.ORE_ALUMINUM_MOON);output.accept(CSBlocks.ORE_ALUMINUM_MARS);output.accept(CSBlocks.ORE_ALUMINUM_VENUS);output.accept(CSBlocks.ORE_ALUMINUM_MERCURY);output.accept(CSBlocks.ORE_CHROMIUM_MOON);output.accept(CSBlocks.ORE_CHROMIUM_MARS);output.accept(CSBlocks.ORE_CHROMIUM_VENUS);output.accept(CSBlocks.ORE_CHROMIUM_MERCURY);output.accept(CSBlocks.ORE_FLUORITE_MOON);output.accept(CSBlocks.ORE_FLUORITE_MARS);output.accept(CSBlocks.ORE_FLUORITE_VENUS);output.accept(CSBlocks.ORE_FLUORITE_MERCURY);output.accept(CSBlocks.ORE_LEAD_MOON);output.accept(CSBlocks.ORE_LEAD_MARS);output.accept(CSBlocks.ORE_LEAD_VENUS);output.accept(CSBlocks.ORE_LEAD_MERCURY);output.accept(CSBlocks.ORE_LITHIUM_MOON);output.accept(CSBlocks.ORE_LITHIUM_MARS);output.accept(CSBlocks.ORE_LITHIUM_VENUS);output.accept(CSBlocks.ORE_LITHIUM_MERCURY);output.accept(CSBlocks.ORE_MOLYBDENUM_MOON);output.accept(CSBlocks.ORE_MOLYBDENUM_MARS);output.accept(CSBlocks.ORE_MOLYBDENUM_VENUS);output.accept(CSBlocks.ORE_MOLYBDENUM_MERCURY);output.accept(CSBlocks.ORE_MONAZITE_MOON);output.accept(CSBlocks.ORE_MONAZITE_MARS);output.accept(CSBlocks.ORE_MONAZITE_VENUS);output.accept(CSBlocks.ORE_MONAZITE_MERCURY);output.accept(CSBlocks.ORE_NITER_MOON);output.accept(CSBlocks.ORE_NITER_MARS);output.accept(CSBlocks.ORE_NITER_VENUS);output.accept(CSBlocks.ORE_NITER_MERCURY);output.accept(CSBlocks.ORE_SALT_MOON);output.accept(CSBlocks.ORE_SALT_MARS);output.accept(CSBlocks.ORE_SALT_VENUS);output.accept(CSBlocks.ORE_SALT_MERCURY);output.accept(CSBlocks.ORE_SILVER_MOON);output.accept(CSBlocks.ORE_SILVER_MARS);output.accept(CSBlocks.ORE_SILVER_VENUS);output.accept(CSBlocks.ORE_SILVER_MERCURY);output.accept(CSBlocks.ORE_SULFUR_MOON);output.accept(CSBlocks.ORE_SULFUR_MARS);output.accept(CSBlocks.ORE_SULFUR_VENUS);output.accept(CSBlocks.ORE_SULFUR_MERCURY);output.accept(CSBlocks.ORE_SYLVITE_MOON);output.accept(CSBlocks.ORE_SYLVITE_MARS);output.accept(CSBlocks.ORE_SYLVITE_VENUS);output.accept(CSBlocks.ORE_SYLVITE_MERCURY);output.accept(CSBlocks.ORE_TIN_MOON);output.accept(CSBlocks.ORE_TIN_MARS);output.accept(CSBlocks.ORE_TIN_VENUS);output.accept(CSBlocks.ORE_TIN_MERCURY);output.accept(CSBlocks.ORE_TITANIUM_MOON);output.accept(CSBlocks.ORE_TITANIUM_MARS);output.accept(CSBlocks.ORE_TITANIUM_VENUS);output.accept(CSBlocks.ORE_TITANIUM_MERCURY);output.accept(CSBlocks.ORE_THORIUM_MOON);output.accept(CSBlocks.ORE_THORIUM_MARS);output.accept(CSBlocks.ORE_THORIUM_VENUS);output.accept(CSBlocks.ORE_THORIUM_MERCURY);output.accept(CSBlocks.ORE_URANIUM_MOON);output.accept(CSBlocks.ORE_URANIUM_MARS);output.accept(CSBlocks.ORE_URANIUM_VENUS);output.accept(CSBlocks.ORE_URANIUM_MERCURY);output.accept(CSBlocks.ORE_VANADIUM_MOON);output.accept(CSBlocks.ORE_VANADIUM_MARS);output.accept(CSBlocks.ORE_VANADIUM_VENUS);output.accept(CSBlocks.ORE_VANADIUM_MERCURY);
+                        output.accept(CSBlocks.ORE_ARSENOPYRITE_MOON);output.accept(CSBlocks.ORE_ARSENOPYRITE_MARS);output.accept(CSBlocks.ORE_ARSENOPYRITE_VENUS);output.accept(CSBlocks.ORE_ARSENOPYRITE_MERCURY);output.accept(CSBlocks.ORE_COOPERITE_MOON);output.accept(CSBlocks.ORE_COOPERITE_MARS);output.accept(CSBlocks.ORE_COOPERITE_VENUS);output.accept(CSBlocks.ORE_COOPERITE_MERCURY);output.accept(CSBlocks.ORE_MAGNESIUM_MOON);output.accept(CSBlocks.ORE_MAGNESIUM_MARS);output.accept(CSBlocks.ORE_MAGNESIUM_VENUS);output.accept(CSBlocks.ORE_MAGNESIUM_MERCURY);output.accept(CSBlocks.ORE_PYROLUSITE_MOON);output.accept(CSBlocks.ORE_PYROLUSITE_MARS);output.accept(CSBlocks.ORE_PYROLUSITE_MERCURY);output.accept(CSBlocks.ORE_PYROLUSITE_VENUS);output.accept(CSBlocks.ORE_SILICON_MOON);output.accept(CSBlocks.ORE_SILICON_MARS);output.accept(CSBlocks.ORE_SILICON_VENUS);output.accept(CSBlocks.ORE_SILICON_MERCURY);output.accept(CSBlocks.ORE_WOLFRAMITE_MOON);output.accept(CSBlocks.ORE_WOLFRAMITE_MARS);output.accept(CSBlocks.ORE_WOLFRAMITE_VENUS);output.accept(CSBlocks.ORE_WOLFRAMITE_MERCURY);output.accept(CSBlocks.ORE_ALUMINUM_MOON);output.accept(CSBlocks.ORE_ALUMINUM_MARS);output.accept(CSBlocks.ORE_ALUMINUM_VENUS);output.accept(CSBlocks.ORE_ALUMINUM_MERCURY);output.accept(CSBlocks.ORE_CHROMIUM_MOON);output.accept(CSBlocks.ORE_CHROMIUM_MARS);output.accept(CSBlocks.ORE_CHROMIUM_VENUS);output.accept(CSBlocks.ORE_CHROMIUM_MERCURY);output.accept(CSBlocks.ORE_FLUORITE_MOON);output.accept(CSBlocks.ORE_FLUORITE_MARS);output.accept(CSBlocks.ORE_FLUORITE_VENUS);output.accept(CSBlocks.ORE_FLUORITE_MERCURY);output.accept(CSBlocks.ORE_LEAD_MOON);output.accept(CSBlocks.ORE_LEAD_MARS);output.accept(CSBlocks.ORE_LEAD_VENUS);output.accept(CSBlocks.ORE_LEAD_MERCURY);output.accept(CSBlocks.ORE_LITHIUM_MOON);output.accept(CSBlocks.ORE_LITHIUM_MARS);output.accept(CSBlocks.ORE_LITHIUM_VENUS);output.accept(CSBlocks.ORE_LITHIUM_MERCURY);output.accept(CSBlocks.ORE_MOLYBDENUM_MOON);output.accept(CSBlocks.ORE_MOLYBDENUM_MARS);output.accept(CSBlocks.ORE_MOLYBDENUM_VENUS);output.accept(CSBlocks.ORE_MOLYBDENUM_MERCURY);output.accept(CSBlocks.ORE_MONAZITE_MOON);output.accept(CSBlocks.ORE_MONAZITE_MARS);output.accept(CSBlocks.ORE_MONAZITE_VENUS);output.accept(CSBlocks.ORE_MONAZITE_MERCURY);output.accept(CSBlocks.ORE_NITER_MOON);output.accept(CSBlocks.ORE_NITER_MARS);output.accept(CSBlocks.ORE_NITER_VENUS);output.accept(CSBlocks.ORE_NITER_MERCURY);output.accept(CSBlocks.ORE_SALT_MOON);output.accept(CSBlocks.ORE_SALT_MARS);output.accept(CSBlocks.ORE_SALT_VENUS);output.accept(CSBlocks.ORE_SALT_MERCURY);output.accept(CSBlocks.ORE_SILVER_MOON);output.accept(CSBlocks.ORE_SILVER_MARS);output.accept(CSBlocks.ORE_SILVER_VENUS);output.accept(CSBlocks.ORE_SILVER_MERCURY);output.accept(CSBlocks.ORE_SULFUR_MOON);output.accept(CSBlocks.ORE_SULFUR_MARS);output.accept(CSBlocks.ORE_SULFUR_VENUS);output.accept(CSBlocks.ORE_SULFUR_MERCURY);output.accept(CSBlocks.ORE_SYLVITE_MOON);output.accept(CSBlocks.ORE_SYLVITE_MARS);output.accept(CSBlocks.ORE_SYLVITE_VENUS);output.accept(CSBlocks.ORE_SYLVITE_MERCURY);output.accept(CSBlocks.ORE_TIN_MOON);output.accept(CSBlocks.ORE_TIN_MARS);output.accept(CSBlocks.ORE_TIN_VENUS);output.accept(CSBlocks.ORE_TIN_MERCURY);output.accept(CSBlocks.ORE_TITANIUM_MOON);output.accept(CSBlocks.ORE_TITANIUM_MARS);output.accept(CSBlocks.ORE_TITANIUM_VENUS);output.accept(CSBlocks.ORE_TITANIUM_MERCURY);output.accept(CSBlocks.ORE_THORIUM_MOON);output.accept(CSBlocks.ORE_THORIUM_MARS);output.accept(CSBlocks.ORE_THORIUM_VENUS);output.accept(CSBlocks.ORE_THORIUM_MERCURY);output.accept(CSBlocks.ORE_URANIUM_MOON);output.accept(CSBlocks.ORE_URANIUM_MARS);output.accept(CSBlocks.ORE_URANIUM_VENUS);output.accept(CSBlocks.ORE_URANIUM_MERCURY);output.accept(CSBlocks.ORE_VANADIUM_MOON);output.accept(CSBlocks.ORE_VANADIUM_MARS);output.accept(CSBlocks.ORE_VANADIUM_VENUS);output.accept(CSBlocks.ORE_VANADIUM_MERCURY);
                         }
 
 
@@ -56,6 +58,8 @@ public class CSCreativeTabs {
                         output.accept(CSItems.RAW_ORE_ARSENOPYRITE);
                         output.accept(CSItems.RAW_ORE_SILICON);
                         output.accept(CSItems.RAW_ORE_WOLFRAMITE);
+                        output.accept(CSItems.RAW_ORE_COOPERITE);
+                        output.accept(CSItems.RAW_ORE_PYROLUSITE);
                         // Ingots
                         output.accept(CSItems.INGOT_GALLIUMARSENIDE);
                         output.accept(CSItems.INGOT_MAGNESIUM);
@@ -83,27 +87,38 @@ public class CSCreativeTabs {
                         output.accept(CSItems.IMPURE_DUST_PALLADIUM);
                         // Crystals
                         output.accept(CSItems.CRYSTAL_MAGNESIUM);
+                        output.accept(CSItems.CRYSTAL_MAGNESIUMCHLORIDE);
                         output.accept(CSItems.CRYSTAL_ACETIC_ANHYDRIDE);
                         // Oxides
                         output.accept(CSItems.DUST_CALCIUMOXIDE);
                         output.accept(CSItems.DUST_CERIUMOXIDE);
                         output.accept(CSItems.DUST_IRONOXIDE);
+                        output.accept(CSItems.DUST_URANIUMOXIDE);
+                        output.accept(CSItems.DUST_PLUTONIUMOXIDE);
                         // Dusts again
                         output.accept(CSItems.DUST_CHROMIUM_BROMIDE);
                         output.accept(CSItems.DUST_PLATINUM_CHLORIDE);
                         output.accept(CSItems.DUST_PALLADIUM_CHLORIDE);
+                        output.accept(CSItems.DUST_PLUTONIUMHYDROXIDE);
                         output.accept(CSItems.DUST_UREA);
                         output.accept(CSItems.DUST_DIMETHYLUREA);
                         output.accept(CSItems.DUST_CAFFEINE);
                         output.accept(CSItems.DUST_AMMONIUMCARBONATE);
+                        output.accept(CSItems.DUST_AMMONIUMDIURANATE);
                         output.accept(CSItems.DUST_SUCCINIMIDE);
                         output.accept(CSItems.DUST_NBROMOSUCCINIMIDE);
                         // Plates
                         output.accept(CSItems.PLATE_SILICON);
+                        // Materials
+                        output.accept(CSItems.ASPHALT);
+                        output.accept(CSItems.TRINITROTOLUENE);
                         // Polymer
                         output.accept(CSItems.DPP_POLYMER);
                         output.accept(CSItems.DTT_POLYMER);
                         output.accept(CSItems.DPPDTT_POLYMER);
+                        output.accept(CSItems.POLYPROPYLENE);
+                        output.accept(CSItems.POLYSTYRENE);
+                        output.accept(CSItems.PVC);
                         // Catalyst
                         output.accept(CSItems.COPPER_ZINC_ALUMINATE_CATALYST);
                         output.accept(CSItems.IRON_ON_CARBON_CATALYST);
@@ -111,9 +126,9 @@ public class CSCreativeTabs {
                         output.accept(CSItems.MOLYBDENUM_SULFUR_CATALYST);
                         output.accept(CSItems.RUTHENIUM_SULFUR_CATALYST);
                         output.accept(CSItems.SILICA_ALUMINA_CATALYST);
+                        output.accept(CSItems.TITANIUM_MAGNESIUM_CATALYST);
                         // Misc
                         output.accept(CSItems.CHROMOTOGRAPHYCARD_CARBONMONOXIDE);
-                        output.accept(CSItems.ASPHALT);
                         output.accept(CSItems.ORGANIC_SOLAR_PANEL_PLATE);
                         output.accept(CSItems.PETRI_DISH);
                         output.accept(CSItems.CULTURE_MEDIUM);
@@ -130,16 +145,16 @@ public class CSCreativeTabs {
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_LAMP);
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_STAIR);
                         output.accept(CSBlocks.MAGNESIUM_GA9Z1_SLAB);
+                        output.accept(CSBlocks.MAGNESIUM_GA9Z1_DOOR);
+                        output.accept(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR);
 
                         output.accept(CSBlocks.ASPHALT_BLOCK);
                         output.accept(CSBlocks.ASPHALT_STAIR);
                         output.accept(CSBlocks.ASPHALT_SLAB);
                         output.accept(CSBlocks.MARKED_LINE_WHITE_ASPHALT_BLOCK);
                         output.accept(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK);
-                        output.accept(CSBlocks.MARKED_CROSS_WHITE_ASPHALT_BLOCK);
                         output.accept(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK);
                         output.accept(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
-                        output.accept(CSBlocks.MARKED_CROSS_YELLOW_ASPHALT_BLOCK);
 
 
 

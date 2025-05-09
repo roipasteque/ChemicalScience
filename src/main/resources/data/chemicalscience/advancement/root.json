@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "HasChemReactor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "electrodynamics:chemicalreactor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "chemicalscience:textures/screen/advancements/chemicalscience.png",
+    "description": {
+      "translate": "advancement.chemicalscience.root.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "electrodynamics:chemicalreactor"
+    },
+    "title": {
+      "color": "dark_green",
+      "translate": "advancement.chemicalscience.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasChemReactor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}
