@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:circuits/basic"
+    },
+    "I": {
+      "tag": "c:ingots/manganin"
+    },
+    "P": {
+      "tag": "c:plates/iron"
+    },
+    "W": {
+      "item": "electrodynamics:wirecopper"
+    }
+  },
+  "pattern": [
+    " W ",
+    "PIP",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrodynamics:multimeter"
+  }
+}

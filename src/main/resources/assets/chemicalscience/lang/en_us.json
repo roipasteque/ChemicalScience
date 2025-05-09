@@ -52,6 +52,7 @@
   "item.chemicalscience.dust_gallium": "Gallium Dust",
   "item.chemicalscience.dust_tungsten": "Tungsten Dust",
   "item.chemicalscience.dust_ceriumoxide": "Cerium Oxide",
+  "item.chemicalscience.dust_manganeseoxide": "Manganese Oxide",
   "item.chemicalscience.dust_calciumoxide": "Calcium Oxide",
   "item.chemicalscience.dust_ironoxide": "Iron Oxide",
   "item.chemicalscience.dust_uraniumoxide": "Uranium Oxide",
@@ -73,6 +74,7 @@
   "item.chemicalscience.impuredust_magnesium": "Impure Magnesium Dust",
   "item.chemicalscience.impuredust_silicon": "Impure Silicon Dust",
   "item.chemicalscience.impuredust_ceriumoxide": "Impure Cerium Oxide",
+  "item.chemicalscience.impuredust_manganeseoxide": "Impure Manganese Oxide",
   "item.chemicalscience.impuredust_arsenopyrite": "Impure Arsenopyrite Dust",
   "item.chemicalscience.impuredust_gallium": "Impure Gallium Dust",
   "item.chemicalscience.impuredust_tungsten": "Impure Tungsten Dust",
@@ -81,9 +83,14 @@
 
   "item.chemicalscience.ingot_magnesium": "Magnesium Ingot",
   "item.chemicalscience.ingot_magnesiumaluminum": "Magnesium G-A9Z1 Ingot",
+  "item.chemicalscience.ingot_manganesealuminum": "Manganese-Aluminum Ingot",
   "item.chemicalscience.ingot_silicon": "Silicon Ingot",
   "item.chemicalscience.ingot_galliumarsenide": "Gallium Arsenide Ingot",
   "item.chemicalscience.ingot_tungsten": "Tungsten Ingot",
+  "item.chemicalscience.ingot_manganese": "Manganese Ingot",
+  "item.chemicalscience.ingot_manganin": "Manganin Ingot",
+  "item.chemicalscience.ingot_platinum": "Platinum Ingot",
+  "item.chemicalscience.ingot_palladium": "Palladium Ingot",
 
   "item.chemicalscience.plate_silicon": "Silicon Plate",
 

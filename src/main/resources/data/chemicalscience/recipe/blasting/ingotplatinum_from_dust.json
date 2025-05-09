@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "group": "chemicalscience",
+  "ingredient": {
+    "item": "chemicalscience:dust_platinum"
+  },
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:ingot_platinum"
+  }
+}

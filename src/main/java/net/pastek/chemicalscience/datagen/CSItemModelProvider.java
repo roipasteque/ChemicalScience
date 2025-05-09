@@ -40,6 +40,7 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.DUST_IRONOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ironoxide");
         withExistingParent(CSItems.DUST_CALCIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_calciumoxide");
         withExistingParent(CSItems.DUST_CERIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ceriumoxide");
+        withExistingParent(CSItems.DUST_MANGANESEOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_manganeseoxide");
         withExistingParent(CSItems.DUST_URANIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_uraniumoxide");
         withExistingParent(CSItems.DUST_PLUTONIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_plutoniumoxide");
         withExistingParent(CSItems.DUST_PLUTONIUMHYDROXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_plutoniumhydroxide");
@@ -59,6 +60,7 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.IMPURE_DUST_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_magnesium");
         withExistingParent(CSItems.IMPURE_DUST_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_silicon");
         withExistingParent(CSItems.IMPURE_DUST_CERIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_ceriumoxide");
+        withExistingParent(CSItems.IMPURE_DUST_MANGANESEOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_manganeseoxide");
         withExistingParent(CSItems.IMPURE_DUST_ARSENOPYRITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_arsenopyrite");
         withExistingParent(CSItems.IMPURE_DUST_GALLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_gallium");
         withExistingParent(CSItems.IMPURE_DUST_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_tungsten");
@@ -68,9 +70,16 @@ public class CSItemModelProvider extends ItemModelProvider {
         // Ingots
         withExistingParent(CSItems.INGOT_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_magnesium");
         withExistingParent(CSItems.INGOT_MAGNESIUM_ALUMINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_magnesiumaluminum");
+        withExistingParent(CSItems.INGOT_MANGANESE_ALUMINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_manganesealuminum");
         withExistingParent(CSItems.INGOT_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_silicon");
         withExistingParent(CSItems.INGOT_GALLIUMARSENIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_galliumarsenide");
         withExistingParent(CSItems.INGOT_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_tungsten");
+        withExistingParent(CSItems.INGOT_MANGANESE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_manganese");
+        withExistingParent(CSItems.INGOT_MANGANIN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_manganin");
+        withExistingParent(CSItems.INGOT_PLATINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_platinum");
+        withExistingParent(CSItems.INGOT_PALLADIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_palladium");
+
+
         // Plates
         withExistingParent(CSItems.PLATE_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_silicon");
         // Materials

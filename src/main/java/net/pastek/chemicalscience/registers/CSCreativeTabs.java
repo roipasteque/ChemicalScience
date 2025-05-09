@@ -64,8 +64,13 @@ public class CSCreativeTabs {
                         output.accept(CSItems.INGOT_GALLIUMARSENIDE);
                         output.accept(CSItems.INGOT_MAGNESIUM);
                         output.accept(CSItems.INGOT_MAGNESIUM_ALUMINUM);
+                        output.accept(CSItems.INGOT_MANGANESE_ALUMINUM);
                         output.accept(CSItems.INGOT_SILICON);
                         output.accept(CSItems.INGOT_TUNGSTEN);
+                        output.accept(CSItems.INGOT_MANGANESE);
+                        output.accept(CSItems.INGOT_MANGANIN);
+                        output.accept(CSItems.INGOT_PLATINUM);
+                        output.accept(CSItems.INGOT_PALLADIUM);
                         // Dusts
                         output.accept(CSItems.DUST_MAGNESIUM);
                         output.accept(CSItems.DUST_SILICON);
@@ -80,6 +85,7 @@ public class CSCreativeTabs {
                         output.accept(CSItems.IMPURE_DUST_MAGNESIUM);
                         output.accept(CSItems.IMPURE_DUST_SILICON);
                         output.accept(CSItems.IMPURE_DUST_CERIUMOXIDE);
+                        output.accept(CSItems.IMPURE_DUST_MANGANESEOXIDE);
                         output.accept(CSItems.IMPURE_DUST_ARSENOPYRITE);
                         output.accept(CSItems.IMPURE_DUST_GALLIUM);
                         output.accept(CSItems.IMPURE_DUST_TUNGSTEN);
@@ -92,6 +98,7 @@ public class CSCreativeTabs {
                         // Oxides
                         output.accept(CSItems.DUST_CALCIUMOXIDE);
                         output.accept(CSItems.DUST_CERIUMOXIDE);
+                        output.accept(CSItems.DUST_MANGANESEOXIDE);
                         output.accept(CSItems.DUST_IRONOXIDE);
                         output.accept(CSItems.DUST_URANIUMOXIDE);
                         output.accept(CSItems.DUST_PLUTONIUMOXIDE);
