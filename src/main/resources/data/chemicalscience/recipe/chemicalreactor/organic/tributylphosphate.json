@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/trisulfur"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 600,
+      "tag": "c:butanol"
+    },
+
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:tributylphosphate"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

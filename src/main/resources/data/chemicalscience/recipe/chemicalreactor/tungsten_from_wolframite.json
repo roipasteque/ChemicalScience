@@ -3,16 +3,30 @@
 
   "itembi": [
     {
-      "chance": 0.3,
+      "chance": 0.5,
       "item": {
         "count": 1,
         "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_manganeseoxide"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
       }
     }
   ],
   "fluidinputs": [
     {
-      "amount": 200,
+      "amount": 400,
       "tag": "c:sulfuric_acid"
     },
     {
@@ -23,7 +37,7 @@
   "group": "chemicalscience",
   "iteminputs": [
     {
-      "count": 1,
+      "count": 3,
       "ingredient": {
         "tag": "c:raw_materials/tungsten"
       }

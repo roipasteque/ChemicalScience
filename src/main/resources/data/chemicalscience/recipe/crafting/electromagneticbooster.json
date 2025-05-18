@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chemicalscience:niobiumtitaniumcoil"
+    },
+    "P": {
+      "tag": "c:plates/copper"
+    },
+    "T": {
+      "tag": "c:plates/steel"
+    },
+    "N": {
+      "tag": "c:plates/niobium"
+    },
+    "B": {
+      "tag": "c:circuits/basic"
+    }
+  },
+  "pattern": [
+    "TNT",
+    "PCP",
+    "TBT"
+  ],
+  "result": {
+    "count": 3,
+    "id": "nuclearscience:electromagneticbooster"
+  }
+}

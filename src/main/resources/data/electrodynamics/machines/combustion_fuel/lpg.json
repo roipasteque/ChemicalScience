@@ -1,5 +1,5 @@
 {
   "fluid_tag": "c:lpg",
-  "power_multiplier": 1.3,
+  "power_multiplier": 0.5,
   "usage_per_burn": 10
 }

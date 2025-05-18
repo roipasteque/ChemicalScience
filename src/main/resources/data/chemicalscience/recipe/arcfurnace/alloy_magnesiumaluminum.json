@@ -18,19 +18,22 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "tag": "c:ingots/magnesium"
+      "tag": "c:ingots/aluminum"
     }
   ],
   "energy": 51200,
   "input": {
-    "tag": "c:ingots/aluminum"
+    "basePredicate": {
+      "tag": "c:ingots/magnesium"
+    },
+    "count": 9
   },
   "results": [
     {
       "basePredicate": {
         "tag": "c:ingots/magnesiumaluminum"
       },
-      "count": 2
+      "count": 9
     }
   ],
   "time": 100

@@ -4,7 +4,7 @@
 
   "itembi": [
     {
-      "chance": 0.5,
+      "chance": 0.9,
       "item": {
         "count": 1,
         "id": "chemicalscience:polymer_propylene"

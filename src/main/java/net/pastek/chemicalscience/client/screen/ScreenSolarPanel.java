@@ -4,7 +4,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-import net.pastek.chemicalscience.common.inventory.container.ContainerSolarPanel;
+import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import voltaic.api.electricity.formatting.ChatFormatter;
@@ -17,9 +17,9 @@ import voltaic.prefab.utilities.math.Color;
 import voltaic.prefab.utilities.object.TransferPack;
 
 @OnlyIn(Dist.CLIENT)
-public class ScreenSolarPanel extends GenericScreen<ContainerSolarPanel> {
+public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> {
 
-    public ScreenSolarPanel(ContainerSolarPanel container, Inventory playerInventory, Component title) {
+    public ScreenSolarPanel(ContainerOrganicSolarPanel container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
         addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
         addComponent(new ScreenComponentMultiLabel(0, 0, graphics -> {

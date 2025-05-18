@@ -4,6 +4,7 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.pastek.chemicalscience.common.block.voxelshapes.CSVoxelShapes;
+import net.pastek.chemicalscience.common.tile.TileFuelCell;
 import voltaic.api.ISubtype;
 import voltaic.api.multiblock.subnodebased.parent.IMultiblockParentBlock;
 import voltaic.api.tile.IMachine;
@@ -14,7 +15,8 @@ import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
 public enum SubtypeChemicalMachine implements ISubtype, IMachine {
 
 
-    organicsolarpanel(true, TileOrganicSolarPanel::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.ORGANIC_SOLAR_PANEL));
+    organicsolarpanel(true, TileOrganicSolarPanel::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.ORGANIC_SOLAR_PANEL)),
+    fuelcell(true, TileFuelCell::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.FUEL_CELL));
 
 
     private final BlockEntityType.BlockEntitySupplier<BlockEntity> blockEntitySupplier;

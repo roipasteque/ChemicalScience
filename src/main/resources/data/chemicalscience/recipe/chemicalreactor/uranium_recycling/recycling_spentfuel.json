@@ -1,16 +1,37 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:tag_empty",
-        "tag": "c:fuel_rods/spent"
-      }
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
     }
   ],
 
   "type": "electrodynamics:chemical_reactor_recipe",
   "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.40,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_ruthenium"
+      }
+    },
+    {
+      "chance": 0.20,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_rhodium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_palladium"
+      }
+    }
+  ],
 
   "iteminputs": [
     {

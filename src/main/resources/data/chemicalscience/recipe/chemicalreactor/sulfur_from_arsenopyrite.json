@@ -2,7 +2,7 @@
   "type": "electrodynamics:chemical_reactor_recipe",
   "itembi": [
     {
-      "chance": 0.1,
+      "chance": 0.5,
       "item": {
         "count": 1,
         "id": "electrodynamics:impuredustiron"

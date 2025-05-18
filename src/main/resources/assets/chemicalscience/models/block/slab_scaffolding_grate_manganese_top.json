@@ -1,0 +1,8 @@
+{
+  "parent": "chemicalscience:block/base/slab_with_top_top",
+  "textures": {
+    "side": "chemicalscience:block/metal_building_blocks/slab_scaffolding_manganese",
+    "top": "chemicalscience:block/metal_building_blocks/scaffolding_grate_manganese_top",
+    "bottom": "chemicalscience:block/metal_building_blocks/scaffolding_manganese"
+  }
+}

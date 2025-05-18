@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 700,
+      "chance": 1.0,
+      "fluid": "chemicalscience:clearfissionwastesolution"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:fissionwastesolution"
+    },
+    {
+      "amount": 300,
+      "tag": "c:dibutylphosphate"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 300,
+    "id": "chemicalscience:organiclanthanidesolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

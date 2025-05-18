@@ -56,9 +56,9 @@ public class ChapterMolecules extends Chapter {
                 ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/calciumoxide.png")));
 
         //Cerium Oxide
-        pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CERIUMOXIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CERIUMOXIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
+        pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CERIUM.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CERIUM.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.ceriumoxide"))).onTooltip(new OnTooltip() {
-            @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CERIUMOXIDE.get());}}));
+            @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CERIUM.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
                 ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ceriumoxide.png")));
 

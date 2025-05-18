@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_orientable_trapdoor_bottom",
   "render_type": "minecraft:cutout",
   "textures": {
-    "texture": "chemicalscience:block/trapdoor_magnesium"
+    "texture": "chemicalscience:block/metal_building_blocks/trapdoor_magnesium"
   }
 }

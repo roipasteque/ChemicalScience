@@ -158,6 +158,17 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_LAMP.get());
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get());
         add(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), block -> createDoorTable(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get()));
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW.get());
+        dropSelf(CSBlocks.MANGANESE_LADDER.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GRATE.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GLASS.get());
+        dropSelf(CSBlocks.MANGANESE_GRATE.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_SLAB.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB.get());
+        dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB.get());
 
         dropSelf(CSBlocks.ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.ASPHALT_STAIR.get());
@@ -169,6 +180,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
 
         // Machines
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());
+        dropSelf(CSBlocks.FUEL_CELL.get());
 
             // Periodic table
         dropSelf(CSBlocks.ELEMENT_H.get());

@@ -1,0 +1,30 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_activatedcarbon"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "gas": "chemicalscience:neon",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:carbonsampleneon"
+  },
+
+  "ticks": 200,
+  "usagepertick": 500.0
+}

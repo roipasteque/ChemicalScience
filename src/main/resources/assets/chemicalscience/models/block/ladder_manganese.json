@@ -1,0 +1,8 @@
+{
+  "parent": "chemicalscience:block/base/ladder",
+  "textures": {
+    "0": "chemicalscience:block/metal_building_blocks/ladder_manganese_hoop",
+    "1": "chemicalscience:block/metal_building_blocks/ladder_manganese",
+    "particle": "chemicalscience:block/metal_building_blocks/ladder_manganese"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "minecraft:coals"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:sodium_hydroxide"
+    },
+    {
+      "amount": 250,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_activatedcarbon"
+  },
+  "ticks": 300,
+  "usagepertick": 300.0
+}

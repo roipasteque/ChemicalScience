@@ -1,0 +1,16 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 20,
+      "fluid": "chemicalscience:puredysprosiumnitrate"
+    }
+  ],
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:dust_dysprosium"
+  },
+  "ticks": 200,
+  "usagepertick": 800.0
+}

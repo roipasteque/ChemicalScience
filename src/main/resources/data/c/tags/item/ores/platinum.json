@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_cooperite",
+    "chemicalscience:ore_deepslate_cooperite",
+    "chemicalscience:ore_cooperite_moon",
+    "chemicalscience:ore_cooperite_mars",
+    "chemicalscience:ore_cooperite_venus",
+    "chemicalscience:ore_cooperite_mercury"
+  ]
+}

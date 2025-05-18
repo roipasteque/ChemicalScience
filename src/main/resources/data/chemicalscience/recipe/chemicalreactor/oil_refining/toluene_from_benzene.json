@@ -14,7 +14,7 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "electrodynamics:oxidedititanium"
+        "item": "chemicalscience:silica_alumina_catalyst"
       }
     }
   ],
@@ -32,7 +32,7 @@
 
   "itemoutput": {
     "count": 1,
-    "id": "electrodynamics:oxidedititanium"
+    "id": "chemicalscience:silica_alumina_catalyst"
   },
 
 

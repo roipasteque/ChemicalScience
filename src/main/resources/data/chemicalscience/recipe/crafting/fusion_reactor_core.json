@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "chemicalscience:boroncompositeplating"
+    },
+    "N": {
+      "item": "chemicalscience:niobiumtitaniumcoil"
+    },
+    "I": {
+      "item": "nuclearscience:fusioninterface"
+    },
+    "F": {
+      "item": "nuclearscience:freezeplug"
+    },
+    "T": {
+      "tag": "c:cells/tritium"
+    }
+  },
+  "pattern": [
+    "PIP",
+    "NTN",
+    "PFP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nuclearscience:fusionreactorcore"
+  }
+}

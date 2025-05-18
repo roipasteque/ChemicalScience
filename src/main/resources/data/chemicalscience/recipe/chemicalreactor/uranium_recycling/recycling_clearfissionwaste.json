@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_barium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_strontium"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 700,
+      "fluid": "chemicalscience:clearfissionwastesolution"
+    },
+    {
+      "amount": 700,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:technetiumsolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

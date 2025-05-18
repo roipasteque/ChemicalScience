@@ -9,12 +9,15 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.common.inventory.container.ContainerSolarPanel;
+import net.pastek.chemicalscience.common.inventory.container.ContainerFuelCell;
+import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 
 public class CSMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(Registries.MENU, ChemicalScience.MOD_ID);
 
-    public static final DeferredHolder<MenuType<?>, MenuType<ContainerSolarPanel>> CONTAINER_SOLARPANEL = register("organicsolarpanel", ContainerSolarPanel::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerOrganicSolarPanel>> CONTAINER_SOLARPANEL = register("organicsolarpanel", ContainerOrganicSolarPanel::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerFuelCell>> CONTAINER_FUELCELL = register("fuelcell", ContainerFuelCell::new);
+
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {
         return MENU_TYPES.register(id, () -> new MenuType<>(supplier, FeatureFlags.DEFAULT_FLAGS));

@@ -1,6 +1,5 @@
 package net.pastek.chemicalscience.client;
 
-import electrodynamics.client.model.armor.ModelNightVisionGoggles;
 import electrodynamics.compatibility.mekanism.MekanismClientHandler;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -16,9 +15,13 @@ import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
+import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
+import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
+import net.pastek.chemicalscience.client.screen.ScreenFuelCell;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
+import org.jetbrains.annotations.NotNull;
 import voltaic.Voltaic;
 import voltaic.client.guidebook.ScreenGuidebook;
 import voltaic.client.misc.SWBFClientExtensions;
@@ -28,7 +31,8 @@ import net.pastek.chemicalscience.client.screen.ScreenSolarPanel;
 @EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class ClientRegister {
 
-    public static final LayerDefinition ORGANIC_NIGHT_VISION_GOGGLES = ModelNightVisionGoggles.createBodyLayer();
+    public static final LayerDefinition ORGANIC_NIGHT_VISION_GOGGLES = OrganicNightVisionGoggles.createBodyLayer();
+    public static final LayerDefinition BULLETPROOF_VEST = BulletProofVest.createBodyLayer(3, false);
 
     public static void setup() {
         ScreenGuidebook.addGuidebookModule(new ModuleChemicalScience());
@@ -38,6 +42,7 @@ public class ClientRegister {
     public static void registerMenus(RegisterMenuScreensEvent event) {
 
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
+        event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
 
         if(ModList.get().isLoaded(Voltaic.MEKANISM_ID)) {
             MekanismClientHandler.registerMenus(event);
@@ -50,8 +55,8 @@ public class ClientRegister {
         //Organic Night Vision Goggles
         event.registerItem(new IClientItemExtensions() {
             @Override
-            public HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlot armorSlot, HumanoidModel<?> properties) {
-                ModelNightVisionGoggles<LivingEntity> model = new ModelNightVisionGoggles<>(ClientRegister.ORGANIC_NIGHT_VISION_GOGGLES.bakeRoot());
+            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlot armorSlot, HumanoidModel<?> properties) {
+                OrganicNightVisionGoggles<LivingEntity> model = new OrganicNightVisionGoggles<>(ClientRegister.ORGANIC_NIGHT_VISION_GOGGLES.bakeRoot());
 
                 model.crouching = properties.crouching;
                 model.riding = properties.riding;
@@ -60,6 +65,20 @@ public class ClientRegister {
                 return model;
             }
         }, CSItems.ORGANICNIGHTVISIONGOGGLES);
+
+        //BulletProof Vest
+        event.registerItem(new IClientItemExtensions() {
+            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlot armorSlot, HumanoidModel<?> properties) {
+                BulletProofVest<LivingEntity> model;
+                model = new BulletProofVest<>(ClientRegister.BULLETPROOF_VEST.bakeRoot(), armorSlot);
+
+                model.crouching = properties.crouching;
+                model.riding = properties.riding;
+                model.young = properties.young;
+                return model;
+            }
+        }, CSItems.BULLETPROOF_VEST);
+
 
 
         CSFluids.FLUIDS.getEntries().forEach((fluid) -> {

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chemicalscience:scaffolding_grate_manganese"
+    },
+    {
+      "item": "chemicalscience:ladder_manganese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:scaffolding_grate_manganese_hollow"
+  }
+}

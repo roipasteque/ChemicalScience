@@ -48,7 +48,7 @@ public class ItemOrganicNightVisionGoggles extends ItemVoltaicArmor implements I
     private final ElectricItemProperties properties;
     public static final int DURATION_SECONDS = 15;
 
-    private static final ResourceLocation ARMOR_TEXTURE = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/model/armor/organicnightvisiongoggles.png");
+    public static final ResourceLocation ARMOR_TEXTURE_LOCATION = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/model/armor/organicnightvisiongoggles.png");
 
     public ItemOrganicNightVisionGoggles(ElectricItemProperties properties, Holder<CreativeModeTab> creativeTab) {
         super(CSArmor.ONVGS, Type.HELMET, properties, creativeTab);
@@ -130,7 +130,7 @@ public class ItemOrganicNightVisionGoggles extends ItemVoltaicArmor implements I
 
     @Override
     public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
-            return ARMOR_TEXTURE;
+            return ARMOR_TEXTURE_LOCATION;
     }
 
     @Override

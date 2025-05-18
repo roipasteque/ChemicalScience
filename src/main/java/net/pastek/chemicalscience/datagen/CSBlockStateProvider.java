@@ -1,9 +1,14 @@
 package net.pastek.chemicalscience.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.ModelProvider;
+import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -44,15 +49,25 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockWithItem(CSBlocks.TUNGSTEN_BLOCK);
 
         // Decorative
-        blockWithItem(CSBlocks.MAGNESIUM_GA9Z1_BLOCK);
-        stairsBlock(CSBlocks.MAGNESIUM_GA9Z1_STAIR.get(), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()));
+        buildingBlockWithItem(CSBlocks.MAGNESIUM_GA9Z1_BLOCK);
+        stairsBlock(CSBlocks.MAGNESIUM_GA9Z1_STAIR.get(), CSTexture("metal_building_blocks", "block_magnesiumaluminum"));
         blockItem(CSBlocks.MAGNESIUM_GA9Z1_STAIR);
-        slabBlock(CSBlocks.MAGNESIUM_GA9Z1_SLAB.get(), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()));
+        slabBlock(CSBlocks.MAGNESIUM_GA9Z1_SLAB.get(), blockTexture(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get()), CSTexture("metal_building_blocks", "block_magnesiumaluminum"));
         blockItem(CSBlocks.MAGNESIUM_GA9Z1_SLAB);
-        blockWithItem(CSBlocks.MAGNESIUM_GA9Z1_LAMP);
-        doorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), modLoc("block/door_magnesium_bottom"), modLoc("block/door_magnesium_top"), "cutout");
-        trapdoorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get(), modLoc("block/trapdoor_magnesium"), true, "cutout");
-        blockItem(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR, "_bottom");
+        buildingBlockWithItem(CSBlocks.MAGNESIUM_GA9Z1_LAMP);
+        doorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), modLoc("block/metal_building_blocks/door_magnesium_bottom"), modLoc("block/metal_building_blocks/door_magnesium_top"), "cutout");
+        trapdoorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get(), modLoc("block/metal_building_blocks/trapdoor_magnesium"), true, "cutout");
+        blockItem(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR, "block/", "_bottom");
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW);
+        buildingBlockWithItem(CSBlocks.MANGANESE_SCAFFOLDING);
+        buildingBlockWithItem(CSBlocks.MANGANESE_GRATE);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_SLAB);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
 
         blockWithItem(CSBlocks.ASPHALT_BLOCK);
         stairsBlock(CSBlocks.ASPHALT_STAIR.get(),blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_STAIR);
@@ -63,6 +78,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         logBlock(((RotatedPillarBlock) CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
+        horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
 
         // Periodic table
         blockWithItem(CSBlocks.ELEMENT_H);
@@ -199,11 +215,23 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         }
     }
 
+    private void buildingBlockWithItem(DeferredBlock<?> deferredBlock) {
+        String path = deferredBlock.getId().getPath();
+
+            ModelFile model = models().cubeAll(path, modLoc("block/metal_building_blocks/" + path));
+            simpleBlockWithItem(deferredBlock.get(), model);
+    }
+
+    public ResourceLocation CSTexture(String folder, String texture) {
+        return ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "block/" + folder + "/" + texture);
+    }
+
+
     private void blockItem(DeferredBlock<?> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("chemicalscience:block/" + deferredBlock.getId().getPath()));
     }
-    private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("chemicalscience:block/" + deferredBlock.getId().getPath() + appendix));
+    private void blockItem(DeferredBlock<?> deferredBlock, String loc, String appendix) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("chemicalscience:" + loc + deferredBlock.getId().getPath() + appendix));
     }
 
 }

@@ -2,7 +2,7 @@
   "parent": "minecraft:block/door_bottom_left_open",
   "render_type": "minecraft:cutout",
   "textures": {
-    "bottom": "chemicalscience:block/door_magnesium_bottom",
-    "top": "chemicalscience:block/door_magnesium_top"
+    "bottom": "chemicalscience:block/metal_building_blocks/door_magnesium_bottom",
+    "top": "chemicalscience:block/metal_building_blocks/door_magnesium_top"
   }
 }

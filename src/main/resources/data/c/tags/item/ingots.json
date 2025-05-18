@@ -3,7 +3,13 @@
       "#c:ingots/galliumarsenide",
       "#c:ingots/magnesium",
       "#c:ingots/magnesiumaluminum",
+      "#c:ingots/manganese",
+      "#c:ingots/manganesealuminum",
+      "#c:ingots/manganin",
+      "#c:ingots/palladium",
+      "#c:ingots/platinum",
       "#c:ingots/silicon",
       "#c:ingots/tungsten"
+
     ]
 }

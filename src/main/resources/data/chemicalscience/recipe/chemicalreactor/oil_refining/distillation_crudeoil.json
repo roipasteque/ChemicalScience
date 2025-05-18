@@ -22,7 +22,7 @@
 
   "fluidinputs": [
     {
-      "amount": 9999,
+      "amount": 10000,
       "tag": "c:crude_oil"
     }
   ],

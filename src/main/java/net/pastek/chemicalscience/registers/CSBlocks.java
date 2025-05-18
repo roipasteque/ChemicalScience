@@ -1,6 +1,5 @@
 package net.pastek.chemicalscience.registers;
 
-import electrodynamics.common.block.subtype.SubtypeMachine;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -11,14 +10,15 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.block.decoration.CSLadderBlock;
+import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingOpen;
+import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingHollow;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
-import voltaic.api.ISubtype;
-import voltaic.api.registration.BulkDeferredHolder;
+import voltaic.api.radiation.util.RadiationShielding;
 import voltaic.common.block.BlockMachine;
 import voltaic.common.blockitem.BlockItemDescriptable;
 import voltaic.prefab.utilities.VoltaicTextUtils;
 
-import java.util.Arrays;
 import java.util.function.Supplier;
 
 public class CSBlocks {
@@ -163,6 +163,30 @@ public class CSBlocks {
     public static final DeferredBlock<TrapDoorBlock> MAGNESIUM_GA9Z1_TRAPDOOR = registerBlock("trapdoor_magnesiumaluminum",
             () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
+
+    public static final DeferredBlock<Block> MANGANESE_GRATE = registerBlock("grate_manganese",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<CSLadderBlock> MANGANESE_LADDER = registerBlock("ladder_manganese",
+            () -> new CSLadderBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING = registerBlock("scaffolding_manganese",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING_HOLLOW = registerBlock("scaffolding_manganese_hollow",
+            () -> new CSScaffoldingHollow(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<SlabBlock> MANGANESE_SCAFFOLDING_SLAB = registerBlock("slab_scaffolding_manganese",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING_GRATE = registerBlock("scaffolding_grate_manganese",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING_GRATE_HOLLOW = registerBlock("scaffolding_grate_manganese_hollow",
+            () -> new CSScaffoldingOpen(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<SlabBlock> MANGANESE_SCAFFOLDING_GRATE_SLAB = registerBlock("slab_scaffolding_grate_manganese",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING_GLASS = registerBlock("scaffolding_glass_manganese",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> MANGANESE_SCAFFOLDING_GLASS_HOLLOW = registerBlock("scaffolding_glass_manganese_hollow",
+            () -> new CSScaffoldingHollow(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<SlabBlock> MANGANESE_SCAFFOLDING_GLASS_SLAB = registerBlock("slab_scaffolding_glass_manganese",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+
     public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<StairBlock> ASPHALT_STAIR = registerBlock("stair_asphalt",
@@ -300,10 +324,11 @@ public class CSBlocks {
 
     // Misc
     public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new BlockMachine(SubtypeChemicalMachine.organicsolarpanel));
+    public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new BlockMachine(SubtypeChemicalMachine.fuelcell));
 
 
-    static { BlockItemDescriptable.addDescription(ORGANIC_SOLAR_PANEL, VoltaicTextUtils.voltageTooltip(120)); }
-
+    static { BlockItemDescriptable.addDescription(ORGANIC_SOLAR_PANEL, VoltaicTextUtils.voltageTooltip(240)); }
+    static { BlockItemDescriptable.addDescription(FUEL_CELL, VoltaicTextUtils.voltageTooltip(240)); }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

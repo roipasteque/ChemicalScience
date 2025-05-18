@@ -2,14 +2,14 @@
   "type": "electrodynamics:chemical_reactor_recipe",
   "itembi": [
     {
-      "chance": 0.5,
+      "chance": 0.6,
       "item": {
         "count": 1,
         "id": "chemicalscience:impuredust_gallium"
       }
     },
     {
-      "chance": 0.05,
+      "chance": 0.4,
       "item": {
         "count": 1,
         "id": "electrodynamics:impuredustvanadium"

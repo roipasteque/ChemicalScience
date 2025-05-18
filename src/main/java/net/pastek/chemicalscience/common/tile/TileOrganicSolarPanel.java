@@ -6,7 +6,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
-import net.pastek.chemicalscience.common.inventory.container.ContainerSolarPanel;
+import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.settings.CSConstants;
 import net.pastek.chemicalscience.prefab.utils.ElectricityUtils;
 import net.pastek.chemicalscience.registers.CSTiles;
@@ -18,27 +18,26 @@ import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.utilities.BlockEntityUtils;
 import voltaic.prefab.utilities.object.CachedTileOutput;
 import voltaic.prefab.utilities.object.TransferPack;
+import voltaic.registers.VoltaicCapabilities;
 
 public class TileOrganicSolarPanel extends GenericGeneratorTile {
 
     protected CachedTileOutput output;
-
     protected SingleProperty<Boolean> generating = property(new SingleProperty<>(PropertyTypes.BOOLEAN, "generating", false));
     protected SingleProperty<Double> multiplier = property(new SingleProperty<>(PropertyTypes.DOUBLE, "multiplier", 1.0));
     protected SingleProperty<Boolean> hasRedstoneSignal = property(new SingleProperty<>(PropertyTypes.BOOLEAN, "redstonesignal", false));
 
     public TileOrganicSolarPanel(BlockPos worldPosition, BlockState blockState) {
-        this(CSTiles.TILE_SOLARPANEL.get(), worldPosition, blockState, 2.25, SubtypeItemUpgrade.improvedsolarcell);
+        this(CSTiles.TILE_ORGANICSOLARPANEL.get(), worldPosition, blockState, 2.25, SubtypeItemUpgrade.improvedsolarcell);
     }
 
     public TileOrganicSolarPanel(BlockEntityType<?> type, BlockPos worldPosition, BlockState blockState, double multiplier, SubtypeItemUpgrade... itemUpgrades) {
         super(type, worldPosition, blockState, multiplier, itemUpgrades);
         addComponent(new ComponentTickable(this).tickServer(this::tickServer));
         addComponent(new ComponentPacketHandler(this));
-        addComponent(new ComponentElectrodynamic(this, true, false).setOutputDirections(BlockEntityUtils.MachineDirection.BOTTOM));
-        addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().upgrades(1)).validUpgrades(ContainerSolarPanel.VALID_UPGRADES).valid(machineValidator()));
-        addComponent(new ComponentContainerProvider(SubtypeChemicalMachine.organicsolarpanel.tag(), this).createMenu((id, player) -> new ContainerSolarPanel(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
-        ((ComponentElectrodynamic)this.getComponent(IComponentType.Electrodynamic)).voltage(240.0);
+        addComponent(new ComponentElectrodynamic(this, true, false).voltage(VoltaicCapabilities.DEFAULT_VOLTAGE*2).setOutputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.BOTTOM}));
+        addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().upgrades(1)).validUpgrades(ContainerOrganicSolarPanel.VALID_UPGRADES).valid(machineValidator()));
+        addComponent(new ComponentContainerProvider(SubtypeChemicalMachine.organicsolarpanel.tag(), this).createMenu((id, player) -> new ContainerOrganicSolarPanel(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
     }
 
     protected void tickServer(ComponentTickable tickable) {

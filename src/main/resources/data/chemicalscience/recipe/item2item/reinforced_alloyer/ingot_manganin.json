@@ -15,13 +15,13 @@
     {
       "count": 4,
       "ingredient": {
-        "tag": "c:ingots/manganese"
+        "tag": "c:ingots/copper"
       }
     },
     {
       "count": 1,
       "ingredient": {
-        "tag": "c:ingots/copper"
+        "tag": "c:ingots/manganese"
       }
     }
   ],

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/scaffolding_manganese_hollow",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/scaffolding_manganese_hollow",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/scaffolding_manganese_hollow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/scaffolding_manganese_hollow",
+      "y": 270
+    }
+  }
+}

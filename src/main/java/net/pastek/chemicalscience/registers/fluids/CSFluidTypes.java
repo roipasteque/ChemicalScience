@@ -68,12 +68,44 @@ public class CSFluidTypes {
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_VINYLCHLORIDE = FLUID_TYPES.register("vinylchloride", () -> CSFluids.FLUID_VINYLCHLORIDE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREURANIUMSOLUTION = FLUID_TYPES.register("impureuraniumsolution", () -> CSFluids.FLUID_IMPUREURANIUMSOLUTION.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ORGANICURANIUMSOLUTION = FLUID_TYPES.register("organicuraniumsolution", () -> CSFluids.FLUID_ORGANICURANIUMSOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ORGANICLANTHANIDESOLUTION = FLUID_TYPES.register("organiclanthanidesolution", () -> CSFluids.FLUID_ORGANICLANTHANIDESOLUTION.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_TRIBUTYLPHOSPHATE = FLUID_TYPES.register("tributylphosphate", () -> CSFluids.FLUID_TRIBUTYLPHOSPHATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_DIBUTYLPHOSPHATE = FLUID_TYPES.register("dibutylphosphate", () -> CSFluids.FLUID_DIBUTYLPHOSPHATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_URANIUMNITRATE = FLUID_TYPES.register("uraniumnitrate", () -> CSFluids.FLUID_URANIUMNITRATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PLUTONIUMNITRATE = FLUID_TYPES.register("plutoniumnitrate", () -> CSFluids.FLUID_PLUTONIUMNITRATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_BUTANOL = FLUID_TYPES.register("butanol", () -> CSFluids.FLUID_BUTANOL.get().getFluidType());
-
-
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_FISSIONWASTESOLUTION = FLUID_TYPES.register("fissionwastesolution", () -> CSFluids.FLUID_FISSIONWASTESOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_CLEARFISSIONWASTESOLUTION = FLUID_TYPES.register("clearfissionwastesolution", () -> CSFluids.FLUID_CLEARFISSIONWASTESOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_TECHNETIUMSOLUTION = FLUID_TYPES.register("technetiumsolution", () -> CSFluids.FLUID_TECHNETIUMSOLUTION.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURENEODYMIUMNITRATE = FLUID_TYPES.register("neodymiumnitrate", () -> CSFluids.FLUID_PURE_NEODYMIUM_NITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURECERIUMNITRATE = FLUID_TYPES.register("ceriumnitrate", () -> CSFluids.FLUID_PURECERIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURELANTHANUMNITRATE = FLUID_TYPES.register("lanthanumnitrate", () -> CSFluids.FLUID_PURELANTHANUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURESAMARIUMNITRATE = FLUID_TYPES.register("samariumnitrate", () -> CSFluids.FLUID_PURESAMARIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREPRASEODYMIUMNITRATE = FLUID_TYPES.register("praseodymiumnitrate", () -> CSFluids.FLUID_PUREPRASEODYMIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREGADOLINIUMNITRATE = FLUID_TYPES.register("gadoliniumnitrate", () -> CSFluids.FLUID_PUREGADOLINIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREEUROPIUMNITRATE = FLUID_TYPES.register("europiumnitrate", () -> CSFluids.FLUID_PUREEUROPIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREDYSPROSIUMNITRATE = FLUID_TYPES.register("dysprosiumnitrate", () -> CSFluids.FLUID_PUREDYSPROSIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURETERBIUMNITRATE = FLUID_TYPES.register("terbiumnitrate", () -> CSFluids.FLUID_PURETERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREHOLMIUMNITRATE = FLUID_TYPES.register("holmiumnitrate", () -> CSFluids.FLUID_PUREHOLMIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREERBIUMNITRATE = FLUID_TYPES.register("erbiumnitrate", () -> CSFluids.FLUID_PUREERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURETHULIUMNITRATE = FLUID_TYPES.register("thuliumnitrate", () -> CSFluids.FLUID_PURETHULIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREYTTERBIUMNITRATE = FLUID_TYPES.register("ytterbiumnitrate", () -> CSFluids.FLUID_PUREYTTERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PURELUTECIUMNITRATE = FLUID_TYPES.register("luteciumnitrate", () -> CSFluids.FLUID_PURELUTECIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PUREPROMETHIUMNITRATE = FLUID_TYPES.register("promethiumnitrate", () -> CSFluids.FLUID_PUREPROMETHIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURECERIUMNITRATE = FLUID_TYPES.register("impureceriumnitrate", () -> CSFluids.FLUID_IMPURECERIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURELANTHANUMNITRATE = FLUID_TYPES.register("impurelanthanumnitrate", () -> CSFluids.FLUID_IMPURELANTHANUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURESAMARIUMNITRATE = FLUID_TYPES.register("impuresamariumnitrate", () -> CSFluids.FLUID_IMPURESAMARIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREPRASEODYMIUMNITRATE = FLUID_TYPES.register("impurepraseodymiumnitrate", () -> CSFluids.FLUID_IMPUREPRASEODYMIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREGADOLINIUMNITRATE = FLUID_TYPES.register("impuregadoliniumnitrate", () -> CSFluids.FLUID_IMPUREGADOLINIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREEUROPIUMNITRATE = FLUID_TYPES.register("impureeuropiumnitrate", () -> CSFluids.FLUID_IMPUREEUROPIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREDYSPROSIUMNITRATE = FLUID_TYPES.register("impuredysprosiumnitrate", () -> CSFluids.FLUID_IMPUREDYSPROSIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURETERBIUMNITRATE = FLUID_TYPES.register("impureterbiumnitrate", () -> CSFluids.FLUID_IMPURETERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREHOLMIUMNITRATE = FLUID_TYPES.register("impureholmiumnitrate", () -> CSFluids.FLUID_IMPUREHOLMIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREERBIUMNITRATE = FLUID_TYPES.register("impureerbiumnitrate", () -> CSFluids.FLUID_IMPUREERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURETHULIUMNITRATE = FLUID_TYPES.register("impurethuliumnitrate", () -> CSFluids.FLUID_IMPURETHULIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREYTTERBIUMNITRATE = FLUID_TYPES.register("impureytterbiumnitrate", () -> CSFluids.FLUID_IMPUREYTTERBIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURELUTECIUMNITRATE = FLUID_TYPES.register("impureluteciumnitrate", () -> CSFluids.FLUID_IMPURELUTECIUMNITRATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREPROMETHIUMNITRATE = FLUID_TYPES.register("impurepromethiumnitrate", () -> CSFluids.FLUID_IMPUREPROMETHIUMNITRATE.get().getFluidType());
 
     public static void register(IEventBus eventBus) {
         FLUID_TYPES.register(eventBus);

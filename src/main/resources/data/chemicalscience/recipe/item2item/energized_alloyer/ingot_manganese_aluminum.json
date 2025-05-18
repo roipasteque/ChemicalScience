@@ -15,13 +15,13 @@
     {
       "count": 9,
       "ingredient": {
-        "tag": "c:ingots/manganese"
+        "tag": "c:ingots/aluminum"
       }
     },
     {
       "count": 1,
       "ingredient": {
-        "tag": "c:ingots/aluminum"
+        "tag": "c:ingots/manganese"
       }
     }
   ],

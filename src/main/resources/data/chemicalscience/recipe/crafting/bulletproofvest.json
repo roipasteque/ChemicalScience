@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plastic"
+    },
+    "K": {
+      "item": "chemicalscience:polymer_paraphenyleneterephthalamide"
+    },
+    "I": {
+      "tag": "c:dyes/green"
+    },
+    "B": {
+      "tag": "c:plates/boroncarbide"
+    }
+  },
+  "pattern": [
+    "P P",
+    "KIK",
+    "BKB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:bulletproofvest"
+  }
+}

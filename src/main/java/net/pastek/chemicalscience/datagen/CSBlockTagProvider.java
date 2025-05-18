@@ -7,6 +7,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSBlocks;
+import net.pastek.chemicalscience.registers.CSTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -80,8 +81,18 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                 // Stellaris
                 .add(CSBlocks.ORE_ARSENOPYRITE_MOON.get()).add(CSBlocks.ORE_ARSENOPYRITE_MARS.get()).add(CSBlocks.ORE_ARSENOPYRITE_VENUS.get()).add(CSBlocks.ORE_ARSENOPYRITE_MERCURY.get()).add(CSBlocks.ORE_COOPERITE_MOON.get()).add(CSBlocks.ORE_COOPERITE_MARS.get()).add(CSBlocks.ORE_COOPERITE_VENUS.get()).add(CSBlocks.ORE_COOPERITE_MERCURY.get()).add(CSBlocks.ORE_MAGNESIUM_MOON.get()).add(CSBlocks.ORE_MAGNESIUM_MARS.get()).add(CSBlocks.ORE_MAGNESIUM_VENUS.get()).add(CSBlocks.ORE_MAGNESIUM_MERCURY.get()).add(CSBlocks.ORE_PYROLUSITE_MOON.get()).add(CSBlocks.ORE_PYROLUSITE_MARS.get()).add(CSBlocks.ORE_PYROLUSITE_VENUS.get()).add(CSBlocks.ORE_PYROLUSITE_MERCURY.get()).add(CSBlocks.ORE_SILICON_MOON.get()).add(CSBlocks.ORE_SILICON_MARS.get()).add(CSBlocks.ORE_SILICON_VENUS.get()).add(CSBlocks.ORE_SILICON_MERCURY.get()).add(CSBlocks.ORE_WOLFRAMITE_MOON.get()).add(CSBlocks.ORE_WOLFRAMITE_MARS.get()).add(CSBlocks.ORE_WOLFRAMITE_VENUS.get()).add(CSBlocks.ORE_WOLFRAMITE_MERCURY.get()).add(CSBlocks.ORE_ALUMINUM_MOON.get()).add(CSBlocks.ORE_ALUMINUM_MARS.get()).add(CSBlocks.ORE_ALUMINUM_VENUS.get()).add(CSBlocks.ORE_ALUMINUM_MERCURY.get()).add(CSBlocks.ORE_CHROMIUM_MOON.get()).add(CSBlocks.ORE_CHROMIUM_MARS.get()).add(CSBlocks.ORE_CHROMIUM_VENUS.get()).add(CSBlocks.ORE_CHROMIUM_MERCURY.get()).add(CSBlocks.ORE_FLUORITE_MOON.get()).add(CSBlocks.ORE_FLUORITE_MARS.get()).add(CSBlocks.ORE_FLUORITE_VENUS.get()).add(CSBlocks.ORE_FLUORITE_MERCURY.get()).add(CSBlocks.ORE_LEAD_MOON.get()).add(CSBlocks.ORE_LEAD_MARS.get()).add(CSBlocks.ORE_LEAD_VENUS.get()).add(CSBlocks.ORE_LEAD_MERCURY.get()).add(CSBlocks.ORE_LITHIUM_MOON.get()).add(CSBlocks.ORE_LITHIUM_MARS.get()).add(CSBlocks.ORE_LITHIUM_VENUS.get()).add(CSBlocks.ORE_LITHIUM_MERCURY.get()).add(CSBlocks.ORE_MOLYBDENUM_MOON.get()).add(CSBlocks.ORE_MOLYBDENUM_MARS.get()).add(CSBlocks.ORE_MOLYBDENUM_VENUS.get()).add(CSBlocks.ORE_MOLYBDENUM_MERCURY.get()).add(CSBlocks.ORE_MONAZITE_MOON.get()).add(CSBlocks.ORE_MONAZITE_MARS.get()).add(CSBlocks.ORE_MONAZITE_VENUS.get()).add(CSBlocks.ORE_MONAZITE_MERCURY.get()).add(CSBlocks.ORE_NITER_MOON.get()).add(CSBlocks.ORE_NITER_MARS.get()).add(CSBlocks.ORE_NITER_VENUS.get()).add(CSBlocks.ORE_NITER_MERCURY.get()).add(CSBlocks.ORE_SALT_MOON.get()).add(CSBlocks.ORE_SALT_MARS.get()).add(CSBlocks.ORE_SALT_VENUS.get()).add(CSBlocks.ORE_SALT_MERCURY.get()).add(CSBlocks.ORE_SILVER_MOON.get()).add(CSBlocks.ORE_SILVER_MARS.get()).add(CSBlocks.ORE_SILVER_VENUS.get()).add(CSBlocks.ORE_SILVER_MERCURY.get()).add(CSBlocks.ORE_SULFUR_MOON.get()).add(CSBlocks.ORE_SULFUR_MARS.get()).add(CSBlocks.ORE_SULFUR_VENUS.get()).add(CSBlocks.ORE_SULFUR_MERCURY.get()).add(CSBlocks.ORE_SYLVITE_MOON.get()).add(CSBlocks.ORE_SYLVITE_MARS.get()).add(CSBlocks.ORE_SYLVITE_VENUS.get()).add(CSBlocks.ORE_SYLVITE_MERCURY.get()).add(CSBlocks.ORE_TIN_MOON.get()).add(CSBlocks.ORE_TIN_MARS.get()).add(CSBlocks.ORE_TIN_VENUS.get()).add(CSBlocks.ORE_TIN_MERCURY.get()).add(CSBlocks.ORE_TITANIUM_MOON.get()).add(CSBlocks.ORE_TITANIUM_MARS.get()).add(CSBlocks.ORE_TITANIUM_VENUS.get()).add(CSBlocks.ORE_TITANIUM_MERCURY.get()).add(CSBlocks.ORE_THORIUM_MOON.get()).add(CSBlocks.ORE_THORIUM_MARS.get()).add(CSBlocks.ORE_THORIUM_VENUS.get()).add(CSBlocks.ORE_THORIUM_MERCURY.get()).add(CSBlocks.ORE_URANIUM_MOON.get()).add(CSBlocks.ORE_URANIUM_MARS.get()).add(CSBlocks.ORE_URANIUM_VENUS.get()).add(CSBlocks.ORE_URANIUM_MERCURY.get()).add(CSBlocks.ORE_VANADIUM_MOON.get()).add(CSBlocks.ORE_VANADIUM_MARS.get()).add(CSBlocks.ORE_VANADIUM_VENUS.get()).add(CSBlocks.ORE_VANADIUM_MERCURY.get());
 
-        // Ressource Block
-                // Decorative
+        tag(BlockTags.CLIMBABLE).add(
+                CSBlocks.MANGANESE_LADDER.get(),
+                CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW.get(),
+                CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW.get(),
+                CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW.get()
+        );
 
+        tag(CSTags.Blocks.NEEDS_TUNGSTEN_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(CSTags.Blocks.INCORRECT_FOR_TUNGSTEN_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(CSTags.Blocks.NEEDS_TUNGSTEN_TOOL);
     }
 }

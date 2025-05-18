@@ -4,14 +4,14 @@
 
   "itembi": [
     {
-      "chance": 0.1,
+      "chance": 0.5,
       "item": {
         "count": 1,
         "id": "chemicalscience:dust_palladiumchloride"
       }
     },
     {
-      "chance": 0.01,
+      "chance": 0.1,
       "item": {
         "count": 1,
         "id": "chemicalscience:dust_ruthenium"

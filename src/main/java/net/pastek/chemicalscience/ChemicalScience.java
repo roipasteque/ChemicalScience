@@ -9,7 +9,6 @@ import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -22,7 +21,7 @@ import net.pastek.chemicalscience.registers.gases.CSGases;
 public class ChemicalScience {
     public static final String MOD_ID = "chemicalscience";
 
-    public ChemicalScience(IEventBus modEventBus, ModContainer modContainer) {
+    public ChemicalScience(IEventBus modEventBus) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
         CSCreativeTabs.register(modEventBus);
@@ -49,13 +48,11 @@ public class ChemicalScience {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            event.enqueueWork(() -> {
-                ClientRegister.setup();
-            });
+            event.enqueueWork(ClientRegister::setup);
         }
     }
 
-    public static final ResourceLocation rl(String path) {
+    public static ResourceLocation rl(String path) {
         return ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, path);
     }
 }
