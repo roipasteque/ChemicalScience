@@ -12,6 +12,14 @@
     }
   ],
 
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:lubricant"
+    }
+  ],
+
   "fluidinputs": [
     {
       "amount": 500,

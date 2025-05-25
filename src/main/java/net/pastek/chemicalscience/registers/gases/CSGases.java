@@ -14,19 +14,28 @@ import voltaic.registers.VoltaicGases;
 public class CSGases {
     public static final DeferredRegister<Gas> GASES = DeferredRegister.create(VoltaicGases.GAS_REGISTRY_KEY, ChemicalScience.MOD_ID);
 
-    public static final DeferredHolder<Gas, Gas> CHLORINE = GASES.register("chlorine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("chlorine"), 239, new Color(225, 255, 0, 180), CSFluids.FLUID_CHLORINE));
-    public static final DeferredHolder<Gas, Gas> CARBON_MONOXIDE = GASES.register("carbonmonoxide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("carbonmonoxide"), 81, new Color(255, 255, 255, 180), CSFluids.FLUID_CARBONMONOXIDE));
-    public static final DeferredHolder<Gas, Gas> BROMINE = GASES.register("bromine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("bromine"), 331, new Color(255, 0, 30, 180), CSFluids.FLUID_BROMINE));
+    /** Hydrocarbons */
+    public static final DeferredHolder<Gas, Gas> METHANE = GASES.register("methane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("methane"), 112, new Color(255, 255, 255, 180), CSFluids.FLUID_METHANE));
+    public static final DeferredHolder<Gas, Gas> ETHYLENE = GASES.register("ethylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("ethylene"), 170, new Color(255, 255, 255, 180), CSFluids.FLUID_ETHYLENE));
+    public static final DeferredHolder<Gas, Gas> PROPANE = GASES.register("propane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propane"), 231, new Color(255, 255, 255, 180), CSFluids.FLUID_PROPANE));
+    public static final DeferredHolder<Gas, Gas> PROPYLENE = GASES.register("propylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propylene"), 226, new Color(255, 255, 255, 180), CSFluids.FLUID_PROPYLENE));
     public static final DeferredHolder<Gas, Gas> BUTANE = GASES.register("butane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("butane"), 272, new Color(255, 255, 255, 180), CSFluids.FLUID_BUTANE));
-    public static final DeferredHolder<Gas, Gas> BROMOMETHANE = GASES.register("bromomethane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("bromomethane"), 179, new Color(255, 255, 255, 180), CSFluids.FLUID_BROMOMETHANE));
+
+    /** Petroleum */
     public static final DeferredHolder<Gas, Gas> IMPUREPETROLEUMGAS = GASES.register("impurepetroleumgas", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("impurepetroleumgas"), 310, new Color(155, 155, 155, 180), CSFluids.FLUID_IMPUREPETROLEUMGAS));
     public static final DeferredHolder<Gas, Gas> IMPURENAPHTA = GASES.register("impurenaphta", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("impurenaphta"), 447, new Color(155, 155, 155, 180), CSFluids.FLUID_IMPURENAPHTA));
-    public static final DeferredHolder<Gas, Gas> PROPANE = GASES.register("propane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propane"), 231, new Color(255, 255, 255, 180), CSFluids.FLUID_PROPANE));
-    public static final DeferredHolder<Gas, Gas> METHANE = GASES.register("methane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("methane"), 112, new Color(255, 255, 255, 180), CSFluids.FLUID_METHANE));
+
+    /** Misc */
+    public static final DeferredHolder<Gas, Gas> CARBON_MONOXIDE = GASES.register("carbonmonoxide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("carbonmonoxide"), 81, new Color(255, 255, 255, 180), CSFluids.FLUID_CARBONMONOXIDE));
     public static final DeferredHolder<Gas, Gas> HYDROGENSULFIDE = GASES.register("hydrogensulfide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("hydrogensulfide"), 213, new Color(255, 255, 225, 180), CSFluids.FLUID_HYDROGENSULFIDE));
-    public static final DeferredHolder<Gas, Gas> ETHYLENE = GASES.register("ethylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("ethylene"), 170, new Color(255, 255, 255, 180), CSFluids.FLUID_ETHYLENE));
-    public static final DeferredHolder<Gas, Gas> PROPYLENE = GASES.register("propylene", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("propylene"), 226, new Color(255, 255, 255, 180), CSFluids.FLUID_PROPYLENE));
+
+    /** Halides */
+    public static final DeferredHolder<Gas, Gas> CHLORINE = GASES.register("chlorine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("chlorine"), 239, new Color(225, 255, 0, 180), CSFluids.FLUID_CHLORINE));
     public static final DeferredHolder<Gas, Gas> VINYLCHLORIDE = GASES.register("vinylchloride", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("vinylchloride"), 260, new Color(255, 255, 255, 180), CSFluids.FLUID_VINYLCHLORIDE));
+    public static final DeferredHolder<Gas, Gas> BROMINE = GASES.register("bromine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("bromine"), 331, new Color(255, 0, 30, 180), CSFluids.FLUID_BROMINE));
+    public static final DeferredHolder<Gas, Gas> BROMOMETHANE = GASES.register("bromomethane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("bromomethane"), 179, new Color(255, 255, 255, 180), CSFluids.FLUID_BROMOMETHANE));
+
+    /** Noble gases */
     public static final DeferredHolder<Gas, Gas> HELIUM = GASES.register("helium", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("helium"), 4, new Color(255, 255, 255, 255), CSFluids.FLUID_HELIUM));
     public static final DeferredHolder<Gas, Gas> NEON = GASES.register("neon", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("neon"), 27, new Color(255, 255, 255, 255), CSFluids.FLUID_NEON));
     public static final DeferredHolder<Gas, Gas> KRYPTON = GASES.register("krypton", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("krypton"), 120, new Color(255, 255, 255, 255), CSFluids.FLUID_KRYPTON));

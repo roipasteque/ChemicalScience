@@ -19,6 +19,6 @@
     "amount": 20,
     "id": "chemicalscience:escherichia_coli"
   },
-  "ticks": 1000,
+  "ticks": 200,
   "usagepertick": 10.0
 }

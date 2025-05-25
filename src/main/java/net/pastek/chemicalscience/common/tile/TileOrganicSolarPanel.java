@@ -57,7 +57,6 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
         }
     }
 
-    @Override
     public TransferPack getProduced() {
         double mod = 1.0f - Mth.clamp(1.0F - (Mth.cos(level.getTimeOfDay(1f) * ((float) Math.PI * 2f)) * 2.0f + 0.2f), 0.0f, 1.0f);
         double temp = level.getBiomeManager().getBiome(getBlockPos()).value().getBaseTemperature();
@@ -65,27 +64,22 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
         return TransferPack.ampsVoltage(getMultiplier() * CSConstants.ORGANICSOLARPANEL_AMPERAGE * lerped * mod * (level.isRaining() || level.isThundering() ? 0.8f : 1), this.<ComponentElectrodynamic>getComponent(IComponentType.Electrodynamic).getVoltage());
     }
 
-    @Override
     public double getMultiplier() {
         return multiplier.getValue();
     }
 
-    @Override
     public void setMultiplier(double val) {
         multiplier.setValue(val);
     }
 
-    @Override
     public int getComparatorSignal() {
         return generating.getValue() ? 15 : 0;
     }
 
-    @Override
     public void onNeightborChanged(BlockPos neighbor, boolean blockStateTrigger) {
-        if (level.isClientSide) {
-            return;
+        if (!this.level.isClientSide) {
+            this.hasRedstoneSignal.setValue(this.level.hasNeighborSignal(this.getBlockPos()));
         }
-        hasRedstoneSignal.setValue(level.hasNeighborSignal(getBlockPos()));
     }
 
 }
