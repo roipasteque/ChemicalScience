@@ -1,5 +1,5 @@
 {
-  "parent": "chemicalscience:root",
+  "parent": "chemicalscience:oilsourcerock",
   "criteria": {
     "HasPolymer": {
       "conditions": {

@@ -4,7 +4,6 @@ import net.neoforged.bus.api.IEventBus;
 import electrodynamics.registers.ElectrodynamicsItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.Fluid;
-import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -120,7 +119,8 @@ public class CSFluids {
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_KRYPTON = FLUIDS.register("krypton", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "krypton", "colorlessfluid", new Color(255, 255, 255, 120))));
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_XENON = FLUIDS.register("xenon", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "xenon", "colorlessfluid", new Color(255, 255, 255, 120))));
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_RADON = FLUIDS.register("radon", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "radon", "colorlessfluid", new Color(255, 255, 255, 120))));
-
+    public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_CASSITERITE_ACID = FLUIDS.register("acidcassiteritesolution", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "acidcassiteritesolution", "fluidroyalmineralplatinum", new Color(155, 155, 255, 180))));
+    public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_CASSITERITE_ALKALINE = FLUIDS.register("alkalinecassiteritesolution", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "alkalinecassiteritesolution", "fluidroyalmineralplatinum", new Color(155, 155, 255, 180))));
 
 
 

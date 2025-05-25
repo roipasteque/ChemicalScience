@@ -1,0 +1,62 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_tungsten"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_tantalum"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 300,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:raw_materials/tin"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "minecraft:coals"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 4,
+    "id": "electrodynamics:dusttin"
+  },
+
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:acidcassiteritesolution"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

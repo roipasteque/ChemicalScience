@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "c:sands"
+    },
+    "G": {
+      "tag": "c:gravels"
+    },
+    "A": {
+      "tag": "c:ingots/steel"
+    },
+    "L": {
+      "tag": "c:plates/lead"
+    }
+
+  },
+  "pattern": [
+    "ASA",
+    "GLG",
+    "ASA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chemicalscience:radiationshielding_concrete"
+  }
+}

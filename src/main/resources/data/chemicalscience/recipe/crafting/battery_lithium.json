@@ -6,10 +6,10 @@
       "tag": "c:plates/lithium"
     },
     "R": {
-      "tag": "c:oxides/manganese"
+      "tag": "c:dusts/cobalt"
     },
     "T": {
-      "tag": "c:plates/stainlesssteel"
+      "tag": "c:plates/steel"
     },
     "W": {
       "item": "electrodynamics:wiregold"

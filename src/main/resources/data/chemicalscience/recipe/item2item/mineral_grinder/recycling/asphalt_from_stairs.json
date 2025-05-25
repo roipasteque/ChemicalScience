@@ -1,0 +1,18 @@
+{
+  "type": "electrodynamics:mineral_grinder_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:stair_asphalt"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:asphalt"
+  },
+  "ticks": 100,
+  "usagepertick": 350.0
+}

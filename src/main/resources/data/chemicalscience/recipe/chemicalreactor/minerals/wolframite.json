@@ -1,0 +1,52 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_scandium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:sulfuric_acid"
+    },
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:raw_materials/tungsten"
+      }
+    }
+  ],
+  "itemoutput": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_tungsten"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

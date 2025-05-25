@@ -1,0 +1,55 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_yttrium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_strontium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_barium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:raw_materials/fluorite"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 2,
+    "id": "chemicalscience:impuredust_calcium"
+  },
+
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "electrodynamics:fluidhydrofluoricacid"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

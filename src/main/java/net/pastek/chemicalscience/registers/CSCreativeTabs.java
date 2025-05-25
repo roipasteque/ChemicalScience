@@ -38,6 +38,7 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MAGNESIUM_BLOCK);
         output.accept(CSBlocks.SILICON_BLOCK);
         output.accept(CSBlocks.TUNGSTEN_BLOCK);
+        output.accept(CSBlocks.PLATINUM_BLOCK);
         /** Construction Blocks */
         // Magnesium alloy
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_BLOCK);
@@ -58,6 +59,14 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
         output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
         output.accept(CSBlocks.MANGANESE_LADDER);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_BLUE);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_WHITE);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN);
+        output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE);
         // Asphalt
         output.accept(CSBlocks.ASPHALT_BLOCK);
         output.accept(CSBlocks.ASPHALT_STAIR);
@@ -66,6 +75,11 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK);
         output.accept(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK);
         output.accept(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
+        // Radiation Shielding
+        output.accept(CSBlocks.CONCRETE_SHIELDING);
+        output.accept(CSBlocks.TANTALUM_SHIELDING);
+        output.accept(CSBlocks.GLASS_SHIELDING);
+        output.accept(CSBlocks.ADVANCED_GLASS_SHIELDING);
         /** Machines */
         output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
         /* output.accept(CSBlocks.FUEL_CELL); */
@@ -80,14 +94,19 @@ public class CSCreativeTabs {
         /** Ingots */
         output.accept(CSItems.INGOT_BORON);
         output.accept(CSItems.INGOT_BORON_CARBIDE);
+        output.accept(CSItems.INGOT_BERYLLIUM);
         output.accept(CSItems.INGOT_MAGNESIUM);
         output.accept(CSItems.INGOT_MAGNESIUM_ALUMINUM);
+        output.accept(CSItems.INGOT_SILICON);
         output.accept(CSItems.INGOT_MANGANESE);
         output.accept(CSItems.INGOT_MANGANESE_ALUMINUM);
-        output.accept(CSItems.INGOT_SILICON);
+        output.accept(CSItems.INGOT_NICKEL);
+        output.accept(CSItems.INGOT_ZINC);
         output.accept(CSItems.INGOT_GALLIUMARSENIDE);
+        output.accept(CSItems.INGOT_GERMANIUM);
         output.accept(CSItems.INGOT_NIOBIUM);
         output.accept(CSItems.INGOT_NIOBIUM_TITANIUM);
+        output.accept(CSItems.INGOT_TANTALUM);
         output.accept(CSItems.INGOT_TUNGSTEN);
         output.accept(CSItems.INGOT_TUNGSTEN_CARBIDE);
         output.accept(CSItems.INGOT_MANGANIN);
@@ -95,29 +114,40 @@ public class CSCreativeTabs {
         output.accept(CSItems.INGOT_PALLADIUM);
         /** Nuggets */
         output.accept(CSItems.NUGGET_MANGANESEALUMINUM);
+        output.accept(CSItems.NUGGET_TUNGSTEN);
         /** Dusts */
         // Dust
         output.accept(CSItems.DUST_BORON);
+        output.accept(CSItems.DUST_BERYLLIUM);
         output.accept(CSItems.DUST_ACTIVATEDCARBON);
         output.accept(CSItems.DUST_MAGNESIUM);
         output.accept(CSItems.DUST_SILICON);
         output.accept(CSItems.DUST_PHOSPHORUS);
+        output.accept(CSItems.DUST_POTASSIUM);
+        output.accept(CSItems.DUST_CALCIUM);
+        output.accept(CSItems.DUST_SCANDIUM);
+        output.accept(CSItems.DUST_COBALT);
+        output.accept(CSItems.DUST_NICKEL);
+        output.accept(CSItems.DUST_ZINC);
         output.accept(CSItems.DUST_GALLIUM);
-        output.accept(CSItems.DUST_ARSENOPYRITE);
+        output.accept(CSItems.DUST_GERMANIUM);
+        output.accept(CSItems.DUST_ARSENIC);
         output.accept(CSItems.DUST_STRONTIUM);
+        output.accept(CSItems.DUST_YTTRIUM);
         output.accept(CSItems.DUST_NIOBIUM);
         output.accept(CSItems.DUST_TECHNETIUM);
         output.accept(CSItems.DUST_RUTHENIUM);
         output.accept(CSItems.DUST_RHODIUM);
         output.accept(CSItems.DUST_PALLADIUM);
+        output.accept(CSItems.DUST_INDIUM);
+        output.accept(CSItems.DUST_IODINE);
         output.accept(CSItems.DUST_BARIUM);
         output.accept(CSItems.DUST_LANTHANUM);
-        output.accept(CSItems.DUST_MONAZITE);
-        output.accept(CSItems.DUST_NEODYMIUM);
         output.accept(CSItems.DUST_CERIUM);
         output.accept(CSItems.DUST_PRASEODYMIUM);
-        output.accept(CSItems.DUST_SAMARIUM);
+        output.accept(CSItems.DUST_NEODYMIUM);
         output.accept(CSItems.DUST_PROMETHIUM);
+        output.accept(CSItems.DUST_SAMARIUM);
         output.accept(CSItems.DUST_EUROPIUM);
         output.accept(CSItems.DUST_GADOLINIUM);
         output.accept(CSItems.DUST_TERBIUM);
@@ -127,23 +157,37 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_THULIUM);
         output.accept(CSItems.DUST_YTTERBIUM);
         output.accept(CSItems.DUST_LUTECIUM);
+        output.accept(CSItems.DUST_TANTALUM);
         output.accept(CSItems.DUST_TUNGSTEN);
         output.accept(CSItems.DUST_PLATINUM);
+        output.accept(CSItems.DUST_BISMUTH);
         // Impure Dust
         output.accept(CSItems.IMPURE_DUST_BORON);
+        output.accept(CSItems.IMPURE_DUST_BERYLLIUM);
         output.accept(CSItems.IMPURE_DUST_MAGNESIUM);
         output.accept(CSItems.IMPURE_DUST_SILICON);
+        output.accept(CSItems.IMPURE_DUST_POTASSIUM);
+        output.accept(CSItems.IMPURE_DUST_CALCIUM);
+        output.accept(CSItems.IMPURE_DUST_SCANDIUM);
         output.accept(CSItems.IMPURE_DUST_MANGANESEOXIDE);
+        output.accept(CSItems.IMPURE_DUST_COBALT);
+        output.accept(CSItems.IMPURE_DUST_NICKEL);
+        output.accept(CSItems.IMPURE_DUST_ZINC);
         output.accept(CSItems.IMPURE_DUST_GALLIUM);
+        output.accept(CSItems.IMPURE_DUST_ARSENIC);
         output.accept(CSItems.IMPURE_DUST_ARSENOPYRITE);
         output.accept(CSItems.IMPURE_DUST_NIOBIUM);
         output.accept(CSItems.IMPURE_DUST_PALLADIUM);
+        output.accept(CSItems.IMPURE_DUST_IODINE);
         output.accept(CSItems.IMPURE_DUST_CERIUM);
+        output.accept(CSItems.IMPURE_DUST_TANTALUM);
         output.accept(CSItems.IMPURE_DUST_TUNGSTEN);
         output.accept(CSItems.IMPURE_DUST_PLATINUM);
+        output.accept(CSItems.IMPURE_DUST_BISMUTH);
         /** Crystals */
         output.accept(CSItems.CRYSTAL_MAGNESIUM);
         output.accept(CSItems.CRYSTAL_MAGNESIUMCHLORIDE);
+        output.accept(CSItems.CRYSTAL_POTASSIUMBROMIDE);
         output.accept(CSItems.CRYSTAL_ACETIC_ANHYDRIDE);
         /** Compound Dust */
         // Oxides
@@ -153,11 +197,13 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_URANIUMOXIDE);
         output.accept(CSItems.DUST_PLUTONIUMOXIDE);
         // Other
+        output.accept(CSItems.DUST_MONAZITE);
         output.accept(CSItems.DUST_PLUTONIUMHYDROXIDE);
         output.accept(CSItems.DUST_TUNGSTEN_CARBIDE);
         output.accept(CSItems.DUST_PHOSPHORUS_CHLORIDE);
-        output.accept(CSItems.DUST_PLATINUM_CHLORIDE);
         output.accept(CSItems.DUST_PALLADIUM_CHLORIDE);
+        output.accept(CSItems.DUST_PLATINUM_CHLORIDE);
+        output.accept(CSItems.DUST_IRONARSENIDE);
         output.accept(CSItems.DUST_CHROMIUM_BROMIDE);
 
         // Organic
@@ -173,8 +219,10 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_PARAPHENYLENEDIAMINE);
         /** Plates */
         output.accept(CSItems.PLATE_BORONCARBIDE);
+        output.accept(CSItems.PLATE_BERYLLIUM);
         output.accept(CSItems.PLATE_SILICON);
         output.accept(CSItems.PLATE_NIOBIUM);
+        output.accept(CSItems.PLATE_TANTALUM);
         output.accept(CSItems.PLATE_TUNGSTEN);
         /** Catalysts */
         output.accept(CSItems.COPPER_ZINC_ALUMINATE_CATALYST);
@@ -215,22 +263,26 @@ public class CSCreativeTabs {
         output.accept(CSItems.ORGANIC_SOLAR_PANEL_PLATE);
         output.accept(CSItems.RAW_BORON_COMPOSITE);
         output.accept(CSItems.PLATING_BORON_COMPOSITE);
+        output.accept(CSItems.RADIATIONSHIELDING_GLASS_DUST);
+        output.accept(CSItems.RADIATIONSHIELDING_ADVANCEDGLASS_DUST);
         output.accept(CSItems.TRINITROTOLUENE);
         output.accept(CSItems.ASPHALT);
+        output.accept(CSItems.CERAMIC_PASTE);
         output.accept(CSItems.PETRI_DISH);
         output.accept(CSItems.CULTURE_MEDIUM);
         output.accept(CSItems.E_COLI);
         output.accept(CSItems.SODA);
         /** Equipment */
-        // Armor
-        output.accept(CSItems.ORGANICNIGHTVISIONGOGGLES);
-        output.accept(CSItems.BULLETPROOF_VEST);
         // Tools
         output.accept(CSItems.TUNGSTENCARBIDE_SWORD);
         output.accept(CSItems.TUNGSTENCARBIDE_PICKAXE);
         output.accept(CSItems.TUNGSTENCARBIDE_AXE);
         output.accept(CSItems.TUNGSTENCARBIDE_SHOVEL);
         output.accept(CSItems.TUNGSTENCARBIDE_HOE);
+        // Armor
+        output.accept(CSItems.ORGANICNIGHTVISIONGOGGLES);
+        output.accept(CSItems.BULLETPROOF_VEST);
+
 
     }).build());
     public static final Supplier<CreativeModeTab> CHEMICAL_SCIENCE_PERIODICTABLE_TAB = CREATIVE_MODE_TAB.register("chemicalscienceperiodictable_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(CSBlocks.ELEMENT_MG.get())).title(Component.translatable("creativetab.chemicalscienceperiodictable")).displayItems((itemDisplayParameters, output) -> {

@@ -1,0 +1,28 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:ceramicpaste"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:water"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:ceramicwet"
+  },
+  "ticks": 50,
+  "usagepertick": 100.0
+}

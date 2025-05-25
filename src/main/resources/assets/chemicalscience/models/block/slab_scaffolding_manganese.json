@@ -1,5 +1,6 @@
 {
   "parent": "chemicalscience:block/base/slab_with_top_bottom",
+  "render_type": "minecraft:cutout",
   "textures": {
     "side": "chemicalscience:block/metal_building_blocks/slab_scaffolding_manganese",
     "top": "chemicalscience:block/metal_building_blocks/scaffolding_manganese",

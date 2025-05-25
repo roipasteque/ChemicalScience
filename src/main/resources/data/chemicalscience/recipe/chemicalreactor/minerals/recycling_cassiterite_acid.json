@@ -1,0 +1,53 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.7,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_manganeseoxide"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_zinc"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_scandium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:sodium_hydroxide"
+    },
+
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:acidcassiteritesolution"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:impuredustiron"
+  },
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:alkalinecassiteritesolution"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

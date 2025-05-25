@@ -1,7 +1,7 @@
 {
   "type": "electrodynamics:reinforced_alloyer_recipe",
   "experience": 0.4000000059604645,
-  "group": "electrodynamics",
+  "group": "chemicalscience",
   "itembi": [
     {
       "chance": 0.15,

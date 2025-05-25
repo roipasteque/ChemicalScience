@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:polymer_kevlar",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:bulletproofvest"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.bulletproofvest.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:bulletproofvest"
+    },
+    "title": {
+      "color": "dark_green",
+      "translate": "advancement.chemicalscience.bulletproofvest.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

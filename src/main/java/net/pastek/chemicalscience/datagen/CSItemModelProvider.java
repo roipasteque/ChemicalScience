@@ -26,20 +26,34 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.CRYSTAL_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/crystal/crystal_magnesium");
         withExistingParent(CSItems.CRYSTAL_ACETIC_ANHYDRIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/crystal/crystal_aceticanhydride");
         withExistingParent(CSItems.CRYSTAL_MAGNESIUMCHLORIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/crystal/crystal_magnesiumchloride");
+        withExistingParent(CSItems.CRYSTAL_POTASSIUMBROMIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/crystal/crystal_potassiumbromide");
 
         // Dusts
         withExistingParent(CSItems.DUST_BORON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_boron");
+        withExistingParent(CSItems.DUST_BERYLLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_beryllium");
         withExistingParent(CSItems.DUST_ACTIVATEDCARBON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_activatedcarbon");
         withExistingParent(CSItems.DUST_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_magnesium");
         withExistingParent(CSItems.DUST_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_silicon");
         withExistingParent(CSItems.DUST_PHOSPHORUS.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_phosphorus");
         withExistingParent(CSItems.DUST_PHOSPHORUS_CHLORIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_phosphoruschloride");
         withExistingParent(CSItems.DUST_MONAZITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_monazite");
-        withExistingParent(CSItems.DUST_ARSENOPYRITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_arsenopyrite");
+        withExistingParent(CSItems.DUST_IRONARSENIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ironarsenide");
         withExistingParent(CSItems.DUST_GALLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_gallium");
         withExistingParent(CSItems.DUST_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_tungsten");
         withExistingParent(CSItems.DUST_IRONOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ironoxide");
+        withExistingParent(CSItems.DUST_POTASSIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_potassium");
+        withExistingParent(CSItems.DUST_CALCIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_calcium");
         withExistingParent(CSItems.DUST_CALCIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_calciumoxide");
+        withExistingParent(CSItems.DUST_SCANDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_scandium");
+        withExistingParent(CSItems.DUST_COBALT.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_cobalt");
+        withExistingParent(CSItems.DUST_NICKEL.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_nickel");
+        withExistingParent(CSItems.DUST_ZINC.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_zinc");
+        withExistingParent(CSItems.DUST_GERMANIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_germanium");
+        withExistingParent(CSItems.DUST_ARSENIC.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_arsenic");
+        withExistingParent(CSItems.DUST_YTTRIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_yttrium");
+        withExistingParent(CSItems.DUST_INDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_indium");
+        withExistingParent(CSItems.DUST_IODINE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_iodine");
+        withExistingParent(CSItems.DUST_TANTALUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_tantalum");
         withExistingParent(CSItems.DUST_CERIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ceriumoxide");
         withExistingParent(CSItems.DUST_MANGANESEOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_manganeseoxide");
         withExistingParent(CSItems.DUST_URANIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_uraniumoxide");
@@ -71,6 +85,7 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.DUST_PLATINUM_CHLORIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_platinumchloride");
         withExistingParent(CSItems.DUST_PALLADIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_palladium");
         withExistingParent(CSItems.DUST_PALLADIUM_CHLORIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_palladiumchloride");
+        withExistingParent(CSItems.DUST_BISMUTH.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_bismuth");
         withExistingParent(CSItems.DUST_RUTHENIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ruthenium");
         withExistingParent(CSItems.DUST_CHROMIUM_BROMIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_chromiumbromide");
         withExistingParent(CSItems.DUST_TUNGSTEN_CARBIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_tungstencarbide");
@@ -82,21 +97,33 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.DUST_NITROCHLOROBENZENE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_nitrochlorobenzene");
         withExistingParent(CSItems.DUST_PARAPHENYLENEDIAMINE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_paraphenylenediamine");
         withExistingParent(CSItems.IMPURE_DUST_BORON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_boron");
+        withExistingParent(CSItems.IMPURE_DUST_BERYLLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_beryllium");
         withExistingParent(CSItems.IMPURE_DUST_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_magnesium");
         withExistingParent(CSItems.IMPURE_DUST_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_silicon");
+        withExistingParent(CSItems.IMPURE_DUST_POTASSIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_potassium");
+        withExistingParent(CSItems.IMPURE_DUST_CALCIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_calcium");
+        withExistingParent(CSItems.IMPURE_DUST_SCANDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_scandium");
+        withExistingParent(CSItems.IMPURE_DUST_COBALT.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_cobalt");
+        withExistingParent(CSItems.IMPURE_DUST_NICKEL.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_nickel");
+        withExistingParent(CSItems.IMPURE_DUST_ZINC.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_zinc");
+        withExistingParent(CSItems.IMPURE_DUST_IODINE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_iodine");
+        withExistingParent(CSItems.IMPURE_DUST_TANTALUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_tantalum");
         withExistingParent(CSItems.IMPURE_DUST_CERIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_ceriumoxide");
         withExistingParent(CSItems.IMPURE_DUST_MANGANESEOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_manganeseoxide");
         withExistingParent(CSItems.IMPURE_DUST_ARSENOPYRITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_arsenopyrite");
         withExistingParent(CSItems.IMPURE_DUST_GALLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_gallium");
+        withExistingParent(CSItems.IMPURE_DUST_ARSENIC.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_arsenic");
         withExistingParent(CSItems.IMPURE_DUST_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_tungsten");
         withExistingParent(CSItems.IMPURE_DUST_PLATINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_platinum");
         withExistingParent(CSItems.IMPURE_DUST_PALLADIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_palladium");
         withExistingParent(CSItems.IMPURE_DUST_NIOBIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_niobium");
+        withExistingParent(CSItems.IMPURE_DUST_BISMUTH.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/impuredust_bismuth");
 
 
         // Ingots
         withExistingParent(CSItems.INGOT_BORON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_boron");
         withExistingParent(CSItems.INGOT_BORON_CARBIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_boroncarbide");
+        withExistingParent(CSItems.INGOT_BERYLLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_beryllium");
         withExistingParent(CSItems.INGOT_MAGNESIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_magnesium");
         withExistingParent(CSItems.INGOT_MAGNESIUM_ALUMINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_magnesiumaluminum");
         withExistingParent(CSItems.INGOT_MANGANESE_ALUMINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_manganesealuminum");
@@ -110,24 +137,34 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.INGOT_PALLADIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_palladium");
         withExistingParent(CSItems.INGOT_NIOBIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_niobium");
         withExistingParent(CSItems.INGOT_NIOBIUM_TITANIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_niobiumtitanium");
-
+        withExistingParent(CSItems.INGOT_ZINC.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_zinc");
+        withExistingParent(CSItems.INGOT_NICKEL.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_nickel");
+        withExistingParent(CSItems.INGOT_GERMANIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_germanium");
+        withExistingParent(CSItems.INGOT_TANTALUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/ingot/ingot_tantalum");
 
         // Nuggets
         withExistingParent(CSItems.NUGGET_MANGANESEALUMINUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/nugget/nugget_manganesealuminum");
+        withExistingParent(CSItems.NUGGET_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/nugget/nugget_tungsten");
 
         // Plates
         withExistingParent(CSItems.PLATE_BORONCARBIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_boroncarbide");
+        withExistingParent(CSItems.PLATE_BERYLLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_beryllium");
         withExistingParent(CSItems.PLATE_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_silicon");
         withExistingParent(CSItems.PLATE_NIOBIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_niobium");
+        withExistingParent(CSItems.PLATE_TANTALUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_tantalum");
         withExistingParent(CSItems.PLATE_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/plate/plate_tungsten");
 
 
         // Materials
         withExistingParent(CSItems.COIL_NIOBIUM_TITANIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/niobiumtitaniumcoil");
         withExistingParent(CSItems.ASPHALT.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/asphalt");
+        withExistingParent(CSItems.CERAMIC_PASTE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/ceramicpaste");
         withExistingParent(CSItems.TRINITROTOLUENE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/trinitrotoluene");
         withExistingParent(CSItems.RAW_BORON_COMPOSITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/boroncompositeplatingraw");
         withExistingParent(CSItems.PLATING_BORON_COMPOSITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/boroncompositeplating");
+        withExistingParent(CSItems.RADIATIONSHIELDING_GLASS_DUST.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/radiationshielding_glass_dust");
+        withExistingParent(CSItems.RADIATIONSHIELDING_ADVANCEDGLASS_DUST.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/materials/radiationshielding_advancedglass_dust");
+
         // Polymer
         withExistingParent(CSItems.DPP_POLYMER.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/polymer/polymer_dpp");
         withExistingParent(CSItems.DTT_POLYMER.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/polymer/polymer_dtt");

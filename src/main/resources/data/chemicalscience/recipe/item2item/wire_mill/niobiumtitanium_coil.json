@@ -1,7 +1,7 @@
 {
   "type": "electrodynamics:wire_mill_recipe",
   "experience": 0.10000000149011612,
-  "group": "electrodynamics",
+  "group": "chemicalscience",
   "iteminputs": [
     {
       "count": 9,

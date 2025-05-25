@@ -24,7 +24,7 @@
   },
 
   "fluidoutput": {
-    "amount": 500,
+    "amount": 1000,
     "id": "electrodynamics:fluidpolyethylene"
   },
 

@@ -9,7 +9,13 @@
       "tag": "c:ingots/galliumarsenide"
     },
     "A": {
-      "tag": "c:ingots/aluminum"
+      "tag": "c:plates/aluminum"
+    },
+    "I": {
+      "tag": "c:dusts/indium"
+    },
+    "E": {
+      "tag": "c:ingots/germanium"
     },
     "W": {
       "item": "electrodynamics:wirecopper"
@@ -17,7 +23,7 @@
   },
   "pattern": [
     "GGG",
-    "ARA",
+    "EIR",
     "AWA"
   ],
   "result": {

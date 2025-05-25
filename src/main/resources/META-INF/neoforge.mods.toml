@@ -8,12 +8,13 @@ version="${mod_version}" #mandatory
 displayName="${mod_name}" #mandatory
 authors="${mod_authors}" #optional
 description='''${mod_description}'''
-logoFile="chemicalscience.png" #optional
+logoFile="chemicalscience.png"
+displayURL = "https://github.com/roipasteque/ChemicalScience"
 
-[[dependencies.${mod_id}]] #optional
-modId="neoforge" #mandatory
-type="required" #mandatory
-versionRange="${neo_version_range}" #mandatory
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
 ordering="NONE"
 side="BOTH"
 
@@ -21,5 +22,19 @@ side="BOTH"
 modId="minecraft"
 type="required"
 versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="electrodynamics"
+type="required"
+versionRange="[0.10,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="voltaic"
+type="required"
+versionRange="[1.0,)"
 ordering="NONE"
 side="BOTH"

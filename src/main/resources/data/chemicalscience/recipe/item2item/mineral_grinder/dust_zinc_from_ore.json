@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [{
+    "type": "neoforge:not",
+    "value": {
+      "type": "neoforge:tag_empty",
+      "tag": "c:ores/zinc"
+    }}],
+
+  "type": "electrodynamics:mineral_grinder_recipe",
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:dustsulfur"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ores/zinc"
+      }
+    }
+  ],
+  "output": {
+    "count": 2,
+    "id": "chemicalscience:dust_zinc"
+  },
+  "ticks": 200,
+  "usagepertick": 350.0
+}

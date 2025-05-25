@@ -1,5 +1,6 @@
 {
 	"parent": "block/block",
+	"render_type": "minecraft:cutout",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "chemicalscience:block/metal_building_blocks/ladder_manganese",

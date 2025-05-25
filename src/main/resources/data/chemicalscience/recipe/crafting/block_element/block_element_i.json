@@ -6,7 +6,7 @@
       "item": "minecraft:yellow_concrete"
     },
     "E": {
-      "item": "nuclearscience:iodinetablet"
+      "item": "chemicalscience:dust_iodine"
     }
   },
   "pattern": [

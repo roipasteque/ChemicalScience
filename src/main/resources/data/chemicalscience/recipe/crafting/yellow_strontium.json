@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:oxides/chromium"
+    },
+    {
+      "tag": "c:dusts/strontium"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:yellow_dye"
+  }
+}

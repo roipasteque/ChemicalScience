@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_mixer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "minecraft:water"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/iodine"
+      }
+    }
+  ],
+  "output": {
+    "amount": 200,
+    "id": "nuclearscience:iodinesolution"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

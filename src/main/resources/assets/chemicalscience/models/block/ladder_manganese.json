@@ -1,5 +1,6 @@
 {
   "parent": "chemicalscience:block/base/ladder",
+  "render_type": "minecraft:cutout",
   "textures": {
     "0": "chemicalscience:block/metal_building_blocks/ladder_manganese_hoop",
     "1": "chemicalscience:block/metal_building_blocks/ladder_manganese",

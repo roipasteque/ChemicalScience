@@ -1,5 +1,6 @@
 {
   "type": "immersiveengineering:arc_furnace",
+  "group": "chemicalscience",
   "additives": [],
   "energy": 102400,
   "input": {

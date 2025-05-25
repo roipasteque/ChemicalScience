@@ -1,5 +1,6 @@
 {
   "type": "immersiveengineering:metal_press",
+  "group": "chemicalscience",
   "energy": 2400,
   "input": {
     "tag": "c:ingots/niobium"

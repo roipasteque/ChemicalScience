@@ -6,7 +6,7 @@
       "item": "minecraft:red_concrete"
     },
     "E": {
-      "item": "electrodynamics:dustniter"
+      "item": "chemicalscience:dust_potassium"
     }
   },
   "pattern": [

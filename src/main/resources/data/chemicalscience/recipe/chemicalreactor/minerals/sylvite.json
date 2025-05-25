@@ -1,0 +1,66 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ores/potassiumchloride"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 20,
+    "id": "chemicalscience:bromine"
+  },
+
+  "itemoutput": {
+    "count": 6,
+    "id": "chemicalscience:impuredust_potassium"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:crystal_magnesiumchloride"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:dustsalt"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_iodine"
+      }
+    }
+  ],
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

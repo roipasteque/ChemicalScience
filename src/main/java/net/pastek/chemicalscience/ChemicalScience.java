@@ -1,7 +1,7 @@
 package net.pastek.chemicalscience;
 
 import net.minecraft.resources.ResourceLocation;
-import net.pastek.chemicalscience.client.ClientRegister;
+import net.pastek.chemicalscience.client.CSClientRegister;
 import net.pastek.chemicalscience.registers.*;
 import net.pastek.chemicalscience.registers.fluids.CSFluidTypes;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
@@ -34,6 +34,7 @@ public class ChemicalScience {
         CSGases.register(modEventBus);
         CSDataComponentTypes.register(modEventBus);
         CSArmor.register(modEventBus);
+        CSPotions.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -48,7 +49,7 @@ public class ChemicalScience {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            event.enqueueWork(ClientRegister::setup);
+            event.enqueueWork(CSClientRegister::setup);
         }
     }
 

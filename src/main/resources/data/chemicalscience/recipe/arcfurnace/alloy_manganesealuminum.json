@@ -4,21 +4,32 @@
       "type": "neoforge:not",
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "c:ingots/manganesealuminum"
+        "tag": "c:dusts/scandium"
       }
     },
     {
       "type": "neoforge:not",
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "c:ingots/magnesium"
+        "tag": "c:ingots/manganese"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ingots/aluminum"
       }
     }
   ],
   "type": "immersiveengineering:arc_furnace",
+  "group": "chemicalscience",
   "additives": [
     {
       "tag": "c:ingots/manganese"
+    },
+    {
+      "tag": "c:dusts/scandium"
     }
   ],
   "energy": 51200,
@@ -33,7 +44,7 @@
       "basePredicate": {
         "tag": "c:ingots/manganesealuminum"
       },
-      "count": 9
+      "count": 12
     }
   ],
   "time": 100

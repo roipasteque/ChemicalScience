@@ -150,6 +150,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MAGNESIUM_BLOCK.get());
         dropSelf(CSBlocks.SILICON_BLOCK.get());
         dropSelf(CSBlocks.TUNGSTEN_BLOCK.get());
+        dropSelf(CSBlocks.PLATINUM_BLOCK.get());
 
         // Decorative
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_BLOCK.get());
@@ -169,6 +170,14 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_SLAB.get());
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB.get());
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_BLUE.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_WHITE.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN.get());
+        dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE.get());
 
         dropSelf(CSBlocks.ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.ASPHALT_STAIR.get());
@@ -177,6 +186,9 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get());
+
+        dropSelf(CSBlocks.CONCRETE_SHIELDING.get());
+        dropSelf(CSBlocks.TANTALUM_SHIELDING.get());
 
         // Machines
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());

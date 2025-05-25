@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+
+  "type": "electrodynamics:energized_alloyer_recipe",
+  "experience": 0.4000000059604645,
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.25,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:slag"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ingots/copper"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ingots/zinc"
+      }
+    }
+  ],
+  "output": {
+    "count": 2,
+    "id": "create:brass_ingot"
+  },
+  "ticks": 50,
+  "usagepertick": 50.0
+}

@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:reinforced_alloyer_recipe",
+  "experience": 0.4000000059604645,
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:slag"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:oxides/calcium"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "tag": "c:dusts/aluminum"
+      }
+    }
+  ],
+  "output": {
+    "count": 3,
+    "id": "chemicalscience:dust_calcium"
+  },
+  "ticks": 50,
+  "usagepertick": 50.0
+}

@@ -2,17 +2,11 @@ package net.pastek.chemicalscience.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.neoforged.fml.ModList;
-import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
-import net.neoforged.neoforge.client.model.generators.ModelProvider;
-import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import voltaic.datagen.utils.client.BaseBlockstateProvider;
 
@@ -47,6 +41,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockWithItem(CSBlocks.MAGNESIUM_BLOCK);
         blockWithItem(CSBlocks.SILICON_BLOCK);
         blockWithItem(CSBlocks.TUNGSTEN_BLOCK);
+        blockWithItem(CSBlocks.PLATINUM_BLOCK);
 
         // Decorative
         buildingBlockWithItem(CSBlocks.MAGNESIUM_GA9Z1_BLOCK);
@@ -61,13 +56,21 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW);
-        buildingBlockWithItem(CSBlocks.MANGANESE_SCAFFOLDING);
-        buildingBlockWithItem(CSBlocks.MANGANESE_GRATE);
+        blockItem(CSBlocks.MANGANESE_SCAFFOLDING);
+        blockItem(CSBlocks.MANGANESE_GRATE);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_SLAB);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_BLUE);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_WHITE);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN);
+        blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE);
 
         blockWithItem(CSBlocks.ASPHALT_BLOCK);
         stairsBlock(CSBlocks.ASPHALT_STAIR.get(),blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_STAIR);
@@ -76,6 +79,11 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         logBlock(((RotatedPillarBlock) CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_DOT_WHITE_ASPHALT_BLOCK);
         logBlock(((RotatedPillarBlock) CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_LINE_YELLOW_ASPHALT_BLOCK);
         logBlock(((RotatedPillarBlock) CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK.get()));blockItem(CSBlocks.MARKED_DOT_YELLOW_ASPHALT_BLOCK);
+
+        blockWithItem(CSBlocks.CONCRETE_SHIELDING);
+        blockWithItem(CSBlocks.TANTALUM_SHIELDING);
+        glassBlock(CSBlocks.GLASS_SHIELDING, modLoc("block/radiationshielding_glass"), true);
+        glassBlock(CSBlocks.ADVANCED_GLASS_SHIELDING, modLoc("block/radiationshielding_advancedglass"), true);
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);

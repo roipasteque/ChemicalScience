@@ -3,7 +3,7 @@
 
   "gasbi": [
     {
-    "amount": 100,
+    "amount": 1500,
     "chance": 1.0,
     "gas": "electrodynamics:hydrogen",
     "pressure": 1,
@@ -38,7 +38,7 @@
   ],
 
   "gasoutput": {
-    "amount": 100,
+    "amount": 5000,
     "gas": "chemicalscience:chlorine",
     "pressure": 1,
     "temp": 293
@@ -50,6 +50,6 @@
     "amount": 500,
     "id": "chemicalscience:sodiumhydroxide"
   },
-  "ticks": 200,
+  "ticks": 100,
   "usagepertick": 1000.0
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chemicalscience:block/metal_building_blocks/grate_manganese"
-  }
-}

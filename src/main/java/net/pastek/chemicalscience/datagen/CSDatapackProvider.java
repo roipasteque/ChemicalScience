@@ -7,9 +7,9 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.worldgen.CSBiomeModifiers;
-import net.pastek.chemicalscience.worldgen.CSConfiguredFeatures;
-import net.pastek.chemicalscience.worldgen.CSPlacedFeatures;
+import net.pastek.chemicalscience.common.world.CSBiomeModifiers;
+import net.pastek.chemicalscience.common.world.CSConfiguredFeatures;
+import net.pastek.chemicalscience.common.world.CSPlacedFeatures;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;

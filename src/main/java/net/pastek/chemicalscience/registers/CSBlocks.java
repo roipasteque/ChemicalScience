@@ -10,6 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.block.decoration.CSHalideLamp;
 import net.pastek.chemicalscience.common.block.decoration.CSLadderBlock;
 import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingOpen;
 import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingHollow;
@@ -140,14 +141,13 @@ public class CSBlocks {
 
     // Ressource Block
     public static final DeferredBlock<Block> MAGNESIUM_BLOCK = registerBlock("block_magnesium",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> SILICON_BLOCK = registerBlock("block_silicon",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> TUNGSTEN_BLOCK = registerBlock("block_tungsten",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> PLATINUM_BLOCK = registerBlock("block_platinum",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     // Decorative
     public static final DeferredBlock<Block> MAGNESIUM_GA9Z1_BLOCK = registerBlock("block_magnesiumaluminum",
@@ -186,6 +186,22 @@ public class CSBlocks {
             () -> new CSScaffoldingHollow(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
     public static final DeferredBlock<SlabBlock> MANGANESE_SCAFFOLDING_GLASS_SLAB = registerBlock("slab_scaffolding_glass_manganese",
             () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_STEEL_WHITE = registerBlock("metalhalidelamp_sw",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_STEEL_RED = registerBlock("metalhalidelamp_sr",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_STEEL_GREEN = registerBlock("metalhalidelamp_sg",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_STEEL_BLUE = registerBlock("metalhalidelamp_sb",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_MANGANESE_WHITE = registerBlock("metalhalidelamp_mw",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_MANGANESE_RED = registerBlock("metalhalidelamp_mr",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_MANGANESE_GREEN = registerBlock("metalhalidelamp_mg",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> METAL_HALIDE_LAMP_MANGANESE_BLUE = registerBlock("metalhalidelamp_mb",
+            () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
 
     public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -201,6 +217,15 @@ public class CSBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> MARKED_DOT_YELLOW_ASPHALT_BLOCK = registerBlock("block_marked_yellow_dot_asphalt",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> CONCRETE_SHIELDING = registerBlock("radiationshielding_concrete",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).explosionResistance(9)));
+    public static final DeferredBlock<Block> TANTALUM_SHIELDING = registerBlock("radiationshielding_tantalum",
+            () -> new Block(BlockBehaviour.Properties.of().strength(8f).requiresCorrectToolForDrops().sound(SoundType.COPPER).explosionResistance(30)));
+    public static final DeferredBlock<Block> GLASS_SHIELDING = registerBlock("radiationshielding_glass",
+            () -> new Block(BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.GLASS).noOcclusion()));
+    public static final DeferredBlock<Block> ADVANCED_GLASS_SHIELDING = registerBlock("radiationshielding_advancedglass",
+            () -> new Block(BlockBehaviour.Properties.of().strength(5f).noLootTable().sound(SoundType.GLASS).explosionResistance(15).noOcclusion()));
 
     // periodic table
     public static final DeferredBlock<Block> ELEMENT_H =  registerBlock("block_element_h",  () -> new Block(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.BONE_BLOCK)));

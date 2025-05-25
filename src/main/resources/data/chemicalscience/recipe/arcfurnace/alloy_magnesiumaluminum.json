@@ -16,6 +16,7 @@
     }
   ],
   "type": "immersiveengineering:arc_furnace",
+  "group": "chemicalscience",
   "additives": [
     {
       "tag": "c:ingots/aluminum"

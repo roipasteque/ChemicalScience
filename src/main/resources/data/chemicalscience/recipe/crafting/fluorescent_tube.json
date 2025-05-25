@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:glass_blocks"
+    },
+    "S": {
+      "tag": "c:dusts/strontium"
+    },
+    "B": {
+      "tag": "c:dusts/bismuth"
+    },
+    "A": {
+      "tag": "c:dusts/aluminum"
+    }
+  },
+  "pattern": [
+    "GSG",
+    "GBG",
+    "GAG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "immersiveengineering:fluorescent_tube"
+  }
+}

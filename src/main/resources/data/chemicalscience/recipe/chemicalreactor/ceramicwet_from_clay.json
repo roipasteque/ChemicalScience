@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:clay"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:sands"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:water"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 2,
+    "id": "electrodynamics:ceramicwet"
+  },
+  "ticks": 100,
+  "usagepertick": 100.0
+}

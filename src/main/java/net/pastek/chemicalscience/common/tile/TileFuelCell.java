@@ -49,9 +49,9 @@ public class TileFuelCell extends GenericMaterialTile implements IElectricGenera
 
     public TileFuelCell(BlockPos worldPosition, BlockState blockState) {
         super(CSTiles.TILE_FUELCELL.get(), worldPosition, blockState);
-        this.running = (SingleProperty)this.property(new SingleProperty(PropertyTypes.BOOLEAN, "running", false));
-        this.burnTime = (SingleProperty)this.property(new SingleProperty(PropertyTypes.INTEGER, "burnTime", 0));
-        this.hasRedstoneSignal = (SingleProperty)this.property(new SingleProperty(PropertyTypes.BOOLEAN, "redstonesignal", false));
+        this.running = this.property(new SingleProperty(PropertyTypes.BOOLEAN, "running", false));
+        this.burnTime = this.property(new SingleProperty(PropertyTypes.INTEGER, "burnTime", 0));
+        this.hasRedstoneSignal = this.property(new SingleProperty(PropertyTypes.BOOLEAN, "redstonesignal", false));
         this.isSoundPlaying = false;
         this.addComponent((new ComponentTickable(this)).tickServer(this::tickServer).tickClient(this::tickClient));
         this.addComponent(new ComponentPacketHandler(this));

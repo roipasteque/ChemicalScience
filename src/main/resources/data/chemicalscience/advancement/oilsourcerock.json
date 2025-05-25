@@ -1,5 +1,5 @@
 {
-  "parent": "chemicalscience:root",
+  "parent": "chemicalscience:ores",
   "criteria": {
     "HasOil": {
       "conditions": {
@@ -21,7 +21,7 @@
       "id": "chemicalscience:ore_deepslate_sourcerock"
     },
     "title": {
-      "color": "black",
+      "color": "dark_gray",
       "translate": "advancement.chemicalscience.oilsourcerock.title"
     }
   },

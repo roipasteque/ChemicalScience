@@ -6,7 +6,7 @@
       "item": "minecraft:brown_concrete"
     },
     "E": {
-      "item": "minecraft:blue_ice"
+      "item": "chemicalscience:dust_scandium"
     }
   },
   "pattern": [

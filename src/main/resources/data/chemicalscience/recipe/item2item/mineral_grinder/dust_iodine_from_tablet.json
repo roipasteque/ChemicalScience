@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:mineral_grinder_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "nuclearscience:iodinetablet"
+      }
+    }
+  ],
+  "output": {
+    "count": 2,
+    "id": "chemicalscience:dust_iodine"
+  },
+  "ticks": 200,
+  "usagepertick": 350.0
+}

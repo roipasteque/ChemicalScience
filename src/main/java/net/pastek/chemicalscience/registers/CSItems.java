@@ -29,33 +29,47 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> CRYSTAL_MAGNESIUM= ITEMS.register("crystal_magnesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CRYSTAL_ACETIC_ANHYDRIDE= ITEMS.register("crystal_aceticanhydride", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CRYSTAL_MAGNESIUMCHLORIDE= ITEMS.register("crystal_magnesiumchloride", () -> new Item(new Item.Properties()));
-
+    public static final DeferredItem<Item> CRYSTAL_POTASSIUMBROMIDE= ITEMS.register("crystal_potassiumbromide", () -> new Item(new Item.Properties()));
     /** Dusts */
     // Dust
     public static final DeferredItem<Item> DUST_BORON = ITEMS.register("dust_boron", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_BERYLLIUM = ITEMS.register("dust_beryllium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_ACTIVATEDCARBON = ITEMS.register("dust_activatedcarbon", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_MAGNESIUM = ITEMS.register("dust_magnesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_SILICON = ITEMS.register("dust_silicon", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PHOSPHORUS = ITEMS.register("dust_phosphorus", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PHOSPHORUS_CHLORIDE = ITEMS.register("dust_phosphoruschloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_POTASSIUM = ITEMS.register("dust_potassium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_CALCIUM = ITEMS.register("dust_calcium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_CALCIUMOXIDE = ITEMS.register("dust_calciumoxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_SCANDIUM = ITEMS.register("dust_scandium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_CHROMIUM_BROMIDE = ITEMS.register("dust_chromiumbromide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_IRONOXIDE = ITEMS.register("dust_ironoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_MANGANESEOXIDE = ITEMS.register("dust_manganeseoxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_COBALT = ITEMS.register("dust_cobalt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_NICKEL = ITEMS.register("dust_nickel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_ZINC = ITEMS.register("dust_zinc", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_GALLIUM = ITEMS.register("dust_gallium", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_ARSENOPYRITE = ITEMS.register("dust_arsenopyrite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_GERMANIUM = ITEMS.register("dust_germanium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_ARSENIC = ITEMS.register("dust_arsenic", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_IRONARSENIDE = ITEMS.register("dust_ironarsenide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_STRONTIUM = ITEMS.register("dust_strontium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_YTTRIUM = ITEMS.register("dust_yttrium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_NIOBIUM = ITEMS.register("dust_niobium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_TECHNETIUM = ITEMS.register("dust_technetium", () -> new ItemRadioactive(new Item.Properties(), null));
     public static final DeferredItem<Item> DUST_RUTHENIUM = ITEMS.register("dust_ruthenium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_RHODIUM = ITEMS.register("dust_rhodium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PALLADIUM = ITEMS.register("dust_palladium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PALLADIUM_CHLORIDE = ITEMS.register("dust_palladiumchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_INDIUM = ITEMS.register("dust_indium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_IODINE = ITEMS.register("dust_iodine", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_BARIUM = ITEMS.register("dust_barium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_TANTALUM = ITEMS.register("dust_tantalum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_TUNGSTEN = ITEMS.register("dust_tungsten", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_TUNGSTEN_CARBIDE = ITEMS.register("dust_tungstencarbide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLATINUM = ITEMS.register("dust_platinum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLATINUM_CHLORIDE = ITEMS.register("dust_platinumchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_BISMUTH = ITEMS.register("dust_bismuth", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_MONAZITE = ITEMS.register("dust_monazite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_LANTHANUM = ITEMS.register("dust_lanthanum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_CERIUM = ITEMS.register("dust_ceriumoxide", () -> new Item(new Item.Properties()));
@@ -89,23 +103,40 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
 
     // Impure dust
     public static final DeferredItem<Item> IMPURE_DUST_BORON = ITEMS.register("impuredust_boron", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_BERYLLIUM = ITEMS.register("impuredust_beryllium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_MAGNESIUM = ITEMS.register("impuredust_magnesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_SILICON = ITEMS.register("impuredust_silicon", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_POTASSIUM = ITEMS.register("impuredust_potassium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_CALCIUM = ITEMS.register("impuredust_calcium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_SCANDIUM = ITEMS.register("impuredust_scandium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_CERIUM = ITEMS.register("impuredust_ceriumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_MANGANESEOXIDE = ITEMS.register("impuredust_manganeseoxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_COBALT = ITEMS.register("impuredust_cobalt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_NICKEL = ITEMS.register("impuredust_nickel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_ZINC = ITEMS.register("impuredust_zinc", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_ARSENOPYRITE = ITEMS.register("impuredust_arsenopyrite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_GALLIUM = ITEMS.register("impuredust_gallium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_ARSENIC = ITEMS.register("impuredust_arsenic", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_NIOBIUM = ITEMS.register("impuredust_niobium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_TUNGSTEN = ITEMS.register("impuredust_tungsten", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_PLATINUM = ITEMS.register("impuredust_platinum", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_BISMUTH = ITEMS.register("impuredust_bismuth", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_PALLADIUM = ITEMS.register("impuredust_palladium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_IODINE = ITEMS.register("impuredust_iodine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_TANTALUM = ITEMS.register("impuredust_tantalum", () -> new Item(new Item.Properties()));
+
     /** Ingots */
     public static final DeferredItem<Item> INGOT_BORON= ITEMS.register("ingot_boron", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INGOT_BERYLLIUM= ITEMS.register("ingot_beryllium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_BORON_CARBIDE= ITEMS.register("ingot_boroncarbide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_MAGNESIUM= ITEMS.register("ingot_magnesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_MAGNESIUM_ALUMINUM= ITEMS.register("ingot_magnesiumaluminum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_MANGANESE_ALUMINUM= ITEMS.register("ingot_manganesealuminum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_SILICON= ITEMS.register("ingot_silicon", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INGOT_ZINC= ITEMS.register("ingot_zinc", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INGOT_NICKEL= ITEMS.register("ingot_nickel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INGOT_GERMANIUM= ITEMS.register("ingot_germanium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INGOT_TANTALUM= ITEMS.register("ingot_tantalum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_GALLIUMARSENIDE= ITEMS.register("ingot_galliumarsenide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_TUNGSTEN= ITEMS.register("ingot_tungsten", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INGOT_MANGANESE= ITEMS.register("ingot_manganese", () -> new Item(new Item.Properties()));
@@ -117,11 +148,15 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> INGOT_TUNGSTEN_CARBIDE= ITEMS.register("ingot_tungstencarbide", () -> new Item(new Item.Properties()));
     /** Nuggets */
     public static final DeferredItem<Item> NUGGET_MANGANESEALUMINUM= ITEMS.register("nugget_manganesealuminum", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NUGGET_TUNGSTEN= ITEMS.register("nugget_tungsten", () -> new Item(new Item.Properties()));
     /** Plates */
     public static final DeferredItem<Item> PLATE_BORONCARBIDE= ITEMS.register("plate_boroncarbide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_BERYLLIUM= ITEMS.register("plate_beryllium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_SILICON= ITEMS.register("plate_silicon", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_NIOBIUM= ITEMS.register("plate_niobium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_TANTALUM= ITEMS.register("plate_tantalum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_TUNGSTEN= ITEMS.register("plate_tungsten", () -> new Item(new Item.Properties()));
+
     /** Catalysts */
     public static final DeferredItem<Item> COPPER_ZINC_ALUMINATE_CATALYST= ITEMS.register("copper_aluminate_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_ON_CARBON_CATALYST= ITEMS.register("iron_carbon_catalyst", () -> new Item(new Item.Properties()));
@@ -161,23 +196,27 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> ORGANIC_SOLAR_PANEL_PLATE= ITEMS.register("organicsolarpanelplate", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_BORON_COMPOSITE= ITEMS.register("boroncompositeplatingraw", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATING_BORON_COMPOSITE= ITEMS.register("boroncompositeplating", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RADIATIONSHIELDING_GLASS_DUST= ITEMS.register("radiationshielding_glass_dust", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RADIATIONSHIELDING_ADVANCEDGLASS_DUST= ITEMS.register("radiationshielding_advancedglass_dust", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TRINITROTOLUENE= ITEMS.register("trinitrotoluene", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ASPHALT= ITEMS.register("asphalt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CERAMIC_PASTE= ITEMS.register("ceramicpaste", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PETRI_DISH= ITEMS.register("petri_dish", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CULTURE_MEDIUM= ITEMS.register("culture_medium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> E_COLI= ITEMS.register("escherichia_coli", () -> new Item(new Item.Properties().food(CSProperties.E_COLI)));
     public static final DeferredItem<Item> SODA= ITEMS.register("soda", () -> new ItemSoda(new Item.Properties().food(CSProperties.SODA).stacksTo(16)));
     public static final DeferredItem<Item> PARACETAMOL= ITEMS.register("paracetamol", () -> new Item(new Item.Properties().food(CSProperties.PARACETAMOL)));
+
     /** Equipment */
-    // Armor
-    public static final DeferredItem<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
-    public static final DeferredItem<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));
     // Tools
     public static final DeferredItem<Item> TUNGSTENCARBIDE_SWORD = ITEMS.register("sword_tungstencarbide", () -> new SwordItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 4.0F, -2.6F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_PICKAXE = ITEMS.register("pickaxe_tungstencarbide", () -> new PickaxeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 2.0F, -3.0F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_AXE = ITEMS.register("axe_tungstencarbide", () -> new AxeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 6.0F, -3.2F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_SHOVEL = ITEMS.register("shovel_tungstencarbide", () -> new ShovelItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 2.5F, -3.2F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_HOE = ITEMS.register("hoe_tungstencarbide", () -> new HoeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, -2.0F, -0.2F)).fireResistant()));
+    // Armor
+    public static final DeferredItem<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
+    public static final DeferredItem<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));
 
 
 

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:dusts/bismuth"
+    },
+    "C": {
+      "tag": "c:dusts/copper"
+    },
+    "S": {
+      "tag": "c:dusts/strontium"
+    },
+    "A": {
+      "tag": "c:dusts/calcium"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "SAS",
+    "CBC"
+  ],
+  "result": {
+    "count": 12,
+    "id": "electrodynamics:dustsuperconductive"
+  }
+}

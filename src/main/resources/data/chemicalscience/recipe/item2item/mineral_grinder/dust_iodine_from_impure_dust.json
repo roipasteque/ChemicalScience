@@ -1,0 +1,18 @@
+{
+  "type": "electrodynamics:mineral_grinder_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:impuredusts/iodine"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:dust_iodine"
+  },
+  "ticks": 200,
+  "usagepertick": 350.0
+}

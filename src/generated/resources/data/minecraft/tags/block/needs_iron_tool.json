@@ -1,11 +1,5 @@
 {
   "values": [
-    "chemicalscience:ore_silicon",
-    "chemicalscience:ore_deepslate_silicon",
-    "chemicalscience:ore_arsenopyrite",
-    "chemicalscience:ore_deepslate_arsenopyrite",
-    "chemicalscience:ore_wolframite",
-    "chemicalscience:ore_deepslate_wolframite",
     "chemicalscience:ore_arsenopyrite_moon",
     "chemicalscience:ore_arsenopyrite_mars",
     "chemicalscience:ore_arsenopyrite_venus",
@@ -97,6 +91,12 @@
     "chemicalscience:ore_vanadium_moon",
     "chemicalscience:ore_vanadium_mars",
     "chemicalscience:ore_vanadium_venus",
-    "chemicalscience:ore_vanadium_mercury"
+    "chemicalscience:ore_vanadium_mercury",
+    "chemicalscience:ore_silicon",
+    "chemicalscience:ore_deepslate_silicon",
+    "chemicalscience:ore_arsenopyrite",
+    "chemicalscience:ore_deepslate_arsenopyrite",
+    "chemicalscience:ore_wolframite",
+    "chemicalscience:ore_deepslate_wolframite"
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:calcium_hydroxide"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:carbondioxide",
+      "temp": 293
+    }
+  ],
+
+
+
+  "itemoutput": {
+    "count": 2,
+    "id": "electrodynamics:oxidecalciumcarbonate"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}
