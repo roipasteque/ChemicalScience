@@ -202,6 +202,8 @@ public class CSBlocks {
             () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
     public static final DeferredBlock<Block> METAL_HALIDE_LAMP_MANGANESE_BLUE = registerBlock("metalhalidelamp_mb",
             () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
+    public static final DeferredBlock<Block> RACK_MANGANESE = registerBlock("rack_manganese", () -> new BlockMachine(SubtypeChemicalMachine.rackm));
+    public static final DeferredBlock<Block> RACK_STEEL = registerBlock("rack_steel", () -> new BlockMachine(SubtypeChemicalMachine.racks));
 
     public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

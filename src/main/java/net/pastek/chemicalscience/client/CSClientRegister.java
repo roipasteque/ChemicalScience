@@ -10,6 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
@@ -17,9 +18,14 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
+import net.pastek.chemicalscience.client.render.tile.RenderRackM;
+import net.pastek.chemicalscience.client.render.tile.RenderRackS;
 import net.pastek.chemicalscience.client.screen.ScreenFuelCell;
+import net.pastek.chemicalscience.client.screen.ScreenRackM;
+import net.pastek.chemicalscience.client.screen.ScreenRackS;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
+import net.pastek.chemicalscience.registers.CSTiles;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import org.jetbrains.annotations.NotNull;
 import voltaic.Voltaic;
@@ -43,6 +49,8 @@ public class CSClientRegister {
 
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
+        event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
+        event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
 
         if(ModList.get().isLoaded(Voltaic.MEKANISM_ID)) {
             MekanismClientHandler.registerMenus(event);
@@ -84,5 +92,11 @@ public class CSClientRegister {
         CSFluids.FLUIDS.getEntries().forEach((fluid) -> {
             event.registerFluidType(new SWBFClientExtensions((SimpleWaterBasedFluidType) fluid.get().getFluidType()), fluid.get().getFluidType());
         });
+    }
+
+    @SubscribeEvent
+    public static void registerEntities(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(CSTiles.TILE_RACK_M.get(), RenderRackM::new);
+        event.registerBlockEntityRenderer(CSTiles.TILE_RACK_S.get(), RenderRackS::new);
     }
 }

@@ -1,0 +1,7 @@
+{
+	"parent": "chemicalscience:block/base/rack",
+	"textures": {
+		"0": "chemicalscience:block/metal_building_blocks/rack_manganese",
+		"particle": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
+	}
+}

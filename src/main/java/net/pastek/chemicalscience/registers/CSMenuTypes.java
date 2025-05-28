@@ -11,12 +11,16 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerFuelCell;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
+import net.pastek.chemicalscience.common.inventory.container.ContainerRackM;
+import net.pastek.chemicalscience.common.inventory.container.ContainerRackS;
 
 public class CSMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(Registries.MENU, ChemicalScience.MOD_ID);
 
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerOrganicSolarPanel>> CONTAINER_SOLARPANEL = register("organicsolarpanel", ContainerOrganicSolarPanel::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerFuelCell>> CONTAINER_FUELCELL = register("fuelcell", ContainerFuelCell::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerRackM>> CONTAINER_RACK_M = register("rackm", ContainerRackM::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerRackS>> CONTAINER_RACK_S = register("racks", ContainerRackS::new);
 
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {

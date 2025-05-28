@@ -35,7 +35,7 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
         super(type, worldPosition, blockState, multiplier, itemUpgrades);
         addComponent(new ComponentTickable(this).tickServer(this::tickServer));
         addComponent(new ComponentPacketHandler(this));
-        addComponent(new ComponentElectrodynamic(this, true, false).voltage(VoltaicCapabilities.DEFAULT_VOLTAGE*2).setOutputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.BOTTOM}));
+        addComponent(new ComponentElectrodynamic(this, true, false).voltage(VoltaicCapabilities.DEFAULT_VOLTAGE*2).setOutputDirections(BlockEntityUtils.MachineDirection.BOTTOM));
         addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().upgrades(1)).validUpgrades(ContainerOrganicSolarPanel.VALID_UPGRADES).valid(machineValidator()));
         addComponent(new ComponentContainerProvider(SubtypeChemicalMachine.organicsolarpanel.tag(), this).createMenu((id, player) -> new ContainerOrganicSolarPanel(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
     }
@@ -75,11 +75,4 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
     public int getComparatorSignal() {
         return generating.getValue() ? 15 : 0;
     }
-
-    public void onNeightborChanged(BlockPos neighbor, boolean blockStateTrigger) {
-        if (!this.level.isClientSide) {
-            this.hasRedstoneSignal.setValue(this.level.hasNeighborSignal(this.getBlockPos()));
-        }
-    }
-
 }

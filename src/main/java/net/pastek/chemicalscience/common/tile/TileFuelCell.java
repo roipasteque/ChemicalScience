@@ -136,10 +136,4 @@ public class TileFuelCell extends GenericMaterialTile implements IElectricGenera
     public int getComparatorSignal() {
         return (Boolean)this.running.getValue() ? 15 : 0;
     }
-
-    public void onNeightborChanged(BlockPos neighbor, boolean blockStateTrigger) {
-        if (!this.level.isClientSide) {
-            this.hasRedstoneSignal.setValue(this.level.hasNeighborSignal(this.getBlockPos()));
-        }
-    }
 }

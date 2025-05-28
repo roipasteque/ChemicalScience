@@ -3,6 +3,7 @@
   "render_type": "minecraft:cutout",
   "textures": {
     "side": "chemicalscience:block/metal_building_blocks/scaffolding_manganese",
-    "top": "chemicalscience:block/metal_building_blocks/scaffolding_grate_manganese_top"
+    "top": "chemicalscience:block/metal_building_blocks/scaffolding_grate_manganese_top",
+    "particle": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
   }
 }

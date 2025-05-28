@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-24T15:30:15.6955109	Loot Tables
+// 1.21.1	2025-05-27T21:06:46.4340834	Loot Tables
 a9f2a05b21175282e030f6c15c0b6904364c3db5 data/chemicalscience/loot_table/blocks/block_asphalt.json
 37b752256adc3eaa8450e6caba82d77663a80386 data/chemicalscience/loot_table/blocks/block_element_ac.json
 2ea4ea35a6fdc2950d79770c5c03ee2d91af447a data/chemicalscience/loot_table/blocks/block_element_ag.json
@@ -247,6 +247,8 @@ cf8cf15ecbbb81514c6ced737c34b0d6d2fe61de data/chemicalscience/loot_table/blocks/
 bfb51fc02403b07b88dfef05e33feb9edb31987a data/chemicalscience/loot_table/blocks/ore_wolframite_moon.json
 52c9963d8167bdca864589e85ec0e0e8009355d3 data/chemicalscience/loot_table/blocks/ore_wolframite_venus.json
 665936b282eabf8a5063ac4a6a1ad55d52d99bf4 data/chemicalscience/loot_table/blocks/organicsolarpanel.json
+53392dbc86bf1d3246028be8277e26314fa1b235 data/chemicalscience/loot_table/blocks/rack_manganese.json
+78688267ffeb8dec7870ec321e48ed9ea3db1582 data/chemicalscience/loot_table/blocks/rack_steel.json
 f471eb19747b012158a72017c075c267af3bdb81 data/chemicalscience/loot_table/blocks/radiationshielding_concrete.json
 74f96044770f2b1735615c02670482545328e04b data/chemicalscience/loot_table/blocks/radiationshielding_tantalum.json
 1dd6ac55f6961c8513b94b26c71a28deafa4ff99 data/chemicalscience/loot_table/blocks/scaffolding_glass_manganese.json

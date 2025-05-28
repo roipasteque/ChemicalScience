@@ -73,6 +73,9 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN.get(),
                         CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE.get(),
 
+                        CSBlocks.RACK_MANGANESE.get(),
+                        CSBlocks.RACK_STEEL.get(),
+
                         CSBlocks.ASPHALT_BLOCK.get(),
                         CSBlocks.ASPHALT_STAIR.get(),
                         CSBlocks.ASPHALT_SLAB.get(),
@@ -87,6 +90,7 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         //Machines
                         CSBlocks.ORGANIC_SOLAR_PANEL.get(),
                         CSBlocks.FUEL_CELL.get()
+
                 );
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(

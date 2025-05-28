@@ -178,6 +178,8 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE.get());
+        dropSelf(CSBlocks.RACK_MANGANESE.get());
+        dropSelf(CSBlocks.RACK_STEEL.get());
 
         dropSelf(CSBlocks.ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.ASPHALT_STAIR.get());

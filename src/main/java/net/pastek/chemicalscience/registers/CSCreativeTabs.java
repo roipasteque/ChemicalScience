@@ -67,6 +67,8 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE);
+        output.accept(CSBlocks.RACK_MANGANESE);
+        output.accept(CSBlocks.RACK_STEEL);
         // Asphalt
         output.accept(CSBlocks.ASPHALT_BLOCK);
         output.accept(CSBlocks.ASPHALT_STAIR);

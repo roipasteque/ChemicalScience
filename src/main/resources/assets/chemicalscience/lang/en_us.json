@@ -142,6 +142,9 @@
   "block.chemicalscience.metalhalidelamp_sg": "Green Steel Lamp",
   "block.chemicalscience.metalhalidelamp_sb": "Blue Steel Lamp",
 
+  "block.chemicalscience.rack_manganese": "Manganese Rack",
+  "block.chemicalscience.rack_steel": "Steel Rack",
+
   "block.chemicalscience.block_asphalt": "Asphalt Block",
   "block.chemicalscience.stair_asphalt": "Asphalt Stairs",
   "block.chemicalscience.slab_asphalt": "Asphalt Slab",
@@ -670,6 +673,8 @@
 
   "container.organicsolarpanel": "Organic Solar Panel",
   "container.fuelcell": "Fuel Cell",
+  "container.rackm": "§cManganese Rack",
+  "container.racks": "§9Steel Rack",
 
   "gui.chemicalscience.machine.current": "Current: %s",
   "gui.chemicalscience.machine.output": "Output: %s",

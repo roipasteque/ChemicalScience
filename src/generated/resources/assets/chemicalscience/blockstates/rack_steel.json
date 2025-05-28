@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/rack_steel"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/rack_steel",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/rack_steel",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/rack_steel",
+      "y": 180
+    }
+  }
+}

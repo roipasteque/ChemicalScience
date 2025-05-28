@@ -142,6 +142,9 @@
   "block.chemicalscience.metalhalidelamp_sg": "Lampe aux halogénures métalliques verte",
   "block.chemicalscience.metalhalidelamp_sb": "Lampe aux halogénures métalliques bleu",
 
+  "block.chemicalscience.rack_manganese": "Étagère de rangement",
+  "block.chemicalscience.rack_steel": "Étagère de rangement",
+
   "block.chemicalscience.block_asphalt": "Bloc d'asphalte",
   "block.chemicalscience.stair_asphalt": "Escalier d'asphalte",
   "block.chemicalscience.slab_asphalt": "Dalle d'asphalte",
@@ -667,6 +670,8 @@
 
   "container.organicsolarpanel": "Panneau solaire organique",
   "container.fuelcell": "Pile à combustible",
+  "container.rackm": "§cÉtagère de rangement",
+  "container.racks": "§9Étagère de rangement",
 
   "gui.chemicalscience.machine.current": "Courant: %s",
   "gui.chemicalscience.machine.output": "Sortie: %s",

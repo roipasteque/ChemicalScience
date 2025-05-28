@@ -6,7 +6,7 @@
 		"0": "chemicalscience:block/metal_building_blocks/ladder_manganese",
 		"1": "chemicalscience:block/metal_building_blocks/scaffolding_grate_manganese_hollow",
 		"2": "chemicalscience:block/metal_building_blocks/scaffolding_manganese",
-		"particle": "chemicalscience:block/metal_building_blocks/scaffolding_manganese"
+		"particle": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
 	},
 	"elements": [
 		{

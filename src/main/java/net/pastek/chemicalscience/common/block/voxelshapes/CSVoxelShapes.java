@@ -19,7 +19,7 @@ public class CSVoxelShapes {
             ).reduce(Shapes::or).get()
     );
 
-    public static final VoxelShapeProvider FUEL_CELL = VoxelShapeProvider.createOmni(
+    public static final VoxelShapeProvider CUBE = VoxelShapeProvider.createOmni(
             Stream.of(
                     Shapes.box(0, 0, 0, 1, 1, 1)
             ).reduce(Shapes::or).get()
