@@ -171,6 +171,7 @@
 
   "item.chemicalscience.ingot_boron": "Lingot de bore",
   "item.chemicalscience.ingot_boroncarbide": "Lingot de carbure de bore",
+  "item.chemicalscience.ingot_beryllium": "Lingot de béryllium",
   "item.chemicalscience.ingot_magnesium": "Lingot de magnésium",
   "item.chemicalscience.ingot_nickel": "Lingot de nickel",
   "item.chemicalscience.ingot_zinc": "Lingot de zinc",
@@ -343,6 +344,7 @@
   "item.chemicalscience.petri_dish": "Plaque de pétri",
   "item.chemicalscience.culture_medium": "Milieu de culture",
   "item.chemicalscience.escherichia_coli": "Plaque de pétri avec Escherichia Coli",
+  "item.chemicalscience.clostridium": "Plaque de pétri avec Clostridium",
   "item.chemicalscience.soda": "Soda",
 
   "item.chemicalscience.sword_tungstencarbide": "Épée en tungstène",
@@ -378,6 +380,7 @@
   "fluid.chemicalscience.ironnitrate": "Nitrate de fer",
   "fluid.chemicalscience.maleicacid": "Acide maléique",
   "fluid.chemicalscience.escherichia_coli": "Solution d'Escherichia Coli",
+  "fluid.chemicalscience.clostridium": "Solution de Clostridium",
   "fluid.chemicalscience.triethylphosphate": "Triéthyl Phosphate",
   "fluid.chemicalscience.bromoaceticacid": "Acide bromoacétique",
   "fluid.chemicalscience.ethylbromoacetate": "Bromoacétate d'éthyle",
@@ -707,6 +710,8 @@
   "advancement.chemicalscience.culture_medium.desc": "Fabriquer un milieu de culture!",
   "advancement.chemicalscience.escherichia_coli.title": "Évite de lécher",
   "advancement.chemicalscience.escherichia_coli.desc": "Faire pousser Escherichia Coli sur une plaque de pétri!",
+  "advancement.chemicalscience.clostridium.title": "Tétanos en boîte",
+  "advancement.chemicalscience.clostridium.desc": "Faire pousser Clostridium sur une plaque de pétri!",
   "advancement.chemicalscience.soda.title": "Parfaitement comestible",
   "advancement.chemicalscience.soda.desc": "Fabriquer du soda dans un réacteur chimique!",
   "advancement.chemicalscience.polymer_kevlar.title": "Dernier rempart",

@@ -217,6 +217,7 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.PETRI_DISH.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/petri_dish");
         withExistingParent(CSItems.CULTURE_MEDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/culture_medium");
         withExistingParent(CSItems.E_COLI.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/escherichia_coli");
+        withExistingParent(CSItems.CLOSTRIDIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/clostridium");
         withExistingParent(CSItems.SODA.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/soda");
         withExistingParent(CSItems.PARACETAMOL.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/paracetamol");
 

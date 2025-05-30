@@ -1,0 +1,36 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:culture_medium"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:oxidized_copper"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:clostridium"
+  },
+
+
+
+  "ticks": 2000,
+  "usagepertick": 10.0
+}

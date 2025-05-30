@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:attractive",
+  "block": "ballistix:attractive",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 100s, type:'ballistix:attractive'}"
+}

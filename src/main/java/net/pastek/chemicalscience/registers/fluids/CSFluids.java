@@ -135,6 +135,7 @@ public class CSFluids {
 
     /** Biology */
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_ESCHERICHIACOLI = FLUIDS.register("escherichia_coli", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "escherichia_coli", "escherichia_coli", new Color(255, 183, 198, 180))));
+    public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_CLOSTRIDIUM = FLUIDS.register("clostridium", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "clostridium", "clostridium", new Color(72, 4, 205, 180))));
 
     /** Gases */
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_CHLORINE = FLUIDS.register("chlorine", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "chlorine", "chlorine", new Color(150, 220, 0, 120))));

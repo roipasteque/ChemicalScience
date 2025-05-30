@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:fermentation_plant_recipe",
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "tag": "c:clostridium"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    }
+  ],
+  "output": {
+    "amount": 20,
+    "id": "chemicalscience:clostridium"
+  },
+  "ticks": 200,
+  "usagepertick": 10.0
+}

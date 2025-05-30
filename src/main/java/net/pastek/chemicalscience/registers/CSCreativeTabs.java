@@ -273,6 +273,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.PETRI_DISH);
         output.accept(CSItems.CULTURE_MEDIUM);
         output.accept(CSItems.E_COLI);
+        output.accept(CSItems.CLOSTRIDIUM);
         output.accept(CSItems.SODA);
         /** Equipment */
         // Tools

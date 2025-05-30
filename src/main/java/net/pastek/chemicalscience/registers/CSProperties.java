@@ -6,16 +6,21 @@ import net.minecraft.world.food.FoodProperties;
 
 public class CSProperties {
 
-    public static final FoodProperties SODA = new FoodProperties.Builder().nutrition(4).saturationModifier(0.10f)
+    public static final FoodProperties SODA = new FoodProperties.Builder().nutrition(4).saturationModifier(1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 1800, 1), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1800), 1.0f)
             .build();
 
     public static final FoodProperties E_COLI = new FoodProperties.Builder().nutrition(1).saturationModifier(0.10f)
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 4), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.WITHER, 80), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.POISON, 80), 1.0f)
+            .build();
+
+    public static final FoodProperties CLOSTRIDIUM = new FoodProperties.Builder().nutrition(1).saturationModifier(0.10f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 9), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.WITHER, 200, 4), 1.0f)
             .build();
 
     public static final FoodProperties PARACETAMOL = new FoodProperties.Builder().nutrition(0).saturationModifier(0f)

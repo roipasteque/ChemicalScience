@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:culture_medium",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:clostridium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.clostridium.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:clostridium"
+    },
+    "title": {
+      "color": "dark_blue",
+      "translate": "advancement.chemicalscience.clostridium.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

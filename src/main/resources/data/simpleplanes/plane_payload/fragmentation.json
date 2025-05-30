@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:fragmentation",
+  "block": "ballistix:fragmentation",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 200s, type:'ballistix:fragmentation'}"
+}

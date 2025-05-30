@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:darkmatter",
+  "block": "ballistix:darkmatter",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 500s, type:'ballistix:darkmatter'}"
+}

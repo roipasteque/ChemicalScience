@@ -204,6 +204,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> PETRI_DISH= ITEMS.register("petri_dish", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CULTURE_MEDIUM= ITEMS.register("culture_medium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> E_COLI= ITEMS.register("escherichia_coli", () -> new Item(new Item.Properties().food(CSProperties.E_COLI)));
+    public static final DeferredItem<Item> CLOSTRIDIUM= ITEMS.register("clostridium", () -> new Item(new Item.Properties().food(CSProperties.CLOSTRIDIUM)));
     public static final DeferredItem<Item> SODA= ITEMS.register("soda", () -> new ItemSoda(new Item.Properties().food(CSProperties.SODA).stacksTo(16)));
     public static final DeferredItem<Item> PARACETAMOL= ITEMS.register("paracetamol", () -> new Item(new Item.Properties().food(CSProperties.PARACETAMOL)));
 

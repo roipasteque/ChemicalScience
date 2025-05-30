@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:largeantimatter",
+  "block": "ballistix:largeantimatter",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 500s, type:'ballistix:largeantimatter'}"
+}

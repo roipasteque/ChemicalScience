@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:thermobaric",
+  "block": "ballistix:thermobaric",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 200s, type:'ballistix:thermobaric'}"
+}

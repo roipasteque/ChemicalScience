@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:nuclear",
+  "block": "ballistix:nuclear",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 300s, type:'ballistix:nuclear'}"
+}
