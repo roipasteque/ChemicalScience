@@ -45,6 +45,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_SCANDIUM = ITEMS.register("dust_scandium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_CHROMIUM_BROMIDE = ITEMS.register("dust_chromiumbromide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_IRONOXIDE = ITEMS.register("dust_ironoxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_IRONTETROXIDE = ITEMS.register("dust_irontetroxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_MANGANESEOXIDE = ITEMS.register("dust_manganeseoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_COBALT = ITEMS.register("dust_cobalt", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_NICKEL = ITEMS.register("dust_nickel", () -> new Item(new Item.Properties()));

@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=ceiling,facing=east": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=south": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 180,
+      "y": 90
+    },
+    "face=floor,facing=east": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "y": 90
+    },
+    "face=floor,facing=north": {
+      "model": "chemicalscience:block/symbol_corrosive"
+    },
+    "face=floor,facing=south": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "y": 270
+    },
+    "face=wall,facing=east": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=north": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 90
+    },
+    "face=wall,facing=south": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "chemicalscience:block/symbol_corrosive",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

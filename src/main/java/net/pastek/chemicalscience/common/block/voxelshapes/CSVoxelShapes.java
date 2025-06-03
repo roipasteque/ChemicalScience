@@ -25,6 +25,21 @@ public class CSVoxelShapes {
             ).reduce(Shapes::or).get()
     );
 
+    public static final VoxelShape CUBE_ALL = Block.box(0, 0, 0, 16, 16, 16);
+
+    public static final VoxelShape LABSUPPORT_EW = Stream.of(
+                    Block.box(0, 13, 0, 16, 16, 16),
+                    Block.box(1, 0, 1, 15, 13, 3),
+                    Block.box(1, 0, 13, 15, 13, 15)
+            ).reduce(Shapes::or).get();
+
+    public static final VoxelShape LABSUPPORT_NS =
+            Stream.of(
+                    Block.box(0, 13, 0, 16, 16, 16),
+                    Block.box(13, 0, 1, 15, 13, 15),
+                    Block.box(1, 0, 1, 3, 13, 15)
+            ).reduce(Shapes::or).get();
+
     public static final VoxelShape SCAFFOLDING_HOLLOW =
             Stream.of(
                     Block.box(1, 0, 0, 15, 16, 1),
@@ -32,7 +47,6 @@ public class CSVoxelShapes {
                     Block.box(15, 0, 0, 16, 16, 16),
                     Block.box(1, 0, 15, 15, 16, 16)
             ).reduce(Shapes::or).get();
-
 
     // Wohin gehst du, wohin?
     public static final VoxelShape SCAFFOLDING_OPEN_EAST =

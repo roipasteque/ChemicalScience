@@ -111,6 +111,7 @@
 
   "block.chemicalscience.block_magnesium": "Block of Magnesium",
   "block.chemicalscience.block_silicon": "Block of Silicon",
+  "block.chemicalscience.block_manganese": "Block of Manganese",
   "block.chemicalscience.block_tungsten": "Block of Tungsten",
   "block.chemicalscience.block_platinum": "Block of Platinum",
 
@@ -120,6 +121,7 @@
   "block.chemicalscience.slab_magnesiumaluminum": "Magnesium Slab",
   "block.chemicalscience.door_magnesiumaluminum": "Magnesium Door",
   "block.chemicalscience.trapdoor_magnesiumaluminum": "Magnesium Trapdoor",
+  "block.chemicalscience.fence_magnesiumaluminum": "Magnesium Fence",
 
   "block.chemicalscience.ladder_manganese": "Manganese Ladder",
   "block.chemicalscience.grate_manganese": "Manganese Grate",
@@ -142,8 +144,23 @@
   "block.chemicalscience.metalhalidelamp_sg": "Green Steel Lamp",
   "block.chemicalscience.metalhalidelamp_sb": "Blue Steel Lamp",
 
+  "block.chemicalscience.symbol_biohazard": "Bio hazard",
+  "block.chemicalscience.symbol_radiation": "Radiation Hazard",
+  "block.chemicalscience.symbol_electrical": "Electrical Hazard",
+  "block.chemicalscience.symbol_danger": "Danger",
+  "block.chemicalscience.symbol_flammable": "Flammable",
+  "block.chemicalscience.symbol_toxic": "Toxic",
+  "block.chemicalscience.symbol_corrosive": "Corrosive",
+  "block.chemicalscience.symbol_pressure": "Compressed Gas",
+  "block.chemicalscience.symbol_explosive": "Explosive",
+
   "block.chemicalscience.rack_manganese": "Manganese Rack",
   "block.chemicalscience.rack_steel": "Steel Rack",
+
+  "block.chemicalscience.laboratory_bench": "Laboratory Bench",
+  "block.chemicalscience.laboratory_support": "Laboratory Support",
+  "block.chemicalscience.laboratory_sink": "Laboratory Sink",
+  "block.chemicalscience.laboratory_storage": "Laboratory Storage",
 
   "block.chemicalscience.block_asphalt": "Asphalt Block",
   "block.chemicalscience.stair_asphalt": "Asphalt Stairs",
@@ -269,6 +286,7 @@
   "item.chemicalscience.dust_manganeseoxide": "Manganese Oxide",
   "item.chemicalscience.dust_calciumoxide": "Calcium Oxide",
   "item.chemicalscience.dust_ironoxide": "Iron Oxide",
+  "item.chemicalscience.dust_irontetroxide": "Iron Tetroxide",
   "item.chemicalscience.dust_uraniumoxide": "Uranium Oxide",
   "item.chemicalscience.dust_plutoniumoxide": "Plutonium Oxide",
 
@@ -471,6 +489,7 @@
   "fluid.chemicalscience.acidcassiteritesolution": "Acidic Cassiterite Solution",
   "fluid.chemicalscience.alkalinecassiteritesolution": "Basic Cassiterite Solution",
   "fluid.chemicalscience.lubricant": "Lubricant",
+  "fluid.chemicalscience.aniline": "Aniline",
 
   "gas.chemicalscience.chlorine": "Chlorine",
   "gas.chemicalscience.carbonmonoxide": "Carbon Monoxide",
@@ -677,6 +696,8 @@
   "container.fuelcell": "Fuel Cell",
   "container.rackm": "§cManganese Rack",
   "container.racks": "§9Steel Rack",
+  "container.labbench": "Laboratory Bench",
+  "container.labstorage": "Storage",
 
   "gui.chemicalscience.machine.current": "Current: %s",
   "gui.chemicalscience.machine.output": "Output: %s",

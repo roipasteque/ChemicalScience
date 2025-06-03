@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
+  }
+}

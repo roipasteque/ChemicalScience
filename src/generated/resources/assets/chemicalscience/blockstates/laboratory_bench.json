@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/laboratory_bench"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/laboratory_bench",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/laboratory_bench",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/laboratory_bench",
+      "y": 180
+    }
+  }
+}

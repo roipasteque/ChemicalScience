@@ -40,6 +40,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         // Ressource Block
         blockWithItem(CSBlocks.MAGNESIUM_BLOCK);
         blockWithItem(CSBlocks.SILICON_BLOCK);
+        blockWithItem(CSBlocks.MANGANESE_BLOCK);
         blockWithItem(CSBlocks.TUNGSTEN_BLOCK);
         blockWithItem(CSBlocks.PLATINUM_BLOCK);
 
@@ -53,6 +54,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         doorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), modLoc("block/metal_building_blocks/door_magnesium_bottom"), modLoc("block/metal_building_blocks/door_magnesium_top"), "cutout");
         trapdoorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get(), modLoc("block/metal_building_blocks/trapdoor_magnesium"), true, "cutout");
         blockItem(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR, "block/", "_bottom");
+        fenceBlock(CSBlocks.MAGNESIUM_GA9Z1_FENCE.get(), CSTexture("metal_building_blocks", "block_magnesiumaluminum"));
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW);
         blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW);
@@ -72,6 +74,16 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN);
         blockItem(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE);
 
+        blockItem(CSBlocks.SYMBOL_BIOHAZARD);
+        blockItem(CSBlocks.SYMBOL_RADIATION);
+        blockItem(CSBlocks.SYMBOL_DANGER);
+        blockItem(CSBlocks.SYMBOL_ELECTRICAL);
+        blockItem(CSBlocks.SYMBOL_FLAMMABLE);
+        blockItem(CSBlocks.SYMBOL_TOXIC);
+        blockItem(CSBlocks.SYMBOL_CORROSIVE);
+        blockItem(CSBlocks.SYMBOL_PRESSURE);
+        blockItem(CSBlocks.SYMBOL_EXPLOSIVE);
+
         blockWithItem(CSBlocks.ASPHALT_BLOCK);
         stairsBlock(CSBlocks.ASPHALT_STAIR.get(),blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_STAIR);
         slabBlock(CSBlocks.ASPHALT_SLAB.get(), blockTexture(CSBlocks.ASPHALT_BLOCK.get()), blockTexture(CSBlocks.ASPHALT_BLOCK.get()));blockItem(CSBlocks.ASPHALT_SLAB);
@@ -89,6 +101,10 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
         horrRotatedBlock(CSBlocks.RACK_MANGANESE, existingBlock(CSBlocks.RACK_MANGANESE), true);
         horrRotatedBlock(CSBlocks.RACK_STEEL, existingBlock(CSBlocks.RACK_STEEL), true);
+        horrRotatedBlock(CSBlocks.LABORATORY_BENCH, existingBlock(CSBlocks.LABORATORY_BENCH), true);
+        horrRotatedBlock(CSBlocks.LABORATORY_STORAGE, existingBlock(CSBlocks.LABORATORY_STORAGE), true);
+        blockItem(CSBlocks.LABORATORY_SUPPORT);
+        blockItem(CSBlocks.LABORATORY_SINK);
 
         // Periodic table
         blockWithItem(CSBlocks.ELEMENT_H);

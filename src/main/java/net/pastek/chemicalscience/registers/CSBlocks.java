@@ -10,10 +10,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.common.block.decoration.CSHalideLamp;
-import net.pastek.chemicalscience.common.block.decoration.CSLadderBlock;
-import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingOpen;
-import net.pastek.chemicalscience.common.block.decoration.CSScaffoldingHollow;
+import net.pastek.chemicalscience.common.block.decoration.*;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import voltaic.api.radiation.util.RadiationShielding;
 import voltaic.common.block.BlockMachine;
@@ -144,6 +141,8 @@ public class CSBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> SILICON_BLOCK = registerBlock("block_silicon",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> MANGANESE_BLOCK = registerBlock("block_manganese",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> TUNGSTEN_BLOCK = registerBlock("block_tungsten",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> PLATINUM_BLOCK = registerBlock("block_platinum",
@@ -162,6 +161,8 @@ public class CSBlocks {
             () -> new DoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final DeferredBlock<TrapDoorBlock> MAGNESIUM_GA9Z1_TRAPDOOR = registerBlock("trapdoor_magnesiumaluminum",
             () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<FenceBlock> MAGNESIUM_GA9Z1_FENCE = registerBlock("fence_magnesiumaluminum",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
 
     public static final DeferredBlock<Block> MANGANESE_GRATE = registerBlock("grate_manganese",
@@ -204,6 +205,12 @@ public class CSBlocks {
             () -> new CSHalideLamp(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(2f).lightLevel(BlockState -> 15)));
     public static final DeferredBlock<Block> RACK_MANGANESE = registerBlock("rack_manganese", () -> new BlockMachine(SubtypeChemicalMachine.rackm));
     public static final DeferredBlock<Block> RACK_STEEL = registerBlock("rack_steel", () -> new BlockMachine(SubtypeChemicalMachine.racks));
+    public static final DeferredBlock<Block> LABORATORY_BENCH = registerBlock("laboratory_bench", () -> new BlockMachine(SubtypeChemicalMachine.labbench));
+    public static final DeferredBlock<Block> LABORATORY_SUPPORT = registerBlock("laboratory_support",
+            () -> new CSLabSupport(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f)));
+    public static final DeferredBlock<Block> LABORATORY_SINK = registerBlock("laboratory_sink",
+            () -> new CSLabSink(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f).noOcclusion()));
+    public static final DeferredBlock<Block> LABORATORY_STORAGE = registerBlock("laboratory_storage", () -> new BlockMachine(SubtypeChemicalMachine.labstorage));
 
     public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -228,6 +235,25 @@ public class CSBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(1f).noLootTable().sound(SoundType.GLASS).noOcclusion()));
     public static final DeferredBlock<Block> ADVANCED_GLASS_SHIELDING = registerBlock("radiationshielding_advancedglass",
             () -> new Block(BlockBehaviour.Properties.of().strength(5f).noLootTable().sound(SoundType.GLASS).explosionResistance(15).noOcclusion()));
+
+    public static final DeferredBlock<Block> SYMBOL_BIOHAZARD = registerBlock("symbol_biohazard",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_RADIATION = registerBlock("symbol_radiation",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_ELECTRICAL = registerBlock("symbol_electrical",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_DANGER = registerBlock("symbol_danger",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_FLAMMABLE = registerBlock("symbol_flammable",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_TOXIC = registerBlock("symbol_toxic",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_CORROSIVE = registerBlock("symbol_corrosive",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_PRESSURE = registerBlock("symbol_pressure",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
+    public static final DeferredBlock<Block> SYMBOL_EXPLOSIVE = registerBlock("symbol_explosive",
+            () -> new CSSymbol(BlockBehaviour.Properties.of().instabreak().sound(SoundType.SCAFFOLDING)));
 
     // periodic table
     public static final DeferredBlock<Block> ELEMENT_H =  registerBlock("block_element_h",  () -> new Block(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.BONE_BLOCK)));

@@ -1,5 +1,9 @@
 {
     "values": [
-      "#c:plates/silicon"
+      "#c:plates/beryllium",
+      "#c:plates/boroncarbide",
+      "#c:plates/silicon",
+      "#c:plates/tantalum",
+      "#c:plates/tungsten"
     ]
 }

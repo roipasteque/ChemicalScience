@@ -1,0 +1,30 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:oxides/iron"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 50,
+      "pressure":1,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 2,
+    "id": "chemicalscience:dust_irontetroxide"
+  },
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

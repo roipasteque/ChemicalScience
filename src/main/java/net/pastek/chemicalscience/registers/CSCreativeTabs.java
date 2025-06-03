@@ -37,6 +37,7 @@ public class CSCreativeTabs {
         /** Ressource Blocks */
         output.accept(CSBlocks.MAGNESIUM_BLOCK);
         output.accept(CSBlocks.SILICON_BLOCK);
+        output.accept(CSBlocks.MANGANESE_BLOCK);
         output.accept(CSBlocks.TUNGSTEN_BLOCK);
         output.accept(CSBlocks.PLATINUM_BLOCK);
         /** Construction Blocks */
@@ -47,6 +48,7 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_SLAB);
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_DOOR);
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR);
+        output.accept(CSBlocks.MAGNESIUM_GA9Z1_FENCE);
         // Manganese alloy
         output.accept(CSBlocks.MANGANESE_GRATE);
         output.accept(CSBlocks.MANGANESE_SCAFFOLDING);
@@ -59,6 +61,7 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
         output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
         output.accept(CSBlocks.MANGANESE_LADDER);
+        // Halide Lamps
         output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN);
@@ -67,8 +70,24 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE);
+        // Symbols
+        output.accept(CSBlocks.SYMBOL_BIOHAZARD);
+        output.accept(CSBlocks.SYMBOL_RADIATION);
+        output.accept(CSBlocks.SYMBOL_ELECTRICAL);
+        output.accept(CSBlocks.SYMBOL_DANGER);
+        output.accept(CSBlocks.SYMBOL_FLAMMABLE);
+        output.accept(CSBlocks.SYMBOL_TOXIC);
+        output.accept(CSBlocks.SYMBOL_CORROSIVE);
+        output.accept(CSBlocks.SYMBOL_PRESSURE);
+        output.accept(CSBlocks.SYMBOL_EXPLOSIVE);
+        // Storage
         output.accept(CSBlocks.RACK_MANGANESE);
         output.accept(CSBlocks.RACK_STEEL);
+        // Laboratory Decoration
+        output.accept(CSBlocks.LABORATORY_BENCH);
+        output.accept(CSBlocks.LABORATORY_SUPPORT);
+        output.accept(CSBlocks.LABORATORY_SINK);
+        output.accept(CSBlocks.LABORATORY_STORAGE);
         // Asphalt
         output.accept(CSBlocks.ASPHALT_BLOCK);
         output.accept(CSBlocks.ASPHALT_STAIR);
@@ -196,6 +215,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_CALCIUMOXIDE);
         output.accept(CSItems.DUST_MANGANESEOXIDE);
         output.accept(CSItems.DUST_IRONOXIDE);
+        output.accept(CSItems.DUST_IRONTETROXIDE);
         output.accept(CSItems.DUST_URANIUMOXIDE);
         output.accept(CSItems.DUST_PLUTONIUMOXIDE);
         // Other

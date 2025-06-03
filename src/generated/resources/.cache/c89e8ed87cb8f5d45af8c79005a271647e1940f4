@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-29T01:35:24.1373072	Item Models: chemicalscience
+// 1.21.1	2025-06-01T19:08:44.8840534	Item Models: chemicalscience
 85ce0f4d901b7d5ce390287f58697c98f4f7457a assets/chemicalscience/models/item/asphalt.json
 3de7a144c067791a1e30ebe6aba9d58dabdfd6b1 assets/chemicalscience/models/item/axe_tungstencarbide.json
 60952a3cd8380329e882dfa52fb8ec362ce8d5c3 assets/chemicalscience/models/item/boroncompositeplating.json
@@ -52,6 +52,7 @@ dc74b53d1b47b805e65303c73dedc070b3a7f267 assets/chemicalscience/models/item/dust
 d34d3e4cee5ebe21665a80ee119a43ed3516246e assets/chemicalscience/models/item/dust_iodine.json
 c762276398b35bda2001fde0b4f2c6528e999b5e assets/chemicalscience/models/item/dust_ironarsenide.json
 bb84e4208bd2c754a739b0491ab8ec845d45e5e1 assets/chemicalscience/models/item/dust_ironoxide.json
+aa755cce0dc272726b4666a38842acddc7e6cccd assets/chemicalscience/models/item/dust_irontetroxide.json
 365e3ab6f831e1da32b276c760367cfd5bc6c9b1 assets/chemicalscience/models/item/dust_lanthanum.json
 c5ccdf510649df18eed4c71cd06810eb0026b694 assets/chemicalscience/models/item/dust_lutecium.json
 c077daa0722cd6eca10484227312667ac6c07e79 assets/chemicalscience/models/item/dust_magnesium.json
@@ -94,6 +95,7 @@ bbb0e54c80d8866c799be57f1b4ec9625af2ef52 assets/chemicalscience/models/item/dust
 4739b7aac3752cfc8a92df73a34152744e733f3e assets/chemicalscience/models/item/dust_yttrium.json
 daf2dadecbbe61abec472567194e8ec32a78bdc3 assets/chemicalscience/models/item/dust_zinc.json
 975e31440d79dc536f50c58c8289962f0c66344e assets/chemicalscience/models/item/escherichia_coli.json
+ba5e716656556fac9c5d0ffcbdeee812d0171610 assets/chemicalscience/models/item/fence_magnesiumaluminum.json
 a368c564942870f74ecd491973b100d56bc905e0 assets/chemicalscience/models/item/hoe_tungstencarbide.json
 26df35af16649ef6b55ebab79e39f0748fdcf19c assets/chemicalscience/models/item/impuredust_arsenic.json
 2c27a0321a12b8968745a4780a09f370c784dd46 assets/chemicalscience/models/item/impuredust_arsenopyrite.json

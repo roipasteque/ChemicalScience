@@ -111,6 +111,7 @@
 
   "block.chemicalscience.block_magnesium": "Bloc de magnésium",
   "block.chemicalscience.block_silicon": "Bloc de silicium",
+  "block.chemicalscience.block_manganese": "Bloc de manganèse",
   "block.chemicalscience.block_tungsten": "Bloc de tungstène",
   "block.chemicalscience.block_platinum": "Bloc de platine",
 
@@ -120,6 +121,7 @@
   "block.chemicalscience.slab_magnesiumaluminum": "Dalle de magnésium",
   "block.chemicalscience.door_magnesiumaluminum": "Porte en magnésium",
   "block.chemicalscience.trapdoor_magnesiumaluminum": "Trappe en magnésium",
+  "block.chemicalscience.fence_magnesiumaluminum": "Barrière en magnésium",
 
   "block.chemicalscience.ladder_manganese": "Échelle en manganèse",
   "block.chemicalscience.grate_manganese": "Grille en manganèse",
@@ -142,8 +144,23 @@
   "block.chemicalscience.metalhalidelamp_sg": "Lampe aux halogénures métalliques verte",
   "block.chemicalscience.metalhalidelamp_sb": "Lampe aux halogénures métalliques bleu",
 
+  "block.chemicalscience.symbol_biohazard": "Danger biologique",
+  "block.chemicalscience.symbol_radiation": "Radioactif",
+  "block.chemicalscience.symbol_electrical": "Danger électrique",
+  "block.chemicalscience.symbol_danger": "Danger",
+  "block.chemicalscience.symbol_flammable": "Inflammable",
+  "block.chemicalscience.symbol_toxic": "Toxique",
+  "block.chemicalscience.symbol_corrosive": "Corrosif",
+  "block.chemicalscience.symbol_pressure": "Gaz comprimé",
+  "block.chemicalscience.symbol_explosive": "Explosif",
+
   "block.chemicalscience.rack_manganese": "Étagère de rangement",
   "block.chemicalscience.rack_steel": "Étagère de rangement",
+
+  "block.chemicalscience.laboratory_bench": "Paillasse de laboratoire",
+  "block.chemicalscience.laboratory_support": "Support de laboratoire",
+  "block.chemicalscience.laboratory_sink": "Lavabo de laboratoire",
+  "block.chemicalscience.laboratory_storage": "Rangement de laboratoire",
 
   "block.chemicalscience.block_asphalt": "Bloc d'asphalte",
   "block.chemicalscience.stair_asphalt": "Escalier d'asphalte",
@@ -266,11 +283,12 @@
   "item.chemicalscience.crystal_aceticanhydride": "Cristaux d'acide acétique",
   "item.chemicalscience.crystal_potassiumbromide": "Cristaux de bromure de potassium",
 
-  "item.chemicalscience.dust_manganeseoxide": "Oxide de manganèse",
+  "item.chemicalscience.dust_manganeseoxide": "Oxyde de manganèse",
   "item.chemicalscience.dust_calciumoxide": "Chaux vive",
-  "item.chemicalscience.dust_ironoxide": "Oxide de fer",
-  "item.chemicalscience.dust_uraniumoxide": "Oxide d'uranium",
-  "item.chemicalscience.dust_plutoniumoxide": "Oxide de plutonium",
+  "item.chemicalscience.dust_ironoxide": "Oxyde de fer",
+  "item.chemicalscience.dust_irontetroxide": "Tétroxyde de trifer",
+  "item.chemicalscience.dust_uraniumoxide": "Oxyde d'uranium",
+  "item.chemicalscience.dust_plutoniumoxide": "Oxyde de plutonium",
 
   "item.chemicalscience.dust_monazite": "Poudre de monazite",
   "item.chemicalscience.dust_plutoniumhydroxide": "Hydroxyde de plutonium",
@@ -309,7 +327,7 @@
   "item.chemicalscience.sulfonated_polystyrene_catalyst": "Catalyseur polystyrène sulfonate",
   "item.chemicalscience.rhodium_manganese_bromine_catalyst": "Catalyseur rhodium-brome-manganèse",
 
-  "item.chemicalscience.chromotographycardcarbonmonoxide": "Chromatogramme de monoxide de carbone",
+  "item.chemicalscience.chromotographycardcarbonmonoxide": "Chromatogramme de monoxyde de carbone",
   "item.chemicalscience.chromotographycardmethane": "Chromatogramme de méthane",
   "item.chemicalscience.chromotographycardhelium": "Chromatogramme d'hélium",
   "item.chemicalscience.chromotographycardneon": "Chromatogramme de néon",
@@ -371,7 +389,7 @@
   "fluid.chemicalscience.bromine": "Brome",
   "fluid.chemicalscience.chlorine": "Chlore",
   "fluid.chemicalscience.methanol": "Méthanol",
-  "fluid.chemicalscience.carbonmonoxide": "Monoxide de carbone",
+  "fluid.chemicalscience.carbonmonoxide": "Monoxyde de carbone",
   "fluid.chemicalscience.aceticacid": "Acide acétique",
   "fluid.chemicalscience.diesel": "Diésel",
   "fluid.chemicalscience.benzene": "Benzène",
@@ -469,9 +487,10 @@
   "fluid.chemicalscience.acidcassiteritesolution": "Solution de cassitérite acide",
   "fluid.chemicalscience.alkalinecassiteritesolution": "Solution de cassitérité basique",
   "fluid.chemicalscience.lubricant": "Huile moteur",
+  "fluid.chemicalscience.aniline": "Aniline",
 
   "gas.chemicalscience.chlorine": "Chlore",
-  "gas.chemicalscience.carbonmonoxide": "Monoxide de carbone",
+  "gas.chemicalscience.carbonmonoxide": "Monoxyde de carbone",
   "gas.chemicalscience.bromine": "Brome",
   "gas.chemicalscience.butane": "Butane",
   "gas.chemicalscience.bromomethane": "Bromométhane",
@@ -675,6 +694,8 @@
   "container.fuelcell": "Pile à combustible",
   "container.rackm": "§cÉtagère de rangement",
   "container.racks": "§9Étagère de rangement",
+  "container.labbench": "Paillasse",
+  "container.labstorage": "Rangement",
 
   "gui.chemicalscience.machine.current": "Courant: %s",
   "gui.chemicalscience.machine.output": "Sortie: %s",

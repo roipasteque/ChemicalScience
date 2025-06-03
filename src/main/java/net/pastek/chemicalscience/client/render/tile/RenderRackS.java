@@ -5,10 +5,14 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.MinecartItem;
+import net.minecraft.world.level.redstone.Redstone;
 import net.pastek.chemicalscience.common.tile.TileRackS;
+import net.pastek.chemicalscience.registers.CSTags;
 import voltaic.client.render.AbstractTileRenderer;
 import voltaic.prefab.tile.components.IComponentType;
 import voltaic.prefab.tile.components.type.ComponentInventory;
@@ -77,7 +81,14 @@ public class RenderRackS extends AbstractTileRenderer<TileRackS> {
                     matrixStackIn.scale(0.35f, 0.35f, 0.35f);
                 }
 
-                Minecraft.getInstance().getItemRenderer().renderStatic(stack, ItemDisplayContext.GROUND, 0xF000F0, combinedOverlayIn, matrixStackIn, bufferIn, tileRack.getLevel(), 0);
+                ItemDisplayContext display = ItemDisplayContext.GROUND;
+                if (stack.getTags().anyMatch(tag -> tag == CSTags.Items.HAZARD_SYMBOL)) {
+                    display = ItemDisplayContext.GUI;
+                    matrixStackIn.translate(0, 0.1675f, 0.18f);
+                    matrixStackIn.scale(0.5f, 0.5f, 0.5f);
+                }
+
+                Minecraft.getInstance().getItemRenderer().renderStatic(stack, display, 0xF000F0, combinedOverlayIn, matrixStackIn, bufferIn, tileRack.getLevel(), 0);
 
                 matrixStackIn.popPose();
             }

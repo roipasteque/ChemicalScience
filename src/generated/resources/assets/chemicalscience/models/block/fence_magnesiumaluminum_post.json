@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
+  }
+}

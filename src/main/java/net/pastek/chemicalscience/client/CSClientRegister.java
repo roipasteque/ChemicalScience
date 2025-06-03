@@ -18,11 +18,10 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
+import net.pastek.chemicalscience.client.render.tile.RenderLabStorage;
 import net.pastek.chemicalscience.client.render.tile.RenderRackM;
 import net.pastek.chemicalscience.client.render.tile.RenderRackS;
-import net.pastek.chemicalscience.client.screen.ScreenFuelCell;
-import net.pastek.chemicalscience.client.screen.ScreenRackM;
-import net.pastek.chemicalscience.client.screen.ScreenRackS;
+import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.CSTiles;
@@ -32,7 +31,6 @@ import voltaic.Voltaic;
 import voltaic.client.guidebook.ScreenGuidebook;
 import voltaic.client.misc.SWBFClientExtensions;
 import voltaic.common.fluid.SimpleWaterBasedFluidType;
-import net.pastek.chemicalscience.client.screen.ScreenSolarPanel;
 
 @EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class CSClientRegister {
@@ -51,6 +49,8 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
+        event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);
+        event.register(CSMenuTypes.CONTAINER_LAB_STORAGE.get(), ScreenLabStorage::new);
 
         if(ModList.get().isLoaded(Voltaic.MEKANISM_ID)) {
             MekanismClientHandler.registerMenus(event);
@@ -98,5 +98,6 @@ public class CSClientRegister {
     public static void registerEntities(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(CSTiles.TILE_RACK_M.get(), RenderRackM::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_RACK_S.get(), RenderRackS::new);
+        event.registerBlockEntityRenderer(CSTiles.TILE_LAB_STORAGE.get(), RenderLabStorage::new);
     }
 }

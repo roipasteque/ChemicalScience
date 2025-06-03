@@ -1,0 +1,6 @@
+{
+  "parent": "chemicalscience:block/base/symbol_base",
+  "textures": {
+    "0": "chemicalscience:block/symbol/symbol_corrosive"
+  }
+}

@@ -1,8 +1,11 @@
 package net.pastek.chemicalscience.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import net.pastek.chemicalscience.registers.CSItems;
@@ -41,6 +44,7 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.DUST_GALLIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_gallium");
         withExistingParent(CSItems.DUST_TUNGSTEN.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_tungsten");
         withExistingParent(CSItems.DUST_IRONOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_ironoxide");
+        withExistingParent(CSItems.DUST_IRONTETROXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_irontetroxide");
         withExistingParent(CSItems.DUST_POTASSIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_potassium");
         withExistingParent(CSItems.DUST_CALCIUM.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_calcium");
         withExistingParent(CSItems.DUST_CALCIUMOXIDE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/dust/dust_calciumoxide");
@@ -224,7 +228,8 @@ public class CSItemModelProvider extends ItemModelProvider {
 
         //Blocks
         withExistingParent(CSBlocks.MAGNESIUM_GA9Z1_DOOR.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/door_magnesium");
+        withExistingParent(CSBlocks.MAGNESIUM_GA9Z1_FENCE.getId().toString(), mcLoc("block/fence_inventory")).texture("texture", "block/metal_building_blocks/block_magnesiumaluminum");
         withExistingParent(CSBlocks.MANGANESE_LADDER.getId().toString(), mcLoc("item/generated")).texture("layer0", "block/metal_building_blocks/ladder_manganese");
-    }
 
+    }
 }

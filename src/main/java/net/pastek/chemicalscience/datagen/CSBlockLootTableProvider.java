@@ -149,6 +149,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         // Ressource Block
         dropSelf(CSBlocks.MAGNESIUM_BLOCK.get());
         dropSelf(CSBlocks.SILICON_BLOCK.get());
+        dropSelf(CSBlocks.MANGANESE_BLOCK.get());
         dropSelf(CSBlocks.TUNGSTEN_BLOCK.get());
         dropSelf(CSBlocks.PLATINUM_BLOCK.get());
 
@@ -159,6 +160,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_LAMP.get());
         dropSelf(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get());
         add(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(), block -> createDoorTable(CSBlocks.MAGNESIUM_GA9Z1_DOOR.get()));
+        dropSelf(CSBlocks.MAGNESIUM_GA9Z1_FENCE.get());
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING.get());
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW.get());
         dropSelf(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW.get());
@@ -178,8 +180,21 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_RED.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_GREEN.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_STEEL_BLUE.get());
+        dropSelf(CSBlocks.SYMBOL_BIOHAZARD.get());
+        dropSelf(CSBlocks.SYMBOL_RADIATION.get());
+        dropSelf(CSBlocks.SYMBOL_DANGER.get());
+        dropSelf(CSBlocks.SYMBOL_ELECTRICAL.get());
+        dropSelf(CSBlocks.SYMBOL_FLAMMABLE.get());
+        dropSelf(CSBlocks.SYMBOL_TOXIC.get());
+        dropSelf(CSBlocks.SYMBOL_CORROSIVE.get());
+        dropSelf(CSBlocks.SYMBOL_PRESSURE.get());
+        dropSelf(CSBlocks.SYMBOL_EXPLOSIVE.get());
         dropSelf(CSBlocks.RACK_MANGANESE.get());
         dropSelf(CSBlocks.RACK_STEEL.get());
+        dropSelf(CSBlocks.LABORATORY_BENCH.get());
+        dropSelf(CSBlocks.LABORATORY_SUPPORT.get());
+        dropSelf(CSBlocks.LABORATORY_SINK.get());
+        dropSelf(CSBlocks.LABORATORY_STORAGE.get());
 
         dropSelf(CSBlocks.ASPHALT_BLOCK.get());
         dropSelf(CSBlocks.ASPHALT_STAIR.get());

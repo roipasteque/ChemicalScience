@@ -41,6 +41,7 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         //Ressource Blocks
                         CSBlocks.MAGNESIUM_BLOCK.get(),
                         CSBlocks.SILICON_BLOCK.get(),
+                        CSBlocks.MANGANESE_BLOCK.get(),
                         CSBlocks.TUNGSTEN_BLOCK.get(),
                         CSBlocks.PLATINUM_BLOCK.get(),
 
@@ -51,6 +52,7 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.MAGNESIUM_GA9Z1_SLAB.get(),
                         CSBlocks.MAGNESIUM_GA9Z1_DOOR.get(),
                         CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get(),
+                        CSBlocks.MAGNESIUM_GA9Z1_FENCE.get(),
 
                         CSBlocks.MANGANESE_GRATE.get(),
                         CSBlocks.MANGANESE_LADDER.get(),
@@ -75,6 +77,11 @@ public class CSBlockTagProvider extends BlockTagsProvider {
 
                         CSBlocks.RACK_MANGANESE.get(),
                         CSBlocks.RACK_STEEL.get(),
+
+                        CSBlocks.LABORATORY_BENCH.get(),
+                        CSBlocks.LABORATORY_SUPPORT.get(),
+                        CSBlocks.LABORATORY_SINK.get(),
+                        CSBlocks.LABORATORY_STORAGE.get(),
 
                         CSBlocks.ASPHALT_BLOCK.get(),
                         CSBlocks.ASPHALT_STAIR.get(),
@@ -119,6 +126,11 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW.get(),
                         CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW.get(),
                         CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW.get()
+                );
+
+        tag(BlockTags.FENCES)
+                .add(
+                        CSBlocks.MAGNESIUM_GA9Z1_FENCE.get()
                 );
 
         tag(CSTags.Blocks.NEEDS_TUNGSTEN_TOOL)

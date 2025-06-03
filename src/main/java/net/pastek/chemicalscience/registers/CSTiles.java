@@ -9,10 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
-import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
-import net.pastek.chemicalscience.common.tile.TileFuelCell;
-import net.pastek.chemicalscience.common.tile.TileRackM;
-import net.pastek.chemicalscience.common.tile.TileRackS;
+import net.pastek.chemicalscience.common.tile.*;
 
 public class CSTiles {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, ChemicalScience.MOD_ID);
@@ -21,6 +18,8 @@ public class CSTiles {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileFuelCell>> TILE_FUELCELL = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.fuelcell.tag(), () -> new BlockEntityType<>(TileFuelCell::new, Sets.newHashSet(CSBlocks.FUEL_CELL.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileRackM>> TILE_RACK_M = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.rackm.tag(), () -> new BlockEntityType<>(TileRackM::new, Sets.newHashSet(CSBlocks.RACK_MANGANESE.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileRackS>> TILE_RACK_S = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.racks.tag(), () -> new BlockEntityType<>(TileRackS::new, Sets.newHashSet(CSBlocks.RACK_STEEL.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabBench>> TILE_LAB_BENCH = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labbench.tag(), () -> new BlockEntityType<>(TileLabBench::new, Sets.newHashSet(CSBlocks.LABORATORY_BENCH.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabStorage>> TILE_LAB_STORAGE = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labstorage.tag(), () -> new BlockEntityType<>(TileLabStorage::new, Sets.newHashSet(CSBlocks.LABORATORY_STORAGE.get()), null));
 
 
     public static void register(IEventBus eventBus) {

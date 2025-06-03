@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/laboratory_sink",
+      "y": 0
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/laboratory_sink",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/laboratory_sink",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/laboratory_sink",
+      "y": 180
+    }
+  }
+}

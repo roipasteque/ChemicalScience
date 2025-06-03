@@ -1,6 +1,10 @@
 package net.pastek.chemicalscience.client.render.tile;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagEntry;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.pastek.chemicalscience.common.tile.TileRackM;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
@@ -9,6 +13,7 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
+import net.pastek.chemicalscience.registers.CSTags;
 import voltaic.client.render.AbstractTileRenderer;
 import voltaic.prefab.tile.components.IComponentType;
 import voltaic.prefab.tile.components.type.ComponentInventory;
@@ -69,15 +74,24 @@ public class RenderRackM extends AbstractTileRenderer<TileRackM> {
                     matrixStackIn.mulPose(MathUtils.rotVectorQuaternionDeg(90, MathUtils.YP));
                 }
 
+
+
                 matrixStackIn.translate(0.5, 0.76, 0);
                 if (stack.getItem() instanceof BlockItem) {
                     matrixStackIn.scale(0.75f, 0.75f, 0.1f);
-                    matrixStackIn.translate(0, -0.11, 0);
+                    matrixStackIn.translate(0, -0.11f, 0);
                 } else {
                     matrixStackIn.scale(0.35f, 0.35f, 0.35f);
                 }
 
-                Minecraft.getInstance().getItemRenderer().renderStatic(stack, ItemDisplayContext.GROUND, 0xF000F0, combinedOverlayIn, matrixStackIn, bufferIn, tileRack.getLevel(), 0);
+                ItemDisplayContext display = ItemDisplayContext.GROUND;
+                if (stack.getTags().anyMatch(tag -> tag == CSTags.Items.HAZARD_SYMBOL)) {
+                    display = ItemDisplayContext.GUI;
+                    matrixStackIn.translate(0, 0.1675f, 0.18f);
+                    matrixStackIn.scale(0.5f, 0.5f, 0.5f);
+                }
+
+                Minecraft.getInstance().getItemRenderer().renderStatic(stack, display, 0xF000F0, combinedOverlayIn, matrixStackIn, bufferIn, tileRack.getLevel(), 0);
 
                 matrixStackIn.popPose();
             }
