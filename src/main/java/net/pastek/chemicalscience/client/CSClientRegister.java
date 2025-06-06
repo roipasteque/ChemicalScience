@@ -51,10 +51,6 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
         event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);
         event.register(CSMenuTypes.CONTAINER_LAB_STORAGE.get(), ScreenLabStorage::new);
-
-        if(ModList.get().isLoaded(Voltaic.MEKANISM_ID)) {
-            MekanismClientHandler.registerMenus(event);
-        }
     }
 
     @SubscribeEvent
