@@ -78,10 +78,8 @@ public class RenderRackM extends AbstractTileRenderer<TileRackM> {
 
                 matrixStackIn.translate(0.5, 0.76, 0);
                 if (stack.getItem() instanceof BlockItem) {
-                    if (stack.getItem() != Items.REDSTONE) {
                         matrixStackIn.scale(0.75f, 0.75f, 0.1f);
                         matrixStackIn.translate(0, -0.11f, 0);
-                    }
                 } else {
                     matrixStackIn.scale(0.35f, 0.35f, 0.35f);
                 }
