@@ -31,7 +31,6 @@ public class ChemicalScience {
         CSFluids.register(modEventBus);
         CSFluidTypes.register(modEventBus);
         CSGases.register(modEventBus);
-        CSDataComponentTypes.register(modEventBus);
         CSRecipies.register(modEventBus);
         CSArmor.register(modEventBus);
         CSPotions.register(modEventBus);

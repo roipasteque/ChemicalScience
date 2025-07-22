@@ -28,7 +28,7 @@ public class CSScaffoldingOpen extends Block {
     }
 
     @Override
-    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         if(state.getValue(FACING) == Direction.SOUTH) {
             return CSVoxelShapes.SCAFFOLDING_OPEN_SOUTH;
         } else if(state.getValue(FACING) == Direction.WEST) {
@@ -45,7 +45,7 @@ public class CSScaffoldingOpen extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     @Override
-    protected BlockState rotate(BlockState state, Rotation rotation) {
+    public BlockState rotate(BlockState state, Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
 

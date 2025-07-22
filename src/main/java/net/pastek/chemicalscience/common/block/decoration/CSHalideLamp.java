@@ -21,6 +21,7 @@ public class CSHalideLamp extends FaceAttachedHorizontalDirectionalBlock {
     }
 
     public static final MapCodec<CSHalideLamp> CODEC = simpleCodec(CSHalideLamp::new);
+
     @Override
     protected MapCodec<? extends FaceAttachedHorizontalDirectionalBlock> codec() {
         return CODEC;

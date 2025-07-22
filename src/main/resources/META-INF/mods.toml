@@ -12,13 +12,6 @@ logoFile="chemicalscience.png"
 displayURL = "https://github.com/roipasteque/ChemicalScience"
 
 [[dependencies.${mod_id}]]
-modId="neoforge"
-type="required"
-versionRange="${neo_version_range}"
-ordering="NONE"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="minecraft"
 type="required"
 versionRange="${minecraft_version_range}"
@@ -28,7 +21,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="electrodynamics"
 type="required"
-versionRange="[0.10,)"
+versionRange="[0.9,)"
 ordering="NONE"
 side="BOTH"
 

@@ -16,17 +16,9 @@ import net.pastek.chemicalscience.registers.CSTiles;
 import voltaic.prefab.sound.ITickableSound;
 import voltaic.prefab.sound.SoundBarrierMethods;
 import voltaic.prefab.tile.components.IComponentType;
-import voltaic.prefab.tile.components.type.ComponentContainerProvider;
-import voltaic.prefab.tile.components.type.ComponentElectrodynamic;
-import voltaic.prefab.tile.components.type.ComponentFluidHandlerMulti;
-import voltaic.prefab.tile.components.type.ComponentInventory;
-import voltaic.prefab.tile.components.type.ComponentPacketHandler;
-import voltaic.prefab.tile.components.type.ComponentProcessor;
-import voltaic.prefab.tile.components.type.ComponentTickable;
-import voltaic.prefab.tile.components.type.ComponentInventory.InventoryBuilder;
+import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.tile.types.GenericMaterialTile;
 import voltaic.prefab.utilities.BlockEntityUtils;
-import voltaic.prefab.utilities.BlockEntityUtils.MachineDirection;
 
 public class TileCircuitMaker extends GenericMaterialTile implements ITickableSound {
     public static final int MAX_TANK_CAPACITY = 5000;
@@ -36,9 +28,9 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
         super((BlockEntityType) CSTiles.TILE_CIRCUIT_MAKER.get(), worldPosition, blockState);
         this.addComponent(new ComponentPacketHandler(this));
         this.addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
-        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.BACK}).voltage((double)480.0F));
-        this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get()));
-        this.addComponent((new ComponentInventory(this, InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5,MachineDirection.BOTTOM, MachineDirection.LEFT, MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
+        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.BACK}).voltage((double)480.0F));
+        this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get()));
+        this.addComponent((new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(BlockEntityUtils.MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5, BlockEntityUtils.MachineDirection.BOTTOM, BlockEntityUtils.MachineDirection.LEFT, BlockEntityUtils.MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
         this.addComponent((new ComponentProcessor(this)).canProcess((component, procNumber) -> component.consumeBucket().canProcessFluidItem2ItemRecipe(procNumber, (RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get())).process(ComponentProcessor::processFluidItem2ItemRecipe));
         this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this)).createMenu((id, player) -> new ContainerCircuitMaker(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
     }

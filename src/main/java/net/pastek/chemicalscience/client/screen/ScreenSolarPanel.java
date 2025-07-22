@@ -2,8 +2,8 @@ package net.pastek.chemicalscience.client.screen;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;

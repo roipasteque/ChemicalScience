@@ -11,7 +11,7 @@ import voltaic.client.guidebook.utils.pagedata.text.TextWrapperObject;
 
 public class ChapterIntroduction extends Chapter {
 
-    private static final ItemWrapperObject LOGO = new ItemWrapperObject(7, 10, 32, 32, 32, 2.0F, CSBlocks.ELEMENT_MG.asItem());
+    private static final ItemWrapperObject LOGO = new ItemWrapperObject(7, 10, 32, 32, 32, 2.0F, CSBlocks.ELEMENT_MG.get().asItem());
 
     public ChapterIntroduction(Module module) {
         super(module);
