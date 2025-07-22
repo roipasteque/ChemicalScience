@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:ores",
+  "criteria": {
+    "HasOre": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:rawore_pyrolusite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.orepyrolusite.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:ore_deepslate_pyrolusite"
+    },
+    "title": {
+      "color": "aqua",
+      "translate": "advancement.chemicalscience.orepyrolusite.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasOre"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

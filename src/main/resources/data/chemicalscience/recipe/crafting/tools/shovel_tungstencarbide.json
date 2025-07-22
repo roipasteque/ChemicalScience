@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/tungstencarbide"
+    },
+    "L": {
+      "tag": "c:leathers"
+    },
+    "R": {
+      "tag": "c:rods/stainlesssteel"
+    }
+  },
+  "pattern": [
+    " I ",
+    " L ",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:shovel_tungstencarbide"
+  }
+}

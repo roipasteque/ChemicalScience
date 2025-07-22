@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:polymer_dppdtt",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:organicsolarpanel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.organicsolarpanel.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:organicsolarpanel"
+    },
+    "title": {
+      "color": "light_purple",
+      "translate": "advancement.chemicalscience.organicsolarpanel.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

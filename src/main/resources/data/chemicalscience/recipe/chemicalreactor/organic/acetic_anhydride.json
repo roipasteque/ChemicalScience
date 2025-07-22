@@ -1,0 +1,38 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 10,
+      "chance": 0.9,
+      "fluid": "chemicalscience:triethylphosphate"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "tag": "c:acetic_acid"
+    },
+
+    {
+      "amount": 10,
+      "tag": "c:triethyl_phosphate"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 10,
+    "id": "minecraft:water"
+  },
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:crystal_aceticanhydride"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

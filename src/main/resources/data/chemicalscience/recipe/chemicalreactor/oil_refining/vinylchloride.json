@@ -1,0 +1,39 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:ethylene"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "gasoutput": {
+    "amount": 100,
+    "gas": "electrodynamics:hydrogen",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:vinylchloride"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

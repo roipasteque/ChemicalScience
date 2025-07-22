@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "tag": "c:oxides/manganese"
+    }
+  ],
+
+  "result": {
+    "count": 1,
+    "id": "minecraft:glass"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "tag": "c:plates/tantalum"
+    },
+    "O": {
+      "item": "electrodynamics:glassaluminum"
+    }
+  },
+  "pattern": [
+    "T",
+    "O",
+    "T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrodynamics:canisterreinforced"
+  }
+}

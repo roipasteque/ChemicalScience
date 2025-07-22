@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chemicalscience:block/slab_scaffolding_manganese"
+    },
+    "type=double": {
+      "model": "chemicalscience:block/scaffolding_manganese"
+    },
+    "type=top": {
+      "model": "chemicalscience:block/slab_scaffolding_manganese_top"
+    }
+  }
+}

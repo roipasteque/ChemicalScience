@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:oilsourcerock",
+  "criteria": {
+    "HasPolymer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:polymer_paraphenyleneterephthalamide"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.polymer_kevlar.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:polymer_paraphenyleneterephthalamide"
+    },
+    "title": {
+      "color": "green",
+      "translate": "advancement.chemicalscience.polymer_kevlar.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasPolymer"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

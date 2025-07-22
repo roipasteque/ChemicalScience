@@ -1,0 +1,35 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/silica"
+      }
+    },
+
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/aluminum"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:silica_alumina_catalyst"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

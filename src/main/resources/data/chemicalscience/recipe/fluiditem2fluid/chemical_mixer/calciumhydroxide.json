@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_mixer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "minecraft:water"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_calciumoxide"
+      }
+    }
+  ],
+  "output": {
+    "amount": 200,
+    "id": "chemicalscience:calciumhydroxide"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

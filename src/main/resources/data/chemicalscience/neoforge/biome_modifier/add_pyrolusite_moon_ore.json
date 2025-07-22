@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stellaris:moon_biomes",
+  "features": "chemicalscience:pyrolusite_moon_ore_placed",
+  "step": "underground_ores"
+}

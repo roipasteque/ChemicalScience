@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_pyrolusite",
+    "chemicalscience:ore_deepslate_pyrolusite",
+    "chemicalscience:ore_pyrolusite_moon",
+    "chemicalscience:ore_pyrolusite_mars",
+    "chemicalscience:ore_pyrolusite_venus",
+    "chemicalscience:ore_pyrolusite_mercury"
+  ]
+}

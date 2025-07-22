@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_mixer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "electrodynamics:crystalpotassiumchloride"
+      }
+    }
+  ],
+  "output": {
+    "amount": 1000,
+    "id": "chemicalscience:potassiumchloride"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

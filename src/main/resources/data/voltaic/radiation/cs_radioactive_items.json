@@ -1,0 +1,10 @@
+{
+  "#c:dusts/technetium": {
+    "amount": 150.0,
+    "strength": 1.0
+  },
+  "#c:dusts/promethium": {
+    "amount": 4500.0,
+    "strength": 1.0
+  }
+}

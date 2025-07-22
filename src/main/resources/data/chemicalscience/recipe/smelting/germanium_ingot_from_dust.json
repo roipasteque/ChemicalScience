@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "chemicalscience",
+  "ingredient": {
+    "tag": "c:dusts/germanium"
+  },
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:ingot_germanium"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "fluid": "chemicalscience:impurepraseodymiumnitrate"
+    }
+  ],
+  "fluidbi": [
+    {
+      "amount": 15,
+      "chance": 1.0,
+      "fluid": "chemicalscience:purepraseodymiumnitrate"
+    }
+  ],
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "fluidoutput": {
+    "amount": 35,
+    "id": "chemicalscience:impuregadoliniumnitrate"
+  }
+}

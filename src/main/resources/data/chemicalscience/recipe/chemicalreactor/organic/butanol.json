@@ -1,0 +1,44 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:butane"
+    },
+
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":1,
+      "tag": "c:carbonmonoxide",
+      "temp": 293
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:butanol"
+  },
+
+  "gasoutput": {
+    "amount": 200,
+    "gas": "electrodynamics:carbondioxide",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

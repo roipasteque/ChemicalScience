@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:ingots/stainlesssteel"
+    },
+    "N": {
+      "tag": "c:nuggets/manganesealuminum"
+    },
+    "C": {
+      "tag": "c:chests"
+    }
+  },
+  "pattern": [
+    "III",
+    "NCN",
+    "N N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:laboratory_storage"
+  }
+}

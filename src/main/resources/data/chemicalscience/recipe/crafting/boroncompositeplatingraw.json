@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "tag": "c:plates/tungsten"
+    },
+    "B": {
+      "tag": "c:plates/boroncarbide"
+    },
+    "P": {
+      "tag": "c:plastic"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "BBB",
+    "PPP"
+  ],
+  "result": {
+    "count": 2,
+    "id": "chemicalscience:boroncompositeplatingraw"
+  }
+}

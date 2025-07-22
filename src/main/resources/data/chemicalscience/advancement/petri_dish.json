@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:root",
+  "criteria": {
+    "HasItem": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:petri_dish"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.petri_dish.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:petri_dish"
+    },
+    "title": {
+      "color": "gray",
+      "translate": "advancement.chemicalscience.petri_dish.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasItem"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:clostridium"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:petri_dish"
+  },
+
+  "fluidoutput": {
+    "amount": 10,
+    "id": "chemicalscience:clostridium"
+  },
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

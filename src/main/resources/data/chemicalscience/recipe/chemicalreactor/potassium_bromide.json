@@ -1,0 +1,28 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:hydrobromic_acid"
+    }
+  ],
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/potassium"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:crystal_potassiumbromide"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

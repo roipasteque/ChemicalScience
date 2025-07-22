@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chemicalscience:block/slab_asphalt"
+    },
+    "type=double": {
+      "model": "chemicalscience:block/block_asphalt"
+    },
+    "type=top": {
+      "model": "chemicalscience:block/slab_asphalt_top"
+    }
+  }
+}

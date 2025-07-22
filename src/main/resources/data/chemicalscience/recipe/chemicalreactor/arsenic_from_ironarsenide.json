@@ -1,0 +1,43 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:dustiron"
+      }
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/ironarsenide"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_arsenic"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

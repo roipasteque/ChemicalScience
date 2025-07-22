@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "C": {
+      "tag": "c:circuits/basic"
+    },
+    "T": {
+      "tag": "c:nuggets/tungsten"
+    },
+    "R": {
+      "tag": "chemicalscience:metal_halide_lamp_ingredient"
+    },
+    "H": {
+      "tag": "c:dusts/iodine"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
+    },
+    "G": {
+      "item": "minecraft:red_stained_glass"
+    }
+  },
+  "pattern": [
+    "TGT",
+    "RQH",
+    "SCS"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chemicalscience:metalhalidelamp_sr"
+  }
+}

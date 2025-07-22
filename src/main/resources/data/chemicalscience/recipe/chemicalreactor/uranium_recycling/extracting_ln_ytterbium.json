@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 4,
+      "fluid": "chemicalscience:impureytterbiumnitrate"
+    }
+  ],
+  "fluidbi": [
+    {
+      "amount": 2,
+      "chance": 1.0,
+      "fluid": "chemicalscience:pureytterbiumnitrate"
+    }
+  ],
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "fluidoutput": {
+    "amount": 2,
+    "id": "chemicalscience:impureluteciumnitrate"
+  }
+}

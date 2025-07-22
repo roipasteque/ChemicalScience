@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "chemicalscience:asphalt"
+    },
+    "W": {
+      "tag": "c:dyes/white"
+    }
+  },
+  "pattern": [
+    "A A",
+    "AWA",
+    "A A"
+  ],
+  "result": {
+    "count": 6,
+    "id": "chemicalscience:block_marked_white_dot_asphalt"
+  }
+}

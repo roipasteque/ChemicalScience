@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,waterlogged=false": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 90
+    },
+    "facing=north,waterlogged=false": {
+      "model": "chemicalscience:block/ladder_manganese"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "chemicalscience:block/ladder_manganese"
+    },
+    "facing=south,waterlogged=false": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 270
+    },
+    "facing=west,waterlogged=true": {
+      "model": "chemicalscience:block/ladder_manganese",
+      "y": 270
+    }
+  }
+}

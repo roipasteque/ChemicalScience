@@ -1,0 +1,56 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.25,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_bismuth"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_ironarsenide"
+      }
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:raw_materials/copper"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 2,
+    "id": "chemicalscience:impuredust_zinc"
+  },
+
+  "fluidoutput": {
+    "amount": 600,
+    "id": "electrodynamics:fluidsulfatecopper"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

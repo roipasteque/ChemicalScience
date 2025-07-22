@@ -1,0 +1,44 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_dimethylurea"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/sodiumcarbonate"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:malonic_acid"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:bromomethane",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_caffeine"
+  },
+
+
+  "ticks": 800,
+  "usagepertick": 200.0
+}

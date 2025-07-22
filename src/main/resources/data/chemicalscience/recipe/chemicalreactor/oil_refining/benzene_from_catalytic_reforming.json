@@ -1,0 +1,51 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 10,
+      "chance": 0.3,
+      "fluid": "chemicalscience:toluene"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_platinumchloride"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:diesel"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 200,
+      "pressure":16,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_platinumchloride"
+  },
+
+  "fluidoutput": {
+    "amount": 20,
+    "id": "chemicalscience:benzene"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 500.0
+}

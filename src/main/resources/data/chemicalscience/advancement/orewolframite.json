@@ -1,0 +1,36 @@
+{
+  "parent": "chemicalscience:ores",
+  "criteria": {
+    "HasOre": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chemicalscience:rawore_wolframite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.chemicalscience.orewolframite.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chemicalscience:ore_deepslate_wolframite"
+    },
+    "title": {
+      "color": "dark_blue",
+      "translate": "advancement.chemicalscience.orewolframite.title"
+    }
+  },
+  "requirements": [
+    [
+      "HasOre"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

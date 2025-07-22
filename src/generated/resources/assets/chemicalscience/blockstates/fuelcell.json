@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/fuelcell"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/fuelcell",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/fuelcell",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/fuelcell",
+      "y": 180
+    }
+  }
+}

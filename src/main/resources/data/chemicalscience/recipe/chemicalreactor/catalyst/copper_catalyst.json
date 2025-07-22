@@ -1,0 +1,39 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_urea"
+      }
+    },
+
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/aluminum"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    },
+    {
+      "amount": 100,
+      "tag": "c:copper_nitrate"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:copper_aluminate_catalyst"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

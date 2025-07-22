@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [{
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+  }],
+
+  "type": "create:splashing",
+  "group": "chemicalscience",
+  "ingredients": [
+    {
+      "item": "chemicalscience:ceramicpaste"
+    }
+  ],
+  "results": [
+    {
+      "id": "electrodynamics:ceramicwet"
+    }
+  ]
+}

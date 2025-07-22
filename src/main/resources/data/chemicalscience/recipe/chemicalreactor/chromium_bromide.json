@@ -1,0 +1,38 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:hydrobromic_acid"
+    },
+    {
+      "amount": 500,
+      "tag": "minecraft:water"
+    }
+  ],
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/chromium"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_chromiumbromide"
+  },
+
+  "gasoutput": {
+    "amount": 100,
+    "gas": "electrodynamics:hydrogen",
+    "pressure": 1,
+    "temp": 293
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

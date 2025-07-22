@@ -1,0 +1,25 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:butanol"
+    },
+
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:dibutylphosphate"
+  },
+
+  "ticks": 200,
+  "usagepertick": 600.0
+}

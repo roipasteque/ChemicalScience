@@ -1,0 +1,35 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:ammonia"
+    },
+
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:carbondioxide",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_ammoniumcarbonate"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

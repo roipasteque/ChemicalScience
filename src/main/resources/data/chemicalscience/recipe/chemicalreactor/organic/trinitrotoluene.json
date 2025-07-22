@@ -1,0 +1,27 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:nitric_acid"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:toluene"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:trinitrotoluene"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

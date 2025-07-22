@@ -1,0 +1,34 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:clostridium"
+    },
+
+    {
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:butanol"
+  },
+
+
+  "ticks": 2000,
+  "usagepertick": 10.0
+}

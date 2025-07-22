@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [{
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+  }],
+
+  "type": "create:deploying",
+  "group": "chemicalscience",
+  "ingredients": [
+    {
+      "item": "electrodynamics:wirecopper"
+    },
+    {
+      "item": "electrodynamics:insulation"
+    }
+  ],
+  "results": [
+    {
+      "id": "electrodynamics:wireinsulatedcopperblack"
+    }
+  ]
+}

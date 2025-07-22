@@ -1,0 +1,28 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:chlorobenzene"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:nitric_acid"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_nitrochlorobenzene"
+  },
+
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

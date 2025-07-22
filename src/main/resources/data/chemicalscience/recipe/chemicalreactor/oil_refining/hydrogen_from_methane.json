@@ -1,0 +1,56 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "gasbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "gas": "electrodynamics:carbondioxide",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_ironoxide"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:methane",
+      "temp": 293
+    },
+
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:steam",
+      "temp": 373
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_ironoxide"
+  },
+
+  "gasoutput": {
+    "amount": 400,
+    "gas": "electrodynamics:hydrogen",
+    "pressure": 1,
+    "temp": 293
+  },
+
+
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

@@ -1,0 +1,43 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:palladium_carbon_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:maleic_acid"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 50,
+      "pressure":16,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:palladium_carbon_catalyst"
+  },
+
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:succinicacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 10.0
+}

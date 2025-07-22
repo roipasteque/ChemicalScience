@@ -1,0 +1,6 @@
+{
+  "item": "ballistix:shrapnel",
+  "block": "ballistix:shrapnel",
+  "entity": "ballistix:explosive",
+  "entity_nbt": "{Fuse: 100s, type:'ballistix:shrapnel'}"
+}

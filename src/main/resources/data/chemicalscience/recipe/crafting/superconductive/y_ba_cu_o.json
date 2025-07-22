@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:dusts/barium"
+    },
+    "C": {
+      "tag": "c:dusts/copper"
+    },
+    "Y": {
+      "tag": "c:dusts/yttrium"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "BYB",
+    "CBC"
+  ],
+  "result": {
+    "count": 9,
+    "id": "electrodynamics:dustsuperconductive"
+  }
+}

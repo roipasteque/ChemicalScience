@@ -1,0 +1,42 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "electrodynamics:fluidsulfuricacid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/disulfur"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "minecraft:water"
+    },
+
+    {
+      "amount": 100,
+      "tag": "c:bromine"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "chemicalscience:hydrobromicacid"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

@@ -1,0 +1,28 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:boric_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/magnesium"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:impuredust_boron"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

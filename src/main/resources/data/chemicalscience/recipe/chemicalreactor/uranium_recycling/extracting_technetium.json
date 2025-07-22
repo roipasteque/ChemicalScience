@@ -1,0 +1,63 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_technetium"
+      }
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "electrodynamics:dusttin"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:sulfonated_polystyrene_catalyst"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:technetiumsolution"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:sulfonated_polystyrene_catalyst"
+  },
+
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

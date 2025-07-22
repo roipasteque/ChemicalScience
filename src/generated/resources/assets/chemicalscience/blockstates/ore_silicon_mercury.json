@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chemicalscience:block/ore_silicon_mercury"
+    }
+  }
+}

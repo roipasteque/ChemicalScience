@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "tag": "c:dusts/iron"
+    },
+    "F": {
+      "tag": "c:raw_materials/fluorite"
+    },
+    "S": {
+      "tag": "c:dusts/strontium"
+    },
+    "M": {
+      "tag": "c:dusts/samarium"
+    },
+    "A": {
+      "tag": "c:dusts/arsenic"
+    }
+  },
+  "pattern": [
+    "EAE",
+    "SFM",
+    "EAE"
+  ],
+  "result": {
+    "count": 6,
+    "id": "electrodynamics:dustsuperconductive"
+  }
+}

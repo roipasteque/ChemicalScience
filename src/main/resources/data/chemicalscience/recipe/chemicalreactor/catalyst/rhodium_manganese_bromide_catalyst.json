@@ -1,0 +1,35 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/rhodium"
+      }
+    },
+
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/manganese"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:bromine"
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:rhodium_manganese_bromine_catalyst"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

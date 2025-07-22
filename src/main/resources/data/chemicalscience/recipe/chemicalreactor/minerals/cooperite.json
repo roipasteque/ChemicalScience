@@ -1,0 +1,60 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_rhodium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_palladium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:nitric_acid"
+    },
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:raw_materials/cooperite"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 12,
+    "id": "chemicalscience:impuredust_platinum"
+  },
+
+  "gasoutput": {
+    "amount": 20,
+    "gas": "electrodynamics:sulfurdioxide",
+    "pressure": 1,
+    "temp": 293
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}

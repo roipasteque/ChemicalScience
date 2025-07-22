@@ -1,0 +1,32 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/sulfur"
+      }
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure":1,
+      "tag": "c:butane",
+      "temp": 293
+    }
+  ],
+
+
+  "fluidoutput": {
+    "amount": 40,
+    "id": "chemicalscience:thiophene"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

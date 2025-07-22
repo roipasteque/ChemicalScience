@@ -1,0 +1,7 @@
+{
+  "parent": "chemicalscience:block/base/metalhalidelamp_base",
+  "textures": {
+    "0": "chemicalscience:block/metal_building_blocks/metalhalidelamp_manganese",
+    "1": "chemicalscience:block/metal_building_blocks/metalhalidelampcolor/red"
+  }
+}

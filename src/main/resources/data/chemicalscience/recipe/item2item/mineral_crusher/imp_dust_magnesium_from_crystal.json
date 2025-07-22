@@ -1,0 +1,27 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:oxidetrisulfur"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:crystal_magnesium"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:impuredust_magnesium"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

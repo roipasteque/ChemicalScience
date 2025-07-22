@@ -1,0 +1,50 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cobalt"
+      }
+    },
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_manganeseoxide"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:ores/magnesium"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 4,
+    "id": "chemicalscience:crystal_magnesiumchloride"
+  },
+  "ticks": 200,
+  "usagepertick": 200.0
+}
