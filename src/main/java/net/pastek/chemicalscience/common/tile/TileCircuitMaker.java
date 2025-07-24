@@ -4,6 +4,7 @@ import electrodynamics.registers.ElectrodynamicsSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.Container;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -64,5 +65,9 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
 
     public int getComparatorSignal() {
         return ((ComponentProcessor)this.getComponent(IComponentType.Processor)).isActive(0) ? 15 : 0;
+    }
+
+    public Component getName() {
+        return null;
     }
 }

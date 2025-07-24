@@ -12,7 +12,7 @@ import net.pastek.chemicalscience.common.inventory.container.ContainerRackS;
 
 public class ScreenRackS extends AbstractContainerScreen<ContainerRackS> {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/gui/racks_gui.png");
+            new ResourceLocation(ChemicalScience.MOD_ID, "textures/screen/gui/racks_gui.png");
 
     public ScreenRackS(ContainerRackS menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

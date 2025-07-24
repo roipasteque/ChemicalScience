@@ -186,11 +186,6 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSItems.SULFONATED_POLYSTYRENE_CATALYST.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/catalyst/sulfonated_polystyrene_catalyst");
         withExistingParent(CSItems.RHODIUM_MANGANESE_BROMINE_CATALYST.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/catalyst/rhodium_manganese_bromine_catalyst");
 
-
-        // Armor
-        withExistingParent(CSItems.ORGANICNIGHTVISIONGOGGLES.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/armor/organicnightvisiongoggles");
-        withExistingParent(CSItems.BULLETPROOF_VEST.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/armor/bulletproofvest");
-
         // Tools
         withExistingParent(CSItems.TUNGSTENCARBIDE_SWORD.getId().toString(), mcLoc("item/handheld")).texture("layer0", "item/tools/sword_tungstencarbide");
         withExistingParent(CSItems.TUNGSTENCARBIDE_PICKAXE.getId().toString(), mcLoc("item/handheld")).texture("layer0", "item/tools/pickaxe_tungstencarbide");

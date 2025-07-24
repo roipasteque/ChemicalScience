@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/manganesealuminum"
+    },
+    "N": {
+      "tag": "forge:nuggets/manganesealuminum"
+    }
+  },
+  "pattern": [
+    "III",
+    " N ",
+    "N N"
+  ],
+  "result": {
+    "count": 8,
+    "item": "chemicalscience:scaffolding_manganese"
+  }
+}

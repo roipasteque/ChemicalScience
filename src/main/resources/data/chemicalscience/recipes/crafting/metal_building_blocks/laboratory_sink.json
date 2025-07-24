@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/stainlesssteel"
+    },
+    "N": {
+      "tag": "forge:nuggets/manganesealuminum"
+    },
+    "C": {
+      "item": "electrodynamics:pipesteel"
+    }
+  },
+  "pattern": [
+    "III",
+    "NCN",
+    "N N"
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:laboratory_sink"
+  }
+}

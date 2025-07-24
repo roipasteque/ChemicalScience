@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "forge:dusts/silica"
+    },
+    "L": {
+      "tag": "forge:dusts/lead"
+    },
+    "C": {
+      "tag": "forge:oxides/cerium"
+    },
+    "B": {
+      "tag": "forge:dusts/boron"
+    },
+    "P": {
+      "tag": "forge:dusts/potassium"
+    }
+
+  },
+  "pattern": [
+    "SLS",
+    "CBP",
+    "SLS"
+  ],
+  "result": {
+    "count": 4,
+    "item": "chemicalscience:radiationshielding_glass_dust"
+  }
+}

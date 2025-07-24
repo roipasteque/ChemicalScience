@@ -1,12 +1,12 @@
 {
   "values": [
-    "#c:dusts/scandium",
-    "#c:dusts/yttrium",
-    "#c:dusts/dysprosium",
-    "#c:dusts/holmium",
-    "#c:dusts/thulium",
-    "#c:dusts/praseodymium",
-    "#c:dusts/lanthanum",
-    "#c:oxides/cerium"
+    "#forge:dusts/scandium",
+    "#forge:dusts/yttrium",
+    "#forge:dusts/dysprosium",
+    "#forge:dusts/holmium",
+    "#forge:dusts/thulium",
+    "#forge:dusts/praseodymium",
+    "#forge:dusts/lanthanum",
+    "#forge:oxides/cerium"
   ]
 }

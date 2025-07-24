@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/tungstencarbide"
+    },
+    "L": {
+      "tag": "forge:leathers"
+    },
+    "R": {
+      "tag": "forge:rods/stainlesssteel"
+    }
+  },
+  "pattern": [
+    "II ",
+    "IL ",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:axe_tungstencarbide"
+  }
+}

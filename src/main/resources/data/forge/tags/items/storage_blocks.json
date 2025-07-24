@@ -1,0 +1,9 @@
+{
+    "values": [
+      "#forge:storage_blocks/magnesium",
+      "#forge:storage_blocks/silicon",
+      "#forge:storage_blocks/manganese",
+      "#forge:storage_blocks/tungsten",
+      "#forge:storage_blocks/platinum"
+    ]
+}

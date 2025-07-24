@@ -1,6 +1,5 @@
 package net.pastek.chemicalscience.common.block.decoration;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
@@ -18,13 +17,6 @@ public class CSHalideLamp extends FaceAttachedHorizontalDirectionalBlock {
         registerDefaultState(stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(FACE, AttachFace.WALL));
-    }
-
-    public static final MapCodec<CSHalideLamp> CODEC = simpleCodec(CSHalideLamp::new);
-
-    @Override
-    protected MapCodec<? extends FaceAttachedHorizontalDirectionalBlock> codec() {
-        return CODEC;
     }
 
     public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 14, 16, 16, 16);

@@ -34,10 +34,10 @@ public class ChapterGeneralChemistry extends Chapter {
     @Override
     public void addData() {
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.generalchemistry.l1")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 75, 150, 75, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/generalchemistry_g1.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 75, 150, 75, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/generalchemistry_g1.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.generalchemistry.l2")).setIndentions(1).setSeparateStart());
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.generalchemistry.l3")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 86, 150, 86, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/generalchemistry_g2.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 86, 150, 86, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/generalchemistry_g2.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.generalchemistry.l4")).setIndentions(1).setSeparateStart());
     }
 

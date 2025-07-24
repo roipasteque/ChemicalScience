@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "forge:circuits/advanced"
+    },
+    "G": {
+      "item": "minecraft:charcoal"
+    },
+    "P": {
+      "tag": "forge:plates/stainlesssteel"
+    },
+    "W": {
+      "item": "electrodynamics:wiretin"
+    }
+  },
+  "pattern": [
+    " G ",
+    "WPW",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:chromotographycardcarbonmonoxide"
+  }
+}

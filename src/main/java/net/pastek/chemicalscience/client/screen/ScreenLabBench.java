@@ -12,7 +12,7 @@ import net.pastek.chemicalscience.common.inventory.container.ContainerLabBench;
 
 public class ScreenLabBench extends AbstractContainerScreen<ContainerLabBench> {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/gui/labbench_gui.png");
+            new ResourceLocation(ChemicalScience.MOD_ID, "textures/screen/gui/labbench_gui.png");
 
     public ScreenLabBench(ContainerLabBench menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

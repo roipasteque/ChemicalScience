@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:chests"
+    },
+    {
+      "item": "electrodynamics:steelscaffold"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:rack_steel"
+  }
+}

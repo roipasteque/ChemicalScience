@@ -8,11 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.item.food.ItemSoda;
 import net.pastek.chemicalscience.common.item.gear.CSToolTiers;
-import net.pastek.chemicalscience.common.item.gear.armor.types.ItemBulletProofVest;
-import net.pastek.chemicalscience.common.item.gear.armor.types.ItemOrganicNightVisionGoggles;
 import voltaic.common.item.ItemVoltaic;
-import voltaic.prefab.item.ElectricItemProperties;
-import voltaic.prefab.utilities.object.TransferPack;
 
 
 public class CSItems { public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ChemicalScience.MOD_ID);
@@ -212,15 +208,11 @@ public class CSItems { public static final DeferredRegister<Item> ITEMS = Deferr
 
     /** Equipment */
     // Tools
-    public static final RegistryObject<Item> TUNGSTENCARBIDE_SWORD = ITEMS.register("sword_tungstencarbide", () -> new SwordItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 4.0F, -2.6F)).fireResistant()));
-    public static final RegistryObject<Item> TUNGSTENCARBIDE_PICKAXE = ITEMS.register("pickaxe_tungstencarbide", () -> new PickaxeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 2.0F, -3.0F)).fireResistant()));
-    public static final RegistryObject<Item> TUNGSTENCARBIDE_AXE = ITEMS.register("axe_tungstencarbide", () -> new AxeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 6.0F, -3.2F)).fireResistant()));
-    public static final RegistryObject<Item> TUNGSTENCARBIDE_SHOVEL = ITEMS.register("shovel_tungstencarbide", () -> new ShovelItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 2.5F, -3.2F)).fireResistant()));
-    public static final RegistryObject<Item> TUNGSTENCARBIDE_HOE = ITEMS.register("hoe_tungstencarbide", () -> new HoeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, -2.0F, -0.2F)).fireResistant()));
-    // Armor
-    public static final RegistryObject<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
-    public static final RegistryObject<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));
-
+    public static final RegistryObject<Item> TUNGSTENCARBIDE_SWORD = ITEMS.register("sword_tungstencarbide", () -> new SwordItem(CSToolTiers.TUNGSTENCARBIDE, 4, -2.6F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> TUNGSTENCARBIDE_PICKAXE = ITEMS.register("pickaxe_tungstencarbide", () -> new PickaxeItem(CSToolTiers.TUNGSTENCARBIDE, 2, -3.0F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> TUNGSTENCARBIDE_AXE = ITEMS.register("axe_tungstencarbide", () -> new AxeItem(CSToolTiers.TUNGSTENCARBIDE, 6, -3.2F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> TUNGSTENCARBIDE_SHOVEL = ITEMS.register("shovel_tungstencarbide", () -> new ShovelItem(CSToolTiers.TUNGSTENCARBIDE, 2, -3.2F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> TUNGSTENCARBIDE_HOE = ITEMS.register("hoe_tungstencarbide", () -> new HoeItem(CSToolTiers.TUNGSTENCARBIDE, -2, -0.2F, new Item.Properties().fireResistant()));
 
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}}

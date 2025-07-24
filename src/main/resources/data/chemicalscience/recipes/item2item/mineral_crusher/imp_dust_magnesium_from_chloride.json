@@ -1,0 +1,17 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "group": "chemicalscience",
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "item": "chemicalscience:crystal_magnesiumchloride"
+    },
+    "count": 1
+  },
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:impuredust_magnesium"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

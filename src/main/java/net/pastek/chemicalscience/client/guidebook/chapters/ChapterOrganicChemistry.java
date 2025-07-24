@@ -36,18 +36,18 @@ public class ChapterOrganicChemistry extends Chapter {
     public void addData() {
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l1")).setIndentions(1).setSeparateStart());
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l2")).setIndentions(1).setNewPage());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g1.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g1.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l3")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g2.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g2.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l4")).setIndentions(1).setSeparateStart());
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l5")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 75, 150, 75, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g3.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 75, 150, 75, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g3.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l6")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g4.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 65, 150, 65, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g4.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l7")).setIndentions(1).setSeparateStart().setNewPage());
-        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 40, 150, 40, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g5.png")));
+        pageData.add(new ImageWrapperObject(0, 0, 0, 0, 150, 40, 150, 40, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g5.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l8")).setIndentions(1).setSeparateStart());
-        pageData.add(new ImageWrapperObject(10, 0, 0, 0, 100, 75, 100, 75, ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g6.png")));
+        pageData.add(new ImageWrapperObject(10, 0, 0, 0, 100, 75, 100, 75, new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/organicchemistry_g6.png")));
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.organicchemistry.l9")).setIndentions(1).setSeparateStart().setNewPage());
     }
 

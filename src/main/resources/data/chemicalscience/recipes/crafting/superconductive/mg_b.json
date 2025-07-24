@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "forge:dusts/boron"
+    },
+    "M": {
+      "tag": "forge:dusts/magnesium"
+    }
+  },
+  "pattern": [
+    "BMB"
+  ],
+  "result": {
+    "count": 1,
+    "item": "electrodynamics:dustsuperconductive"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "itembi": [
+    {
+      "chance": 0.40,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_ruthenium"
+      }
+    },
+    {
+      "chance": 0.20,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_rhodium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_palladium"
+      }
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:fuel_rods/spent"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "forge:nitric_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:impureuraniumsolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

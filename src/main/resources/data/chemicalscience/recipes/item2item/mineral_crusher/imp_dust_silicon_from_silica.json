@@ -1,0 +1,17 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "group": "chemicalscience",
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "tag": "forge:dusts/silica"
+    },
+    "count": 1
+  },
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:impuredust_silicon"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:fissionwastesolution"
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:impureuraniumsolution"
+    },
+    {
+      "amount": 200,
+      "tag": "forge:tributylphosphate"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 1200,
+    "id": "chemicalscience:organicuraniumsolution"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

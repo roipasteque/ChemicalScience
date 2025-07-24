@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "forge:glass_panes"
+    },
+    "R": {
+      "tag": "forge:ingots/galliumarsenide"
+    },
+    "A": {
+      "tag": "forge:plates/aluminum"
+    },
+    "I": {
+      "tag": "forge:dusts/indium"
+    },
+    "E": {
+      "tag": "forge:ingots/germanium"
+    },
+    "W": {
+      "item": "electrodynamics:wirecopper"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "EIR",
+    "AWA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "electrodynamics:solarpanelplate"
+  }
+}

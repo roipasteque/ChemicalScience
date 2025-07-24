@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "electrodynamics:circuitadvanced"
+    },
+    "I": {
+      "tag": "forge:plates/stainlesssteel"
+    },
+    "S": {
+      "tag": "forge:ingots/silver"
+    },
+    "A": {
+      "tag": "forge:ingots/gold"
+    },
+    "P": {
+      "tag": "forge:pellets/plutonium"
+    },
+    "G": {
+      "tag": "forge:dusts/gallium"
+    },
+    "T": {
+      "item": "ballistix:thermobaric"
+    }
+  },
+  "pattern": [
+    "ICI",
+    "SPA",
+    "TGT"
+  ],
+  "result": {
+    "count": 1,
+    "item": "ballistix:nuclear"
+  }
+}

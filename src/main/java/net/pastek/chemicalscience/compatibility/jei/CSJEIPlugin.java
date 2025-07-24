@@ -34,7 +34,7 @@ import voltaic.registers.VoltaicGases;
 @JeiPlugin
 public class CSJEIPlugin implements IModPlugin {
 
-    public static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "jei");
+    public static final ResourceLocation ID = new ResourceLocation(ChemicalScience.MOD_ID, "jei");
 
     @Override
     public @NotNull ResourceLocation getPluginUid() {
@@ -49,7 +49,7 @@ public class CSJEIPlugin implements IModPlugin {
         Minecraft mc = Minecraft.getInstance();
         ClientLevel world = (ClientLevel) Objects.requireNonNull(mc.level);
         RecipeManager recipeManager = world.getRecipeManager();
-        registration.addRecipes(CircuitMakerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CIRCUIT_MAKER_TYPE.get()).stream().map((val) -> (CircuitMakerRecipe)val.value()).toList());
+        registration.addRecipes(CircuitMakerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CIRCUIT_MAKER_TYPE.get()));
     }
 
     public void registerCategories(IRecipeCategoryRegistration registration) {

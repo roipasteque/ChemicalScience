@@ -13,7 +13,6 @@ import net.pastek.chemicalscience.client.CSClientRegister;
 import net.pastek.chemicalscience.registers.*;
 import net.pastek.chemicalscience.registers.fluids.CSFluidTypes;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
-
 import net.pastek.chemicalscience.registers.gases.CSGases;
 
 @Mod(ChemicalScience.MOD_ID)
@@ -32,7 +31,6 @@ public class ChemicalScience {
         CSFluidTypes.register(modEventBus);
         CSGases.register(modEventBus);
         CSRecipies.register(modEventBus);
-        CSArmor.register(modEventBus);
         CSPotions.register(modEventBus);
     }
 
@@ -53,6 +51,6 @@ public class ChemicalScience {
     }
 
     public static ResourceLocation rl(String path) {
-        return ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, path);
+        return new ResourceLocation(ChemicalScience.MOD_ID, path);
     }
 }

@@ -45,175 +45,175 @@ public class ChapterMolecules extends Chapter {
                 CSTextUtils.guidebook("chapter.molecules.ammoniumcarbonate"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_AMMONIUMCARBONATE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ammoniumcarbonate.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ammoniumcarbonate.png")));
 
         //Ammonium Diuranate
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_AMMONIUMDIURANATE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_AMMONIUMDIURANATE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.ammoniumdiuranate"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_AMMONIUMDIURANATE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ammoniumdiuranate.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ammoniumdiuranate.png")));
 
         //Caffeine
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CAFFEINE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CAFFEINE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.caffeine"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CAFFEINE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/caffeine.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/caffeine.png")));
 
         //Calcium Oxide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CALCIUMOXIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CALCIUMOXIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.calciumoxide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CALCIUMOXIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/calciumoxide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/calciumoxide.png")));
 
         //Cerium Oxide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CERIUM.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CERIUM.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.ceriumoxide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CERIUM.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ceriumoxide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ceriumoxide.png")));
 
         //Chromium Bromide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_CHROMIUM_BROMIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_CHROMIUM_BROMIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.chromiumbromide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_CHROMIUM_BROMIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/chromiumbromide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/chromiumbromide.png")));
 
         //Dimethyl Urea
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_DIMETHYLUREA.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_DIMETHYLUREA.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.dimethylurea"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_DIMETHYLUREA.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dimethylurea.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dimethylurea.png")));
 
         //DPP
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DPP_POLYMER.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DPP_POLYMER.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.dpp"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DPP_POLYMER.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dpp.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dpp.png")));
 
         //DTT
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DTT_POLYMER.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DTT_POLYMER.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.dtt"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DTT_POLYMER.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dtt.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dtt.png")));
 
         //DPP-DTT
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DPPDTT_POLYMER.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DPPDTT_POLYMER.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.dppdtt"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DPPDTT_POLYMER.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dppdtt.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/dppdtt.png")));
 
         //Iron Arsenide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_IRONARSENIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_IRONARSENIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.ironarsenide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_IRONARSENIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ironarsenide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ironarsenide.png")));
 
         //Iron Oxide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_IRONOXIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_IRONOXIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.ironoxide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_IRONOXIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ironoxide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/ironoxide.png")));
 
         //Magnesium Sulfate
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.CRYSTAL_MAGNESIUM.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.CRYSTAL_MAGNESIUM.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.magnesiumsulfate"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.CRYSTAL_MAGNESIUM.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/magnesiumsulfate.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/magnesiumsulfate.png")));
 
         //Nitrochlorobenzene
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_NITROCHLOROBENZENE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_NITROCHLOROBENZENE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.nitrochlorobenzene"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_NITROCHLOROBENZENE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/nitrochlorobenzene.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/nitrochlorobenzene.png")));
 
         //Palladium Chloride
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_PALLADIUM_CHLORIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_PALLADIUM_CHLORIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.palladiumchloride"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_PALLADIUM_CHLORIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/palladiumchloride.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/palladiumchloride.png")));
 
         //Platinum Chloride
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_PLATINUM_CHLORIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_PLATINUM_CHLORIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.platinumchloride"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_PLATINUM_CHLORIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/platinumchloride.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/platinumchloride.png")));
 
         //Paraphenylene diamine
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_PARAPHENYLENEDIAMINE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_PARAPHENYLENEDIAMINE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.paraphenylenediamine"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_PARAPHENYLENEDIAMINE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/paraphenylenediamine.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/paraphenylenediamine.png")));
 
         //Terephthaloylchloride
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_TEREPHTHALOYLCHLORIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_TEREPHTHALOYLCHLORIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.terephthaloylchloride"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_TEREPHTHALOYLCHLORIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/terephthaloylchloride.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/terephthaloylchloride.png")));
 
         //Paraphenyleneterephthalamide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.PARAPHENYLENETEREPHTHALAMIDE_POLYMER.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.PARAPHENYLENETEREPHTHALAMIDE_POLYMER.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.paraphenyleneterephthalamide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.PARAPHENYLENETEREPHTHALAMIDE_POLYMER.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/paraphenyleneterephthalamide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/paraphenyleneterephthalamide.png")));
 
         //Propylene
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.POLYPROPYLENE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.POLYPROPYLENE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.propylene"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.POLYPROPYLENE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/propylene.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/propylene.png")));
 
         //Styrene
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.POLYSTYRENE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.POLYSTYRENE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.styrene"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.POLYSTYRENE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/styrene.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/styrene.png")));
 
         //Succinimide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_SUCCINIMIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_SUCCINIMIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.succinimide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_SUCCINIMIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/succinimide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/succinimide.png")));
 
         //Nbromosuccinimide
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_NBROMOSUCCINIMIDE.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_NBROMOSUCCINIMIDE.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.nbromosuccinimide"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_NBROMOSUCCINIMIDE.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/nbromosuccinimide.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/nbromosuccinimide.png")));
 
         //Urea
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.DUST_UREA.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.DUST_UREA.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.urea"))).onTooltip(new OnTooltip() {
         @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.DUST_UREA.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/urea.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/urea.png")));
 
         //Vinyl Chloride
         pageData.add(new ItemWrapperObject(15, 10, 32, 32, 50, 2.0F, CSItems.PVC.get(), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 10, CSItems.PVC.get().getDescription().copy().withStyle(ChatFormatting.UNDERLINE).withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.DARK_BLUE)), new AbstractGraphicWrapper.GraphicTextDescriptor(40, 20,
                 CSTextUtils.guidebook("chapter.molecules.vinylchloride"))).onTooltip(new OnTooltip() {
             @Override public void onTooltip(GuiGraphics graphics, int xAxis, int yAxis, ScreenGuidebook screen) {if (JeiBuffer.isJeiInstalled()) {graphics.renderTooltip(screen.getFontRenderer(), ElectroTextUtils.tooltip("guidebookjeiuse").withStyle(ChatFormatting.GRAY), xAxis, yAxis);}}}).onKeyPress(new OnKeyPress() {@Override public void onKeyPress(int keyCode, int scanCode, int modifiers, int x, int y, int xAxis, int yAxis, ScreenGuidebook screen) {}@Override public Object getJeiLookup() {return new ItemStack(CSItems.PVC.get());}}));
         pageData.add(new ImageWrapperObject(20, 0, 0, 0, 100, 75, 100, 75,
-                ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/vinylchloride.png")));
+                new ResourceLocation(ChemicalScience.MOD_ID,"textures/screen/guidebook/molecules/vinylchloride.png")));
 
     }
 }

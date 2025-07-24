@@ -1,0 +1,27 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "group": "chemicalscience",
+  "itembi": {
+    "0": {
+      "chance": 0.9,
+      "item": {
+        "Count": 1,
+        "id": "chemicalscience:impuredust_beryllium"
+      }
+    },
+    "count": 1
+  },
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "tag": "forge:ores/emerald"
+    },
+    "count": 1
+  },
+  "output": {
+    "count": 3,
+    "item": "minecraft:emerald"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

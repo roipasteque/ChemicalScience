@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "tag": "forge:ingots/manganesealuminum"
+    },
+    "C": {
+      "tag": "forge:circuits/basic"
+    },
+    "T": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "R": {
+      "tag": "chemicalscience:metal_halide_lamp_ingredient"
+    },
+    "H": {
+      "tag": "forge:dusts/iodine"
+    },
+    "Q": {
+      "tag": "forge:gems/quartz"
+    },
+    "G": {
+      "item": "minecraft:red_stained_glass"
+    }
+  },
+  "pattern": [
+    "TGT",
+    "RQH",
+    "MCM"
+  ],
+  "result": {
+    "count": 4,
+    "item": "chemicalscience:metalhalidelamp_mr"
+  }
+}

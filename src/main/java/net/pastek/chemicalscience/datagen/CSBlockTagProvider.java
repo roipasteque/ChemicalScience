@@ -95,8 +95,7 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.TANTALUM_SHIELDING.get(),
 
                         //Machines
-                        CSBlocks.ORGANIC_SOLAR_PANEL.get(),
-                        CSBlocks.FUEL_CELL.get()
+                        CSBlocks.ORGANIC_SOLAR_PANEL.get()
 
                 );
         tag(BlockTags.MINEABLE_WITH_HOE)

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "forge:dusts/silica"
+    },
+    "I": {
+      "tag": "forge:dusts/bismuth"
+    },
+    "C": {
+      "tag": "forge:oxides/cerium"
+    },
+    "B": {
+      "tag": "forge:dusts/boron"
+    },
+    "F": {
+      "tag": "forge:oxides/iron"
+    }
+
+  },
+  "pattern": [
+    "SIS",
+    "CBF",
+    "SIS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "chemicalscience:radiationshielding_advancedglass_dust"
+  }
+}

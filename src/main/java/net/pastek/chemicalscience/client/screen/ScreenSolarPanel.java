@@ -21,7 +21,6 @@ public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> 
 
     public ScreenSolarPanel(ContainerOrganicSolarPanel container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
-        addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
         addComponent(new ScreenComponentMultiLabel(0, 0, graphics -> {
             TileOrganicSolarPanel panel = menu.getSafeHost();
             if (panel == null) {

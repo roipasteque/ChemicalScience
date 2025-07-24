@@ -60,7 +60,7 @@ public class CircuitMakerRecipeCategory extends FluidItem2ItemRecipeCategory<Cir
         IN_GAUGE = new FluidGaugeObject(10, 5);
         POWER_LABEL = new PowerLabelWrapperElectroRecipe(2, 55, 480);
         TIME_LABEL = new TimeLabelWrapperElectroRecipe(130, 55);
-        INPUT_MACHINE = new ItemStack((ItemLike) CSBlocks.CIRCUIT_MAKER);
+        INPUT_MACHINE = new ItemStack(CSBlocks.CIRCUIT_MAKER.get());
         RECIPE_TYPE = RecipeType.create("chemicalscience", "circuit_maker_recipe", CircuitMakerRecipe.class);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/lanthanide"
+    },
+    {
+      "tag": "forge:dusts/ironarsenide"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "electrodynamics:dustsuperconductive"
+  }
+}

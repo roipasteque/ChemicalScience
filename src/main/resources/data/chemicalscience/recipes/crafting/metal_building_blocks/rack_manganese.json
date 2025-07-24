@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:chests"
+    },
+    {
+      "item": "chemicalscience:scaffolding_manganese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:rack_manganese"
+  }
+}

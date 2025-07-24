@@ -1,0 +1,18 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "experience": 0.1000000015,
+  "group": "chemicalscience",
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "tag": "forge:ingots/beryllium"
+    },
+    "count": 1
+  },
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:plate_beryllium"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

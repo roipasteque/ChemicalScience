@@ -303,9 +303,6 @@ public class CSCreativeTabs {
         output.accept(CSItems.TUNGSTENCARBIDE_AXE.get());
         output.accept(CSItems.TUNGSTENCARBIDE_SHOVEL.get());
         output.accept(CSItems.TUNGSTENCARBIDE_HOE.get());
-        // Armor
-        output.accept(CSItems.ORGANICNIGHTVISIONGOGGLES.get());
-        output.accept(CSItems.BULLETPROOF_VEST.get());
 
 
     }).build());

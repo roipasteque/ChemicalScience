@@ -4,6 +4,7 @@ import electrodynamics.common.tile.electricitygrid.generators.GenericGeneratorTi
 import electrodynamics.prefab.utilities.ElectricityUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,6 +12,8 @@ import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.settings.CSConstants;
 import net.pastek.chemicalscience.registers.CSTiles;
+import org.jetbrains.annotations.NotNull;
+import voltaic.Voltaic;
 import voltaic.common.item.subtype.SubtypeItemUpgrade;
 import voltaic.prefab.properties.types.PropertyTypes;
 import voltaic.prefab.properties.variant.SingleProperty;
@@ -75,5 +78,9 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
 
     public int getComparatorSignal() {
         return generating.getValue() ? 15 : 0;
+    }
+
+    public @NotNull Component getName() {
+        return (Component)(this.hasComponent(IComponentType.Name) ? ((ComponentName)this.getComponent(IComponentType.Name)).getName() : Component.literal(Voltaic.ID + "voltaic.default.tile.name"));
     }
 }

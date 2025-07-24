@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = "${mod_version}-1.20.1"
+version = "1.20.1-${mod_version}"
 group = 'net.pastek.chemicalscience'
 archivesBaseName = 'chemicalscience'
 
@@ -137,7 +137,8 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            name = 'Forge'
+            url = 'https://maven.minecraftforge.net/'
         }
     }
 }

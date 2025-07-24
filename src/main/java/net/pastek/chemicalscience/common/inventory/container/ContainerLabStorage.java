@@ -3,13 +3,15 @@ package net.pastek.chemicalscience.common.inventory.container;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
-import net.pastek.chemicalscience.common.tile.TileLabBench;
+import net.minecraft.world.item.ItemStack;
 import net.pastek.chemicalscience.common.tile.TileLabStorage;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import voltaic.prefab.inventory.container.types.GenericContainerBlockEntity;
+import voltaic.prefab.utilities.ContainerUtils;
 
 public class ContainerLabStorage extends GenericContainerBlockEntity<TileLabStorage> {
 
@@ -31,5 +33,15 @@ public class ContainerLabStorage extends GenericContainerBlockEntity<TileLabStor
         this.addSlot(new Slot(inv,27, 15 + 9 * 18, 18));
         this.addSlot(new Slot(inv,28, 15 + 9 * 18, 36));
         this.addSlot(new Slot(inv,29, 15 + 9 * 18, 54));
+    }
+
+    @Override
+    public boolean stillValid(Player player) {
+        return getContainer().stillValid(player);
+    }
+
+    @Override
+    public ItemStack quickMoveStack(Player player, int index) {
+        return ContainerUtils.handleShiftClick(slots, player, index);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/sulfur"
+    },
+    {
+      "tag": "forge:dusts/molybdenum"
+    },
+    {
+      "tag": "forge:dusts/cobalt"
+    },
+    {
+      "tag": "forge:dusts/silica"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:molybdenum_sulfur_catalyst"
+  }
+}

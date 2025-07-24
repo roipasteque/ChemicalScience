@@ -1,0 +1,23 @@
+{
+    "values": [
+      "#forge:ingots/galliumarsenide",
+      "#forge:ingots/magnesium",
+      "#forge:ingots/magnesiumaluminum",
+      "#forge:ingots/manganese",
+      "#forge:ingots/manganesealuminum",
+      "#forge:ingots/manganin",
+      "#forge:ingots/palladium",
+      "#forge:ingots/platinum",
+      "#forge:ingots/silicon",
+      "#forge:ingots/tungsten",
+      "#forge:ingots/boron",
+      "#forge:ingots/boroncarbide",
+      "#forge:ingots/germanium",
+      "#forge:ingots/niobium",
+      "#forge:ingots/niobiumtitanium",
+      "#forge:ingots/tantalum",
+      "#forge:ingots/tungstencarbide",
+      "#forge:ingots/zinc",
+      "#forge:ingots/nickel"
+    ]
+}

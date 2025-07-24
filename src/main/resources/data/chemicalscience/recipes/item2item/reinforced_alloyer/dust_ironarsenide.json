@@ -1,0 +1,35 @@
+{
+
+  "type": "electrodynamics:reinforced_alloyer_recipe",
+  "experience": 0.4000000059604645,
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "item": "electrodynamics:slag"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:dusts/iron"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:dusts/arsenic"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:dust_ironarsenide"
+  },
+  "ticks": 50,
+  "usagepertick": 50.0
+}

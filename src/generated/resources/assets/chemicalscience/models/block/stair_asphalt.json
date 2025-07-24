@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "chemicalscience:block/block_asphalt",
-    "side": "chemicalscience:block/block_asphalt",
-    "top": "chemicalscience:block/block_asphalt"
-  }
-}

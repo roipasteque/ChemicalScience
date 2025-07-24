@@ -1,0 +1,28 @@
+{
+  "type": "electrodynamics:mineral_crusher_recipe",
+  "experience": 0.200000003,
+  "group": "chemicalscience",
+  "itembi": {
+    "0": {
+      "chance": 0.1,
+      "item": {
+        "Count": 1,
+        "id": "electrodynamics:dustsulfur"
+      }
+    },
+    "count": 1
+  },
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "tag": "forge:raw_materials/arsenopyrite"
+    },
+    "count": 1
+  },
+  "output": {
+    "count": 3,
+    "item": "chemicalscience:impuredust_arsenopyrite"
+  },
+  "ticks": 200,
+  "usagepertick": 450.0
+}

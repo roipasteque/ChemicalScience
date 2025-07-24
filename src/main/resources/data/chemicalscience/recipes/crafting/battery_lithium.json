@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "tag": "forge:plates/lithium"
+    },
+    "R": {
+      "tag": "forge:dusts/cobalt"
+    },
+    "T": {
+      "tag": "forge:plates/steel"
+    },
+    "W": {
+      "item": "electrodynamics:wiregold"
+    }
+  },
+  "pattern": [
+    " L ",
+    "TRT",
+    "TWT"
+  ],
+  "result": {
+    "count": 1,
+    "item": "electrodynamics:lithiumbattery"
+  }
+}

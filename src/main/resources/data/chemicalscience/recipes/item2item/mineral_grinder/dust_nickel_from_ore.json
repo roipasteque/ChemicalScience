@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [{
+    "type": "neoforge:not",
+    "value": {
+      "type": "neoforge:tag_empty",
+      "tag": "forge:ores/nickel"
+    }}],
+
+  "type": "electrodynamics:mineral_grinder_recipe",
+  "group": "chemicalscience",
+  "itembi": [
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "item": "chemicalscience:dust_magnesium"
+      }
+    }
+  ],
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:ores/nickel"
+      }
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "chemicalscience:dust_nickel"
+  },
+  "ticks": 200,
+  "usagepertick": 350.0
+}

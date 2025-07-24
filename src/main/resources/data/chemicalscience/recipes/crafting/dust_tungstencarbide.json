@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:coal_coke"
+    },
+    {
+      "tag": "forge:dusts/tungsten"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:dust_tungstencarbide"
+  }
+}

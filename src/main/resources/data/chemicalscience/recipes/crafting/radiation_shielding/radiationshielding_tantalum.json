@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "forge:plates/boroncarbide"
+    },
+    "B": {
+      "tag": "forge:plates/beryllium"
+    },
+    "P": {
+      "tag": "forge:dusts/barium"
+    },
+    "T": {
+      "tag": "forge:storage_blocks/platinum"
+    },
+    "A": {
+      "tag": "forge:plates/tantalum"
+    }
+
+  },
+  "pattern": [
+    "ATA",
+    "CPB",
+    "ATA"
+  ],
+  "result": {
+    "count": 2,
+    "item": "chemicalscience:radiationshielding_tantalum"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/manganesealuminum"
+    },
+    "N": {
+      "tag": "forge:nuggets/manganesealuminum"
+    },
+    "G": {
+      "item": "chemicalscience:grate_manganese"
+    }
+  },
+  "pattern": [
+    "IGI",
+    " N ",
+    "N N"
+  ],
+  "result": {
+    "count": 8,
+    "item": "chemicalscience:scaffolding_grate_manganese"
+  }
+}

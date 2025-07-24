@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/stainlesssteel"
+    },
+    "N": {
+      "tag": "forge:nuggets/manganesealuminum"
+    }
+  },
+  "pattern": [
+    "III",
+    "N N",
+    "N N"
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:laboratory_support"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "forge:sulfates/magnesium"
+    }
+  ],
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:crystal_magnesium"
+  },
+  "ticks": 200,
+  "usagepertick": 800.0
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chemicalscience:block/ores/ore_molybdenum_moon"
-  }
-}

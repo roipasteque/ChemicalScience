@@ -37,7 +37,6 @@ public class ScreenCircuitMaker extends GenericMaterialScreen<ContainerCircuitMa
             TileCircuitMaker boiler = (TileCircuitMaker)container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getInputTanks()[0] : null;
         }, 21, 18));
-        this.addComponent(new ScreenComponentElectricInfo(-25, 2));
         new WrapperInventoryIO(this, -25, 28, 75, 82, 8, 72);
     }
 }

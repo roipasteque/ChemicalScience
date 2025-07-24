@@ -1,6 +1,7 @@
 package net.pastek.chemicalscience.common.tile;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
@@ -40,5 +41,9 @@ public class TileLabStorage extends GenericTile {
     public int getComparatorSignal() {
         ComponentInventory inv = getComponent(IComponentType.Inventory);
         return (int) (((double) getCount() / (double) Math.max(1, inv.getContainerSize())) * 15.0);
+    }
+
+    public Component getName() {
+        return null;
     }
 }

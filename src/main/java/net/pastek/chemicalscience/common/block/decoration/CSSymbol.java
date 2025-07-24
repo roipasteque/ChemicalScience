@@ -20,12 +20,6 @@ public class CSSymbol extends FaceAttachedHorizontalDirectionalBlock {
                 .setValue(FACE, AttachFace.WALL));
     }
 
-    public static final MapCodec<CSSymbol> CODEC = simpleCodec(CSSymbol::new);
-    @Override
-    protected MapCodec<? extends FaceAttachedHorizontalDirectionalBlock> codec() {
-        return CODEC;
-    }
-
     public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 15, 16, 16, 16);
     public static final VoxelShape EAST_SHAPE = Block.box(0, 0, 0, 1, 16, 16);
     public static final VoxelShape SOUTH_SHAPE = Block.box(0, 0, 0, 16, 16, 2);
