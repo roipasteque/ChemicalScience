@@ -5,23 +5,22 @@
       "modid": "nuclearscience"
     }
   ],
-
   "type": "electrodynamics:chemical_mixer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 200,
       "tag": "minecraft:water"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:dusts/iodine"
-      }
-    }
-  ],
+      "tag": "forge:dusts/iodine"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 200,
     "fluid": "nuclearscience:iodinesolution"

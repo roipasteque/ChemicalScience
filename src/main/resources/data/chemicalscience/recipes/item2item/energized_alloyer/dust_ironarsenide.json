@@ -1,31 +1,28 @@
 {
-
   "type": "electrodynamics:energized_alloyer_recipe",
-  "experience": 0.4000000059604645,
+  "experience": 0.400000006,
   "group": "chemicalscience",
-  "itembi": [
-    {
+  "itembi": {
+    "0": {
       "chance": 0.25,
       "item": {
-        "count": 1,
-        "item": "electrodynamics:slag"
-      }
-    }
-  ],
-  "iteminputs": [
-    {
-      "count": 1,
-      "ingredient": {
-        "tag": "forge:dusts/iron"
+        "Count": 1,
+        "id": "electrodynamics:slag"
       }
     },
-    {
+    "count": 1
+  },
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:dusts/arsenic"
-      }
-    }
-  ],
+      "tag": "forge:dusts/iron"
+    },
+    "1": {
+      "count": 1,
+      "tag": "forge:dusts/arsenic"
+    },
+    "count": 2
+  },
   "output": {
     "count": 1,
     "item": "chemicalscience:dust_ironarsenide"

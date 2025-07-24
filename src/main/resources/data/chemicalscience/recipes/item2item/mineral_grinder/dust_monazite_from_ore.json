@@ -1,14 +1,13 @@
 {
   "type": "electrodynamics:mineral_grinder_recipe",
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:ores/monazite"
-      }
-    }
-  ],
+      "tag": "forge:ores/monazite"
+    },
+    "count": 1
+  },
   "output": {
     "count": 2,
     "item": "chemicalscience:dust_monazite"

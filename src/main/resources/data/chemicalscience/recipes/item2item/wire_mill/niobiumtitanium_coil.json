@@ -1,15 +1,14 @@
 {
   "type": "electrodynamics:wire_mill_recipe",
-  "experience": 0.10000000149011612,
+  "experience": 0.1000000015,
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 9,
-      "ingredient": {
-        "tag": "forge:ingots/niobiumtitanium"
-      }
-    }
-  ],
+      "tag": "forge:ingots/niobiumtitanium"
+    },
+    "count": 1
+  },
   "output": {
     "count": 1,
     "item": "chemicalscience:niobiumtitaniumcoil"

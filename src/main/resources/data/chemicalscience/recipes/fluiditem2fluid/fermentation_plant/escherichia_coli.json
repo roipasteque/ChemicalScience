@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:fermentation_plant_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 10,
       "tag": "forge:escherichia_coli"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "item": "minecraft:sugar"
-      }
-    }
-  ],
+      "item": "minecraft:sugar"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 20,
     "fluid": "chemicalscience:escherichia_coli"

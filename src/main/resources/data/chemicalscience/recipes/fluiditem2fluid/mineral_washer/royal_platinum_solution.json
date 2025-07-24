@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:mineral_washer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 1000,
       "tag": "forge:aquaregia"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 24,
-      "ingredient": {
-        "tag": "forge:impuredusts/platinum"
-      }
-    }
-  ],
+      "tag": "forge:impuredusts/platinum"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 4000,
     "fluid": "chemicalscience:fluidroyalmineralplatinum"

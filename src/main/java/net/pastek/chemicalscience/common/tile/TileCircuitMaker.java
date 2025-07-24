@@ -14,6 +14,8 @@ import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerCircuitMaker;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.CSTiles;
+import org.jetbrains.annotations.NotNull;
+import voltaic.Voltaic;
 import voltaic.prefab.sound.ITickableSound;
 import voltaic.prefab.sound.SoundBarrierMethods;
 import voltaic.prefab.tile.components.IComponentType;
@@ -67,7 +69,7 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
         return ((ComponentProcessor)this.getComponent(IComponentType.Processor)).isActive(0) ? 15 : 0;
     }
 
-    public Component getName() {
-        return null;
+    public @NotNull Component getName() {
+        return (Component)(this.hasComponent(IComponentType.Name) ? ((ComponentName)this.getComponent(IComponentType.Name)).getName() : Component.literal(Voltaic.ID + "voltaic.default.tile.name"));
     }
 }

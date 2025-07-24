@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:chemical_mixer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 200,
       "tag": "forge:phosphoric_acid"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 3,
-      "ingredient": {
-        "tag": "forge:dusts/palladium"
-      }
-    }
-  ],
+      "tag": "forge:dusts/palladium"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 100,
     "fluid": "chemicalscience:palladiumphosphate"

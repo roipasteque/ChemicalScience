@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:chemical_mixer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 200,
       "tag": "forge:calcium_hydroxide"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:oxides/sodiumcarbonate"
-      }
-    }
-  ],
+      "tag": "forge:oxides/sodiumcarbonate"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 400,
     "fluid": "chemicalscience:sodiumhydroxide"

@@ -1,21 +1,18 @@
 {
   "type": "electrodynamics:oxidation_furnace_recipe",
-  "experience": 0.10000000149011612,
+  "experience": 0.1000000015,
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:dusts/iron"
-      }
+      "tag": "forge:dusts/iron"
     },
-    {
+    "1": {
       "count": 1,
-      "ingredient": {
-        "tag": "minecraft:coals"
-      }
-    }
-  ],
+      "tag": "minecraft:coals"
+    },
+    "count": 2
+  },
   "output": {
     "count": 1,
     "item": "chemicalscience:dust_ironoxide"

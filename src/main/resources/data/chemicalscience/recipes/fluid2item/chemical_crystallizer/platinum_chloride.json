@@ -1,11 +1,12 @@
 {
   "type": "electrodynamics:chemical_crystallizer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 200,
       "tag": "forge:chloroplatinic_acid"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
   "output": {
     "count": 1,

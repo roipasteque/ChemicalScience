@@ -20,7 +20,6 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.registries.RegistryObject;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.screen.ScreenCircuitMaker;
-import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
 import net.pastek.chemicalscience.compatibility.jei.recipecategories.fluiditem2item.CircuitMakerRecipeCategory;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;

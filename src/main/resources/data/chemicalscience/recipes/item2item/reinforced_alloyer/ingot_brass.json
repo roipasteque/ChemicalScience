@@ -5,33 +5,30 @@
       "modid": "create"
     }
   ],
-
   "type": "electrodynamics:reinforced_alloyer_recipe",
-  "experience": 0.4000000059604645,
+  "experience": 0.400000006,
   "group": "chemicalscience",
-  "itembi": [
-    {
+  "itembi": {
+    "0": {
       "chance": 0.15,
       "item": {
-        "count": 1,
-        "item": "electrodynamics:slag"
-      }
-    }
-  ],
-  "iteminputs": [
-    {
-      "count": 1,
-      "ingredient": {
-        "tag": "forge:ingots/copper"
+        "Count": 1,
+        "id": "electrodynamics:slag"
       }
     },
-    {
+    "count": 1
+  },
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:ingots/zinc"
-      }
-    }
-  ],
+      "tag": "forge:ingots/copper"
+    },
+    "1": {
+      "count": 1,
+      "tag": "forge:ingots/zinc"
+    },
+    "count": 2
+  },
   "output": {
     "count": 2,
     "item": "create:brass_ingot"

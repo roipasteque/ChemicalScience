@@ -24,19 +24,18 @@ public class CircuitMakerRecipe extends FluidItem2ItemRecipe {
         super(group, inputItems, inputFluids, itemOutput, experience, ticks, usagePerTick, itemBiproducts, fluidBiproducts, gasBiproducts);
     }
 
-    @Override
-    public boolean canCraftInDimensions(int p_43999_, int p_44000_) {
-        return false;
-    }
-
-    @Override
-    public ItemStack getResultItem(RegistryAccess p_267052_) {
-        return null;
+    public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
+        return this.getItemRecipeOutput();
     }
 
     @Override
     public ResourceLocation getId() {
-        return null;
+        return RECIPE_ID;
+    }
+
+    @Override
+    public boolean canCraftInDimensions(int width, int height) {
+        return false;
     }
 
     public RecipeSerializer<?> getSerializer() {

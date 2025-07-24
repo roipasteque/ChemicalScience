@@ -1,11 +1,12 @@
 package net.pastek.chemicalscience.registers;
 
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
 import voltaic.common.recipe.VoltaicRecipeType;
 import voltaic.common.recipe.categories.fluiditem2item.FluidItem2ItemRecipeSerializer;
@@ -17,12 +18,12 @@ public class CSRecipies {
     public static final RegistryObject<RecipeSerializer<?>> CIRCUIT_MAKER_SERIALIZER;
 
     static {
-        RECIPE_SERIALIZER = DeferredRegister.create(Registries.RECIPE_SERIALIZER, "chemicalscience");
-        RECIPE_TYPES = DeferredRegister.create(Registries.RECIPE_TYPE, "chemicalscience");
+        RECIPE_SERIALIZER = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, ChemicalScience.MOD_ID);
+        RECIPE_TYPES = DeferredRegister.create(ForgeRegistries.RECIPE_TYPES, ChemicalScience.MOD_ID);
 
-        CIRCUIT_MAKER_TYPE = RECIPE_TYPES.register("circuit_maker_recipe", VoltaicRecipeType::new);
+        CIRCUIT_MAKER_TYPE = RECIPE_TYPES.register(CircuitMakerRecipe.RECIPE_GROUP, VoltaicRecipeType::new);
 
-        CIRCUIT_MAKER_SERIALIZER = RECIPE_SERIALIZER.register("circuit_maker_recipe", () -> new FluidItem2ItemRecipeSerializer(CircuitMakerRecipe::new));
+        CIRCUIT_MAKER_SERIALIZER = RECIPE_SERIALIZER.register(CircuitMakerRecipe.RECIPE_GROUP, () -> new FluidItem2ItemRecipeSerializer<>(CircuitMakerRecipe::new));
     }
 
     public static void register(IEventBus eventBus) {

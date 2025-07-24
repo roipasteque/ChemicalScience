@@ -5,7 +5,6 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
 import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import net.pastek.chemicalscience.registers.CSBlocks;

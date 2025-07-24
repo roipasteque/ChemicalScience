@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:chemical_mixer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 600,
       "tag": "forge:hydrochloric_acid"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 2,
-      "ingredient": {
-        "tag": "forge:dusts/arsenic"
-      }
-    }
-  ],
+      "tag": "forge:dusts/arsenic"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 200,
     "fluid": "chemicalscience:arsenictrichloride"

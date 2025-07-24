@@ -5,17 +5,15 @@
       "modid": "nuclearscience"
     }
   ],
-
   "type": "electrodynamics:mineral_grinder_recipe",
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "item": "nuclearscience:iodinetablet"
-      }
-    }
-  ],
+      "item": "nuclearscience:iodinetablet"
+    },
+    "count": 1
+  },
   "output": {
     "count": 2,
     "item": "chemicalscience:dust_iodine"

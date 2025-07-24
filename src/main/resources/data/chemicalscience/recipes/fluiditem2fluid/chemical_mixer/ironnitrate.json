@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:chemical_mixer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 100,
       "tag": "forge:nitric_acid"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:dusts/iron"
-      }
-    }
-  ],
+      "tag": "forge:dusts/iron"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 100,
     "fluid": "chemicalscience:ironnitrate"

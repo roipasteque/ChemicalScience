@@ -1,20 +1,20 @@
 {
   "type": "electrodynamics:mineral_washer_recipe",
-  "fluidinputs": [
-    {
+  "fluidinputs": {
+    "0": {
       "amount": 1000,
       "tag": "forge:sulfuric_acid"
-    }
-  ],
+    },
+    "count": 1
+  },
   "group": "chemicalscience",
-  "iteminputs": [
-    {
+  "iteminputs": {
+    "0": {
       "count": 1,
-      "ingredient": {
-        "tag": "forge:ores/magnesium"
-      }
-    }
-  ],
+      "tag": "forge:ores/magnesium"
+    },
+    "count": 1
+  },
   "output": {
     "amount": 1000,
     "fluid": "chemicalscience:sulfatemagnesium"
