@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum",
+    "side": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum",
+    "top": "chemicalscience:block/metal_building_blocks/block_magnesiumaluminum"
+  }
+}

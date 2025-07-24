@@ -1,0 +1,13 @@
+{
+  "values": [
+    "chemicalscience:symbol_biohazard",
+    "chemicalscience:symbol_radiation",
+    "chemicalscience:symbol_danger",
+    "chemicalscience:symbol_electrical",
+    "chemicalscience:symbol_flammable",
+    "chemicalscience:symbol_toxic",
+    "chemicalscience:symbol_corrosive",
+    "chemicalscience:symbol_pressure",
+    "chemicalscience:symbol_explosive"
+  ]
+}

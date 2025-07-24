@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chemicalscience:block/block_marked_yellow_line_asphalt_top",
+    "side": "chemicalscience:block/block_marked_yellow_line_asphalt"
+  }
+}

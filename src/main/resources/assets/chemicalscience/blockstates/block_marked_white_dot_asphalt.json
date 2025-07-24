@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chemicalscience:block/block_marked_white_dot_asphalt_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chemicalscience:block/block_marked_white_dot_asphalt"
+    },
+    "axis=z": {
+      "model": "chemicalscience:block/block_marked_white_dot_asphalt_horizontal",
+      "x": 90
+    }
+  }
+}

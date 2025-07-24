@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemicalscience:block/metal_building_blocks/ladder_manganese"
+  }
+}

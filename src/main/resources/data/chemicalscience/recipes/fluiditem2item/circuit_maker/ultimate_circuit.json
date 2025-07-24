@@ -1,0 +1,46 @@
+{
+  "type": "chemicalscience:circuit_maker_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": {
+    "0": {
+      "amount": 50,
+      "fluid": "chemicalscience:ferricchloride"
+    },
+    "count": 1
+  },
+
+  "iteminputs": {
+    "0" : {
+      "count": 1,
+      "tag": "forge:dusts/superconductive"
+
+    },
+    "1" :{
+      "count": 1,
+      "tag": "forge:circuits/elite"
+    },
+    "2":{
+      "count": 1,
+      "tag": "forge:dusts/obsidian"
+
+    },
+    "3":{
+      "count": 1,
+      "tag": "forge:dusts/arsenic"
+    },
+    "4":{
+      "count": 1,
+      "tag": "forge:dusts/boron"
+    },
+    "count": 5
+  },
+
+  "output": {
+    "count": 2,
+    "item": "electrodynamics:circuitultimate"
+  },
+
+  "ticks": 200,
+  "usagepertick": 400.0
+}
