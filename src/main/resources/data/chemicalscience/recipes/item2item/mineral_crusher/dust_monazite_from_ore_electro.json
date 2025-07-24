@@ -4,7 +4,7 @@
   "group": "chemicalscience",
   "itembi": {
     "0": {
-      "chance": 0.01,
+      "chance": 0.1,
       "item": {
         "Count": 1,
         "id": "chemicalscience:dust_yttrium"
@@ -15,7 +15,7 @@
   "iteminputs": {
     "0": {
       "count": 1,
-      "tag": "forge:ores/monazite"
+      "item": "electrodynamics:oremonazite"
     },
     "count": 1
   },

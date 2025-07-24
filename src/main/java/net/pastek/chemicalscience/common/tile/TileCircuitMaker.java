@@ -28,14 +28,14 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
     private boolean isSoundPlaying = false;
 
     public TileCircuitMaker(BlockPos worldPosition, BlockState blockState) {
-        super((BlockEntityType) CSTiles.TILE_CIRCUIT_MAKER.get(), worldPosition, blockState);
-        this.addComponent(new ComponentPacketHandler(this));
-        this.addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
-        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.BACK}).voltage((double)480.0F));
-        this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get()));
-        this.addComponent((new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(BlockEntityUtils.MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5, BlockEntityUtils.MachineDirection.BOTTOM, BlockEntityUtils.MachineDirection.LEFT, BlockEntityUtils.MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
-        this.addComponent((new ComponentProcessor(this)).canProcess((component, procNumber) -> component.consumeBucket().canProcessFluidItem2ItemRecipe(procNumber, (RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get())).process(ComponentProcessor::processFluidItem2ItemRecipe));
-        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this)).createMenu((id, player) -> new ContainerCircuitMaker(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
+        super(CSTiles.TILE_CIRCUIT_MAKER.get(), worldPosition, blockState);
+        addComponent(new ComponentPacketHandler(this));
+        addComponent(new ComponentTickable(this).tickClient(this::tickClient));
+        addComponent(new ComponentElectrodynamic(this, false, true).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.BACK}).voltage((double)480.0F));
+        addComponent(new ComponentFluidHandlerMulti(this).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{BlockEntityUtils.MachineDirection.RIGHT}).setRecipeType(CSRecipies.CIRCUIT_MAKER_TYPE.get()));
+        addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3)).setSlotsByDirection(BlockEntityUtils.MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5, BlockEntityUtils.MachineDirection.BOTTOM, BlockEntityUtils.MachineDirection.LEFT, BlockEntityUtils.MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
+        addComponent(new ComponentProcessor(this).canProcess((component, procNumber) -> component.consumeBucket().canProcessFluidItem2ItemRecipe(procNumber, CSRecipies.CIRCUIT_MAKER_TYPE.get())).process(ComponentProcessor::processFluidItem2ItemRecipe));
+        addComponent(new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this).createMenu((id, player) -> new ContainerCircuitMaker(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
     }
 
     protected void tickClient(ComponentTickable tickable) {
@@ -51,7 +51,7 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
 
             if (!this.isSoundPlaying) {
                 this.isSoundPlaying = true;
-                SoundBarrierMethods.playTileSound((SoundEvent)ElectrodynamicsSounds.SOUND_HUM.get(), this, true);
+                SoundBarrierMethods.playTileSound(ElectrodynamicsSounds.SOUND_HUM.get(), this, true);
             }
 
         }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "forge:plastic"
+    },
+    "T": {
+      "tag": "forge:dusts/sulfur"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PTP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:polymer_dtt"
+  }
+}

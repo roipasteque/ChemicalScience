@@ -1,0 +1,24 @@
+{
+  "type": "electrodynamics:chemical_mixer_recipe",
+  "fluidinputs": {
+    "0": {
+      "amount": 1000,
+      "tag": "forge:potassium_chloride"
+    },
+    "count": 1
+  },
+  "group": "chemicalscience",
+  "iteminputs": {
+    "0": {
+      "count": 1,
+      "tag": "forge:dusts/iron"
+    },
+    "count": 1
+  },
+  "output": {
+    "amount": 300,
+    "fluid": "chemicalscience:ferricchloride"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

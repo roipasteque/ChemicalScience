@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.util;
+package net.pastek.chemicalscience.prefab.utils;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;

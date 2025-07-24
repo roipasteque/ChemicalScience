@@ -19,9 +19,11 @@ import voltaic.common.recipe.recipeutils.ProbableItem;
 public class CircuitMakerRecipe extends FluidItem2ItemRecipe {
     public static final String RECIPE_GROUP = "circuit_maker_recipe";
     public static final ResourceLocation RECIPE_ID = new ResourceLocation(ChemicalScience.MOD_ID, "circuit_maker_recipe");
+    private final ResourceLocation id;
 
     public CircuitMakerRecipe(ResourceLocation group, List<CountableIngredient> inputItems, List<FluidIngredient> inputFluids, ItemStack itemOutput, double experience, int ticks, double usagePerTick, List<ProbableItem> itemBiproducts, List<ProbableFluid> fluidBiproducts, List<ProbableGas> gasBiproducts) {
         super(group, inputItems, inputFluids, itemOutput, experience, ticks, usagePerTick, itemBiproducts, fluidBiproducts, gasBiproducts);
+        this.id = group;
     }
 
     public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
@@ -30,7 +32,7 @@ public class CircuitMakerRecipe extends FluidItem2ItemRecipe {
 
     @Override
     public ResourceLocation getId() {
-        return RECIPE_ID;
+        return id;
     }
 
     @Override

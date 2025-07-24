@@ -21,7 +21,7 @@
       "tag": "forge:gems/quartz"
     },
     "G": {
-      "tag": "forge:glass_blocks/colorless"
+      "item": "minecraft:glass"
     }
   },
   "pattern": [

@@ -4,10 +4,10 @@
   "group": "chemicalscience",
   "itembi": {
     "0": {
-      "chance": 0.01,
+      "chance": 0.15,
       "item": {
         "Count": 1,
-        "id": "chemicalscience:dust_yttrium"
+        "id": "chemicalscience:impuredust_bismuth"
       }
     },
     "count": 1
@@ -15,13 +15,13 @@
   "iteminputs": {
     "0": {
       "count": 1,
-      "tag": "forge:ores/monazite"
+      "tag": "forge:ores/wolframite"
     },
     "count": 1
   },
   "output": {
     "count": 3,
-    "item": "chemicalscience:dust_monazite"
+    "item": "chemicalscience:impuredust_tungsten"
   },
   "ticks": 200,
   "usagepertick": 450.0

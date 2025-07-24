@@ -4,10 +4,10 @@
   "group": "chemicalscience",
   "itembi": {
     "0": {
-      "chance": 0.1,
+      "chance": 0.2,
       "item": {
         "Count": 1,
-        "id": "minecraft:cobblestone"
+        "id": "chemicalscience:dust_barium"
       }
     },
     "count": 1

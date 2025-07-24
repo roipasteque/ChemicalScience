@@ -29,6 +29,7 @@ public class ChapterIntroduction extends Chapter {
 
     @Override
     public void addData() {
+        pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.introduction.l1.0")).setIndentions(1).setSeparateStart());
         pageData.add(new TextWrapperObject(CSTextUtils.guidebook("chapter.introduction.l1.1")).setIndentions(1).setSeparateStart());
     }
 

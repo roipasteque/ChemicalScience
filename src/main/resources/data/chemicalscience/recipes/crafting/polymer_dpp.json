@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "forge:plastic"
+    },
+    "B": {
+      "tag": "forge:dusts/boron"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PBP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:polymer_dpp"
+  }
+}

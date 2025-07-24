@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:plates/silicon"
+      "item": "chemicalscience:polymer_dpp"
     },
     {
-      "tag": "forge:dusts/redstone"
+      "item": "chemicalscience:polymer_dtt"
     }
   ],
   "result": {
     "count": 1,
-    "item": "electrodynamics:circuitbasic"
+    "item": "chemicalscience:polymer_dppdtt"
   }
 }

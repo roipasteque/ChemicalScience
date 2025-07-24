@@ -9,13 +9,13 @@
       "tag": "forge:ingots/galliumarsenide"
     },
     "A": {
-      "tag": "forge:plates/aluminum"
+      "tag": "forge:ingots/aluminum"
     },
     "I": {
-      "tag": "forge:dusts/indium"
+      "tag": "forge:dusts/superconductive"
     },
     "E": {
-      "tag": "forge:ingots/germanium"
+      "tag": "forge:dusts/ironarsenide"
     },
     "W": {
       "item": "electrodynamics:wirecopper"
@@ -23,11 +23,11 @@
   },
   "pattern": [
     "GGG",
-    "EIR",
+    "IEI",
     "AWA"
   ],
   "result": {
-    "count": 4,
+    "count": 2,
     "item": "electrodynamics:solarpanelplate"
   }
 }

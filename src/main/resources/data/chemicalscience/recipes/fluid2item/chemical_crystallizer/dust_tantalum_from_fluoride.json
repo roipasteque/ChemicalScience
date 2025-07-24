@@ -1,0 +1,17 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": {
+    "0": {
+      "amount": 200,
+      "fluid": "chemicalscience:tantalumfluoride"
+    },
+    "count": 1
+  },
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "item": "chemicalscience:impuredust_tantalum"
+  },
+  "ticks": 200,
+  "usagepertick": 800.0
+}

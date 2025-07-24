@@ -4,7 +4,7 @@
       "conditions": {
         "items": [
           {
-            "items": "electrodynamics:chemicalreactor"
+            "items": "electrodynamics:chemicalmixer"
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "electrodynamics:chemicalreactor"
+      "id": "electrodynamics:chemicalmixer"
     },
     "title": {
       "color": "dark_green",

@@ -6,7 +6,7 @@
       "tag": "forge:ingots/tungstencarbide"
     },
     "L": {
-      "tag": "forge:leathers"
+      "item": "minecraft:leather"
     },
     "R": {
       "tag": "forge:rods/stainlesssteel"

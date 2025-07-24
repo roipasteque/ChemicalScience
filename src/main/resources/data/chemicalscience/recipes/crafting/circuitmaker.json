@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "forge:plates/steel"
+    },
+    "C": {
+      "item": "electrodynamics:circuitultimate"
+    },
+    "I": {
+      "tag": "forge:plates/stainlesssteel"
+    },
+    "M": {
+      "item": "electrodynamics:motor"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "A": {
+      "tag": "forge:dusts/yttrium"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "MIA",
+    "SGS"
+  ],
+  "result": {
+    "count": 1,
+    "item": "chemicalscience:circuitmaker"
+  }
+}

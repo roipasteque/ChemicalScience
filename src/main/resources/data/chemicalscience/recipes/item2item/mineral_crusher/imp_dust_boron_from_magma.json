@@ -4,10 +4,10 @@
   "group": "chemicalscience",
   "itembi": {
     "0": {
-      "chance": 0.01,
+      "chance": 0.5,
       "item": {
         "Count": 1,
-        "id": "chemicalscience:dust_yttrium"
+        "id": "chemicalscience:impuredust_boron"
       }
     },
     "count": 1
@@ -15,13 +15,13 @@
   "iteminputs": {
     "0": {
       "count": 1,
-      "tag": "forge:ores/monazite"
+      "item": "minecraft:magma_block"
     },
     "count": 1
   },
   "output": {
-    "count": 3,
-    "item": "chemicalscience:dust_monazite"
+    "count": 1,
+    "item": "minecraft:basalt"
   },
   "ticks": 200,
   "usagepertick": 450.0

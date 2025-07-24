@@ -122,6 +122,10 @@ public class CSFluids {
     public static RegistryObject<FluidNonPlaceable> FLUID_PALLADIUMPHOSPHATE = FLUIDS.register("palladiumphosphate", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "palladiumphosphate", "palladiumphosphate", new Color(90, 0, 120, 180))));
     // Sulfates
     public static RegistryObject<FluidNonPlaceable> FLUID_MAGNESIUMSULFATE = FLUIDS.register("sulfatemagnesium", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "sulfatemagnesium", "sulfatemagnesium", new Color(255, 255, 255, 180))));
+    // Fluorides
+    public static RegistryObject<FluidNonPlaceable> FLUID_TANTALUMFLUORIDE = FLUIDS.register("tantalumfluoride", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "tantalumfluoride", "sulfatemagnesium", new Color(255, 205, 205, 180))));
+    public static RegistryObject<FluidNonPlaceable> FLUID_NIOBIUMFLUORIDE = FLUIDS.register("niobiumfluoride", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "niobiumfluoride", "sulfatemagnesium", new Color(255, 255, 105, 180))));
+
 
     /** Mineral Solutions */
     public static RegistryObject<FluidNonPlaceable> FLUID_IMPUREURANIUMSOLUTION = FLUIDS.register("impureuraniumsolution", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "impureuraniumsolution", "impureuraniumsolution", new Color(200, 255, 0, 180))));
