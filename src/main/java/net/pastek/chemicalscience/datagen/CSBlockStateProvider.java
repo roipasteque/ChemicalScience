@@ -99,6 +99,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
+        horrRotatedBlock(CSBlocks.CIRCUIT_MAKER, existingBlock(CSBlocks.CIRCUIT_MAKER), true);
         horrRotatedBlock(CSBlocks.RACK_MANGANESE, existingBlock(CSBlocks.RACK_MANGANESE), true);
         horrRotatedBlock(CSBlocks.RACK_STEEL, existingBlock(CSBlocks.RACK_STEEL), true);
         horrRotatedBlock(CSBlocks.LABORATORY_BENCH, existingBlock(CSBlocks.LABORATORY_BENCH), true);

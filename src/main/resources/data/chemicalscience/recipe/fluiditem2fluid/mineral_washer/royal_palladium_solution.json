@@ -2,7 +2,7 @@
   "type": "electrodynamics:mineral_washer_recipe",
   "fluidinputs": [
     {
-      "amount": 1000,
+      "amount": 100,
       "tag": "c:aquaregia"
     }
   ],

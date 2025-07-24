@@ -11,7 +11,7 @@
     {
       "chance": 1.0,
       "item": {
-        "count": 3,
+        "count": 4,
         "id": "chemicalscience:impuredust_arsenic"
       }
     },
@@ -25,21 +25,21 @@
   ],
   "fluidinputs": [
     {
-      "amount": 400,
+      "amount": 200,
       "tag": "c:nitric_acid"
     }
   ],
   "group": "chemicalscience",
   "iteminputs": [
     {
-      "count": 4,
+      "count": 1,
       "ingredient": {
         "tag": "c:raw_materials/arsenopyrite"
       }
     }
   ],
   "itemoutput": {
-    "count": 16,
+    "count": 8,
     "id": "electrodynamics:dustsulfur"
   },
   "fluidoutput": {

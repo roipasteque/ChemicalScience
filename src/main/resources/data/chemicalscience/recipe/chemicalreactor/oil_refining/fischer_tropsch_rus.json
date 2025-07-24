@@ -31,14 +31,14 @@
 
   "gasinputs": [
     {
-      "amount": 100,
+      "amount": 10,
       "pressure":16,
       "tag": "c:carbonmonoxide",
       "temp": 293
     },
 
     {
-      "amount": 300,
+      "amount": 20,
       "pressure":16,
       "tag": "c:hydrogen",
       "temp": 293

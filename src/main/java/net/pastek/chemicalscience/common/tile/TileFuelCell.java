@@ -1,5 +1,6 @@
 package net.pastek.chemicalscience.common.tile;
 
+import electrodynamics.prefab.utilities.ElectricityUtils;
 import electrodynamics.registers.ElectrodynamicsSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -15,7 +16,6 @@ import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerFuelCell;
 import net.pastek.chemicalscience.common.settings.CSConstants;
-import net.pastek.chemicalscience.prefab.utils.ElectricityUtils;
 import net.pastek.chemicalscience.registers.CSTags;
 import net.pastek.chemicalscience.registers.CSTiles;
 import voltaic.api.electricity.generator.IElectricGenerator;

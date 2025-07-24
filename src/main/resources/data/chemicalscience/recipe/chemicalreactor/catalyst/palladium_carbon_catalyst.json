@@ -21,11 +21,6 @@
   "fluidinputs": [
     {
       "amount": 100,
-      "tag": "c:nitric_acid"
-    },
-
-    {
-      "amount": 100,
       "tag": "c:hydrochloric_acid"
     }
   ],

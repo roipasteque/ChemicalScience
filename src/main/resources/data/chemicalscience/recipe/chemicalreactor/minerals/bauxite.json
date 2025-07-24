@@ -18,7 +18,7 @@
   ],
   "fluidinputs": [
     {
-      "amount": 200,
+      "amount": 100,
       "tag": "c:sodium_hydroxide"
     }
   ],

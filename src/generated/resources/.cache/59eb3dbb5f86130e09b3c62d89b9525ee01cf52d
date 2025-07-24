@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-04T00:51:26.0801338	Loot Tables
+// 1.21.1	2025-07-24T02:45:00.5203216	Loot Tables
 a9f2a05b21175282e030f6c15c0b6904364c3db5 data/chemicalscience/loot_table/blocks/block_asphalt.json
 37b752256adc3eaa8450e6caba82d77663a80386 data/chemicalscience/loot_table/blocks/block_element_ac.json
 2ea4ea35a6fdc2950d79770c5c03ee2d91af447a data/chemicalscience/loot_table/blocks/block_element_ag.json
@@ -128,6 +128,7 @@ fc043a4370d595c9ba0839be7d03d4348fc44e7f data/chemicalscience/loot_table/blocks/
 898959d3c2b5c6e2287fb6f2f579747421db1df8 data/chemicalscience/loot_table/blocks/block_platinum.json
 f0eebccd2012dc288c4ae1c28fcd2d2965eab9e5 data/chemicalscience/loot_table/blocks/block_silicon.json
 511fb1a231a95dd39a965d70b90957dec74d2220 data/chemicalscience/loot_table/blocks/block_tungsten.json
+608231c60f55d6ff36d75b7183b4a87ed8c56baa data/chemicalscience/loot_table/blocks/circuitmaker.json
 82499201ced385b721f4968e66d9b0ced5d20b0e data/chemicalscience/loot_table/blocks/door_magnesiumaluminum.json
 791e335f81528228ec8e5e190b4c0ed6fd92c370 data/chemicalscience/loot_table/blocks/fence_magnesiumaluminum.json
 b769d79bc05e95bf1a47ffe981a09e45689a832d data/chemicalscience/loot_table/blocks/fuelcell.json

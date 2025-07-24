@@ -2,16 +2,27 @@ package net.pastek.chemicalscience.compatibility.jei;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.neoforge.NeoForgeTypes;
-import mezz.jei.api.registration.IExtraIngredientRegistration;
+import mezz.jei.api.recipe.RecipeType;
+import mezz.jei.api.recipe.category.IRecipeCategory;
+import mezz.jei.api.registration.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.client.screen.ScreenCircuitMaker;
+import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
+import net.pastek.chemicalscience.compatibility.jei.recipecategories.fluiditem2item.CircuitMakerRecipeCategory;
+import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import net.pastek.chemicalscience.registers.gases.CSGases;
 import org.jetbrains.annotations.NotNull;
@@ -30,8 +41,27 @@ public class CSJEIPlugin implements IModPlugin {
         return ID;
     }
 
+    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(CircuitMakerRecipeCategory.INPUT_MACHINE, new RecipeType[]{CircuitMakerRecipeCategory.RECIPE_TYPE});
+    }
 
-    @Override
+    public void registerRecipes(IRecipeRegistration registration) {
+        Minecraft mc = Minecraft.getInstance();
+        ClientLevel world = (ClientLevel) Objects.requireNonNull(mc.level);
+        RecipeManager recipeManager = world.getRecipeManager();
+        registration.addRecipes(CircuitMakerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CIRCUIT_MAKER_TYPE.get()).stream().map((val) -> (CircuitMakerRecipe)val.value()).toList());
+    }
+
+    public void registerCategories(IRecipeCategoryRegistration registration) {
+        IGuiHelper guiHelper = registration.getJeiHelpers().getGuiHelper();
+        registration.addRecipeCategories(new IRecipeCategory[]{new CircuitMakerRecipeCategory(guiHelper)});
+    }
+
+    public void registerGuiHandlers(IGuiHandlerRegistration registry) {
+        registry.addRecipeClickArea(ScreenCircuitMaker.class, 85, 35, 22, 15, new RecipeType[]{CircuitMakerRecipeCategory.RECIPE_TYPE});
+    }
+
+        @Override
     public void registerExtraIngredients(IExtraIngredientRegistration registration) {
         List<FluidStack> fluids = new ArrayList<>();
         for (DeferredHolder<Fluid, ? extends Fluid> fluid : CSFluids.FLUIDS.getEntries()) {

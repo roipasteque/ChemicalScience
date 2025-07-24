@@ -378,10 +378,12 @@ public class CSBlocks {
     // Misc
     public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new BlockMachine(SubtypeChemicalMachine.organicsolarpanel));
     public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new BlockMachine(SubtypeChemicalMachine.fuelcell));
+    public static final DeferredBlock<Block> CIRCUIT_MAKER = registerBlock("circuitmaker", () -> new BlockMachine(SubtypeChemicalMachine.circuitmaker));
 
 
     static { BlockItemDescriptable.addDescription(ORGANIC_SOLAR_PANEL, VoltaicTextUtils.voltageTooltip(240)); }
     static { BlockItemDescriptable.addDescription(FUEL_CELL, VoltaicTextUtils.voltageTooltip(240)); }
+    static { BlockItemDescriptable.addDescription(CIRCUIT_MAKER, VoltaicTextUtils.voltageTooltip(480)); }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

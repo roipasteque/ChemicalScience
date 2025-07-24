@@ -179,6 +179,7 @@
 
   "block.chemicalscience.organicsolarpanel": "Panneau solaire organique",
   "block.chemicalscience.fuelcell": "Pile à combustible",
+  "block.chemicalscience.circuitmaker": "Développeur de circuits",
 
   "item.chemicalscience.rawore_silicon": "Silicium brut",
   "item.chemicalscience.rawore_arsenopyrite": "Arsénopyrite brut",
@@ -412,8 +413,8 @@
   "fluid.chemicalscience.butane": "Butane",
   "fluid.chemicalscience.thiophene": "Thiophène",
   "fluid.chemicalscience.palladiumphosphate": "Phosphate de palladium",
-  "fluid.chemicalscience.fluidroyalmineralplatinum": "Solution royale de palladium",
-  "fluid.chemicalscience.fluidroyalmineralpalladium": "Solution royale de platine",
+  "fluid.chemicalscience.fluidroyalmineralplatinum": "Solution royale de platine",
+  "fluid.chemicalscience.fluidroyalmineralpalladium": "Solution royale de palladium",
   "fluid.chemicalscience.hydrobromicacid": "Acide hydrobromique",
   "fluid.chemicalscience.bromomethane": "Bromométhane",
   "fluid.chemicalscience.malonicacid": "Acide malonique",
@@ -488,6 +489,7 @@
   "fluid.chemicalscience.alkalinecassiteritesolution": "Solution de cassitérité basique",
   "fluid.chemicalscience.lubricant": "Huile moteur",
   "fluid.chemicalscience.aniline": "Aniline",
+  "fluid.chemicalscience.ferricchloride": "Chlorure de fer",
 
   "gas.chemicalscience.chlorine": "Chlore",
   "gas.chemicalscience.carbonmonoxide": "Monoxyde de carbone",
@@ -696,10 +698,13 @@
   "container.racks": "§9Étagère de rangement",
   "container.labbench": "Paillasse",
   "container.labstorage": "Rangement",
+  "container.circuitmaker": "Développeur de circuits",
 
   "gui.chemicalscience.machine.current": "Courant: %s",
   "gui.chemicalscience.machine.output": "Sortie: %s",
   "gui.chemicalscience.machine.voltage": "Voltage: %s",
+
+  "jei.circuit_maker_recipe": "Circuits",
 
   "advancement.chemicalscience.root.title": "Chemical Science",
   "advancement.chemicalscience.root.desc": "Fabrique un réacteur chimique et commence vraiment la chimie!",

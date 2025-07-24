@@ -1,5 +1,7 @@
 package net.pastek.chemicalscience.common.tile;
 
+import electrodynamics.common.tile.electricitygrid.generators.GenericGeneratorTile;
+import electrodynamics.prefab.utilities.ElectricityUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.Mth;
@@ -8,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.settings.CSConstants;
-import net.pastek.chemicalscience.prefab.utils.ElectricityUtils;
 import net.pastek.chemicalscience.registers.CSTiles;
 import voltaic.common.item.subtype.SubtypeItemUpgrade;
 import voltaic.prefab.properties.types.PropertyTypes;

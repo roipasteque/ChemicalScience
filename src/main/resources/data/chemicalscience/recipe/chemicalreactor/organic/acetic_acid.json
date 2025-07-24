@@ -46,7 +46,7 @@
   },
 
   "fluidoutput": {
-    "amount": 100,
+    "amount": 500,
     "id": "chemicalscience:aceticacid"
   },
 

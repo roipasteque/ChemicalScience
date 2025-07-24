@@ -4,7 +4,7 @@
 
   "fluidbi": [
     {
-      "amount": 30,
+      "amount": 50,
       "chance": 1.0,
       "fluid": "chemicalscience:toluene"
     }
@@ -12,7 +12,7 @@
 
   "gasbi": [
     {
-      "amount": 100,
+      "amount": 150,
       "chance": 1.0,
       "gas": "chemicalscience:propylene",
       "pressure": 1,
@@ -38,12 +38,12 @@
   ],
 
   "fluidoutput": {
-    "amount": 50,
+    "amount": 100,
     "id": "chemicalscience:benzene"
   },
 
   "gasoutput": {
-    "amount": 150,
+    "amount": 250,
     "gas": "chemicalscience:ethylene",
     "pressure": 1,
     "temp": 293

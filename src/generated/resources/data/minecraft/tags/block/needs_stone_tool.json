@@ -1,0 +1,10 @@
+{
+  "values": [
+    "chemicalscience:ore_magnesium",
+    "chemicalscience:ore_deepslate_magnesium",
+    "chemicalscience:ore_pyrolusite",
+    "chemicalscience:ore_deepslate_pyrolusite",
+    "chemicalscience:ore_sourcerock",
+    "chemicalscience:ore_deepslate_sourcerock"
+  ]
+}

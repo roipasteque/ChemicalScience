@@ -9,7 +9,7 @@ import net.pastek.chemicalscience.common.item.food.ItemSoda;
 import net.pastek.chemicalscience.common.item.gear.CSToolTiers;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemBulletProofVest;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemOrganicNightVisionGoggles;
-import voltaic.common.item.ItemRadioactive;
+import voltaic.common.item.ItemVoltaic;
 import voltaic.prefab.item.ElectricItemProperties;
 import voltaic.prefab.utilities.object.TransferPack;
 
@@ -57,7 +57,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_STRONTIUM = ITEMS.register("dust_strontium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_YTTRIUM = ITEMS.register("dust_yttrium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_NIOBIUM = ITEMS.register("dust_niobium", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_TECHNETIUM = ITEMS.register("dust_technetium", () -> new ItemRadioactive(new Item.Properties(), null));
+    public static final DeferredItem<Item> DUST_TECHNETIUM = ITEMS.register("dust_technetium", () -> new ItemVoltaic(new Item.Properties(), null));
     public static final DeferredItem<Item> DUST_RUTHENIUM = ITEMS.register("dust_ruthenium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_RHODIUM = ITEMS.register("dust_rhodium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PALLADIUM = ITEMS.register("dust_palladium", () -> new Item(new Item.Properties()));
@@ -77,7 +77,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_NEODYMIUM = ITEMS.register("dust_neodymium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PRASEODYMIUM = ITEMS.register("dust_praseodymium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_SAMARIUM = ITEMS.register("dust_samarium", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_PROMETHIUM = ITEMS.register("dust_promethium", () -> new ItemRadioactive(new Item.Properties(), null));
+    public static final DeferredItem<Item> DUST_PROMETHIUM = ITEMS.register("dust_promethium", () -> new ItemVoltaic(new Item.Properties(), null));
     public static final DeferredItem<Item> DUST_EUROPIUM = ITEMS.register("dust_europium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_GADOLINIUM = ITEMS.register("dust_gadolinium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_TERBIUM = ITEMS.register("dust_terbium", () -> new Item(new Item.Properties()));

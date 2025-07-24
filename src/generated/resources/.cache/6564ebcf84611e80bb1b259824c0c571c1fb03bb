@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-04T00:51:26.0883102	Block States: chemicalscience
+// 1.21.1	2025-07-24T02:45:00.5254588	Block States: chemicalscience
 b1ee8a8a95d9605309af720223eb45bd77e8d6d9 assets/chemicalscience/blockstates/block_asphalt.json
 df675d88634ae23c1829044db00b292a3b759b2c assets/chemicalscience/blockstates/block_element_ac.json
 4fe58f4852c17675ba4a63a38d34419704b41802 assets/chemicalscience/blockstates/block_element_ag.json
@@ -128,6 +128,7 @@ f06d70f0b3ce39d210fd6e5f4487ded41a83016c assets/chemicalscience/blockstates/bloc
 13c9c7c15cd063abd0131fcda56ab552d4c5ee5b assets/chemicalscience/blockstates/block_platinum.json
 846f3aa5dd481ede21423f29f911d9959f905bad assets/chemicalscience/blockstates/block_silicon.json
 869d6bca0d470a25aff62faa216179264cf9d30c assets/chemicalscience/blockstates/block_tungsten.json
+327edd88e2390f0a3804777bf6151ba868e3f9fa assets/chemicalscience/blockstates/circuitmaker.json
 4780475bcb0c5417896aeb9ddb4ad65871980cd4 assets/chemicalscience/blockstates/door_magnesiumaluminum.json
 0371a1a4f3defa9b5588fb5e1b8a50ef2ae4c8c5 assets/chemicalscience/blockstates/fence_magnesiumaluminum.json
 20bb2358af7cd36d06d7549c9219def12dfbe421 assets/chemicalscience/blockstates/fuelcell.json
@@ -648,6 +649,7 @@ de17346b2c803dd7f9166550c58827f2142f284f assets/chemicalscience/models/item/bloc
 31de92f87dd59531a051ead599eacb64e3ee7876 assets/chemicalscience/models/item/block_platinum.json
 3ed76d7cc2243268061e0031a7826970a0563070 assets/chemicalscience/models/item/block_silicon.json
 b52aac6ce21d6cbab9690897b2d05490d92d942a assets/chemicalscience/models/item/block_tungsten.json
+17a6fd310f3c7e37e388fdc54237687884881fc6 assets/chemicalscience/models/item/circuitmaker.json
 a0e93894c2ed157065e954a99a52a8aee7b6c2e8 assets/chemicalscience/models/item/fuelcell.json
 d9016e776626af1d96bce075d4ae1b0e9586672b assets/chemicalscience/models/item/grate_manganese.json
 de64aa4869704f8fb119950400ed9408ac184c9e assets/chemicalscience/models/item/laboratory_bench.json

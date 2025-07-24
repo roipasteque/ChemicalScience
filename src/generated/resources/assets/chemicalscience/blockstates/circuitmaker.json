@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/circuitmaker"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/circuitmaker",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/circuitmaker",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/circuitmaker",
+      "y": 180
+    }
+  }
+}

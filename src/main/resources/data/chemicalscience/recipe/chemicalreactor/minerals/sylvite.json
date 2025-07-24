@@ -28,12 +28,12 @@
   ],
 
   "fluidoutput": {
-    "amount": 20,
+    "amount": 150,
     "id": "chemicalscience:bromine"
   },
 
   "itemoutput": {
-    "count": 6,
+    "count": 2,
     "id": "chemicalscience:impuredust_potassium"
   },
 
@@ -46,14 +46,14 @@
       }
     },
     {
-      "chance": 0.8,
+      "chance": 1.0,
       "item": {
         "count": 1,
         "id": "electrodynamics:dustsalt"
       }
     },
     {
-      "chance": 0.3,
+      "chance": 0.8,
       "item": {
         "count": 1,
         "id": "chemicalscience:impuredust_iodine"

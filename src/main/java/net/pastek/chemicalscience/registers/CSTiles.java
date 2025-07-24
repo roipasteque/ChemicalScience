@@ -20,6 +20,7 @@ public class CSTiles {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileRackS>> TILE_RACK_S = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.racks.tag(), () -> new BlockEntityType<>(TileRackS::new, Sets.newHashSet(CSBlocks.RACK_STEEL.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabBench>> TILE_LAB_BENCH = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labbench.tag(), () -> new BlockEntityType<>(TileLabBench::new, Sets.newHashSet(CSBlocks.LABORATORY_BENCH.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabStorage>> TILE_LAB_STORAGE = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labstorage.tag(), () -> new BlockEntityType<>(TileLabStorage::new, Sets.newHashSet(CSBlocks.LABORATORY_STORAGE.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileCircuitMaker>> TILE_CIRCUIT_MAKER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.circuitmaker.tag(), () -> new BlockEntityType<>(TileCircuitMaker::new, Sets.newHashSet(CSBlocks.CIRCUIT_MAKER.get()), null));
 
 
     public static void register(IEventBus eventBus) {

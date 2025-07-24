@@ -104,6 +104,7 @@ public class CSCreativeTabs {
         /** Machines */
         output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
         /* output.accept(CSBlocks.FUEL_CELL); */
+        output.accept(CSBlocks.CIRCUIT_MAKER);
 
         /** ITEMS */
         /** Raw Materials */

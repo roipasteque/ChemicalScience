@@ -40,7 +40,7 @@
   },
 
   "fluidoutput": {
-    "amount": 100,
+    "amount": 200,
     "id": "chemicalscience:methanol"
   },
 

@@ -2,7 +2,7 @@
   "type": "electrodynamics:chemical_crystallizer_recipe",
   "fluidinputs": [
     {
-      "amount": 100,
+      "amount": 10,
       "tag": "c:trinitrotoluene"
     }
   ],

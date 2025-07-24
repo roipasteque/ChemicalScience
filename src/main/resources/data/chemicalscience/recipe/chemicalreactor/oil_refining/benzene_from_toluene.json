@@ -6,7 +6,7 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "electrodynamics:dustchromium"
+        "item": "electrodynamics:oxidechromite"
       }
     }
   ],
@@ -29,7 +29,7 @@
 
   "itemoutput": {
     "count": 1,
-    "id": "electrodynamics:dustchromium"
+    "id": "electrodynamics:oxidechromite"
   },
 
   "fluidoutput": {

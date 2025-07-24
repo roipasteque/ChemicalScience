@@ -23,6 +23,6 @@
     "count": 1,
     "id": "electrodynamics:ceramicwet"
   },
-  "ticks": 50,
+  "ticks": 10,
   "usagepertick": 100.0
 }

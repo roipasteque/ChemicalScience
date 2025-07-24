@@ -11,25 +11,25 @@
   ],
   "fluidinputs": [
     {
-      "amount": 600,
+      "amount": 100,
       "tag": "c:sodium_hydroxide"
     }
   ],
   "group": "chemicalscience",
   "iteminputs": [
     {
-      "count": 2,
+      "count": 1,
       "ingredient": {
         "tag": "c:dusts/monazite"
       }
     }
   ],
   "itemoutput": {
-    "count": 2,
+    "count": 1,
     "id": "chemicalscience:impuredust_ceriumoxide"
   },
   "fluidoutput": {
-    "amount": 500,
+    "amount": 1000,
     "id": "chemicalscience:phosphoricacid"
   },
   "ticks": 200,

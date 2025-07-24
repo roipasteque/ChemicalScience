@@ -20,6 +20,7 @@ public class CSMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerRackS>> CONTAINER_RACK_S = register("racks", ContainerRackS::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerLabBench>> CONTAINER_LAB_BENCH = register("labbench", ContainerLabBench::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerLabStorage>> CONTAINER_LAB_STORAGE = register("labstorage", ContainerLabStorage::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerCircuitMaker>> CONTAINER_CIRCUIT_MAKER = register("circuitmaker", ContainerCircuitMaker::new);
 
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {

@@ -4,18 +4,18 @@
 
   "fluidinputs": [
     {
-      "amount": 180,
+      "amount": 200,
       "tag": "c:nitric_acid"
     },
 
     {
-      "amount": 60,
+      "amount": 100,
       "tag": "c:toluene"
     }
   ],
 
   "fluidoutput": {
-    "amount": 60,
+    "amount": 100,
     "id": "chemicalscience:trinitrotoluene"
   },
 

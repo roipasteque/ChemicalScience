@@ -1,0 +1,49 @@
+{
+  "type": "chemicalscience:circuit_maker_recipe",
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:ferric_chloride"
+    }
+  ],
+
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/copper"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:circuits/basic"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:redstone"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/phosphorus"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/tin"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "electrodynamics:circuitadvanced"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

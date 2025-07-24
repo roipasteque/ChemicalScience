@@ -47,6 +47,7 @@ public class CSClientRegister {
 
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
+        event.register(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), ScreenCircuitMaker::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
         event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);

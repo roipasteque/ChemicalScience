@@ -3,7 +3,7 @@
 
   "gasbi": [
     {
-    "amount": 1500,
+    "amount": 2500,
     "chance": 1.0,
     "gas": "electrodynamics:hydrogen",
     "pressure": 1,
@@ -13,8 +13,8 @@
 
   "fluidbi": [
     {
-      "amount": 50,
-      "chance": 0.2,
+      "amount": 100,
+      "chance": 1.0,
       "fluid": "chemicalscience:sodiumperchlorate"
     }
   ],
@@ -30,9 +30,15 @@
 
   "iteminputs": [
     {
-      "count": 12,
+      "count": 6,
       "ingredient": {
         "tag": "c:dusts/salt"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/redstone"
       }
     }
   ],
@@ -47,9 +53,9 @@
 
 
   "fluidoutput": {
-    "amount": 500,
+    "amount": 1000,
     "id": "chemicalscience:sodiumhydroxide"
   },
   "ticks": 100,
-  "usagepertick": 1000.0
+  "usagepertick": 500.0
 }

@@ -179,6 +179,7 @@
 
   "block.chemicalscience.organicsolarpanel": "Organic Solar Panel",
   "block.chemicalscience.fuelcell": "Fuel Cell",
+  "block.chemicalscience.circuitmaker": "Circuit Maker",
 
   "item.chemicalscience.rawore_silicon": "Raw Silicon Ore",
   "item.chemicalscience.rawore_arsenopyrite": "Raw Arsenopyrite Ore",
@@ -490,6 +491,7 @@
   "fluid.chemicalscience.alkalinecassiteritesolution": "Basic Cassiterite Solution",
   "fluid.chemicalscience.lubricant": "Lubricant",
   "fluid.chemicalscience.aniline": "Aniline",
+  "fluid.chemicalscience.ferricchloride": "Ferric Chloride",
 
   "gas.chemicalscience.chlorine": "Chlorine",
   "gas.chemicalscience.carbonmonoxide": "Carbon Monoxide",
@@ -698,10 +700,13 @@
   "container.racks": "§9Steel Rack",
   "container.labbench": "Laboratory Bench",
   "container.labstorage": "Storage",
+  "container.circuitmaker": "Circuit Maker",
 
   "gui.chemicalscience.machine.current": "Current: %s",
   "gui.chemicalscience.machine.output": "Output: %s",
   "gui.chemicalscience.machine.voltage": "Voltage: %s",
+
+  "jei.circuit_maker_recipe": "Circuits",
 
   "advancement.chemicalscience.root.title": "Chemical Science",
   "advancement.chemicalscience.root.desc": "Craft a Chemical Reactor, and start some real chemistry!",

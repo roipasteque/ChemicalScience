@@ -34,14 +34,14 @@
       "amount": 10,
       "pressure":16,
       "gas": "chemicalscience:impurepetroleumgas",
-      "temp": 350
+      "temp": 500
     },
 
     {
       "amount": 20,
       "pressure":16,
       "tag": "c:hydrogen",
-      "temp": 293
+      "temp": 500
     }
   ],
 
