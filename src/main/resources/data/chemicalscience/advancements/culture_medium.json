@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:culture_medium"
+            "items": ["chemicalscience:culture_medium"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:culture_medium"
+      "item": "chemicalscience:culture_medium"
     },
     "title": {
       "color": "dark_aqua",

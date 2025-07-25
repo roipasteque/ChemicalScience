@@ -634,7 +634,8 @@
   "guidebook.chemicalscience.chemicalscience": "Chemical Science",
 
   "guidebook.chemicalscience.chapter.introduction": "Introduction",
-  "guidebook.chemicalscience.chapter.introduction.l1.0": "Chemical Science 1.20.1 est en béta, beaucoup de contenu manque ou ne fonctionne pas aussi bien qu'il le devrait. Pour profiter pleinement du mod, essayez la version 1.21.1. Désolé :D",
+  "guidebook.chemicalscience.chapter.introduction.l1.b1": "§cChemical Science 1.20.1 est en béta, beaucoup de contenu manque ou ne fonctionne pas aussi bien qu'il le devrait.",
+  "guidebook.chemicalscience.chapter.introduction.l1.b2": "§0§rPour profiter pleinement du mod, essayez la version 1.21.1. Désolé :D",
   "guidebook.chemicalscience.chapter.introduction.l1.1": "Chemical Science is an addon that aims to add way more recipes to Electrodynamics and its addons. It expends chemistry by adding ores, items, fluids, new tools and machines. You can use it to learn a bit about chemistry too, everything is in the guidebook!",
 
   "guidebook.chemicalscience.chapter.ores": "Minerais",

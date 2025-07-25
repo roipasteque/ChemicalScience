@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:rawore_silicon"
+            "items": ["chemicalscience:rawore_silicon"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:ore_deepslate_silicon"
+      "item": "chemicalscience:ore_deepslate_silicon"
     },
     "title": {
       "color": "dark_purple",

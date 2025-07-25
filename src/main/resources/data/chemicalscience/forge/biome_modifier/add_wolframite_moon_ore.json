@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#chemicalscience:moon_biomes",
+  "features": "chemicalscience:wolframite_moon_ore_placed",
+  "step": "underground_ores"
+}

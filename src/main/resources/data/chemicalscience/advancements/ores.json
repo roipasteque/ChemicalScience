@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "electrodynamics:electricdrill"
+            "items": ["electrodynamics:electricdrill"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "electrodynamics:electricdrill"
+      "item": "electrodynamics:electricdrill"
     },
     "title": {
       "color": "gray",

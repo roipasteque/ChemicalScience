@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:rawore_cooperite"
+            "items": ["chemicalscience:rawore_cooperite"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:ore_deepslate_cooperite"
+      "item": "chemicalscience:ore_deepslate_cooperite"
     },
     "title": {
       "color": "gold",

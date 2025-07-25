@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#chemicalscience:venus_biomes",
+  "features": "chemicalscience:arsenopyrite_venus_ore_placed",
+  "step": "underground_ores"
+}

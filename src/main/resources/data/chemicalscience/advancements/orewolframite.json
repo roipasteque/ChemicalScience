@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:rawore_wolframite"
+            "items": ["chemicalscience:rawore_wolframite"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:ore_deepslate_wolframite"
+      "item": "chemicalscience:ore_deepslate_wolframite"
     },
     "title": {
       "color": "dark_blue",

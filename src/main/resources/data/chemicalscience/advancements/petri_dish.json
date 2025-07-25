@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:petri_dish"
+            "items": ["chemicalscience:petri_dish"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:petri_dish"
+      "item": "chemicalscience:petri_dish"
     },
     "title": {
       "color": "gray",

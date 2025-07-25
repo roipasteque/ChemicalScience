@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:ore_sourcerock"
+            "items": ["chemicalscience:ore_sourcerock"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:ore_deepslate_sourcerock"
+      "item": "chemicalscience:ore_deepslate_sourcerock"
     },
     "title": {
       "color": "dark_gray",

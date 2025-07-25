@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:escherichia_coli"
+            "items": ["chemicalscience:escherichia_coli"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:escherichia_coli"
+      "item": "chemicalscience:escherichia_coli"
     },
     "title": {
       "color": "light_purple",

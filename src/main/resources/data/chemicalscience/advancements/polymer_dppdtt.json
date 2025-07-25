@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:polymer_dppdtt"
+            "items": ["chemicalscience:polymer_dppdtt"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:polymer_dppdtt"
+      "item": "chemicalscience:polymer_dppdtt"
     },
     "title": {
       "color": "red",

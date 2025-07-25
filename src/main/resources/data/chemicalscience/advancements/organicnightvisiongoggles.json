@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:organicnightvisiongoggles"
+            "items": ["chemicalscience:organicnightvisiongoggles"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:organicnightvisiongoggles"
+      "item": "chemicalscience:organicnightvisiongoggles"
     },
     "title": {
       "color": "dark_blue",

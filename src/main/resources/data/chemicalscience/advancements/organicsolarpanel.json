@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:organicsolarpanel"
+            "items": ["chemicalscience:organicsolarpanel"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:organicsolarpanel"
+      "item": "chemicalscience:organicsolarpanel"
     },
     "title": {
       "color": "light_purple",

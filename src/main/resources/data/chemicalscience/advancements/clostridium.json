@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "chemicalscience:clostridium"
+            "items": ["chemicalscience:clostridium"]
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "chemicalscience:clostridium"
+      "item": "chemicalscience:clostridium"
     },
     "title": {
       "color": "dark_blue",

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#chemicalscience:mars_biomes",
+  "features": "chemicalscience:fluorite_mars_ore_placed",
+  "step": "underground_ores"
+}
