@@ -11,8 +11,6 @@ import voltaic.api.electricity.formatting.ChatFormatter;
 import voltaic.api.electricity.formatting.DisplayUnits;
 import voltaic.prefab.screen.GenericScreen;
 import voltaic.prefab.screen.component.types.ScreenComponentMultiLabel;
-import voltaic.prefab.screen.component.types.guitab.ScreenComponentElectricInfo;
-import voltaic.prefab.screen.component.utils.AbstractScreenComponentInfo;
 import voltaic.prefab.utilities.math.Color;
 import voltaic.prefab.utilities.object.TransferPack;
 
@@ -21,16 +19,14 @@ public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> 
 
     public ScreenSolarPanel(ContainerOrganicSolarPanel container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
-        addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
         addComponent(new ScreenComponentMultiLabel(0, 0, graphics -> {
             TileOrganicSolarPanel panel = menu.getSafeHost();
-            if (panel == null) {
-                return;
+            if (panel != null) {
+                TransferPack transfer = panel.getProduced();
+                graphics.drawString(font, ElectroTextUtils.gui("machine.current", ChatFormatter.getChatDisplayShort(transfer.getAmps(), DisplayUnits.AMPERE)), inventoryLabelX + 60, inventoryLabelY - 48, Color.TEXT_GRAY.color(), false);
+                graphics.drawString(font, ElectroTextUtils.gui("machine.output", ChatFormatter.getChatDisplayShort(transfer.getWatts(), DisplayUnits.WATT)), inventoryLabelX + 60, inventoryLabelY - 35, Color.TEXT_GRAY.color(), false);
+                graphics.drawString(font, ElectroTextUtils.gui("machine.voltage", ChatFormatter.getChatDisplayShort(240, DisplayUnits.VOLTAGE)), inventoryLabelX + 60, inventoryLabelY - 22, Color.TEXT_GRAY.color(), false);
             }
-            TransferPack transfer = panel.getProduced();
-            graphics.drawString(font, ElectroTextUtils.gui("machine.current", ChatFormatter.getChatDisplayShort(transfer.getAmps(), DisplayUnits.AMPERE)), inventoryLabelX + 60, inventoryLabelY - 48, Color.TEXT_GRAY.color(), false);
-            graphics.drawString(font, ElectroTextUtils.gui("machine.output", ChatFormatter.getChatDisplayShort(transfer.getWatts(), DisplayUnits.WATT)), inventoryLabelX + 60, inventoryLabelY - 35, Color.TEXT_GRAY.color(), false);
-            graphics.drawString(font, ElectroTextUtils.gui("machine.voltage", ChatFormatter.getChatDisplayShort(transfer.getVoltage(), DisplayUnits.VOLTAGE)), inventoryLabelX + 60, inventoryLabelY - 22, Color.TEXT_GRAY.color(), false);
         }));
     }
 
