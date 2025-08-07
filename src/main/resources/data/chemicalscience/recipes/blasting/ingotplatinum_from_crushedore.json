@@ -1,11 +1,8 @@
 {
-  "neoforge:conditions": [
+  "conditions": [
     {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:tag_empty",
-        "tag": "create:crushed_raw_materials"
-      }
+      "type": "forge:mod_loaded",
+      "modid": "create"
     }
   ],
   "type": "minecraft:blasting",

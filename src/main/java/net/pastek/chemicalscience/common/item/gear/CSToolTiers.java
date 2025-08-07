@@ -9,13 +9,14 @@ import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.TierSortingRegistry;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSItems;
+import net.pastek.chemicalscience.registers.CSTags;
 
 import java.util.List;
 
 
 public class CSToolTiers {
     public static final Tier TUNGSTENCARBIDE = TierSortingRegistry.registerTier(
-            new ForgeTier(2, 2130, 10.0f, 2.0f, 5, BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(CSItems.INGOT_TUNGSTEN_CARBIDE.get())),
-            new ResourceLocation(ChemicalScience.MOD_ID, "tungsten"), List.of(Tiers.DIAMOND), List.of());
+            new ForgeTier(2, 2130, 10.0f, 2.0f, 5, CSTags.Blocks.NEEDS_TUNGSTEN_TOOL, () -> Ingredient.of(CSItems.INGOT_TUNGSTEN_CARBIDE.get())),
+            new ResourceLocation(ChemicalScience.MOD_ID, "tungsten"), List.of(Tiers.IRON), List.of());
 
 }

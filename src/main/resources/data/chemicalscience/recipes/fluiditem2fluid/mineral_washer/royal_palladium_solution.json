@@ -3,7 +3,7 @@
   "fluidinputs": {
     "0": {
       "amount": 1000,
-      "tag": "forge:aquaregia"
+      "tag": "forge:sulfuric_acid"
     },
     "count": 1
   },

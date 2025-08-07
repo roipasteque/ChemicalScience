@@ -1,4 +1,19 @@
 {
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "nuclearscience"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ballistix"
+        }
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {

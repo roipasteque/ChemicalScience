@@ -3,7 +3,7 @@
   "fluidinputs": {
     "0": {
       "amount": 100,
-      "tag": "forge:nitric_acid"
+      "tag": "forge:sulfuric_acid"
     },
     "count": 1
   },

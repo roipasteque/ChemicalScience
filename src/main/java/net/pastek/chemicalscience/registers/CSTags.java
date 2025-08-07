@@ -10,7 +10,6 @@ public class CSTags {
 
     public static class Blocks {
         public static final TagKey<Block> NEEDS_TUNGSTEN_TOOL = createTag("needs_tungsten_tool");
-        public static final TagKey<Block> INCORRECT_FOR_TUNGSTEN_TOOL = createTag("incorrect_for_tungsten_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(new ResourceLocation(ChemicalScience.MOD_ID, name));

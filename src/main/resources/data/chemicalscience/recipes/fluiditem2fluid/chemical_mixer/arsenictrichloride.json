@@ -3,7 +3,7 @@
   "fluidinputs": {
     "0": {
       "amount": 600,
-      "tag": "forge:hydrochloric_acid"
+      "tag": "forge:potassium_chloride"
     },
     "count": 1
   },

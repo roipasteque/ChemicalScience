@@ -1,4 +1,11 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nuclearscience"
+    }
+  ],
+
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
