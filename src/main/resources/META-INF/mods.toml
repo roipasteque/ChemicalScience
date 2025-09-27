@@ -4,7 +4,7 @@ license="ARR"
 [[mods]] #mandatory
 
 modId="chemicalscience" #mandatory
-version="1.20.1-3.0.1" #mandatory
+version="1.20.1-3.0.2" #mandatory
 displayName="Chemical Science" #mandatory
 authors="Roi Pasteque" #optional
 description='''An addon for Electrodynamics expending chemistry.'''
