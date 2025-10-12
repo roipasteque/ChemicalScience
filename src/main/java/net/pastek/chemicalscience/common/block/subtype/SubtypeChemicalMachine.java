@@ -10,6 +10,7 @@ import net.pastek.chemicalscience.common.tile.TileRackS;
 import net.pastek.chemicalscience.common.tile.TileLabBench;
 import net.pastek.chemicalscience.common.tile.TileLabStorage;
 import net.pastek.chemicalscience.common.tile.TileCircuitMaker;
+import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
 import voltaic.api.ISubtype;
 import voltaic.api.multiblock.subnodebased.parent.IMultiblockParentBlock;
 import voltaic.api.tile.IMachine;
@@ -26,7 +27,9 @@ public enum SubtypeChemicalMachine implements ISubtype, IMachine {
     racks(true, TileRackS::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     labbench(true, TileLabBench::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     labstorage(true, TileLabStorage::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
-    circuitmaker(true, TileCircuitMaker::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE));
+    circuitmaker(true, TileCircuitMaker::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
+    fractionatingcolumn(true, TileFractionatingColumn::new);
+
 
 
 

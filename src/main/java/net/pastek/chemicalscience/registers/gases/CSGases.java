@@ -41,8 +41,4 @@ public class CSGases {
     public static final DeferredHolder<Gas, Gas> KRYPTON = GASES.register("krypton", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("krypton"), 120, new Color(255, 255, 255, 255), CSFluids.FLUID_KRYPTON));
     public static final DeferredHolder<Gas, Gas> XENON = GASES.register("xenon", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("xenon"), 165, new Color(255, 255, 255, 255), CSFluids.FLUID_XENON));
     public static final DeferredHolder<Gas, Gas> RADON = GASES.register("radon", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("radon"), 212, new Color(255, 255, 255, 255), CSFluids.FLUID_RADON));
-
-    public static void register(IEventBus eventBus) {
-        GASES.register(eventBus);
-    }
 }

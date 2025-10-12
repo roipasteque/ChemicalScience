@@ -4,12 +4,12 @@ import com.google.common.collect.Sets;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.tile.*;
+
 
 public class CSTiles {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, ChemicalScience.MOD_ID);
@@ -22,8 +22,5 @@ public class CSTiles {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabStorage>> TILE_LAB_STORAGE = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labstorage.tag(), () -> new BlockEntityType<>(TileLabStorage::new, Sets.newHashSet(CSBlocks.LABORATORY_STORAGE.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileCircuitMaker>> TILE_CIRCUIT_MAKER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.circuitmaker.tag(), () -> new BlockEntityType<>(TileCircuitMaker::new, Sets.newHashSet(CSBlocks.CIRCUIT_MAKER.get()), null));
 
-
-    public static void register(IEventBus eventBus) {
-        BLOCK_ENTITY_TYPES.register(eventBus);
-    }
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileFractionatingColumn>> TILE_FRACTIONATING_COLUMN = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.fractionatingcolumn.tag(), () -> new BlockEntityType<>(TileFractionatingColumn::new, Sets.newHashSet(CSBlocks.FRACTIONATING_COLUMN.get()), null));
 }

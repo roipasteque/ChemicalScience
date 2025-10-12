@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
+    "east": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
+    "north": "chemicalscience:block/block_tungsten",
+    "particle": "voltaic:block/steelcasing",
+    "south": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
+    "up": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
+    "west": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom"
+  }
+}

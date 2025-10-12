@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = ChemicalScience.MOD_ID)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -39,5 +39,6 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new CSBlockStateProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new CSDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new CSMultiblockProvider(packOutput, lookupProvider, existingFileHelper));
     }
 }

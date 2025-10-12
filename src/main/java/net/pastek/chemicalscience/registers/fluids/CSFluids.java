@@ -149,11 +149,4 @@ public class CSFluids {
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_KRYPTON = FLUIDS.register("krypton", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "krypton", "colorlessfluid", new Color(255, 255, 255, 120))));
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_XENON = FLUIDS.register("xenon", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "xenon", "colorlessfluid", new Color(255, 255, 255, 120))));
     public static DeferredHolder<Fluid, FluidNonPlaceable> FLUID_RADON = FLUIDS.register("radon", () -> new FluidNonPlaceable(ElectrodynamicsItems.ITEM_CANISTERREINFORCED, new SimpleWaterBasedFluidType(ChemicalScience.MOD_ID, "radon", "colorlessfluid", new Color(255, 255, 255, 120))));
-
-
-
-
-    public static void register(IEventBus eventBus) {
-        FLUIDS.register(eventBus);
-    }
 }

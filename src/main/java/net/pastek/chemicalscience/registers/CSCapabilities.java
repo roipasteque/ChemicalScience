@@ -9,7 +9,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import voltaic.prefab.tile.GenericTile;
 import voltaic.registers.VoltaicCapabilities;
 
-@EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = ChemicalScience.MOD_ID)
 public class CSCapabilities {
 
     @SubscribeEvent

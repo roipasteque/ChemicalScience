@@ -17,9 +17,4 @@ public class CSDataComponentTypes {
 
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> ON = DATA_COMPONENT_TYPES.register(NBTUtils.ON, () -> DataComponentType.<Boolean>builder().persistent(Codec.BOOL).networkSynchronized(ByteBufCodecs.BOOL).cacheEncoding().build());
-
-
-    public static void register(IEventBus bus) {
-        DATA_COMPONENT_TYPES.register(bus);
-    }
 }

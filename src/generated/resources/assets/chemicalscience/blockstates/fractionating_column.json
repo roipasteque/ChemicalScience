@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/fractionating_column",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/fractionating_column"
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/fractionating_column",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/fractionating_column",
+      "y": 270
+    }
+  }
+}

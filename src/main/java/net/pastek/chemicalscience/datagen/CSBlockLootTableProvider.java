@@ -211,6 +211,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());
         dropSelf(CSBlocks.FUEL_CELL.get());
         dropSelf(CSBlocks.CIRCUIT_MAKER.get());
+        dropSelf(CSBlocks.FRACTIONATING_COLUMN.get());
 
             // Periodic table
         dropSelf(CSBlocks.ELEMENT_H.get());

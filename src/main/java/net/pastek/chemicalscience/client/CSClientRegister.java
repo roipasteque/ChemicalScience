@@ -1,6 +1,5 @@
 package net.pastek.chemicalscience.client;
 
-import electrodynamics.compatibility.mekanism.MekanismClientHandler;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -8,7 +7,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
@@ -18,6 +16,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
+import net.pastek.chemicalscience.client.render.tile.RenderFractionatingColumn;
 import net.pastek.chemicalscience.client.render.tile.RenderLabStorage;
 import net.pastek.chemicalscience.client.render.tile.RenderRackM;
 import net.pastek.chemicalscience.client.render.tile.RenderRackS;
@@ -27,12 +26,11 @@ import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.CSTiles;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import org.jetbrains.annotations.NotNull;
-import voltaic.Voltaic;
 import voltaic.client.guidebook.ScreenGuidebook;
 import voltaic.client.misc.SWBFClientExtensions;
 import voltaic.common.fluid.SimpleWaterBasedFluidType;
 
-@EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(modid = ChemicalScience.MOD_ID, value = {Dist.CLIENT})
 public class CSClientRegister {
 
     public static final LayerDefinition ORGANIC_NIGHT_VISION_GOGGLES = OrganicNightVisionGoggles.createBodyLayer();
@@ -48,6 +46,7 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
         event.register(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), ScreenCircuitMaker::new);
+        event.register(CSMenuTypes.CONTAINER_FRACTIONATING_COLUMN.get(), ScreenFractionatingColumn::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
         event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);
@@ -96,5 +95,6 @@ public class CSClientRegister {
         event.registerBlockEntityRenderer(CSTiles.TILE_RACK_M.get(), RenderRackM::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_RACK_S.get(), RenderRackS::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_LAB_STORAGE.get(), RenderLabStorage::new);
+        event.registerBlockEntityRenderer(CSTiles.TILE_FRACTIONATING_COLUMN.get(), RenderFractionatingColumn::new);
     }
 }

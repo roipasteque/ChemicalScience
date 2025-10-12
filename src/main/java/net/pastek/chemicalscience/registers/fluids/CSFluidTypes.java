@@ -106,8 +106,4 @@ public class CSFluidTypes {
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREYTTERBIUMNITRATE = FLUID_TYPES.register("impureytterbiumnitrate", () -> CSFluids.FLUID_IMPUREYTTERBIUMNITRATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPURELUTECIUMNITRATE = FLUID_TYPES.register("impureluteciumnitrate", () -> CSFluids.FLUID_IMPURELUTECIUMNITRATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_IMPUREPROMETHIUMNITRATE = FLUID_TYPES.register("impurepromethiumnitrate", () -> CSFluids.FLUID_IMPUREPROMETHIUMNITRATE.get().getFluidType());
-
-    public static void register(IEventBus eventBus) {
-        FLUID_TYPES.register(eventBus);
-    }
 }

@@ -21,13 +21,9 @@ public class CSMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerLabBench>> CONTAINER_LAB_BENCH = register("labbench", ContainerLabBench::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerLabStorage>> CONTAINER_LAB_STORAGE = register("labstorage", ContainerLabStorage::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerCircuitMaker>> CONTAINER_CIRCUIT_MAKER = register("circuitmaker", ContainerCircuitMaker::new);
-
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerFractionatingColumn>> CONTAINER_FRACTIONATING_COLUMN = register("fractionatingcolumn", ContainerFractionatingColumn::new);
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {
         return MENU_TYPES.register(id, () -> new MenuType<>(supplier, FeatureFlags.DEFAULT_FLAGS));
-    }
-
-    public static void register(IEventBus eventBus) {
-        MENU_TYPES.register(eventBus);
     }
 }

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSBlocks;
+import voltaic.Voltaic;
 import voltaic.datagen.utils.client.BaseBlockstateProvider;
 
 public class CSBlockStateProvider extends BaseBlockstateProvider {
@@ -106,6 +107,28 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         horrRotatedBlock(CSBlocks.LABORATORY_STORAGE, existingBlock(CSBlocks.LABORATORY_STORAGE), true);
         blockItem(CSBlocks.LABORATORY_SUPPORT);
         blockItem(CSBlocks.LABORATORY_SINK);
+
+        horrRotatedBlock(CSBlocks.FRACTIONATING_COLUMN,
+                //
+                models().cube(
+                                //
+                                name(CSBlocks.FRACTIONATING_COLUMN.get()),
+                                //
+                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                //
+                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                //
+                                blockLoc("block_tungsten"),
+                                //
+                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                //
+                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                //
+                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"))
+                        //
+                        .texture("particle", Voltaic.rl("block/steelcasing")),
+                //
+                90, 0, true);
 
         // Periodic table
         blockWithItem(CSBlocks.ELEMENT_H);

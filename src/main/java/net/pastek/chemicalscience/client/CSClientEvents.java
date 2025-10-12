@@ -9,7 +9,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSPotions;
 
-@EventBusSubscriber(modid = ChemicalScience.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = ChemicalScience.MOD_ID)
 public class CSClientEvents {
 
     @SubscribeEvent

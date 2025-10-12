@@ -219,7 +219,4 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     // Armor
     public static final DeferredItem<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
     public static final DeferredItem<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));
-
-
-
-    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}}
+}

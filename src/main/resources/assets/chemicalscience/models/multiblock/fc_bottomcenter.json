@@ -1,0 +1,7 @@
+{
+	"loader": "voltaic:voltaicmultiblockmodelloader",
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "chemicalscience:block/multiblock/fractionatingcolumn/frac_bottom"
+	}
+}

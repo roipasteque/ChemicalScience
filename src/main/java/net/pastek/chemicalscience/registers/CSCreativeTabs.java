@@ -105,6 +105,7 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
         /* output.accept(CSBlocks.FUEL_CELL); */
         output.accept(CSBlocks.CIRCUIT_MAKER);
+        output.accept(CSBlocks.FRACTIONATING_COLUMN);
 
         /** ITEMS */
         /** Raw Materials */
@@ -431,4 +432,4 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.ELEMENT_OG);
 
     }).build());
-    public static void register(IEventBus eventBus) {CREATIVE_MODE_TAB.register(eventBus);}}
+}
