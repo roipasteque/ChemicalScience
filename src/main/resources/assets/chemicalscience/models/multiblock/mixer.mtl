@@ -1,0 +1,8 @@
+newmtl mixer
+map_Kd chemicalscience:textures/multiblock/mixer.png
+
+newmtl multiblock_base
+map_Kd chemicalscience:textures/multiblock/multiblock_base.png
+
+newmtl multiblock_components
+map_Kd chemicalscience:textures/multiblock/multiblock_components.png

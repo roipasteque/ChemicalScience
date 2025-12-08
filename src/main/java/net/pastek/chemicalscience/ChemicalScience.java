@@ -13,10 +13,13 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(ChemicalScience.MOD_ID)
 public class ChemicalScience {
     public static final String MOD_ID = "chemicalscience";
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     public ChemicalScience(IEventBus EventBus) {
         EventBus.addListener(this::commonSetup);

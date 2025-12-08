@@ -1,0 +1,4 @@
+newmtl fractionatingcolumn
+map_Kd frac_bottom.png
+newmtl fractionatingcolumnpowerin
+map_Kd frac_powerin.png
