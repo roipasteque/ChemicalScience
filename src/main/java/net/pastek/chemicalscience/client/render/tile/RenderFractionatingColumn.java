@@ -2,45 +2,63 @@ package net.pastek.chemicalscience.client.render.tile;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-import net.pastek.chemicalscience.ChemicalScience;
-import net.pastek.chemicalscience.client.render.multiblock.BakedObjModel;
-import net.pastek.chemicalscience.client.render.multiblock.ObjModelManager;
-import net.pastek.chemicalscience.client.render.multiblock.ObjModelRenderer;
+import net.pastek.chemicalscience.client.CSClientRegister;
 import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
 
 @OnlyIn(Dist.CLIENT)
 public class RenderFractionatingColumn implements BlockEntityRenderer<TileFractionatingColumn> {
 
-    public RenderFractionatingColumn(BlockEntityRendererProvider.Context context) {
-    }
+    public RenderFractionatingColumn(BlockEntityRendererProvider.Context context) {}
+
+    private BakedModel cachedModel = null;
+    private boolean modelLoadAttempted = false;
 
     @Override
     public void render(TileFractionatingColumn tile, float partialTicks, PoseStack poseStack,
                        MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        if(tile.isFormed.getValue() == true) {
 
-            BakedObjModel model = ObjModelManager.INSTANCE.get(
-                    ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "models/multiblock/mixer.obj")
-            );
+        if (tile.isFormed.getValue() == true) {
 
-            if (model == null) return;
+            if (!modelLoadAttempted) {
+                cachedModel = Minecraft.getInstance().getModelManager().getModel(CSClientRegister.FRACTIONATINGCOLUMN_MODEL);
+                modelLoadAttempted = true;
+
+                if (cachedModel == Minecraft.getInstance().getModelManager().getMissingModel()) {
+                    System.err.println("ERROR: Missing Multiblock Model at: " + CSClientRegister.FRACTIONATINGCOLUMN_MODEL);
+                    cachedModel = null;
+                    return;
+                }
+            }
+
+            if (cachedModel == null) return;
 
             poseStack.pushPose();
 
-            poseStack.translate(0.5 + tile.getFacing().getStepX() / 2.0, 0.5 + tile.getFacing().getStepY() / 2.0, 0.5 + tile.getFacing().getStepZ() / 2.0);
-            poseStack.scale(1f, 1f, 1f);
             poseStack.mulPose(Axis.YP.rotationDegrees(tile.getFacing().toYRot()));
+            poseStack.translate(0.5, -1, -0.5);
 
-            ObjModelRenderer.render(model, poseStack, buffer, packedLight, packedOverlay);
+            BlockState state = tile.getBlockState();
+
+            Minecraft.getInstance().getBlockRenderer().getModelRenderer().renderModel(
+                    poseStack.last(),
+                    buffer.getBuffer(RenderType.cutout()),
+                    state,
+                    cachedModel,
+                    1.0f, 1.0f, 1.0f,
+                    packedLight,
+                    packedOverlay
+            );
 
             poseStack.popPose();
         }
     }
 }
-

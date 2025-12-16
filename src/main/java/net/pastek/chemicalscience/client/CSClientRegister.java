@@ -2,6 +2,8 @@ package net.pastek.chemicalscience.client;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -9,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
@@ -17,7 +20,6 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
-import net.pastek.chemicalscience.client.render.multiblock.ObjModelReloadListener;
 import net.pastek.chemicalscience.client.render.tile.RenderFractionatingColumn;
 import net.pastek.chemicalscience.client.render.tile.RenderLabStorage;
 import net.pastek.chemicalscience.client.render.tile.RenderRackM;
@@ -37,6 +39,10 @@ public class CSClientRegister {
 
     public static final LayerDefinition ORGANIC_NIGHT_VISION_GOGGLES = OrganicNightVisionGoggles.createBodyLayer();
     public static final LayerDefinition BULLETPROOF_VEST = BulletProofVest.createBodyLayer(3, false);
+
+    public static final ModelResourceLocation FRACTIONATINGCOLUMN_MODEL =
+            ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/fractionating_column"));
+
 
     public static void setup() {
         ScreenGuidebook.addGuidebookModule(new ModuleChemicalScience());
@@ -101,7 +107,7 @@ public class CSClientRegister {
     }
 
     @SubscribeEvent
-    public static void onRegisterReloadListeners(RegisterClientReloadListenersEvent event) {
-        event.registerReloadListener(new ObjModelReloadListener());
+    public static void registerModels(ModelEvent.RegisterAdditional event) {
+        event.register(FRACTIONATINGCOLUMN_MODEL);
     }
 }
