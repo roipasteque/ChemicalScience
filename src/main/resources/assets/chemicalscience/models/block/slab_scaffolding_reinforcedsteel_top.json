@@ -1,0 +1,9 @@
+{
+  "parent": "chemicalscience:block/base/slab_with_top_top",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "side": "chemicalscience:block/metal_building_blocks/slab_scaffolding_reinforcedsteel",
+    "top": "chemicalscience:block/metal_building_blocks/scaffolding_reinforcedsteel",
+    "bottom": "chemicalscience:block/metal_building_blocks/scaffolding_reinforcedsteel"
+  }
+}

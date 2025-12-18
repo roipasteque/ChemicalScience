@@ -2,12 +2,9 @@ package net.pastek.chemicalscience.common.tile;
 
 import java.util.List;
 
-import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -40,18 +37,21 @@ import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 
 import voltaic.api.IWrenchItem;
 import voltaic.api.electricity.ICapabilityElectrodynamic;
+import voltaic.api.gas.IGasHandler;
 import voltaic.api.multiblock.assemblybased.Multiblock;
 import voltaic.api.multiblock.assemblybased.MultiblockSlaveNode;
 import voltaic.api.multiblock.assemblybased.TileMultiblockController;
 import voltaic.api.multiblock.assemblybased.TileMultiblockSlave;
 import voltaic.common.block.states.VoltaicBlockStates;
 import voltaic.common.network.utils.FluidUtilities;
+import voltaic.common.network.utils.GasUtilities;
 import voltaic.common.recipe.VoltaicRecipe;
 import voltaic.prefab.properties.types.PropertyTypes;
 import voltaic.prefab.properties.variant.SingleProperty;
 import voltaic.prefab.tile.components.*;
 import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.tile.components.utils.IComponentFluidHandler;
+import voltaic.prefab.tile.components.utils.IComponentGasHandler;
 import voltaic.prefab.utilities.BlockEntityUtils;
 import voltaic.registers.VoltaicCapabilities;
 
@@ -69,45 +69,102 @@ public class TileFractionatingColumn extends TileMultiblockController {
 
     public TileFractionatingColumn(BlockPos pos, BlockState state) {
         super(CSTiles.TILE_FRACTIONATING_COLUMN.get(), pos, state);
-        addComponent(new ComponentElectrodynamic(this, false, true).setInputDirections(BlockEntityUtils.MachineDirection.BACK).voltage(VoltaicCapabilities.DEFAULT_VOLTAGE*16));
+        addComponent(new ComponentElectrodynamic(this, false, true).setInputDirections(BlockEntityUtils.MachineDirection.BACK).voltage(VoltaicCapabilities.DEFAULT_VOLTAGE*4));
         addComponent(new ComponentFluidHandlerMulti(this).setInputDirections(BlockEntityUtils.MachineDirection.RIGHT)
                 .setInputTanks(1, arr(MAX_INPUT_TANK_CAPACITY)).setOutputDirections(BlockEntityUtils.MachineDirection.LEFT)
-                .setOutputTanks(1, MAX_OUTPUT_TANK_CAPACITY).setRecipeType(CSRecipies.FRACTIONATING_COLUMN_TYPE.get()));
+                .setOutputTanks(4, MAX_OUTPUT_TANK_CAPACITY, MAX_OUTPUT_TANK_CAPACITY, MAX_OUTPUT_TANK_CAPACITY, MAX_OUTPUT_TANK_CAPACITY).setRecipeType(CSRecipies.FRACTIONATING_COLUMN_TYPE.get()));
+        addComponent(new ComponentGasHandlerSimple(this, "", 5000, 1000, 10).setOutputDirections(BlockEntityUtils.MachineDirection.RIGHT));
         addComponent(new ComponentContainerProvider(SubtypeChemicalMachine.fractionatingcolumn.tag(), this)
                 .createMenu((id, player) -> new ContainerFractionatingColumn(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
-        addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().bucketInputs(1).bucketOutputs(1)).valid(machineValidator()));
+        addComponent(new ComponentInventory(this, ComponentInventory.InventoryBuilder.newInv().bucketInputs(1).bucketOutputs(4).gasOutputs(1)).valid(machineValidator()));
+        addComponent(new ComponentProcessor(this).canProcess((component, procNumber) -> component.outputToFluidPipe().consumeBucket().dispenseBucket().canProcessFluidItem2FluidRecipe(procNumber, CSRecipies.FRACTIONATING_COLUMN_TYPE.get())).process(ComponentProcessor::processFluidItem2FluidRecipe));
+    }
+
+
+    public void tickClient(ComponentTickable tickable) {
+        if (!this.<ComponentProcessor>getComponent(IComponentType.Processor).isActive(0)) {
+            return;
+        }
+
+        if (level.random.nextDouble() < 0.15) {
+            level.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, worldPosition.getX() + level.random.nextDouble(), worldPosition.getY() + level.random.nextDouble() * 0.4 + 12, worldPosition.getZ() + 1, 0.0D, 0.0D, 0.0D);
+        }
+
     }
 
     @Override
     public void tickServer(ComponentTickable tickable) {
         super.tickServer(tickable);
+
         ComponentFluidHandlerMulti fluidHandler = getComponent(IComponentType.FluidHandler);
+        ComponentGasHandlerMulti gasHandler = getComponent(IComponentType.GasHandler);
         ComponentElectrodynamic electro = getComponent(IComponentType.Electrodynamic);
+
         FluidUtilities.drainItem(this, fluidHandler.getInputTanks());
         FluidUtilities.fillItem(this, fluidHandler.getOutputTanks());
+        GasUtilities.fillItem(this, gasHandler.getOutputTanks());
+
         outputToPipe();
 
         if (currRecipe == null) {
-            for (RecipeHolder<FractionatingColumnRecipe> recipe : getLevel().getRecipeManager().getAllRecipesFor(CSRecipies.FRACTIONATING_COLUMN_TYPE.get())) {
-                if (testRecipe(recipe.value(), fluidHandler.getInputTanks())) { currRecipe = recipe.value(); break; }
+            for (RecipeHolder<FractionatingColumnRecipe> recipe : getLevel().getRecipeManager()
+                    .getAllRecipesFor(CSRecipies.FRACTIONATING_COLUMN_TYPE.get())) {
+                if (testRecipe(recipe.value(), fluidHandler.getInputTanks())) {
+                    currRecipe = recipe.value();
+                    break;
+                }
             }
-        } else if (!testRecipe(currRecipe, fluidHandler.getInputTanks())) currRecipe = null;
+        } else if (!testRecipe(currRecipe, fluidHandler.getInputTanks())) {
+            currRecipe = null;
+        }
 
-        if (currRecipe == null || electro.getJoulesStored()<=0 || (!fluidHandler.getOutputTanks()[0].isEmpty() && !fluidHandler.getOutputTanks()[0].getFluid().is(currRecipe.getFluidRecipeOutput().getFluid()))) {
-            operatingTicks.setValue(0.0); isActive.setValue(false); processAmount.setValue(0); neededTicks.setValue(0.0); return;
+        if (currRecipe == null || electro.getJoulesStored() <= 0 || (!fluidHandler.getOutputTanks()[0].isEmpty()
+                && !fluidHandler.getOutputTanks()[0].getFluid().is(currRecipe.getFluidRecipeOutput().getFluid()))) {
+            operatingTicks.setValue(0.0);
+            isActive.setValue(false);
+            processAmount.setValue(0);
+            neededTicks.setValue(0.0);
+            return;
+        }
+
+        double energySatisfaction = electro.getJoulesStored()
+                / 2;
+
+        if (energySatisfaction < 1) {
+            neededTicks.setValue(1.0 / energySatisfaction);
+            processAmount.setValue(1);
+        } else {
+            neededTicks.setValue(0.0);
+            operatingTicks.setValue(0.0);
+            processAmount.setValue((int) energySatisfaction);
         }
 
         int room = fluidHandler.getOutputTanks()[0].getCapacity() - fluidHandler.getOutputTanks()[0].getFluidAmount();
-        if (room <= 0) { isActive.setValue(false); return; }
+
+        if (room <= 0) {
+            isActive.setValue(false);
+            return;
+        }
+
         int amtToProcess = Math.min(room, processAmount.getValue());
+
         electro.setJoulesStored(0);
+
         isActive.setValue(true);
 
-        if (neededTicks.getValue()>0 && operatingTicks.getValue()<neededTicks.getValue()) { operatingTicks.setValue(operatingTicks.getValue()+1.0); return; }
+        if (neededTicks.getValue() > 0 && operatingTicks.getValue() < neededTicks.getValue()) {
+            operatingTicks.setValue(operatingTicks.getValue() + 1.0);
+            return;
+        }
+
         operatingTicks.setValue(0.0);
+
         fluidHandler.getInputTanks()[0].drain(amtToProcess, IFluidHandler.FluidAction.EXECUTE);
-        fluidHandler.getOutputTanks()[0].fill(new FluidStack(currRecipe.getFluidRecipeOutput().getFluidHolder(), amtToProcess), IFluidHandler.FluidAction.EXECUTE);
+        fluidHandler.getOutputTanks()[0].fill(
+                new FluidStack(currRecipe.getFluidRecipeOutput().getFluidHolder(), amtToProcess),
+                IFluidHandler.FluidAction.EXECUTE);
     }
+
 
     private static boolean testRecipe(FractionatingColumnRecipe recipe, FluidTank[] inputTanks) {
         Pair<List<Integer>, Boolean> pair = VoltaicRecipe.areFluidsValid(recipe.getFluidIngredients(), inputTanks);
@@ -134,9 +191,11 @@ public class TileFractionatingColumn extends TileMultiblockController {
     }
 
     @Override public @Nullable IFluidHandler getFluidHandlerCapability(@Nullable Direction side){ return null; }
-    @Nullable @Override public IFluidHandler getSlaveFluidHandlerCapability(TileMultiblockSlave slave, @Nullable Direction side) {if (slave.index.getValue() != 35 && slave.index.getValue() != 39) {return null;}return this.<IComponentFluidHandler>getComponent(IComponentType.FluidHandler).getCapability(side, CapabilityInputType.NONE);}
+    @Nullable @Override public IFluidHandler getSlaveFluidHandlerCapability(TileMultiblockSlave slave, @Nullable Direction side) {if (slave.index.getValue() != 12 && slave.index.getValue() != 29 && slave.index.getValue() != 47 && slave.index.getValue() != 65 && slave.index.getValue() != 83) {return null;}return this.<IComponentFluidHandler>getComponent(IComponentType.FluidHandler).getCapability(side, CapabilityInputType.NONE);}
+    @Override public @Nullable IGasHandler getGasHandlerCapability(@Nullable Direction side){ return null; }
+    @Nullable @Override public IGasHandler getSlaveGasHandlerCapability(TileMultiblockSlave slave, @Nullable Direction side) {if (slave.index.getValue() != 101) {return null;}return this.<IComponentGasHandler>getComponent(IComponentType.GasHandler).getCapability(side, CapabilityInputType.NONE);}
     @Override public @Nullable ICapabilityElectrodynamic getElectrodynamicCapability(@Nullable Direction side){ return null; }
-    @Nullable @Override public ICapabilityElectrodynamic getSlaveCapabilityElectrodynamic(TileMultiblockSlave slave, @Nullable Direction side) {if (slave.index.getValue() != 7) {return null;}return this.<ComponentElectrodynamic>getComponent(IComponentType.Electrodynamic).getCapability(side, CapabilityInputType.NONE);}
+    @Nullable @Override public ICapabilityElectrodynamic getSlaveCapabilityElectrodynamic(TileMultiblockSlave slave, @Nullable Direction side) {if (slave.index.getValue() != 8) {return null;}return this.<ComponentElectrodynamic>getComponent(IComponentType.Electrodynamic).getCapability(side, CapabilityInputType.NONE);}
     @Override public @Nullable IItemHandler getItemHandlerCapability(@Nullable Direction side){ return null; }
 
     @Override

@@ -8,7 +8,9 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.pastek.chemicalscience.client.CSClientRegister;
@@ -43,8 +45,10 @@ public class RenderFractionatingColumn implements BlockEntityRenderer<TileFracti
 
             poseStack.pushPose();
 
-            poseStack.mulPose(Axis.YP.rotationDegrees(tile.getFacing().toYRot()));
-            poseStack.translate(0.5, -1, -0.5);
+            Vec3 offset = getOffset(tile.getFacing());
+            poseStack.translate(offset.x, -1.0, offset.z);
+
+            poseStack.mulPose(Axis.YP.rotationDegrees(getFixedRotation(tile.getFacing())));
 
             BlockState state = tile.getBlockState();
 
@@ -60,5 +64,25 @@ public class RenderFractionatingColumn implements BlockEntityRenderer<TileFracti
 
             poseStack.popPose();
         }
+    }
+
+    private static Vec3 getOffset(Direction facing) {
+        return switch (facing) {
+            case SOUTH -> new Vec3( 0.5, 0, -0.5);
+            case WEST  -> new Vec3( 1.5, 0,  0.5);
+            case EAST  -> new Vec3( -0.5, 0, 0.5);
+            case NORTH -> new Vec3( 0.5, 0,  1.5);
+            default -> Vec3.ZERO;
+        };
+    }
+
+    private static float getFixedRotation(Direction facing) {
+        return switch (facing) {
+            case NORTH -> 180f;
+            case SOUTH -> 0f;
+            case WEST  -> -90f;
+            case EAST  -> 90f;
+            default -> 0f;
+        };
     }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
-    "east": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
-    "north": "chemicalscience:block/block_tungsten",
+    "down": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller_top",
+    "east": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller_side",
+    "north": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller",
     "particle": "voltaic:block/steelcasing",
-    "south": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
-    "up": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom",
-    "west": "chemicalscience:block/multiblock/fractionatingcolumn/frac_seperatorbottom"
+    "south": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller_side",
+    "up": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller_top",
+    "west": "chemicalscience:block/multiblock/fractionatingcolumn/frac_controller_side"
   }
 }

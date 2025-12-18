@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chemicalscience:block/slab_scaffolding_glass_steel"
+    },
+    "type=double": {
+      "model": "chemicalscience:block/scaffolding_glass_steel"
+    },
+    "type=top": {
+      "model": "chemicalscience:block/slab_scaffolding_glass_steel_top"
+    }
+  }
+}

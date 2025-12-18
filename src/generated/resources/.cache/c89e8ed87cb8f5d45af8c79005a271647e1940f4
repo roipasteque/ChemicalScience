@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-01T19:08:44.8840534	Item Models: chemicalscience
+// 1.21.1	2025-12-18T01:45:13.4809325	Item Models: chemicalscience
 85ce0f4d901b7d5ce390287f58697c98f4f7457a assets/chemicalscience/models/item/asphalt.json
 3de7a144c067791a1e30ebe6aba9d58dabdfd6b1 assets/chemicalscience/models/item/axe_tungstencarbide.json
 60952a3cd8380329e882dfa52fb8ec362ce8d5c3 assets/chemicalscience/models/item/boroncompositeplating.json
@@ -141,6 +141,8 @@ fc527dd86f669f706ebbee2873250241af6b3960 assets/chemicalscience/models/item/ingo
 5818d9aeb0bf727178efc57c62787c4ea8317435 assets/chemicalscience/models/item/ingot_zinc.json
 b38948126a275b83715e3354be4bb3910bb8ec48 assets/chemicalscience/models/item/iron_carbon_catalyst.json
 fa5549f6dbdaa6fdee5cdde5316f1896d45542ef assets/chemicalscience/models/item/ladder_manganese.json
+9dfd8c8ca1e45d701facf87837307c4b6f9b7622 assets/chemicalscience/models/item/ladder_reinforcedsteel.json
+480c62296c41dfc9d4cb19faadb2315ec7e03f16 assets/chemicalscience/models/item/ladder_steel.json
 effed33969b71f5f6113853644206d2e6d7d117e assets/chemicalscience/models/item/molybdenum_sulfur_catalyst.json
 0dfd9b623a75935cee8f0caa3c384544b7c64f66 assets/chemicalscience/models/item/niobiumtitaniumcoil.json
 e49d54ebd4767f70092a3650a4c232621f225685 assets/chemicalscience/models/item/nugget_manganesealuminum.json

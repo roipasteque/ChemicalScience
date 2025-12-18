@@ -1,5 +1,6 @@
 package net.pastek.chemicalscience.datagen;
 
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.RotatedPillarBlock;
@@ -56,16 +57,39 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         trapdoorBlockWithRenderType(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR.get(), modLoc("block/metal_building_blocks/trapdoor_magnesium"), true, "cutout");
         blockItem(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR, "block/", "_bottom");
         fenceBlock(CSBlocks.MAGNESIUM_GA9Z1_FENCE.get(), CSTexture("metal_building_blocks", "block_magnesiumaluminum"));
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING);
-        blockItem(CSBlocks.MANGANESE_GRATE);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_SLAB);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
-        blockItem(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
+
+        blockItem(CSBlocks.GRATE_MANGANESE);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GRATE);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GLASS);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GRATE_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GLASS_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GRATE_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_MANGANESE_GLASS_SLAB);
+
+        blockItem(CSBlocks.GRATE_STEEL);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GRATE);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GLASS);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GRATE_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GLASS_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB);
+
+        blockItem(CSBlocks.GRATE_REINFORCEDSTEEL);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB);
+        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB);
+
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN);
@@ -95,8 +119,8 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
 
         blockWithItem(CSBlocks.CONCRETE_SHIELDING);
         blockWithItem(CSBlocks.TANTALUM_SHIELDING);
-        glassBlock(CSBlocks.GLASS_SHIELDING, modLoc("block/radiationshielding_glass"), true);
-        glassBlock(CSBlocks.ADVANCED_GLASS_SHIELDING, modLoc("block/radiationshielding_advancedglass"), true);
+        simpleBlockCustomRenderType(CSBlocks.GLASS_SHIELDING.get(), modLoc("block/radiationshielding_glass"), Voltaic.vanillarl("translucent"), true);
+        simpleBlockCustomRenderType(CSBlocks.ADVANCED_GLASS_SHIELDING.get(), modLoc("block/radiationshielding_advancedglass"), Voltaic.vanillarl("translucent"), true);
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
@@ -114,17 +138,17 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
                                 //
                                 name(CSBlocks.FRACTIONATING_COLUMN.get()),
                                 //
-                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller_top"),
                                 //
-                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller_top"),
                                 //
-                                blockLoc("block_tungsten"),
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller"),
                                 //
-                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller_side"),
                                 //
-                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"),
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller_side"),
                                 //
-                                blockLoc("multiblock/fractionatingcolumn/frac_seperatorbottom"))
+                                blockLoc("multiblock/fractionatingcolumn/frac_controller_side"))
                         //
                         .texture("particle", Voltaic.rl("block/steelcasing")),
                 //

@@ -1,5 +1,6 @@
 package net.pastek.chemicalscience.registers;
 
+import electrodynamics.registers.ElectrodynamicsBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -49,18 +50,40 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_DOOR);
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_TRAPDOOR);
         output.accept(CSBlocks.MAGNESIUM_GA9Z1_FENCE);
-        // Manganese alloy
-        output.accept(CSBlocks.MANGANESE_GRATE);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GRATE);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GLASS);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_HOLLOW);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_HOLLOW);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_HOLLOW);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_SLAB);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GRATE_SLAB);
-        output.accept(CSBlocks.MANGANESE_SCAFFOLDING_GLASS_SLAB);
-        output.accept(CSBlocks.MANGANESE_LADDER);
+        // Scaffolding
+        output.accept(CSBlocks.GRATE_STEEL);
+        output.accept(ElectrodynamicsBlocks.BLOCK_STEELSCAFFOLDING.get());
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GRATE);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GLASS);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GRATE_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GLASS_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB);
+        output.accept(CSBlocks.LADDER_STEEL);
+        output.accept(CSBlocks.GRATE_REINFORCEDSTEEL);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB);
+        output.accept(CSBlocks.LADDER_REINFORCEDSTEEL);
+        output.accept(CSBlocks.GRATE_MANGANESE);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GRATE);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GLASS);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GRATE_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GLASS_HOLLOW);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GRATE_SLAB);
+        output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GLASS_SLAB);
+        output.accept(CSBlocks.LADDER_MANGANESE);
         // Halide Lamps
         output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
         output.accept(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);

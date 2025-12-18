@@ -3,5 +3,5 @@
   "model": "chemicalscience:models/multiblock/fractionating_column.obj",
   "detectCullableFaces": false,
   "flipV": true,
-  "automaticNormals": true
+  "automaticNormals": false
 }

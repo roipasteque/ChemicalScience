@@ -1,0 +1,9 @@
+{
+  "parent": "chemicalscience:block/base/block_with_top",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "side": "chemicalscience:block/metal_building_blocks/scaffolding_steel",
+    "top": "chemicalscience:block/metal_building_blocks/scaffolding_grate_steel_top",
+    "particle": "electrodynamics:block/resource/resourceblocksteel"
+  }
+}
