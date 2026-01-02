@@ -9,12 +9,14 @@ import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
 import voltaic.prefab.screen.component.types.ScreenComponentProgress;
 import voltaic.prefab.screen.component.types.ScreenComponentProgress.ProgressBars;
 import voltaic.prefab.screen.component.types.gauges.ScreenComponentFluidGauge;
+import voltaic.prefab.screen.component.types.gauges.ScreenComponentGasGauge;
 import voltaic.prefab.screen.component.types.guitab.ScreenComponentElectricInfo;
 import voltaic.prefab.screen.component.types.wrapper.WrapperInventoryIO;
 import voltaic.prefab.screen.types.GenericMaterialScreen;
 import voltaic.prefab.tile.GenericTile;
 import voltaic.prefab.tile.components.IComponentType;
 import voltaic.prefab.tile.components.type.ComponentFluidHandlerMulti;
+import voltaic.prefab.tile.components.type.ComponentGasHandlerMulti;
 import voltaic.prefab.tile.components.type.ComponentProcessor;
 
 @OnlyIn(Dist.CLIENT)
@@ -34,9 +36,31 @@ public class ScreenFractionatingColumn extends GenericMaterialScreen<ContainerFr
         }, 78, 31));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
-            TileFractionatingColumn boiler = (TileFractionatingColumn)container.getSafeHost();
+            TileFractionatingColumn boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getInputTanks()[0] : null;
-        }, 21, 18));
+        }, 18, 11));
+
+        this.addComponent(new ScreenComponentFluidGauge(() -> {
+            TileFractionatingColumn boiler = container.getSafeHost();
+            return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[0] : null;
+        }, 38, 11));
+        this.addComponent(new ScreenComponentFluidGauge(() -> {
+            TileFractionatingColumn boiler = container.getSafeHost();
+            return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[1] : null;
+        }, 58, 11));
+        this.addComponent(new ScreenComponentFluidGauge(() -> {
+            TileFractionatingColumn boiler = container.getSafeHost();
+            return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[2] : null;
+        }, 78, 11));
+        this.addComponent(new ScreenComponentFluidGauge(() -> {
+            TileFractionatingColumn boiler = container.getSafeHost();
+            return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[3] : null;
+        }, 98, 11));
+        this.addComponent(new ScreenComponentFluidGauge(() -> {
+            TileFractionatingColumn boiler = container.getSafeHost();
+            return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[4] : null;
+        }, 118, 11));
+
         this.addComponent(new ScreenComponentElectricInfo(-25, 2));
         new WrapperInventoryIO(this, -25, 28, 75, 82, 8, 72);
     }

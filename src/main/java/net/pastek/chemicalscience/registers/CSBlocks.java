@@ -365,9 +365,16 @@ public class CSBlocks {
                 /* ==                             MACHINES                             == */
                 /* ====================================================================== */
 
+    // Energy
     public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new BlockMachine(SubtypeChemicalMachine.organicsolarpanel));
     public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new BlockMachine(SubtypeChemicalMachine.fuelcell));
+
+    // Simple Machine
     public static final DeferredBlock<Block> CIRCUIT_MAKER = registerBlock("circuitmaker", () -> new BlockMachine(SubtypeChemicalMachine.circuitmaker));
+    public static final DeferredBlock<Block> HDS_UNIT = registerBlock("hds_unit", () -> new BlockMachine(SubtypeChemicalMachine.hdsunit));
+
+
+    // Multiblock Machine
     public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new BlockMachine(SubtypeChemicalMachine.fractionatingcolumn));
 
 

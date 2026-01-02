@@ -1,0 +1,44 @@
+{
+  "type": "chemicalscience:fractionating_column_recipe",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:crude_oil"
+    }
+  ],
+  "group": "chemicalscience",
+
+  "output": {
+    "amount": 200,
+    "id": "chemicalscience:impureheavyoil"
+  },
+
+  "fluidbi": [
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "chemicalscience:impurediesel"
+    },
+
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "chemicalscience:impurenaphta"
+    },
+
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "chemicalscience:naphta"
+    },
+
+    {
+      "amount": 200,
+      "chance": 1.0,
+      "fluid": "chemicalscience:impurepetroleumgas"
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 400.0
+}

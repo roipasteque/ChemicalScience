@@ -21,6 +21,8 @@ public class CSTiles {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabBench>> TILE_LAB_BENCH = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labbench.tag(), () -> new BlockEntityType<>(TileLabBench::new, Sets.newHashSet(CSBlocks.LABORATORY_BENCH.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileLabStorage>> TILE_LAB_STORAGE = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.labstorage.tag(), () -> new BlockEntityType<>(TileLabStorage::new, Sets.newHashSet(CSBlocks.LABORATORY_STORAGE.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileCircuitMaker>> TILE_CIRCUIT_MAKER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.circuitmaker.tag(), () -> new BlockEntityType<>(TileCircuitMaker::new, Sets.newHashSet(CSBlocks.CIRCUIT_MAKER.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileHDSUnit>> TILE_HDS_UNIT = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.hdsunit.tag(), () -> new BlockEntityType<>(TileHDSUnit::new, Sets.newHashSet(CSBlocks.HDS_UNIT.get()), null));
+
 
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileFractionatingColumn>> TILE_FRACTIONATING_COLUMN = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.fractionatingcolumn.tag(), () -> new BlockEntityType<>(TileFractionatingColumn::new, Sets.newHashSet(CSBlocks.FRACTIONATING_COLUMN.get()), null));
 }

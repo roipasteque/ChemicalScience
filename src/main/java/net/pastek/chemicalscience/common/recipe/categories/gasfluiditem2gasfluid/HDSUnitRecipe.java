@@ -1,0 +1,28 @@
+package net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.neoforged.neoforge.fluids.FluidStack;
+import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.registers.CSRecipies;
+import voltaic.common.recipe.recipeutils.*;
+
+import java.util.List;
+
+public class HDSUnitRecipe extends GasFluidItem2FluidRecipe {
+    public static final String RECIPE_GROUP = "hds_unit_recipe";
+    public static final ResourceLocation RECIPE_ID = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "hds_unit_recipe");
+
+    public HDSUnitRecipe(String group, List<CountableIngredient> inputItems, List<FluidIngredient> inputFluids, List<GasIngredient> inputGases, FluidStack fluidOutput, double experience, int ticks, double usagePerTick, List<ProbableItem> itemBiproducts, List<ProbableFluid> fluidBiproducts, List<ProbableGas> gasBiproducts) {
+        super(group, inputItems, inputFluids, inputGases, fluidOutput, experience, ticks, usagePerTick, itemBiproducts, fluidBiproducts, gasBiproducts);
+    }
+
+    public RecipeSerializer<?> getSerializer() {
+        return (RecipeSerializer) CSRecipies.HDS_UNIT_SERIALIZER.get();
+    }
+
+    public RecipeType<?> getType() {
+        return (RecipeType)CSRecipies.HDS_UNIT_TYPE.get();
+    }
+}

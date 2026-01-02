@@ -6,6 +6,8 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.common.recipe.categories.fluid2fluid.specificmachines.FractionatingColumnRecipe;
+import net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid.GasFluidItem2FluidRecipeSerializer;
+import net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid.HDSUnitRecipe;
 import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
 import voltaic.common.recipe.VoltaicRecipeType;
 import voltaic.common.recipe.categories.fluid2fluid.Fluid2FluidRecipeSerializer;
@@ -15,8 +17,10 @@ public class CSRecipies {
     public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZER;
     public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES;
     public static final DeferredHolder<RecipeType<?>, RecipeType<CircuitMakerRecipe>> CIRCUIT_MAKER_TYPE;
+    public static final DeferredHolder<RecipeType<?>, RecipeType<HDSUnitRecipe>> HDS_UNIT_TYPE;
     public static final DeferredHolder<RecipeType<?>, RecipeType<FractionatingColumnRecipe>> FRACTIONATING_COLUMN_TYPE;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> CIRCUIT_MAKER_SERIALIZER;
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> HDS_UNIT_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> FRACTIONATING_COLUMN_SERIALIZER;
 
     static {
@@ -24,9 +28,11 @@ public class CSRecipies {
         RECIPE_TYPES = DeferredRegister.create(Registries.RECIPE_TYPE, "chemicalscience");
 
         CIRCUIT_MAKER_TYPE = RECIPE_TYPES.register("circuit_maker_recipe", VoltaicRecipeType::new);
+        HDS_UNIT_TYPE = RECIPE_TYPES.register("hds_unit_recipe", VoltaicRecipeType::new);
         FRACTIONATING_COLUMN_TYPE = RECIPE_TYPES.register("fractionating_column_recipe", VoltaicRecipeType::new);
 
         CIRCUIT_MAKER_SERIALIZER = RECIPE_SERIALIZER.register("circuit_maker_recipe", () -> new FluidItem2ItemRecipeSerializer(CircuitMakerRecipe::new));
+        HDS_UNIT_SERIALIZER = RECIPE_SERIALIZER.register("hds_unit_recipe", () -> new GasFluidItem2FluidRecipeSerializer<>(HDSUnitRecipe::new));
         FRACTIONATING_COLUMN_SERIALIZER = RECIPE_SERIALIZER.register("fractionating_column_recipe", () -> new Fluid2FluidRecipeSerializer(FractionatingColumnRecipe::new));
     }
 }

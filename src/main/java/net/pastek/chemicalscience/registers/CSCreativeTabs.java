@@ -129,6 +129,7 @@ public class CSCreativeTabs {
         /* output.accept(CSBlocks.FUEL_CELL); */
         output.accept(CSBlocks.CIRCUIT_MAKER);
         output.accept(CSBlocks.FRACTIONATING_COLUMN);
+        output.accept(CSBlocks.HDS_UNIT);
 
         /** ITEMS */
         /** Raw Materials */
