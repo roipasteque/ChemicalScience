@@ -1,0 +1,43 @@
+{
+  "type": "chemicalscience:steam_cracker_recipe",
+  "group": "chemicalscience",
+
+  "gasinputs": [
+    {
+      "amount": 50,
+      "gas": "chemicalscience:impurenaphta",
+      "pressure": 1,
+      "temp": 448
+    }
+  ],
+
+  "output": {
+    "amount": 100,
+    "gas": "chemicalscience:hydrogensulfide",
+    "pressure": 2,
+    "temp": 350
+  },
+
+  "itembi": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:coalcoke"
+      }
+    }
+  ],
+
+  "gasbi": [
+    {
+      "amount": 580,
+      "chance": 1.0,
+      "gas": "chemicalscience:ethylene",
+      "pressure": 2,
+      "temp": 350
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 400.0
+}

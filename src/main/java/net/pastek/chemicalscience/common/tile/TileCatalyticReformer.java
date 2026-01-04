@@ -43,8 +43,8 @@ public class TileCatalyticReformer extends GenericGasTile implements ITickableSo
         addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
         addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new MachineDirection[]{MachineDirection.BOTTOM}).voltage((double)480.0F));
         addComponent((new ComponentFluidHandlerMulti(this))
-                .setInputTanks(1, MAX_TANK_CAPACITY).setInputDirections(new MachineDirection[]{MachineDirection.RIGHT})
-                .setOutputTanks(2, MAX_TANK_CAPACITY, MAX_TANK_CAPACITY).setOutputDirections(new MachineDirection[]{MachineDirection.LEFT})
+                .setInputTanks(1, MAX_TANK_CAPACITY).setInputDirections(new MachineDirection[]{MachineDirection.LEFT})
+                .setOutputTanks(2, MAX_TANK_CAPACITY, MAX_TANK_CAPACITY).setOutputDirections(MachineDirection.RIGHT, MachineDirection.BACK)
                 .setRecipeType((RecipeType) CSRecipies.CATALYTIC_REFORMER_TYPE.get()));
         addComponent((new ComponentGasHandlerMulti(this))
                 .setOutputTanks(1, new int[]{5000}, new int[]{1000}, new int[]{1024}).setOutputDirections(new MachineDirection[]{MachineDirection.TOP})
