@@ -33,7 +33,7 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
 
         BlockState slave = VoltaicBlocks.BLOCK_MULTIBLOCK_SLAVE.get().defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false);
         BlockState scaffold_steel = ElectrodynamicsBlocks.BLOCK_STEELSCAFFOLDING.get().defaultBlockState();
-        BlockState scaffold_reinforcedsteel = CSBlocks.SCAFFOLDING_REINFORCEDSTEEL.get().defaultBlockState();
+        BlockState grate_steel = CSBlocks.GRATE_STEEL.get().defaultBlockState();
         BlockState scaffold_manganese = CSBlocks.SCAFFOLDING_MANGANESE.get().defaultBlockState();
 
         ResourceLocation empty = ChemicalScience.rl("multiblock/empty");
@@ -78,15 +78,15 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
                 new MultiblockSlaveNode(slave, Blocks.IRON_BLOCK.defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(0, 0, -2), Shapes.block(), empty),
 
                 //Layer 2
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 1, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -2), Shapes.block(), empty),
 
                 //Layer 3 - Heavy Oil Output
                 new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCK_COMPRESSOR.get().defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false).setValue(VoltaicBlockStates.LIT, false).setValue(ElectrodynamicsBlockStates.COMPRESSORSIDE_HAS_TOPTANK, false), MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, 0), Shapes.block(), empty),
@@ -100,15 +100,15 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, -2), Shapes.block(), empty),
 
                 //Layer 4
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 3, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 3, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 3, -2), Shapes.block(), empty),
 
                 //Layer 5 - Diesel Output
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 4, 0), Shapes.block(), empty),
@@ -122,15 +122,15 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 4, -2), Shapes.block(), empty),
 
                 //Layer 6
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 5, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 5, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 5, -2), Shapes.block(), empty),
 
                 //Layer 7 - Fuel Output
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 6, 0), Shapes.block(), empty),
@@ -144,15 +144,15 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 6, -2), Shapes.block(), empty),
 
                 //Layer 8
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 7, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 7, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 7, -2), Shapes.block(), empty),
 
                 //Layer 9 - Naphta Output
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 8, 0), Shapes.block(), empty),
@@ -166,15 +166,15 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 8, -2), Shapes.block(), empty),
 
                 //Layer 10
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, -2), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_reinforcedsteel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(1, 9, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 9, -2), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, grate_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 9, -2), Shapes.block(), empty),
 
                 //Layer 11 - Gas Output
                 new MultiblockSlaveNode(slave, scaffold_manganese, MultiblockSlaveNode.NOTAG, new Vec3i(0, 10, 0), Shapes.block(), empty),

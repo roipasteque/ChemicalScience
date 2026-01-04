@@ -12,23 +12,22 @@ import voltaic.common.item.subtype.SubtypeItemUpgrade;
 import voltaic.prefab.inventory.container.slot.item.SlotGeneric;
 import voltaic.prefab.inventory.container.slot.item.type.SlotFluid;
 import voltaic.prefab.inventory.container.slot.item.type.SlotGas;
-import voltaic.prefab.inventory.container.slot.item.type.SlotRestricted;
 import voltaic.prefab.inventory.container.slot.item.type.SlotUpgrade;
 import voltaic.prefab.inventory.container.types.GenericContainerBlockEntity;
 import voltaic.prefab.utilities.math.Color;
 
-public class ContainerHDSUnit extends GenericContainerBlockEntity<TileHDSUnit> {
+public class ContainerSteamCracker extends GenericContainerBlockEntity<TileHDSUnit> {
     public static final SubtypeItemUpgrade[] VALID_UPGRADES;
 
-    public ContainerHDSUnit(int id, Inventory playerinv) {
+    public ContainerSteamCracker(int id, Inventory playerinv) {
         this(id, playerinv, new SimpleContainer(10), new SimpleContainerData(3));
     }
 
-    public ContainerHDSUnit(int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
+    public ContainerSteamCracker(int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
         super((MenuType) CSMenuTypes.CONTAINER_HDS_UNIT.get(), id, playerinv, inventory, inventorydata);
     }
 
-    public ContainerHDSUnit(MenuType<?> type, int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
+    public ContainerSteamCracker(MenuType<?> type, int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
         super(type, id, playerinv, inventory, inventorydata);
     }
 

@@ -20,7 +20,7 @@ import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.screen.ScreenCircuitMaker;
-import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.CircuitMakerRecipe;
+import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.specificmachines.CircuitMakerRecipe;
 import net.pastek.chemicalscience.compatibility.jei.recipecategories.fluiditem2item.CircuitMakerRecipeCategory;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;

@@ -1,9 +1,0 @@
-{
-  "parent": "chemicalscience:block/base/ladder",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "0": "chemicalscience:block/metal_building_blocks/ladder_reinforcedsteel_hoop",
-    "1": "chemicalscience:block/metal_building_blocks/ladder_reinforcedsteel",
-    "particle": "electrodynamics:block/resource/resourceblocksteel"
-  }
-}

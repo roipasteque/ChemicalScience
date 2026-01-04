@@ -14,21 +14,19 @@ import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerCircuitMaker;
 import net.pastek.chemicalscience.common.inventory.container.ContainerHDSUnit;
+import net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid.GasFluidItem2FluidRecipe;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.CSTiles;
-import voltaic.common.recipe.categories.fluid2fluid.Fluid2FluidRecipe;
-import voltaic.common.recipe.categories.fluiditem2fluid.FluidItem2FluidRecipe;
-import voltaic.common.recipe.recipeutils.ProbableFluid;
+import voltaic.api.gas.GasAction;
+import voltaic.api.gas.GasTank;
 import voltaic.prefab.sound.ITickableSound;
 import voltaic.prefab.sound.SoundBarrierMethods;
 import voltaic.prefab.tile.components.IComponentType;
 import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.tile.components.type.ComponentInventory.InventoryBuilder;
 import voltaic.prefab.tile.types.GenericGasTile;
-import voltaic.prefab.tile.types.GenericMaterialTile;
 import voltaic.prefab.utilities.BlockEntityUtils.MachineDirection;
 
-import java.util.List;
 
 public class TileHDSUnit extends GenericGasTile implements ITickableSound {
     public static final int MAX_TANK_CAPACITY = 5000;
@@ -36,19 +34,19 @@ public class TileHDSUnit extends GenericGasTile implements ITickableSound {
 
     public TileHDSUnit(BlockPos worldPosition, BlockState blockState) {
         super((BlockEntityType) CSTiles.TILE_HDS_UNIT.get(), worldPosition, blockState);
-        this.addComponent(new ComponentPacketHandler(this));
-        this.addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
-        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new MachineDirection[]{MachineDirection.BACK}).voltage((double)480.0F));
-        this.addComponent((new ComponentFluidHandlerMulti(this))
-                .setInputTanks(1, new int[]{5000}).setInputDirections(new MachineDirection[]{MachineDirection.RIGHT})
-                .setOutputTanks(1, new int[]{5000}).setInputDirections(new MachineDirection[]{MachineDirection.LEFT})
+        addComponent(new ComponentPacketHandler(this));
+        addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
+        addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new MachineDirection[]{MachineDirection.BOTTOM}).voltage((double)480.0F));
+        addComponent((new ComponentFluidHandlerMulti(this))
+                .setInputTanks(1, new int[]{5000}).setInputDirections(new MachineDirection[]{MachineDirection.LEFT})
+                .setOutputTanks(1, new int[]{5000}).setOutputDirections(new MachineDirection[]{MachineDirection.RIGHT})
                 .setRecipeType((RecipeType) CSRecipies.HDS_UNIT_TYPE.get()));
-        this.addComponent((new ComponentGasHandlerMulti(this))
-                .setInputTanks(1, new int[]{5000}, new int[]{1000}, new int[]{1024}).setInputDirections(new MachineDirection[]{MachineDirection.BACK})
-                .setOutputTanks(1, new int[]{5000}, new int[]{1000}, new int[]{1024}).setOutputDirections(new MachineDirection[]{MachineDirection.TOP})
+        addComponent((new ComponentGasHandlerMulti(this))
+                .setInputTanks(1, new int[]{5000}, new int[]{1000}, new int[]{1024}).setInputDirections(new MachineDirection[]{MachineDirection.FRONT})
+                .setOutputTanks(1, new int[]{5000}, new int[]{1000}, new int[]{1024}).setOutputDirections(new MachineDirection[]{MachineDirection.BACK})
                 .setCondensedHandler(getCondensedHandler()));
-        this.addComponent((new ComponentInventory(this, InventoryBuilder.newInv().processors(1, 1, 0, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5,MachineDirection.BOTTOM, MachineDirection.LEFT, MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
-        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.hdsunit.tag(), this)).createMenu((id, player) -> new ContainerHDSUnit(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
+        addComponent((new ComponentInventory(this, InventoryBuilder.newInv().processors(1, 1, 0, 0).bucketInputs(1).gasInputs(1).upgrades(3))).setDirectionsBySlot(0, MachineDirection.TOP).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
+        addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.hdsunit.tag(), this)).createMenu((id, player) -> new ContainerHDSUnit(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
         addComponent(new ComponentProcessor(this).canProcess(this::canProcess).process(this::process));
     }
 
@@ -72,15 +70,16 @@ public class TileHDSUnit extends GenericGasTile implements ITickableSound {
     }
 
     private boolean canProcess(ComponentProcessor pr, int procNumber) {
-        FluidItem2FluidRecipe locRecipe;
+        pr.consumeBucket().consumeGasCylinder().dispenseGasCylinder().dispenseBucket().outputToGasPipe().outputToFluidPipe();
+        GasFluidItem2FluidRecipe locRecipe;
         if (!pr.checkExistingRecipe(procNumber)) {
             pr.setShouldKeepProgress(false, procNumber);
             pr.operatingTicks.setValue(0.0, procNumber);
-            locRecipe = (FluidItem2FluidRecipe) pr.getRecipe(CSRecipies.FRACTIONATING_COLUMN_TYPE.get(), procNumber);
+            locRecipe = (GasFluidItem2FluidRecipe) pr.getRecipe(CSRecipies.HDS_UNIT_TYPE.get(), procNumber);
             if (locRecipe == null) return false;
         } else {
             pr.setShouldKeepProgress(true, procNumber);
-            locRecipe = (FluidItem2FluidRecipe) pr.getRecipe(procNumber);
+            locRecipe = (GasFluidItem2FluidRecipe) pr.getRecipe(procNumber);
         }
 
         pr.setRecipe(locRecipe, procNumber);
@@ -89,6 +88,7 @@ public class TileHDSUnit extends GenericGasTile implements ITickableSound {
 
         ComponentElectrodynamic electro = getComponent(IComponentType.Electrodynamic);
         if (electro.getJoulesStored() < pr.getUsage(procNumber)) return false;
+
 
         ComponentFluidHandlerMulti fluidHandler = getComponent(IComponentType.FluidHandler);
         FluidTank[] outTanks = fluidHandler.getOutputTanks();
@@ -102,10 +102,19 @@ public class TileHDSUnit extends GenericGasTile implements ITickableSound {
                 < locRecipe.getFluidRecipeOutput().getAmount()) {
             return false;
         }
+        ComponentGasHandlerMulti gasHandler = getComponent(IComponentType.GasHandler);
+        GasTank[] outGasTanks = gasHandler.getOutputTanks();
 
-        if (locRecipe.hasFluidBiproducts()) {
-            FluidTank[] biTanksOnly = java.util.Arrays.copyOfRange(outTanks, 1, outTanks.length);
-            if (!ComponentProcessor.roomInBiproductFluidTanks(biTanksOnly, locRecipe.getFullFluidBiStacks())) {
+        GasTank inGasTank = gasHandler.getInputTanks()[0];
+        if (inGasTank.getGasAmount() < locRecipe.getGasIngredients().get(0).getGasStack().getAmount()) {
+            return false;
+        }
+
+
+
+        if (locRecipe.hasGasBiproducts()) {
+            GasTank[] biGasTanksOnly = java.util.Arrays.copyOfRange(outGasTanks, 1, outGasTanks.length);
+            if (!ComponentProcessor.roomInBiproductGasTanks(biGasTanksOnly, locRecipe.getFullGasBiStacks())) {
                 return false;
             }
         }
@@ -116,26 +125,30 @@ public class TileHDSUnit extends GenericGasTile implements ITickableSound {
     private void process(ComponentProcessor pr, int procNumber) {
         if (pr.getRecipe(procNumber) == null) return;
 
-        Fluid2FluidRecipe locRecipe = (Fluid2FluidRecipe) pr.getRecipe(procNumber);
+        GasFluidItem2FluidRecipe locRecipe = (GasFluidItem2FluidRecipe) pr.getRecipe(procNumber);
         ComponentFluidHandlerMulti fluidHandler = getComponent(IComponentType.FluidHandler);
         FluidTank[] outTanks = fluidHandler.getOutputTanks();
+        ComponentGasHandlerMulti gasHandler = getComponent(IComponentType.GasHandler);
+        GasTank[] outGasTanks = gasHandler.getOutputTanks();
 
         outTanks[0].fill(locRecipe.getFluidRecipeOutput(), IFluidHandler.FluidAction.EXECUTE);
+        outGasTanks[0].fill(locRecipe.getGasBiproducts().getFirst().roll(), GasAction.EXECUTE);
 
-        if (locRecipe.hasFluidBiproducts()) {
-            List<ProbableFluid> fluidBi = locRecipe.getFluidBiproducts();
-            for (int i = 0; i < fluidBi.size(); i++) {
-                outTanks[i + 1].fill(fluidBi.get(i).roll(), IFluidHandler.FluidAction.EXECUTE);
-            }
-        }
 
         fluidHandler.getInputTanks()[0].drain(
-                locRecipe.getFluidIngredients().get(0).getFluidStack().getAmount(),
+                locRecipe.getFluidIngredients().getFirst().getFluidStack().getAmount(),
                 IFluidHandler.FluidAction.EXECUTE
+        );
+
+        gasHandler.getInputTanks()[0].drain(
+                locRecipe.getGasIngredients().getFirst().getGasStack().getAmount(),
+                GasAction.EXECUTE
         );
 
         pr.setChanged();
     }
+
+
 
     public void setNotPlaying() {
         this.isSoundPlaying = false;

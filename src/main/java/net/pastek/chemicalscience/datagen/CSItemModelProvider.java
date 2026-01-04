@@ -231,6 +231,5 @@ public class CSItemModelProvider extends ItemModelProvider {
         withExistingParent(CSBlocks.MAGNESIUM_GA9Z1_FENCE.getId().toString(), mcLoc("block/fence_inventory")).texture("texture", "block/metal_building_blocks/block_magnesiumaluminum");
         withExistingParent(CSBlocks.LADDER_MANGANESE.getId().toString(), mcLoc("item/generated")).texture("layer0", "block/metal_building_blocks/ladder_manganese");
         withExistingParent(CSBlocks.LADDER_STEEL.getId().toString(), mcLoc("item/generated")).texture("layer0", "block/metal_building_blocks/ladder_steel");
-        withExistingParent(CSBlocks.LADDER_REINFORCEDSTEEL.getId().toString(), mcLoc("item/generated")).texture("layer0", "block/metal_building_blocks/ladder_reinforcedsteel");
     }
 }

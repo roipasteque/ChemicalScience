@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/catalytic_reformer"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/catalytic_reformer",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/catalytic_reformer",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/catalytic_reformer",
+      "y": 180
+    }
+  }
+}

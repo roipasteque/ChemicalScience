@@ -112,7 +112,7 @@ public class TileFractionatingColumn extends TileMultiblockController {
         }
 
         if (locRecipe.hasFluidBiproducts()) {
-            FluidTank[] biTanksOnly = java.util.Arrays.copyOfRange(outTanks, 1, outTanks.length);
+            FluidTank[] biTanksOnly = java.util.Arrays.copyOfRange(outTanks, 0, outTanks.length);
             if (!ComponentProcessor.roomInBiproductFluidTanks(biTanksOnly, locRecipe.getFullFluidBiStacks())) {
                 return false;
             }
@@ -138,7 +138,7 @@ public class TileFractionatingColumn extends TileMultiblockController {
         }
 
         fluidHandler.getInputTanks()[0].drain(
-                locRecipe.getFluidIngredients().get(0).getFluidStack().getAmount(),
+                locRecipe.getFluidIngredients().getFirst().getFluidStack().getAmount(),
                 IFluidHandler.FluidAction.EXECUTE
         );
 

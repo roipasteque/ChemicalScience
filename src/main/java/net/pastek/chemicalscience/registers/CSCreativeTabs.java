@@ -62,17 +62,6 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB);
         output.accept(CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB);
         output.accept(CSBlocks.LADDER_STEEL);
-        output.accept(CSBlocks.GRATE_REINFORCEDSTEEL);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB);
-        output.accept(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB);
-        output.accept(CSBlocks.LADDER_REINFORCEDSTEEL);
         output.accept(CSBlocks.GRATE_MANGANESE);
         output.accept(CSBlocks.SCAFFOLDING_MANGANESE);
         output.accept(CSBlocks.SCAFFOLDING_MANGANESE_GRATE);
@@ -130,6 +119,8 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.CIRCUIT_MAKER);
         output.accept(CSBlocks.FRACTIONATING_COLUMN);
         output.accept(CSBlocks.HDS_UNIT);
+        output.accept(CSBlocks.STEAM_CRACKER);
+        output.accept(CSBlocks.CATALYTIC_REFORMER);
 
         /** ITEMS */
         /** Raw Materials */

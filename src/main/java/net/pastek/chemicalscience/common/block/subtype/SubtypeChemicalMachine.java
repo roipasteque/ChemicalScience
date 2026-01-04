@@ -1,8 +1,11 @@
 package net.pastek.chemicalscience.common.block.subtype;
 
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.voxelshapes.CSVoxelShapes;
 import net.pastek.chemicalscience.common.tile.*;
 import voltaic.api.ISubtype;
@@ -10,6 +13,8 @@ import voltaic.api.multiblock.subnodebased.parent.IMultiblockParentBlock;
 import voltaic.api.tile.IMachine;
 import voltaic.api.tile.MachineProperties;
 import voltaic.common.block.voxelshapes.VoxelShapeProvider;
+
+import javax.annotation.Nullable;
 
 public enum SubtypeChemicalMachine implements ISubtype, IMachine {
 
@@ -20,8 +25,10 @@ public enum SubtypeChemicalMachine implements ISubtype, IMachine {
     racks(true, TileRackS::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     labbench(true, TileLabBench::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     labstorage(true, TileLabStorage::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
-    circuitmaker(true, TileCircuitMaker::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
+    circuitmaker(true, TileCircuitMaker::new, MachineProperties.builder().setLitBrightness(15).setShapeProvider(CSVoxelShapes.CUBE)),
     hdsunit(true, TileHDSUnit::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
+    steamcracker(true, TileSteamCracker::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
+    catalyticreformer(true, TileCatalyticReformer::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     fractionatingcolumn(true, TileFractionatingColumn::new);
 
 

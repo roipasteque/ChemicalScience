@@ -79,17 +79,6 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockItem(CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB);
         blockItem(CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB);
 
-        blockItem(CSBlocks.GRATE_REINFORCEDSTEEL);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB);
-        blockItem(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB);
-
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE);
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED);
         blockItem(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN);
@@ -124,7 +113,10 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
 
         horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
-        horrRotatedBlock(CSBlocks.CIRCUIT_MAKER, existingBlock(CSBlocks.CIRCUIT_MAKER), true);
+        horrRotatedLitBlock(CSBlocks.CIRCUIT_MAKER, existingBlock(CSBlocks.CIRCUIT_MAKER), existingBlock(blockLoc("circuitmakerlit")), true);
+        horrRotatedBlock(CSBlocks.HDS_UNIT, existingBlock(CSBlocks.HDS_UNIT), true);
+        horrRotatedBlock(CSBlocks.STEAM_CRACKER, existingBlock(CSBlocks.STEAM_CRACKER), true);
+        horrRotatedBlock(CSBlocks.CATALYTIC_REFORMER, existingBlock(CSBlocks.CATALYTIC_REFORMER), true);
         horrRotatedBlock(CSBlocks.RACK_MANGANESE, existingBlock(CSBlocks.RACK_MANGANESE), true);
         horrRotatedBlock(CSBlocks.RACK_STEEL, existingBlock(CSBlocks.RACK_STEEL), true);
         horrRotatedBlock(CSBlocks.LABORATORY_BENCH, existingBlock(CSBlocks.LABORATORY_BENCH), true);

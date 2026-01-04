@@ -11,36 +11,31 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerCircuitMaker;
+import net.pastek.chemicalscience.common.inventory.container.ContainerSteamCracker;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.CSTiles;
 import voltaic.prefab.sound.ITickableSound;
 import voltaic.prefab.sound.SoundBarrierMethods;
 import voltaic.prefab.tile.components.IComponentType;
-import voltaic.prefab.tile.components.type.ComponentContainerProvider;
-import voltaic.prefab.tile.components.type.ComponentElectrodynamic;
-import voltaic.prefab.tile.components.type.ComponentFluidHandlerMulti;
-import voltaic.prefab.tile.components.type.ComponentInventory;
-import voltaic.prefab.tile.components.type.ComponentPacketHandler;
-import voltaic.prefab.tile.components.type.ComponentProcessor;
-import voltaic.prefab.tile.components.type.ComponentTickable;
+import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.tile.components.type.ComponentInventory.InventoryBuilder;
+import voltaic.prefab.tile.types.GenericGasTile;
 import voltaic.prefab.tile.types.GenericMaterialTile;
-import voltaic.prefab.utilities.BlockEntityUtils;
 import voltaic.prefab.utilities.BlockEntityUtils.MachineDirection;
 
-public class TileCircuitMaker extends GenericMaterialTile implements ITickableSound {
+public class TileSteamCracker extends GenericGasTile implements ITickableSound {
     public static final int MAX_TANK_CAPACITY = 5000;
     private boolean isSoundPlaying = false;
 
-    public TileCircuitMaker(BlockPos worldPosition, BlockState blockState) {
-        super((BlockEntityType) CSTiles.TILE_CIRCUIT_MAKER.get(), worldPosition, blockState);
+    public TileSteamCracker(BlockPos worldPosition, BlockState blockState) {
+        super((BlockEntityType) CSTiles.TILE_STEAM_CRACKER.get(), worldPosition, blockState);
         this.addComponent(new ComponentPacketHandler(this));
         this.addComponent((new ComponentTickable(this)).tickClient(this::tickClient));
-        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.BACK}).voltage((double)480.0F));
-        this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get()));
+        this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new MachineDirection[]{MachineDirection.BACK}).voltage((double)480.0F));
+        this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new MachineDirection[]{MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.STEAM_CRACKER_TYPE.get()));
         this.addComponent((new ComponentInventory(this, InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5,MachineDirection.BOTTOM, MachineDirection.LEFT, MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
-        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this)).createMenu((id, player) -> new ContainerCircuitMaker(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
-        this.addComponent((new ComponentProcessor(this)).canProcess(this::canProcessCircuitMaker).process(ComponentProcessor::processFluidItem2ItemRecipe));
+        this.addComponent((new ComponentProcessor(this)).canProcess((component, procNumber) -> component.consumeBucket().canProcessFluidItem2ItemRecipe(procNumber, (RecipeType) CSRecipies.STEAM_CRACKER_TYPE.get())).process(ComponentProcessor::processFluid2ItemRecipe));
+        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.steamcracker.tag(), this)).createMenu((id, player) -> new ContainerSteamCracker(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
     }
 
     protected void tickClient(ComponentTickable tickable) {
@@ -60,15 +55,6 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
             }
 
         }
-    }
-
-    public boolean canProcessCircuitMaker(ComponentProcessor pr, int procNumber) {
-        boolean canProcess = pr.consumeBucket().canProcessFluidItem2ItemRecipe(procNumber, CSRecipies.CIRCUIT_MAKER_TYPE.get());
-        if (BlockEntityUtils.isLit(this) ^ canProcess) {
-            BlockEntityUtils.updateLit(this, canProcess);
-        }
-
-        return canProcess;
     }
 
     public void setNotPlaying() {

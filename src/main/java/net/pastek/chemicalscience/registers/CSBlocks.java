@@ -183,18 +183,6 @@ public class CSBlocks {
     public static final DeferredBlock<Block> GRATE_STEEL = registerBlock("grate_steel", () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
     public static final DeferredBlock<CSLadderBlock> LADDER_STEEL = registerBlock("ladder_steel", () -> new CSLadderBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
 
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL = registerBlock("scaffolding_reinforcedsteel", () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<SlabBlock> SCAFFOLDING_REINFORCEDSTEEL_SLAB = registerBlock("slab_scaffolding_reinforcedsteel", () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL_HOLLOW = registerBlock("scaffolding_reinforcedsteel_hollow", () -> new CSScaffoldingHollow(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL_GRATE = registerBlock("scaffolding_grate_reinforcedsteel", () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<SlabBlock> SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB = registerBlock("slab_scaffolding_grate_reinforcedsteel", () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW = registerBlock("scaffolding_grate_reinforcedsteel_hollow", () -> new CSScaffoldingOpen(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL_GLASS = registerBlock("scaffolding_glass_reinforcedsteel", () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<SlabBlock> SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB = registerBlock("slab_scaffolding_glass_reinforcedsteel", () -> new SlabBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW = registerBlock("scaffolding_glass_reinforcedsteel_hollow", () -> new CSScaffoldingOpen(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<Block> GRATE_REINFORCEDSTEEL = registerBlock("grate_reinforcedsteel", () -> new Block(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-    public static final DeferredBlock<CSLadderBlock> LADDER_REINFORCEDSTEEL = registerBlock("ladder_reinforcedsteel", () -> new CSLadderBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.METAL).strength(3f)));
-
     // Radiation shielding
     public static final DeferredBlock<Block> CONCRETE_SHIELDING = registerBlock("radiationshielding_concrete", () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS).explosionResistance(9)));
     public static final DeferredBlock<Block> TANTALUM_SHIELDING = registerBlock("radiationshielding_tantalum", () -> new Block(BlockBehaviour.Properties.of().strength(8f).requiresCorrectToolForDrops().sound(SoundType.COPPER).explosionResistance(30)));
@@ -372,7 +360,8 @@ public class CSBlocks {
     // Simple Machine
     public static final DeferredBlock<Block> CIRCUIT_MAKER = registerBlock("circuitmaker", () -> new BlockMachine(SubtypeChemicalMachine.circuitmaker));
     public static final DeferredBlock<Block> HDS_UNIT = registerBlock("hds_unit", () -> new BlockMachine(SubtypeChemicalMachine.hdsunit));
-
+    public static final DeferredBlock<Block> STEAM_CRACKER = registerBlock("steam_cracker", () -> new BlockMachine(SubtypeChemicalMachine.steamcracker));
+    public static final DeferredBlock<Block> CATALYTIC_REFORMER = registerBlock("catalytic_reformer", () -> new BlockMachine(SubtypeChemicalMachine.catalyticreformer));
 
     // Multiblock Machine
     public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new BlockMachine(SubtypeChemicalMachine.fractionatingcolumn));

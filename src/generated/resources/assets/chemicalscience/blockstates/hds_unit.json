@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "chemicalscience:block/hds_unit"
+    },
+    "facing=north": {
+      "model": "chemicalscience:block/hds_unit",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "chemicalscience:block/hds_unit",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chemicalscience:block/hds_unit",
+      "y": 180
+    }
+  }
+}

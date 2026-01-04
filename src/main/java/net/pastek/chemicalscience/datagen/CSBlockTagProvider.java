@@ -77,18 +77,6 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB.get(),
                         CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB.get(),
 
-                        CSBlocks.GRATE_REINFORCEDSTEEL.get(),
-                        CSBlocks.LADDER_REINFORCEDSTEEL.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB.get(),
-
                         CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE.get(),
                         CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED.get(),
                         CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN.get(),
@@ -119,7 +107,11 @@ public class CSBlockTagProvider extends BlockTagsProvider {
 
                         //Machines
                         CSBlocks.ORGANIC_SOLAR_PANEL.get(),
-                        CSBlocks.FUEL_CELL.get()
+                        CSBlocks.FUEL_CELL.get(),
+                        CSBlocks.HDS_UNIT.get(),
+                        CSBlocks.STEAM_CRACKER.get(),
+                        CSBlocks.CATALYTIC_REFORMER.get(),
+                        CSBlocks.FRACTIONATING_COLUMN.get()
 
                 );
         tag(BlockTags.MINEABLE_WITH_HOE)
@@ -152,11 +144,7 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.LADDER_STEEL.get(),
                         CSBlocks.SCAFFOLDING_STEEL_HOLLOW.get(),
                         CSBlocks.SCAFFOLDING_STEEL_GRATE_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_STEEL_GLASS_HOLLOW.get(),
-                        CSBlocks.LADDER_REINFORCEDSTEEL.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW.get(),
-                        CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW.get()
+                        CSBlocks.SCAFFOLDING_STEEL_GLASS_HOLLOW.get()
                 );
 
         tag(BlockTags.FENCES)

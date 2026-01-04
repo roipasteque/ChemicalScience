@@ -139,17 +139,6 @@
     "chemicalscience:slab_scaffolding_steel",
     "chemicalscience:slab_scaffolding_grate_steel",
     "chemicalscience:slab_scaffolding_glass_steel",
-    "chemicalscience:grate_reinforcedsteel",
-    "chemicalscience:ladder_reinforcedsteel",
-    "chemicalscience:scaffolding_reinforcedsteel",
-    "chemicalscience:scaffolding_grate_reinforcedsteel",
-    "chemicalscience:scaffolding_glass_reinforcedsteel",
-    "chemicalscience:scaffolding_reinforcedsteel_hollow",
-    "chemicalscience:scaffolding_grate_reinforcedsteel_hollow",
-    "chemicalscience:scaffolding_glass_reinforcedsteel_hollow",
-    "chemicalscience:slab_scaffolding_reinforcedsteel",
-    "chemicalscience:slab_scaffolding_grate_reinforcedsteel",
-    "chemicalscience:slab_scaffolding_glass_reinforcedsteel",
     "chemicalscience:metalhalidelamp_mw",
     "chemicalscience:metalhalidelamp_mr",
     "chemicalscience:metalhalidelamp_mg",
@@ -174,6 +163,10 @@
     "chemicalscience:radiationshielding_concrete",
     "chemicalscience:radiationshielding_tantalum",
     "chemicalscience:organicsolarpanel",
-    "chemicalscience:fuelcell"
+    "chemicalscience:fuelcell",
+    "chemicalscience:hds_unit",
+    "chemicalscience:steam_cracker",
+    "chemicalscience:catalytic_reformer",
+    "chemicalscience:fractionating_column"
   ]
 }

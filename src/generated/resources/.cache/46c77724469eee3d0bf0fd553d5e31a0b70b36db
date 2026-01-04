@@ -1,9 +1,9 @@
-// 1.21.1	2025-12-18T01:45:13.491124	Tags for minecraft:block mod id chemicalscience
+// 1.21.1	2026-01-04T15:09:49.4314885	Tags for minecraft:block mod id chemicalscience
 f351a8c82a31ccbb4a860b281948fd495e0d8836 data/chemicalscience/tags/block/incorrect_for_tungsten_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/chemicalscience/tags/block/needs_tungsten_tool.json
-1f61c6df19bf5e6609a8dbabefd2ef362216802a data/minecraft/tags/block/climbable.json
+aba6634fcd095c482c812bfb1df4b6ee3a9df73c data/minecraft/tags/block/climbable.json
 d03ca98cd8b416f833ae1e8d1bfe7198094b05ba data/minecraft/tags/block/fences.json
 d849210fd1344a1e29a5134f063ce80d504e5277 data/minecraft/tags/block/mineable/hoe.json
-e25bb5fad4f0d172ad57afad616f6090a9cbc3cc data/minecraft/tags/block/mineable/pickaxe.json
+837ba8557e7f6e39b6a2d900b436355f6048084c data/minecraft/tags/block/mineable/pickaxe.json
 1f5c54a69f46350f6de9db5cf72339fc9d61689c data/minecraft/tags/block/needs_iron_tool.json
 1828de84850f04b6988ff8d89ab13606756f1db9 data/minecraft/tags/block/needs_stone_tool.json

@@ -54,6 +54,8 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
         event.register(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), ScreenCircuitMaker::new);
+        event.register(CSMenuTypes.CONTAINER_HDS_UNIT.get(), ScreenHDSUnit::new);
+        event.register(CSMenuTypes.CONTAINER_CATALYTIC_REFORMER.get(), ScreenCatalyticReformer::new);
         event.register(CSMenuTypes.CONTAINER_FRACTIONATING_COLUMN.get(), ScreenFractionatingColumn::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);

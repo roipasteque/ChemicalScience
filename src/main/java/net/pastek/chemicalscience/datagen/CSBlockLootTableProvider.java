@@ -181,17 +181,6 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.SCAFFOLDING_STEEL_SLAB.get());
         dropSelf(CSBlocks.SCAFFOLDING_STEEL_GRATE_SLAB.get());
         dropSelf(CSBlocks.SCAFFOLDING_STEEL_GLASS_SLAB.get());
-        dropSelf(CSBlocks.GRATE_REINFORCEDSTEEL.get());
-        dropSelf(CSBlocks.LADDER_REINFORCEDSTEEL.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_HOLLOW.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_HOLLOW.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_HOLLOW.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_SLAB.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GRATE_SLAB.get());
-        dropSelf(CSBlocks.SCAFFOLDING_REINFORCEDSTEEL_GLASS_SLAB.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_WHITE.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_RED.get());
         dropSelf(CSBlocks.METAL_HALIDE_LAMP_MANGANESE_GREEN.get());
@@ -231,6 +220,9 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.ORGANIC_SOLAR_PANEL.get());
         dropSelf(CSBlocks.FUEL_CELL.get());
         dropSelf(CSBlocks.CIRCUIT_MAKER.get());
+        dropSelf(CSBlocks.HDS_UNIT.get());
+        dropSelf(CSBlocks.STEAM_CRACKER.get());
+        dropSelf(CSBlocks.CATALYTIC_REFORMER.get());
         dropSelf(CSBlocks.FRACTIONATING_COLUMN.get());
 
             // Periodic table

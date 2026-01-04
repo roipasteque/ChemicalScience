@@ -7,10 +7,6 @@
     "chemicalscience:ladder_steel",
     "chemicalscience:scaffolding_steel_hollow",
     "chemicalscience:scaffolding_grate_steel_hollow",
-    "chemicalscience:scaffolding_glass_steel_hollow",
-    "chemicalscience:ladder_reinforcedsteel",
-    "chemicalscience:scaffolding_reinforcedsteel_hollow",
-    "chemicalscience:scaffolding_grate_reinforcedsteel_hollow",
-    "chemicalscience:scaffolding_glass_reinforcedsteel_hollow"
+    "chemicalscience:scaffolding_glass_steel_hollow"
   ]
 }

@@ -536,7 +536,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -566,7 +566,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -596,7 +596,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -626,7 +626,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -656,7 +656,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -686,7 +686,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -716,7 +716,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -746,7 +746,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -776,7 +776,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1087,7 +1087,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1117,7 +1117,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1147,7 +1147,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1177,7 +1177,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1207,7 +1207,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1237,7 +1237,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1267,7 +1267,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1297,7 +1297,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1327,7 +1327,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1632,7 +1632,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1662,7 +1662,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1692,7 +1692,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1722,7 +1722,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1752,7 +1752,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1782,7 +1782,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1812,7 +1812,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1842,7 +1842,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -1872,7 +1872,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2177,7 +2177,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2207,7 +2207,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2237,7 +2237,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2267,7 +2267,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2297,7 +2297,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2327,7 +2327,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2357,7 +2357,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2387,7 +2387,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2417,7 +2417,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2722,7 +2722,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2752,7 +2752,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2782,7 +2782,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2812,7 +2812,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2842,7 +2842,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2872,7 +2872,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2902,7 +2902,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2932,7 +2932,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -2962,7 +2962,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4064,7 +4064,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4094,7 +4094,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4124,7 +4124,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4154,7 +4154,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4184,7 +4184,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4214,7 +4214,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4244,7 +4244,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4274,7 +4274,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4304,7 +4304,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4615,7 +4615,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4645,7 +4645,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4675,7 +4675,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4705,7 +4705,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4735,7 +4735,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4765,7 +4765,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4795,7 +4795,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4825,7 +4825,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -4855,7 +4855,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5160,7 +5160,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5190,7 +5190,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5220,7 +5220,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5250,7 +5250,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5280,7 +5280,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5310,7 +5310,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5340,7 +5340,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5370,7 +5370,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5400,7 +5400,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5705,7 +5705,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5735,7 +5735,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5765,7 +5765,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5795,7 +5795,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5825,7 +5825,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5855,7 +5855,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5885,7 +5885,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5915,7 +5915,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -5945,7 +5945,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6250,7 +6250,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6280,7 +6280,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6310,7 +6310,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6340,7 +6340,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6370,7 +6370,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6400,7 +6400,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6430,7 +6430,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6460,7 +6460,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -6490,7 +6490,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7592,7 +7592,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7622,7 +7622,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7652,7 +7652,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7682,7 +7682,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7712,7 +7712,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7742,7 +7742,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7772,7 +7772,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7802,7 +7802,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -7832,7 +7832,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8143,7 +8143,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8173,7 +8173,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8203,7 +8203,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8233,7 +8233,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8263,7 +8263,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8293,7 +8293,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8323,7 +8323,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8353,7 +8353,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8383,7 +8383,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8688,7 +8688,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8718,7 +8718,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8748,7 +8748,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8778,7 +8778,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8808,7 +8808,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8838,7 +8838,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8868,7 +8868,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8898,7 +8898,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -8928,7 +8928,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9233,7 +9233,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9263,7 +9263,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9293,7 +9293,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9323,7 +9323,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9353,7 +9353,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9383,7 +9383,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9413,7 +9413,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9443,7 +9443,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9473,7 +9473,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9778,7 +9778,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9808,7 +9808,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9838,7 +9838,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9868,7 +9868,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9898,7 +9898,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9928,7 +9928,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9958,7 +9958,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -9988,7 +9988,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -10018,7 +10018,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11120,7 +11120,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11150,7 +11150,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11180,7 +11180,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11210,7 +11210,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11240,7 +11240,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11270,7 +11270,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11300,7 +11300,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11330,7 +11330,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11360,7 +11360,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11671,7 +11671,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11701,7 +11701,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11731,7 +11731,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11761,7 +11761,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11791,7 +11791,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11821,7 +11821,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11851,7 +11851,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11881,7 +11881,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -11911,7 +11911,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12216,7 +12216,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12246,7 +12246,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12276,7 +12276,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12306,7 +12306,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12336,7 +12336,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12366,7 +12366,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12396,7 +12396,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12426,7 +12426,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12456,7 +12456,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12761,7 +12761,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12791,7 +12791,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12821,7 +12821,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12851,7 +12851,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12881,7 +12881,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12911,7 +12911,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12941,7 +12941,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -12971,7 +12971,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13001,7 +13001,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13306,7 +13306,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13336,7 +13336,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13366,7 +13366,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13396,7 +13396,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13426,7 +13426,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13456,7 +13456,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13486,7 +13486,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13516,7 +13516,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
@@ -13546,7 +13546,7 @@
           }
         },
         "replacestate": {
-          "Name": "chemicalscience:scaffolding_reinforcedsteel"
+          "Name": "chemicalscience:grate_steel"
         },
         "voxelshape": {
           "aabbs": [
