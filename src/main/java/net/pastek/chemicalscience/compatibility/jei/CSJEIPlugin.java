@@ -58,7 +58,7 @@ public class CSJEIPlugin implements IModPlugin {
     }
 
     public void registerGuiHandlers(IGuiHandlerRegistration registry) {
-        registry.addRecipeClickArea(ScreenCircuitMaker.class, 85, 35, 22, 15, new RecipeType[]{CircuitMakerRecipeCategory.RECIPE_TYPE});
+        registry.addRecipeClickArea(ScreenCircuitMaker.class, 124, 54, 22, 16, new RecipeType[]{CircuitMakerRecipeCategory.RECIPE_TYPE});
     }
 
         @Override

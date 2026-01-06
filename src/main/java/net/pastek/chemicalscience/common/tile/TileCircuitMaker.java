@@ -39,7 +39,7 @@ public class TileCircuitMaker extends GenericMaterialTile implements ITickableSo
         this.addComponent((new ComponentElectrodynamic(this, false, true)).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.BACK}).voltage((double)480.0F));
         this.addComponent((new ComponentFluidHandlerMulti(this)).setInputTanks(1, new int[]{5000}).setInputDirections(new BlockEntityUtils.MachineDirection[]{MachineDirection.RIGHT}).setRecipeType((RecipeType) CSRecipies.CIRCUIT_MAKER_TYPE.get()));
         this.addComponent((new ComponentInventory(this, InventoryBuilder.newInv().processors(1, 5, 1, 0).bucketInputs(1).upgrades(3))).setSlotsByDirection(MachineDirection.TOP, 0, 1, 2, 3, 4).setDirectionsBySlot(5,MachineDirection.BOTTOM, MachineDirection.LEFT, MachineDirection.FRONT).validUpgrades(ContainerCircuitMaker.VALID_UPGRADES).valid(machineValidator()));
-        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this)).createMenu((id, player) -> new ContainerCircuitMaker(id, player, (Container)this.getComponent(IComponentType.Inventory), this.getCoordsArray())));
+        this.addComponent((new ComponentContainerProvider(SubtypeChemicalMachine.circuitmaker.tag(), this)).createMenu((id, player) -> new ContainerCircuitMaker(id, player, getComponent(IComponentType.Inventory), getCoordsArray())));
         this.addComponent((new ComponentProcessor(this)).canProcess(this::canProcessCircuitMaker).process(ComponentProcessor::processFluidItem2ItemRecipe));
     }
 

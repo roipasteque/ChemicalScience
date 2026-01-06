@@ -4,7 +4,6 @@ import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.pastek.chemicalscience.common.tile.TileCircuitMaker;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
@@ -24,24 +23,21 @@ public class ContainerCircuitMaker extends GenericContainerBlockEntity<TileCircu
     }
 
     public ContainerCircuitMaker(int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
-        super((MenuType) CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), id, playerinv, inventory, inventorydata);
-    }
-
-    public ContainerCircuitMaker(MenuType<?> type, int id, Inventory playerinv, Container inventory, ContainerData inventorydata) {
-        super(type, id, playerinv, inventory, inventorydata);
+        super(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), id, playerinv, inventory, inventorydata);
     }
 
     public void addInventorySlots(Container inv, Inventory playerinv) {
-        this.addSlot((new SlotGeneric(inv, this.nextIndex(), 38, 31)).setIOColor(new Color(0, 240, 255, 255)));
-        this.addSlot((new SlotGeneric(inv, this.nextIndex(), 58, 31)).setIOColor(new Color(0, 240, 255, 255)));
-        this.addSlot((new SlotGeneric(inv, this.nextIndex(), 58, 51)).setIOColor(new Color(0, 240, 255, 255)));
-        this.addSlot((new SlotGeneric(inv, this.nextIndex(), 104, 51)).setIOColor(new Color(0, 240, 255, 255)));
-        this.addSlot((new SlotGeneric(inv, this.nextIndex(), 124, 51)).setIOColor(new Color(0, 240, 255, 255)));
-        this.addSlot((new SlotRestricted(inv, this.nextIndex(), 124, 31)).setIOColor(new Color(255, 0, 0, 255)));
-        this.addSlot(new SlotFluid(inv, this.nextIndex(), 38, 51));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 14, VALID_UPGRADES));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 34, VALID_UPGRADES));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 54, VALID_UPGRADES));
+        setPlayerInvOffset(35);
+        addSlot((new SlotGeneric(inv, nextIndex(), 8, 18)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 44, 54)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 80, 72)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 80, 36)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 102, 54)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 153, 54)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot(new SlotFluid(inv, nextIndex(), 44, 72));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 108, 18, VALID_UPGRADES));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 127, 18, VALID_UPGRADES));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 146, 18, VALID_UPGRADES));
     }
 
     static {
