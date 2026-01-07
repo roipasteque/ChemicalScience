@@ -7,7 +7,7 @@ import mezz.jei.api.recipe.RecipeType;
 import net.minecraft.world.item.ItemStack;
 import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.specificmachines.CircuitMakerRecipe;
 import net.pastek.chemicalscience.compatibility.jei.CSBackgroundObject;
-import net.pastek.chemicalscience.compatibility.jei.CSTextures;
+import net.pastek.chemicalscience.prefab.screen.CSTextures;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import voltaic.compatibility.jei.recipecategories.fluiditem2item.FluidItem2ItemRecipeCategory;

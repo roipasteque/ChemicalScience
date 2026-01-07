@@ -112,7 +112,7 @@ public class TileFractionatingColumn extends TileMultiblockController {
         }
 
         if (locRecipe.hasFluidBiproducts()) {
-            FluidTank[] biTanksOnly = java.util.Arrays.copyOfRange(outTanks, 0, outTanks.length);
+            FluidTank[] biTanksOnly = java.util.Arrays.copyOfRange(outTanks, 1, outTanks.length);
             if (!ComponentProcessor.roomInBiproductFluidTanks(biTanksOnly, locRecipe.getFullFluidBiStacks())) {
                 return false;
             }

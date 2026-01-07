@@ -1,4 +1,4 @@
-package net.pastek.chemicalscience.compatibility.jei;
+package net.pastek.chemicalscience.prefab.screen;
 
 import net.minecraft.resources.ResourceLocation;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -6,11 +6,32 @@ import voltaic.api.screen.ITexture;
 
 public enum CSTextures implements ITexture {
 
+    CATALYST_ICON(
+            0, 0,
+            18, 18,
+            18, 18,
+            ChemicalScience.rl("textures/screen/component/icon/catalyst.png")
+    ),
+
     CIRCUIT_MAKER_JEI(
             0, 0,
             176, 125,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/circuitmaker.png")
+    ),
+
+    HDS_UNIT_JEI(
+            0, 0,
+            176, 125,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/hdsunit.png")
+    ),
+
+    FRACTIONATING_COLUMN_JEI(
+            0, 0,
+            176, 125,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/fractionatingcolumn.png")
     );
 
     private final int u;

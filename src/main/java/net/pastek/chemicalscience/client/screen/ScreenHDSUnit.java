@@ -1,9 +1,11 @@
 package net.pastek.chemicalscience.client.screen;
 
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerHDSUnit;
 import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
 import net.pastek.chemicalscience.common.tile.TileHDSUnit;
@@ -13,6 +15,7 @@ import voltaic.prefab.screen.component.types.gauges.ScreenComponentFluidGauge;
 import voltaic.prefab.screen.component.types.gauges.ScreenComponentGasGauge;
 import voltaic.prefab.screen.component.types.guitab.ScreenComponentElectricInfo;
 import voltaic.prefab.screen.component.types.wrapper.WrapperInventoryIO;
+import voltaic.prefab.screen.component.utils.AbstractScreenComponentInfo;
 import voltaic.prefab.screen.types.GenericMaterialScreen;
 import voltaic.prefab.tile.GenericTile;
 import voltaic.prefab.tile.components.IComponentType;
@@ -24,7 +27,13 @@ import voltaic.prefab.tile.components.type.ComponentProcessor;
 public class ScreenHDSUnit extends GenericMaterialScreen<ContainerHDSUnit> {
     public ScreenHDSUnit(ContainerHDSUnit container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
-        this.addComponent(new ScreenComponentProgress(ProgressBars.PROGRESS_ARROW_RIGHT, () -> {
+
+        this.defaultResource = ChemicalScience.rl("textures/screen/gui/hdsunit_gui.png");
+
+        imageHeight += 35;
+        inventoryLabelY += 35;
+
+        this.addComponent(new ScreenComponentProgress(ProgressBars.PROGRESS_ARROW_RIGHT_BIG, () -> {
             GenericTile furnace = (GenericTile)container.getSafeHost();
             if (furnace != null) {
                 ComponentProcessor processor = (ComponentProcessor)furnace.getComponent(IComponentType.Processor);
@@ -34,29 +43,45 @@ public class ScreenHDSUnit extends GenericMaterialScreen<ContainerHDSUnit> {
             }
 
             return (double)0.0F;
-        }, 78, 31));
+        }, 56, 43));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
             TileHDSUnit boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getInputTanks()[0] : null;
-        }, 18, 11));
+        }, 9, 27));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
             TileHDSUnit boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[0] : null;
-        }, 98, 11));
+        }, 135, 27));
 
         this.addComponent(new ScreenComponentGasGauge(() -> {
             TileHDSUnit boiler = container.getSafeHost();
             return boiler != null ? ((ComponentGasHandlerMulti)boiler.getComponent(IComponentType.GasHandler)).getInputTanks()[0] : null;
-        }, 38, 11));
+        }, 27, 27));
 
         this.addComponent(new ScreenComponentGasGauge(() -> {
             TileHDSUnit boiler = container.getSafeHost();
             return boiler != null ? ((ComponentGasHandlerMulti)boiler.getComponent(IComponentType.GasHandler)).getOutputTanks()[0] : null;
-        }, 118, 11));
+        }, 153, 27));
 
-        this.addComponent(new ScreenComponentElectricInfo(-25, 2));
-        new WrapperInventoryIO(this, -25, 28, 75, 82, 8, 72);
+        addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
+        new WrapperInventoryIO(this, -AbstractScreenComponentInfo.SIZE + 1, AbstractScreenComponentInfo.SIZE + 2, 75, 117, 8, 107);
+    }
+
+    @Override
+    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
+        int left = this.leftPos;
+        int top  = this.topPos;
+
+        graphics.blit(
+                this.defaultResource,
+                left,
+                top,
+                0,
+                0,
+                176,
+                200
+        );
     }
 }

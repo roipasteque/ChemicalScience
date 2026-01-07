@@ -2,14 +2,12 @@ package net.pastek.chemicalscience.client.screen;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerCircuitMaker;
 import net.pastek.chemicalscience.common.tile.TileCircuitMaker;
-import voltaic.Voltaic;
 import voltaic.prefab.screen.component.types.ScreenComponentProgress;
 import voltaic.prefab.screen.component.types.ScreenComponentProgress.ProgressBars;
 import voltaic.prefab.screen.component.types.gauges.ScreenComponentFluidGauge;
@@ -51,6 +49,7 @@ public class ScreenCircuitMaker extends GenericMaterialScreen<ContainerCircuitMa
 
         addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
         new WrapperInventoryIO(this, -AbstractScreenComponentInfo.SIZE + 1, AbstractScreenComponentInfo.SIZE + 2, 75, 117, 8, 107);
+
     }
 
     @Override
