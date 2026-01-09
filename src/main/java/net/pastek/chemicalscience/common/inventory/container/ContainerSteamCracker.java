@@ -13,6 +13,7 @@ import voltaic.common.item.subtype.SubtypeItemUpgrade;
 import voltaic.prefab.inventory.container.slot.item.SlotGeneric;
 import voltaic.prefab.inventory.container.slot.item.type.SlotFluid;
 import voltaic.prefab.inventory.container.slot.item.type.SlotGas;
+import voltaic.prefab.inventory.container.slot.item.type.SlotRestricted;
 import voltaic.prefab.inventory.container.slot.item.type.SlotUpgrade;
 import voltaic.prefab.inventory.container.types.GenericContainerBlockEntity;
 import voltaic.prefab.utilities.math.Color;
@@ -33,13 +34,12 @@ public class ContainerSteamCracker extends GenericContainerBlockEntity<TileSteam
     }
 
     public void addInventorySlots(Container inv, Inventory playerinv) {
-        this.addSlot(new SlotGas(inv, this.nextIndex(), 18, 51));
-        this.addSlot(new SlotGas(inv, this.nextIndex(), 78, 51));
-        this.addSlot(new SlotGas(inv, this.nextIndex(), 98, 51));
-        this.addSlot(new SlotGeneric(inv, this.nextIndex(), 118, 31));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 14, VALID_UPGRADES));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 34, VALID_UPGRADES));
-        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 153, 54, VALID_UPGRADES));
+        setPlayerInvOffset(35);
+        this.addSlot(new SlotRestricted(inv, this.nextIndex(), 80, 45));
+        this.addSlot(new SlotGas(inv, this.nextIndex(), 26, 63));
+        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 152, 23, VALID_UPGRADES));
+        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 152, 43, VALID_UPGRADES));
+        this.addSlot(new SlotUpgrade(inv, this.nextIndex(), 152, 63, VALID_UPGRADES));
     }
 
     static {

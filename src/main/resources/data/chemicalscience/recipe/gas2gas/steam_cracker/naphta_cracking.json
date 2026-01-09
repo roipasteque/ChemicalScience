@@ -20,7 +20,7 @@
 
   "itembi": [
     {
-      "chance": 1.0,
+      "chance": 0.1,
       "item": {
         "count": 1,
         "id": "electrodynamics:coalcoke"

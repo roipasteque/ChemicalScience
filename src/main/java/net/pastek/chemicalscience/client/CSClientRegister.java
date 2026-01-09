@@ -50,7 +50,6 @@ public class CSClientRegister {
 
     @SubscribeEvent
     public static void registerMenus(RegisterMenuScreensEvent event) {
-
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
         event.register(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), ScreenCircuitMaker::new);

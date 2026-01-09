@@ -1,9 +1,11 @@
 package net.pastek.chemicalscience.client.screen;
 
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerCatalyticReformer;
 import net.pastek.chemicalscience.common.tile.TileCatalyticReformer;
 import voltaic.prefab.screen.component.types.ScreenComponentProgress;
@@ -12,6 +14,7 @@ import voltaic.prefab.screen.component.types.gauges.ScreenComponentFluidGauge;
 import voltaic.prefab.screen.component.types.gauges.ScreenComponentGasGauge;
 import voltaic.prefab.screen.component.types.guitab.ScreenComponentElectricInfo;
 import voltaic.prefab.screen.component.types.wrapper.WrapperInventoryIO;
+import voltaic.prefab.screen.component.utils.AbstractScreenComponentInfo;
 import voltaic.prefab.screen.types.GenericMaterialScreen;
 import voltaic.prefab.tile.GenericTile;
 import voltaic.prefab.tile.components.IComponentType;
@@ -23,6 +26,13 @@ import voltaic.prefab.tile.components.type.ComponentProcessor;
 public class ScreenCatalyticReformer extends GenericMaterialScreen<ContainerCatalyticReformer> {
     public ScreenCatalyticReformer(ContainerCatalyticReformer container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
+
+        this.defaultResource = ChemicalScience.rl("textures/screen/gui/catalyticreformer_gui.png");
+
+        imageHeight += 35;
+        inventoryLabelY += 35;
+
+
         this.addComponent(new ScreenComponentProgress(ProgressBars.PROGRESS_ARROW_RIGHT, () -> {
             GenericTile furnace = (GenericTile)container.getSafeHost();
             if (furnace != null) {
@@ -33,29 +43,45 @@ public class ScreenCatalyticReformer extends GenericMaterialScreen<ContainerCata
             }
 
             return (double)0.0F;
-        }, 78, 31));
+        }, 50, 45));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
             TileCatalyticReformer boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getInputTanks()[0] : null;
-        }, 18, 11));
+        }, 8, 30));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
             TileCatalyticReformer boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[0] : null;
-        }, 98, 11));
+        }, 99, 30));
 
         this.addComponent(new ScreenComponentFluidGauge(() -> {
             TileCatalyticReformer boiler = container.getSafeHost();
             return boiler != null ? ((ComponentFluidHandlerMulti)boiler.getComponent(IComponentType.FluidHandler)).getOutputTanks()[1] : null;
-        }, 118, 11));
+        }, 117, 30));
 
         this.addComponent(new ScreenComponentGasGauge(() -> {
             TileCatalyticReformer boiler = container.getSafeHost();
             return boiler != null ? ((ComponentGasHandlerMulti)boiler.getComponent(IComponentType.GasHandler)).getOutputTanks()[0] : null;
-        }, 138, 11));
+        }, 135, 30));
 
-        this.addComponent(new ScreenComponentElectricInfo(-25, 2));
-        new WrapperInventoryIO(this, -25, 28, 75, 82, 8, 72);
+        addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
+        new WrapperInventoryIO(this, -AbstractScreenComponentInfo.SIZE + 1, AbstractScreenComponentInfo.SIZE + 2, 75, 117, 8, 107);
+    }
+
+    @Override
+    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
+        int left = this.leftPos;
+        int top  = this.topPos;
+
+        graphics.blit(
+                this.defaultResource,
+                left,
+                top,
+                0,
+                0,
+                176,
+                200
+        );
     }
 }

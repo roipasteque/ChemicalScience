@@ -22,9 +22,23 @@ public enum CSTextures implements ITexture {
 
     HDS_UNIT_JEI(
             0, 0,
-            176, 125,
+            176, 80,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/hdsunit.png")
+    ),
+
+    STEAM_CRACKER_JEI(
+            0, 0,
+            176, 80,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/steamcracker.png")
+    ),
+
+    CATALYTIC_REFORMER_JEI(
+            0, 0,
+            176, 80,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/catalyticreformer.png")
     ),
 
     FRACTIONATING_COLUMN_JEI(

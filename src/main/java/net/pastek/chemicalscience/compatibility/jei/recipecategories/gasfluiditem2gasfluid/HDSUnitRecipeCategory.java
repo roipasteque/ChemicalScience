@@ -44,7 +44,7 @@ public class HDSUnitRecipeCategory extends GasFluidItem2FluidRecipeCategory<HDSU
     }
 
     static {
-        INPUT_CAT_SLOT = new ItemSlotObject(SlotType.NORMAL, 79, 5, RecipeIngredientRole.INPUT);
+        INPUT_CAT_SLOT = new ItemSlotObject(SlotType.NORMAL, 79, 5, RecipeIngredientRole.CATALYST);
         ANIM_RIGHT_ARROW = new ArrowAnimatedObject(ProgressBars.PROGRESS_ARROW_RIGHT_BIG, 56, 21, StartDirection.LEFT);
         IN_FLUID_GAUGE = new FluidGaugeObject(9, 5);
         IN_GAS_GAUGE = new GasGaugeObject(27, 5);
