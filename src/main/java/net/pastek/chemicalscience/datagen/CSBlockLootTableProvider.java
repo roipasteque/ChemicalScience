@@ -224,6 +224,7 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         dropSelf(CSBlocks.STEAM_CRACKER.get());
         dropSelf(CSBlocks.CATALYTIC_REFORMER.get());
         dropSelf(CSBlocks.FRACTIONATING_COLUMN.get());
+        dropSelf(CSBlocks.CHEMICAL_BENCH.get());
 
             // Periodic table
         dropSelf(CSBlocks.ELEMENT_H.get());

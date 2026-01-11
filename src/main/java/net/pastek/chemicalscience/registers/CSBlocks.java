@@ -365,6 +365,7 @@ public class CSBlocks {
 
     // Multiblock Machine
     public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new BlockMachine(SubtypeChemicalMachine.fractionatingcolumn));
+    public static final DeferredBlock<Block> CHEMICAL_BENCH = registerBlock("chemical_bench_controller", () -> new BlockMachine(SubtypeChemicalMachine.chemicalbench));
 
 
 

@@ -5,10 +5,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.inventory.container.ContainerChemicalBench;
 import net.pastek.chemicalscience.common.inventory.container.*;
 
 public class CSMenuTypes {
@@ -25,6 +25,8 @@ public class CSMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerSteamCracker>> CONTAINER_STEAM_CRACKER = register("steamcracker", ContainerSteamCracker::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerCatalyticReformer>> CONTAINER_CATALYTIC_REFORMER = register("catalyticreformer", ContainerCatalyticReformer::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerFractionatingColumn>> CONTAINER_FRACTIONATING_COLUMN = register("fractionatingcolumn", ContainerFractionatingColumn::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerChemicalBench>> CONTAINER_CHEMICAL_BENCH = register("chemicalbench", ContainerChemicalBench::new);
+
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {
         return MENU_TYPES.register(id, () -> new MenuType<>(supplier, FeatureFlags.DEFAULT_FLAGS));

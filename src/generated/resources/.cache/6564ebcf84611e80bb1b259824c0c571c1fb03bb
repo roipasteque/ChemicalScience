@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-04T15:24:54.0296883	Block States: chemicalscience
+// 1.21.1	2026-01-10T17:49:15.7988947	Block States: chemicalscience
 b1ee8a8a95d9605309af720223eb45bd77e8d6d9 assets/chemicalscience/blockstates/block_asphalt.json
 df675d88634ae23c1829044db00b292a3b759b2c assets/chemicalscience/blockstates/block_element_ac.json
 4fe58f4852c17675ba4a63a38d34419704b41802 assets/chemicalscience/blockstates/block_element_ag.json
@@ -129,6 +129,7 @@ f06d70f0b3ce39d210fd6e5f4487ded41a83016c assets/chemicalscience/blockstates/bloc
 846f3aa5dd481ede21423f29f911d9959f905bad assets/chemicalscience/blockstates/block_silicon.json
 869d6bca0d470a25aff62faa216179264cf9d30c assets/chemicalscience/blockstates/block_tungsten.json
 f2f3e11384809db068d143eca55b2a59e6a17e1a assets/chemicalscience/blockstates/catalytic_reformer.json
+f68bb606d1503430f85ae37712bc267bfa1cd720 assets/chemicalscience/blockstates/chemical_bench_controller.json
 c391c6373c44e23a932cc4a7f93bceb04cfe50e2 assets/chemicalscience/blockstates/circuitmaker.json
 4780475bcb0c5417896aeb9ddb4ad65871980cd4 assets/chemicalscience/blockstates/door_magnesiumaluminum.json
 0371a1a4f3defa9b5588fb5e1b8a50ef2ae4c8c5 assets/chemicalscience/blockstates/fence_magnesiumaluminum.json
@@ -655,6 +656,7 @@ de17346b2c803dd7f9166550c58827f2142f284f assets/chemicalscience/models/item/bloc
 3ed76d7cc2243268061e0031a7826970a0563070 assets/chemicalscience/models/item/block_silicon.json
 b52aac6ce21d6cbab9690897b2d05490d92d942a assets/chemicalscience/models/item/block_tungsten.json
 dd92539b570a9f3dab55a356037cabac23e57bec assets/chemicalscience/models/item/catalytic_reformer.json
+a8358022fd1ed5d7bfc47adf4569d28768dddddc assets/chemicalscience/models/item/chemical_bench_controller.json
 17a6fd310f3c7e37e388fdc54237687884881fc6 assets/chemicalscience/models/item/circuitmaker.json
 d209d967a24ca309f061c0ca56eec8a93e0a634c assets/chemicalscience/models/item/fractionating_column.json
 a0e93894c2ed157065e954a99a52a8aee7b6c2e8 assets/chemicalscience/models/item/fuelcell.json

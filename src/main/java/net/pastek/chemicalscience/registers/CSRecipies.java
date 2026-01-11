@@ -12,6 +12,8 @@ import net.pastek.chemicalscience.common.recipe.categories.gas2gas.specificmachi
 import net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid.GasFluidItem2FluidRecipeSerializer;
 import net.pastek.chemicalscience.common.recipe.categories.gasfluiditem2gasfluid.specificmachines.HDSUnitRecipe;
 import net.pastek.chemicalscience.common.recipe.categories.fluiditem2item.specificmachines.CircuitMakerRecipe;
+import net.pastek.chemicalscience.common.recipe.categories.misc.ChemicalBenchRecipe;
+import net.pastek.chemicalscience.common.recipe.categories.misc.ChemicalBenchRecipeSerializer;
 import voltaic.common.recipe.VoltaicRecipeType;
 import voltaic.common.recipe.categories.fluid2fluid.Fluid2FluidRecipeSerializer;
 import voltaic.common.recipe.categories.fluiditem2fluid.FluidItem2FluidRecipeSerializer;
@@ -25,11 +27,13 @@ public class CSRecipies {
     public static final DeferredHolder<RecipeType<?>, RecipeType<SteamCrackerRecipe>> STEAM_CRACKER_TYPE;
     public static final DeferredHolder<RecipeType<?>, RecipeType<CatalyticReformerRecipe>> CATALYTIC_REFORMER_TYPE;
     public static final DeferredHolder<RecipeType<?>, RecipeType<FractionatingColumnRecipe>> FRACTIONATING_COLUMN_TYPE;
+    public static final DeferredHolder<RecipeType<?>, RecipeType<FractionatingColumnRecipe>> CHEMICAL_BENCH_TYPE;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> CIRCUIT_MAKER_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> HDS_UNIT_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> STEAM_CRACKER_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> CATALYTIC_REFORMER_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> FRACTIONATING_COLUMN_SERIALIZER;
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> CHEMICAL_BENCH_SERIALIZER;
 
     static {
         RECIPE_SERIALIZER = DeferredRegister.create(Registries.RECIPE_SERIALIZER, "chemicalscience");
@@ -40,11 +44,14 @@ public class CSRecipies {
         STEAM_CRACKER_TYPE = RECIPE_TYPES.register("steam_cracker_recipe", VoltaicRecipeType::new);
         CATALYTIC_REFORMER_TYPE = RECIPE_TYPES.register("catalytic_reformer_recipe", VoltaicRecipeType::new);
         FRACTIONATING_COLUMN_TYPE = RECIPE_TYPES.register("fractionating_column_recipe", VoltaicRecipeType::new);
+        CHEMICAL_BENCH_TYPE = RECIPE_TYPES.register("chemical_bench_recipe", VoltaicRecipeType::new);
 
         CIRCUIT_MAKER_SERIALIZER = RECIPE_SERIALIZER.register("circuit_maker_recipe", () -> new FluidItem2ItemRecipeSerializer<>(CircuitMakerRecipe::new));
         HDS_UNIT_SERIALIZER = RECIPE_SERIALIZER.register("hds_unit_recipe", () -> new GasFluidItem2FluidRecipeSerializer<>(HDSUnitRecipe::new));
         STEAM_CRACKER_SERIALIZER = RECIPE_SERIALIZER.register("steam_cracker_recipe", () -> new Gas2GasRecipeSerializer<>(SteamCrackerRecipe::new));
         CATALYTIC_REFORMER_SERIALIZER = RECIPE_SERIALIZER.register("catalytic_reformer_recipe", () -> new FluidItem2FluidRecipeSerializer<>(CatalyticReformerRecipe::new));
         FRACTIONATING_COLUMN_SERIALIZER = RECIPE_SERIALIZER.register("fractionating_column_recipe", () -> new Fluid2FluidRecipeSerializer<>(FractionatingColumnRecipe::new));
+        CHEMICAL_BENCH_SERIALIZER = RECIPE_SERIALIZER.register("chemical_bench_recipe", ChemicalBenchRecipeSerializer::new);
+
     }
 }

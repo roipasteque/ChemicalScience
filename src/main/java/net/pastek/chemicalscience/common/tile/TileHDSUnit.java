@@ -6,6 +6,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.Container;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,6 +27,7 @@ import voltaic.prefab.tile.components.type.*;
 import voltaic.prefab.tile.components.type.ComponentInventory.InventoryBuilder;
 import voltaic.prefab.tile.types.GenericGasTile;
 import voltaic.prefab.utilities.BlockEntityUtils.MachineDirection;
+import voltaic.prefab.utilities.ItemUtils;
 
 
 public class TileHDSUnit extends GenericGasTile implements ITickableSound {

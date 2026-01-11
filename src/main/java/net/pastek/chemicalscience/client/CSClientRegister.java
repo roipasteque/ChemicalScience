@@ -20,10 +20,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
-import net.pastek.chemicalscience.client.render.tile.RenderFractionatingColumn;
-import net.pastek.chemicalscience.client.render.tile.RenderLabStorage;
-import net.pastek.chemicalscience.client.render.tile.RenderRackM;
-import net.pastek.chemicalscience.client.render.tile.RenderRackS;
+import net.pastek.chemicalscience.client.render.tile.*;
 import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
@@ -42,6 +39,8 @@ public class CSClientRegister {
 
     public static final ModelResourceLocation FRACTIONATINGCOLUMN_MODEL =
             ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/fractionating_column"));
+    public static final ModelResourceLocation CHEMICALBENCH_MODEL =
+            ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/chemical_bench"));
 
 
     public static void setup() {
@@ -57,6 +56,7 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_STEAM_CRACKER.get(), ScreenSteamCracker::new);
         event.register(CSMenuTypes.CONTAINER_CATALYTIC_REFORMER.get(), ScreenCatalyticReformer::new);
         event.register(CSMenuTypes.CONTAINER_FRACTIONATING_COLUMN.get(), ScreenFractionatingColumn::new);
+        event.register(CSMenuTypes.CONTAINER_CHEMICAL_BENCH.get(), ScreenChemicalBench::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
         event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);
@@ -106,10 +106,12 @@ public class CSClientRegister {
         event.registerBlockEntityRenderer(CSTiles.TILE_RACK_S.get(), RenderRackS::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_LAB_STORAGE.get(), RenderLabStorage::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_FRACTIONATING_COLUMN.get(), RenderFractionatingColumn::new);
+        event.registerBlockEntityRenderer(CSTiles.TILE_CHEMICAL_BENCH.get(), RenderChemicalBench::new);
     }
 
     @SubscribeEvent
     public static void registerModels(ModelEvent.RegisterAdditional event) {
         event.register(FRACTIONATINGCOLUMN_MODEL);
+        event.register(CHEMICALBENCH_MODEL);
     }
 }

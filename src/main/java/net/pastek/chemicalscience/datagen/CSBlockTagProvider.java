@@ -111,7 +111,8 @@ public class CSBlockTagProvider extends BlockTagsProvider {
                         CSBlocks.HDS_UNIT.get(),
                         CSBlocks.STEAM_CRACKER.get(),
                         CSBlocks.CATALYTIC_REFORMER.get(),
-                        CSBlocks.FRACTIONATING_COLUMN.get()
+                        CSBlocks.FRACTIONATING_COLUMN.get(),
+                        CSBlocks.CHEMICAL_BENCH.get()
 
                 );
         tag(BlockTags.MINEABLE_WITH_HOE)

@@ -27,4 +27,5 @@ public class CSTiles {
 
 
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileFractionatingColumn>> TILE_FRACTIONATING_COLUMN = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.fractionatingcolumn.tag(), () -> new BlockEntityType<>(TileFractionatingColumn::new, Sets.newHashSet(CSBlocks.FRACTIONATING_COLUMN.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileChemicalBench>> TILE_CHEMICAL_BENCH = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.chemicalbench.tag(), () -> new BlockEntityType<>(TileChemicalBench::new, Sets.newHashSet(CSBlocks.CHEMICAL_BENCH.get()), null));
 }

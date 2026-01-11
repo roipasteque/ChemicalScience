@@ -1,0 +1,4 @@
+# Made in Blockbench 5.0.7
+newmtl chemical_bench
+map_Kd chemicalscience:block/multiblock/chemical_bench/chemical_bench
+newmtl none

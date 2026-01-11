@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.tile.TileChemicalBench;
 import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import voltaic.api.multiblock.assemblybased.MultiblockSlaveNode;
@@ -200,7 +201,26 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
 
         ));
 
+        /** Chemical Bench */
+        addMultiblock(TileChemicalBench.ID, List.of(
 
+                //Layer 0
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 0, -1), Shapes.block(), empty),
+
+                //Layer 1
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
+
+                //Layer 2
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, 0), Shapes.block(), empty)
+        ));
     }
 
 }

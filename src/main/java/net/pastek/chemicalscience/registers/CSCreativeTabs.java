@@ -121,6 +121,7 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.HDS_UNIT);
         output.accept(CSBlocks.STEAM_CRACKER);
         output.accept(CSBlocks.CATALYTIC_REFORMER);
+        output.accept(CSBlocks.CHEMICAL_BENCH);
 
         /** ITEMS */
         /** Raw Materials */

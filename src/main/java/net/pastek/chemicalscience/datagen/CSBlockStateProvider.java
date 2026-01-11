@@ -146,6 +146,8 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
                 //
                 90, 0, true);
 
+        horrRotatedLitBlock(CSBlocks.CHEMICAL_BENCH, existingBlock(CSBlocks.CHEMICAL_BENCH), existingBlock(blockLoc("chemical_bench_controller_lit")), true);
+
         // Periodic table
         blockWithItem(CSBlocks.ELEMENT_H);
         blockWithItem(CSBlocks.ELEMENT_HE);

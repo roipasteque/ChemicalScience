@@ -167,6 +167,7 @@
     "chemicalscience:hds_unit",
     "chemicalscience:steam_cracker",
     "chemicalscience:catalytic_reformer",
-    "chemicalscience:fractionating_column"
+    "chemicalscience:fractionating_column",
+    "chemicalscience:chemical_bench_controller"
   ]
 }

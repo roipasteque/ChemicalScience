@@ -29,7 +29,8 @@ public enum SubtypeChemicalMachine implements ISubtype, IMachine {
     hdsunit(true, TileHDSUnit::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     steamcracker(true, TileSteamCracker::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
     catalyticreformer(true, TileCatalyticReformer::new, MachineProperties.builder().setShapeProvider(CSVoxelShapes.CUBE)),
-    fractionatingcolumn(true, TileFractionatingColumn::new);
+    fractionatingcolumn(true, TileFractionatingColumn::new),
+    chemicalbench(true, TileChemicalBench::new);
 
 
 

@@ -1,0 +1,7 @@
+{
+  "loader": "neoforge:obj",
+  "model": "chemicalscience:models/multiblock/chemical_bench.obj",
+  "detectCullableFaces": false,
+  "flipV": true,
+  "automaticNormals": false
+}
