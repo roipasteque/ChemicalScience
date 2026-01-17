@@ -1,4 +1,4 @@
-package net.pastek.chemicalscience.compatibility.jei;
+package net.pastek.chemicalscience.prefab.screen;
 
 import voltaic.api.screen.ITexture;
 import voltaic.compatibility.jei.utils.gui.types.BackgroundObject;

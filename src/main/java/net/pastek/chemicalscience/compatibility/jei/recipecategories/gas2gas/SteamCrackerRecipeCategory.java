@@ -2,16 +2,13 @@ package net.pastek.chemicalscience.compatibility.jei.recipecategories.gas2gas;
 
 import mezz.jei.api.gui.drawable.IDrawableAnimated.StartDirection;
 import mezz.jei.api.helpers.IGuiHelper;
-import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import net.minecraft.world.item.ItemStack;
 import net.pastek.chemicalscience.common.recipe.categories.gas2gas.specificmachines.SteamCrackerRecipe;
-import net.pastek.chemicalscience.compatibility.jei.CSBackgroundObject;
+import net.pastek.chemicalscience.prefab.screen.CSBackgroundObject;
 import net.pastek.chemicalscience.prefab.screen.CSTextures;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import net.pastek.chemicalscience.registers.CSBlocks;
-import voltaic.common.recipe.VoltaicRecipe;
-import voltaic.compatibility.jei.VoltaicJEIPlugin;
 import voltaic.compatibility.jei.utils.gui.types.ArrowAnimatedObject;
 import voltaic.compatibility.jei.utils.gui.types.BackgroundObject;
 import voltaic.compatibility.jei.utils.gui.types.gasgauge.GasGaugeObject;

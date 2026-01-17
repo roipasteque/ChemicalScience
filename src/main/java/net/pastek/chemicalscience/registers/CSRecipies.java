@@ -27,7 +27,7 @@ public class CSRecipies {
     public static final DeferredHolder<RecipeType<?>, RecipeType<SteamCrackerRecipe>> STEAM_CRACKER_TYPE;
     public static final DeferredHolder<RecipeType<?>, RecipeType<CatalyticReformerRecipe>> CATALYTIC_REFORMER_TYPE;
     public static final DeferredHolder<RecipeType<?>, RecipeType<FractionatingColumnRecipe>> FRACTIONATING_COLUMN_TYPE;
-    public static final DeferredHolder<RecipeType<?>, RecipeType<FractionatingColumnRecipe>> CHEMICAL_BENCH_TYPE;
+    public static final DeferredHolder<RecipeType<?>, RecipeType<ChemicalBenchRecipe>> CHEMICAL_BENCH_TYPE;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> CIRCUIT_MAKER_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> HDS_UNIT_SERIALIZER;
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> STEAM_CRACKER_SERIALIZER;

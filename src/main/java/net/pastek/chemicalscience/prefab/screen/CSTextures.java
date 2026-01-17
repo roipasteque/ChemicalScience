@@ -13,6 +13,20 @@ public enum CSTextures implements ITexture {
             ChemicalScience.rl("textures/screen/component/icon/catalyst.png")
     ),
 
+    FLUID_INFO(
+            0, 0,
+            36, 9,
+            36, 9,
+            ChemicalScience.rl("textures/screen/component/fluidinfo.png")
+    ),
+
+    GAS_INFO(
+            0, 0,
+            36, 9,
+            36, 9,
+            ChemicalScience.rl("textures/screen/component/fluidinfo.png")
+    ),
+
     CIRCUIT_MAKER_JEI(
             0, 0,
             176, 125,
@@ -46,6 +60,13 @@ public enum CSTextures implements ITexture {
             176, 125,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/fractionatingcolumn.png")
+    ),
+
+    CHEMICAL_BENCH_JEI(
+            0, 0,
+            176, 160,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/chemicalbench.png")
     );
 
     private final int u;

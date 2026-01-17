@@ -7,6 +7,18 @@
       "count": 1,
       "ingredient": {
         "tag": "c:dusts/ironarsenide"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "create:cogwheel"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:ingot_boron"
       },
       "catalyst": true
     }

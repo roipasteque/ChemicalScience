@@ -23,6 +23,7 @@ import net.pastek.chemicalscience.compatibility.jei.recipecategories.fluiditem2f
 import net.pastek.chemicalscience.compatibility.jei.recipecategories.fluiditem2item.CircuitMakerRecipeCategory;
 import net.pastek.chemicalscience.compatibility.jei.recipecategories.gas2gas.SteamCrackerRecipeCategory;
 import net.pastek.chemicalscience.compatibility.jei.recipecategories.gasfluiditem2gasfluid.HDSUnitRecipeCategory;
+import net.pastek.chemicalscience.compatibility.jei.recipecategories.misc.ChemicalBenchRecipeCategory;
 import net.pastek.chemicalscience.registers.CSRecipies;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import net.pastek.chemicalscience.registers.gases.CSGases;
@@ -48,6 +49,7 @@ public class CSJEIPlugin implements IModPlugin {
         registration.addRecipeCatalyst(HDSUnitRecipeCategory.INPUT_MACHINE, HDSUnitRecipeCategory.RECIPE_TYPE);
         registration.addRecipeCatalyst(SteamCrackerRecipeCategory.INPUT_MACHINE, SteamCrackerRecipeCategory.RECIPE_TYPE);
         registration.addRecipeCatalyst(CatalyticReformerRecipeCategory.INPUT_MACHINE, CatalyticReformerRecipeCategory.RECIPE_TYPE);
+        registration.addRecipeCatalyst(ChemicalBenchRecipeCategory.INPUT_MACHINE, ChemicalBenchRecipeCategory.RECIPE_TYPE);
     }
 
     public void registerRecipes(IRecipeRegistration registration) {
@@ -59,6 +61,7 @@ public class CSJEIPlugin implements IModPlugin {
         registration.addRecipes(HDSUnitRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.HDS_UNIT_TYPE.get()).stream().map((val) -> val.value()).toList());
         registration.addRecipes(SteamCrackerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.STEAM_CRACKER_TYPE.get()).stream().map((val) -> val.value()).toList());
         registration.addRecipes(CatalyticReformerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CATALYTIC_REFORMER_TYPE.get()).stream().map((val) -> val.value()).toList());
+        registration.addRecipes(ChemicalBenchRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CHEMICAL_BENCH_TYPE.get()).stream().map((val) -> val.value()).toList());
 
     }
 
@@ -69,6 +72,7 @@ public class CSJEIPlugin implements IModPlugin {
         registration.addRecipeCategories(new HDSUnitRecipeCategory(guiHelper));
         registration.addRecipeCategories(new SteamCrackerRecipeCategory(guiHelper));
         registration.addRecipeCategories(new CatalyticReformerRecipeCategory(guiHelper));
+        registration.addRecipeCategories(new ChemicalBenchRecipeCategory(guiHelper));
     }
 
     public void registerGuiHandlers(IGuiHandlerRegistration registry) {
@@ -77,6 +81,7 @@ public class CSJEIPlugin implements IModPlugin {
         registry.addRecipeClickArea(ScreenHDSUnit.class, 56, 45, 64, 13, HDSUnitRecipeCategory.RECIPE_TYPE);
         registry.addRecipeClickArea(ScreenSteamCracker.class, 50, 45, 22, 16, SteamCrackerRecipeCategory.RECIPE_TYPE);
         registry.addRecipeClickArea(ScreenCatalyticReformer.class, 50, 45, 22, 16, CatalyticReformerRecipeCategory.RECIPE_TYPE);
+        registry.addRecipeClickArea(ScreenChemicalBench.class, 56, 49, 64, 13, ChemicalBenchRecipeCategory.RECIPE_TYPE);
     }
 
         @Override

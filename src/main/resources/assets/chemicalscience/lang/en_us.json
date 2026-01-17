@@ -701,12 +701,16 @@
   "container.labbench": "Laboratory Bench",
   "container.labstorage": "Storage",
   "container.circuitmaker": "Circuit Maker",
+  "container.chemicalbench": "Chemical Bench",
+  "container.chemicalbench.inputfluids": "Input",
+  "container.chemicalbench.outputfluids": "Output",
 
   "gui.chemicalscience.machine.current": "Current: %s",
   "gui.chemicalscience.machine.output": "Output: %s",
   "gui.chemicalscience.machine.voltage": "Voltage: %s",
 
   "jei.circuit_maker_recipe": "Circuits",
+  "jei.catalyst": "Catalyst",
 
   "advancement.chemicalscience.root.title": "Chemical Science",
   "advancement.chemicalscience.root.desc": "Craft a Chemical Reactor, and start some real chemistry!",

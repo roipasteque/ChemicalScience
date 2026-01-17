@@ -27,22 +27,22 @@ public class ContainerChemicalBench extends GenericContainerBlockEntity<TileChem
     }
 
     public void addInventorySlots(Container inv, Inventory playerinv) {
-        setPlayerInvOffset(35);
-        addSlot((new SlotGeneric(inv, nextIndex(), 20, 20)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotGeneric(inv, nextIndex(), 40, 20)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotGeneric(inv, nextIndex(), 60, 20)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotGeneric(inv, nextIndex(), 20, 40)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotGeneric(inv, nextIndex(), 40, 40)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotGeneric(inv, nextIndex(), 60, 40)).setIOColor(new Color(0, 240, 255, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 120, 20)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 140, 20)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 160, 20)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 120, 40)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 140, 40)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot((new SlotRestricted(inv, nextIndex(), 160, 40)).setIOColor(new Color(255, 0, 0, 255)));
-        addSlot(new SlotUpgrade(inv, nextIndex(), 80, 70, VALID_UPGRADES));
-        addSlot(new SlotUpgrade(inv, nextIndex(), 100, 70, VALID_UPGRADES));
-        addSlot(new SlotUpgrade(inv, nextIndex(), 120, 70, VALID_UPGRADES));
+        setPlayerInvOffset(70);
+        addSlot((new SlotGeneric(inv, nextIndex(), 8, 100)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 26, 100)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 44, 100)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 8, 118)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 26, 118)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotGeneric(inv, nextIndex(), 44, 118)).setIOColor(new Color(0, 240, 255, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 116, 100)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 134, 100)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 152, 100)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 116, 118)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 134, 118)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot((new SlotRestricted(inv, nextIndex(), 152, 118)).setIOColor(new Color(255, 0, 0, 255)));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 177, 18, VALID_UPGRADES));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 177, 36, VALID_UPGRADES));
+        addSlot(new SlotUpgrade(inv, nextIndex(), 177, 54, VALID_UPGRADES));
     }
 
     static {
