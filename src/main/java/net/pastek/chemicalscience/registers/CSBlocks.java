@@ -6,16 +6,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.block.decoration.*;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
-import voltaic.api.radiation.util.RadiationShielding;
 import voltaic.common.block.BlockMachine;
-import voltaic.common.blockitem.BlockItemDescriptable;
-import voltaic.prefab.utilities.VoltaicTextUtils;
 
 import java.util.function.Supplier;
 

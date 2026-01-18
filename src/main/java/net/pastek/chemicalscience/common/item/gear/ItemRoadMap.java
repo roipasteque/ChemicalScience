@@ -31,8 +31,8 @@ public class ItemRoadMap extends ItemVoltaic {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltips, TooltipFlag flag) {
-        tooltips.add(CSTextUtils.tooltip("roadmapname").withStyle(ChatFormatting.DARK_GREEN));
         tooltips.add(CSTextUtils.tooltip("info.roadmapuse").withStyle(ChatFormatting.GREEN));
+        tooltips.add(CSTextUtils.tooltip("info.roadmapcraft").withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, context, tooltips, flag);
     }
 
@@ -40,7 +40,7 @@ public class ItemRoadMap extends ItemVoltaic {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand handIn) {
         if (world.isClientSide) {
             if (player.isShiftKeyDown()) {
-                player.sendSystemMessage(VoltaicTextUtils.chatMessage("guidebookclick").withStyle(ChatFormatting.BOLD, ChatFormatting.RED).withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, LINK))));
+                player.sendSystemMessage(CSTextUtils.chatMessage("roadmapclick").withStyle(ChatFormatting.BOLD, ChatFormatting.RED).withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, LINK))));
                 return InteractionResultHolder.pass(player.getItemInHand(handIn));
             }
         } else if(!player.isShiftKeyDown()) {

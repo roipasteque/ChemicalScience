@@ -11,17 +11,26 @@ import net.minecraft.world.item.ItemStack;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerRoadMap;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.joml.Matrix4f;
 import voltaic.prefab.screen.GenericScreen;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
 
     private static final ResourceLocation TEXTURE_BG = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/background.png");
     private static final ResourceLocation TEXTURE_NODE_FRAME = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/node_frame.png");
     private static final ResourceLocation TEXTURE_OVERLAY = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/node_overlay.png");
+    private static final ResourceLocation TEXTURE_IMAGE_FRAME = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/node_image_frame.png");
     private static final ResourceLocation TEXTURE_WINDOW_FRAME = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/window_frame.png");
+
+    private static final ResourceLocation ICON_CHECK = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/icon/check.png");
+    private static final ResourceLocation ICON_DOT = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/icon/dot.png");
+
+    private static final Map<ResourceLocation, NodeStatus> NODE_PROGRESS = new HashMap<>();
 
     private double scrollX = 0;
     private double scrollY = 0;
@@ -45,18 +54,14 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     protected void init() {
         this.winW = (int) (this.width * 0.8f);
         this.winH = (int) (this.winW / ASPECT_RATIO);
-
         if (this.winH > this.height * 0.85f) {
             this.winH = (int) (this.height * 0.85f);
             this.winW = (int) (this.winH * ASPECT_RATIO);
         }
-
         this.winX = (this.width - this.winW) / 2;
         this.winY = (this.height - this.winH) / 2;
-
         this.imageWidth = this.winW;
         this.imageHeight = this.winH;
-
         super.init();
     }
 
@@ -65,16 +70,13 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         for (net.minecraft.world.inventory.Slot slot : this.menu.slots) {
             this.addComponent(this.createScreenSlot(slot));
         }
-
         this.guiTitle = new voltaic.prefab.screen.component.types.ScreenComponentSimpleLabel(0, 0, 0, voltaic.prefab.utilities.math.Color.BLACK, Component.empty());
         this.playerInvLabel = new voltaic.prefab.screen.component.types.ScreenComponentSimpleLabel(0, 0, 0, voltaic.prefab.utilities.math.Color.BLACK, Component.empty());
     }
 
     @Override
     public void render(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
-
         g.fill(0, 0, this.width, this.height, 0x11000000);
-
         g.fill(winX, winY, winX + winW, winY + winH, 0xEE101010);
 
         g.enableScissor(winX, winY, winX + winW, winY + winH);
@@ -96,7 +98,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             for (ResourceLocation parentId : node.parents()) {
                 RoadmapNode parent = RoadMapNodes.NODE_MAP.get(parentId);
                 if (parent != null) {
-                    renderConnection(g, parent, node);
+                    renderConnection(g, parent, node, node.lineColor());
                 }
             }
         }
@@ -110,6 +112,8 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
 
         renderWindowFrame(g);
 
+        renderControlsLegend(g);
+
         if (selectedNode != null) {
             renderDetailOverlay(g, mouseX, mouseY);
         } else {
@@ -119,17 +123,10 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         super.render(g, mouseX, mouseY, partialTick);
     }
 
-    @Override
-    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
-    }
+    @Override protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {}
+    @Override public void renderBackground(@NotNull GuiGraphics g, int mouseX, int mouseY, float partialTick) {}
+    @Override protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {}
 
-    @Override
-    public void renderBackground(@NotNull GuiGraphics g, int mouseX, int mouseY, float partialTick) {
-    }
-
-    @Override
-    protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
-    }
 
     private void renderWindowFrame(GuiGraphics g) {
         RenderSystem.enableBlend();
@@ -139,14 +136,14 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     private void renderInfiniteBackground(GuiGraphics g) {
         int bgSize = 2048;
         RenderSystem.setShaderTexture(0, TEXTURE_BG);
-        g.blit(TEXTURE_BG, -bgSize / 2, -bgSize / 2, 0, 0, bgSize, bgSize, 256, 256);
+        g.blit(TEXTURE_BG, -bgSize / 2, -bgSize / 2, 0, 0, bgSize, bgSize, 32, 32);
     }
 
-    private void renderConnection(GuiGraphics g, RoadmapNode parent, RoadmapNode child) {
+    private void renderConnection(GuiGraphics g, RoadmapNode parent, RoadmapNode child, int color) {
         drawLine(g,
                 parent.x() + NODE_SIZE / 2f, parent.y() + NODE_SIZE / 2f,
                 child.x() + NODE_SIZE / 2f, child.y() + NODE_SIZE / 2f,
-                0xFF555555);
+                color);
     }
 
     private void drawLine(GuiGraphics g, float x1, float y1, float x2, float y2, int color) {
@@ -154,7 +151,6 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         float dy = y2 - y1;
         float length = (float) Math.sqrt(dx * dx + dy * dy);
         float angle = (float) Math.atan2(dy, dx);
-
         g.pose().pushPose();
         g.pose().translate(x1, y1, 0);
         g.pose().mulPose(com.mojang.math.Axis.ZP.rotation(angle));
@@ -178,21 +174,46 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         int offset = (NODE_SIZE - 16) / 2;
         g.renderItem(node.icon(), offset, offset);
 
+        NodeStatus status = NODE_PROGRESS.getOrDefault(node.id(), NodeStatus.NONE);
+        if (status == NodeStatus.DONE) {
+            g.pose().pushPose();
+            g.pose().translate(NODE_SIZE - 10, -4, 200);
+            RenderSystem.enableBlend();
+            g.blit(ICON_CHECK, 0, 0, 0, 0, 12, 12, 12, 12);
+            g.pose().popPose();
+        } else if (status == NodeStatus.IN_PROGRESS) {
+            g.pose().pushPose();
+            g.pose().translate(NODE_SIZE - 10, -4, 200);
+            RenderSystem.enableBlend();
+            g.blit(ICON_DOT, 0, 0, 0, 0, 12, 12, 12, 12);
+            g.pose().popPose();
+        }
+
         g.pose().popPose();
     }
 
-    private void renderNodeTooltips(GuiGraphics g, int screenX, int screenY, double worldX, double worldY) {
-        for (RoadmapNode node : RoadMapNodes.NODES) {
-            if (isMouseOverNode(node, worldX, worldY)) {
-                g.renderTooltip(font, node.title(), screenX, screenY);
-                break;
-            }
-        }
-    }
+    private void renderControlsLegend(GuiGraphics g) {
+        int padding = 6;
+        int lineSpacing = 10;
 
-    private boolean isMouseOverNode(RoadmapNode node, double wx, double wy) {
-        return wx >= node.x() && wx <= node.x() + NODE_SIZE &&
-                wy >= node.y() && wy <= node.y() + NODE_SIZE;
+        String[] lines = {
+                Component.translatable("roadmap.chemicalscience.controls.clickleft").getString(),
+                Component.translatable("roadmap.chemicalscience.controls.clickright").getString(),
+                Component.translatable("roadmap.chemicalscience.controls.escape").getString()
+        };
+
+        int boxW = 150;
+        int boxH = (lines.length * lineSpacing) + (padding * 2);
+
+        int lx = winX + 5;
+        int ly = (winY + winH) - boxH - 5;
+
+        g.fill(lx, ly, lx + boxW, ly + boxH, 0xAA000000);
+        g.renderOutline(lx, ly, boxW, boxH, 0xFF444444);
+
+        for (int i = 0; i < lines.length; i++) {
+            g.drawString(font, lines[i], lx + padding, ly + padding + (i * lineSpacing), 0xFFFFFF, false);
+        }
     }
 
     @Override
@@ -212,83 +233,35 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         double worldX = (mouseX - winCenterX) / zoom - scrollX;
         double worldY = (mouseY - winCenterY) / zoom - scrollY;
 
-        if (button == 0) {
-            for (RoadmapNode node : RoadMapNodes.NODES) {
-                if (isMouseOverNode(node, worldX, worldY)) {
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            if (isMouseOverNode(node, worldX, worldY)) {
+                if (button == 0) {
                     selectedNode = node;
+                    return true;
+                } else if (button == 1) {
+                    toggleNodeStatus(node);
+                    Minecraft.getInstance().getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(net.minecraft.sounds.SoundEvents.UI_BUTTON_CLICK, 1.0F));
                     return true;
                 }
             }
+        }
+
+        if (button == 0) {
             isDragging = true;
             return true;
         }
+
         return super.mouseClicked(mouseX, mouseY, button);
     }
 
-    @Override
-    public boolean mouseReleased(double mouseX, double mouseY, int button) {
-        isDragging = false;
-        return super.mouseReleased(mouseX, mouseY, button);
-    }
-
-    @Override
-    public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) {
-        if (isDragging) {
-            scrollX += dx / zoom;
-            scrollY += dy / zoom;
-            return true;
-        }
-        return super.mouseDragged(mouseX, mouseY, button, dx, dy);
-    }
-
-    @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
-        double zoomFactor = 0.1;
-        if (scrollY > 0) zoom += zoomFactor;
-        else zoom -= zoomFactor;
-        zoom = Math.clamp(zoom, MIN_ZOOM, MAX_ZOOM);
-        return true;
-    }
-
-    private void renderDetailOverlay(GuiGraphics g, int mouseX, int mouseY) {
-        g.pose().pushPose();
-        g.pose().translate(0, 0, 400);
-
-        g.fillGradient(0, 0, width, height, 0x22000000, 0x22000000);
-
-        int panelWidth = 128;
-        int panelHeight = 128;
-        int px = (width - panelWidth) / 2;
-        int py = (height - panelHeight) / 2;
-
-        g.blit(TEXTURE_OVERLAY, px, py, 0, 0, panelWidth, panelHeight, 128, 128);
-
-        g.drawCenteredString(font, selectedNode.title(), width / 2, py + 10, 0xFFFFFF);
-        renderNodeImage(g, selectedNode, px + 25, py + 30);
-        g.drawWordWrap(font, selectedNode.description(), px + 10, py + 110, panelWidth - 20, 0xDDDDDD);
-
-        g.pose().popPose();
-    }
-
-    private void renderNodeImage(GuiGraphics g, RoadmapNode node, int x, int y) {
-        if (node.image() == null) return;
-        int imgSize = 64;
-
-        if (node.animationFrames() > 1) {
-            assert Minecraft.getInstance().level != null;
-            long tick = Minecraft.getInstance().level.getGameTime();
-            int frame = (int) ((tick / 2) % node.animationFrames());
-            RenderSystem.setShaderTexture(0, node.image());
-
-            float u0 = 0;
-            float u1 = 1;
-            float v0 = (float) frame / node.animationFrames();
-            float v1 = (float) (frame + 1) / node.animationFrames();
-
-            blitCustom(g, x, x + imgSize, y, y + imgSize, u0, u1, v0, v1);
-        } else {
-            g.blit(node.image(), x, y, 0, 0, imgSize, imgSize, imgSize, imgSize);
-        }
+    private void toggleNodeStatus(RoadmapNode node) {
+        NodeStatus current = NODE_PROGRESS.getOrDefault(node.id(), NodeStatus.NONE);
+        NodeStatus next = switch (current) {
+            case NONE -> NodeStatus.IN_PROGRESS;
+            case IN_PROGRESS -> NodeStatus.DONE;
+            case DONE -> NodeStatus.NONE;
+        };
+        NODE_PROGRESS.put(node.id(), next);
     }
 
     private void blitCustom(GuiGraphics g, int x1, int x2, int y1, int y2, float u0, float u1, float v0, float v1) {
@@ -301,14 +274,94 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         BufferUploader.drawWithShader(bufferbuilder.buildOrThrow());
     }
 
+    private void renderNodeTooltips(GuiGraphics g, int screenX, int screenY, double worldX, double worldY) {
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            if (isMouseOverNode(node, worldX, worldY)) {
+                g.renderTooltip(font, node.title(), screenX, screenY);
+                break;
+            }
+        }
+    }
+
+    private boolean isMouseOverNode(RoadmapNode node, double wx, double wy) {
+        return wx >= node.x() && wx <= node.x() + NODE_SIZE &&
+                wy >= node.y() && wy <= node.y() + NODE_SIZE;
+    }
+
+    private void renderDetailOverlay(GuiGraphics g, int mouseX, int mouseY) {
+        g.pose().pushPose();
+        g.pose().translate(0, 0, 400);
+
+        g.fillGradient(0, 0, width, height, 0x33000000, 0x33000000);
+
+        int panelSize = 128;
+        int px = (width - panelSize) / 2;
+        int py = (height - panelSize) / 2;
+
+        g.blit(TEXTURE_OVERLAY, px, py, 0, 0, panelSize, panelSize, 128, 128);
+
+        if (selectedNode.image() != null) {
+            renderNodeImage(g, selectedNode, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY());
+
+            RenderSystem.enableBlend();
+            if (selectedNode.overlayImageFrame()) {
+                g.blit(TEXTURE_IMAGE_FRAME, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY(), 0, 0, 96, 96, 96, 96);
+            }
+        }
+
+        g.drawString(font, selectedNode.title(), px + selectedNode.overlayTitleX(), py + selectedNode.overlayTitleY(), 0xFFFFFF, false);
+        g.drawWordWrap(font, selectedNode.description(), px + selectedNode.overlayDescX(), py + selectedNode.overlayDescY(), selectedNode.overlayDescWidth(), 0xDDDDDD);
+
+        g.pose().popPose();
+    }
+
+    private void renderNodeImage(GuiGraphics g, RoadmapNode node, int x, int y) {
+        if (node.image() == null) return;
+        int imgSize = node.overlayImageSize();
+
+        if (node.animationFrames() > 1) {
+            assert Minecraft.getInstance().level != null;
+            long tick = Minecraft.getInstance().level.getGameTime();
+            int frame = (int) ((tick / 2) % node.animationFrames());
+            RenderSystem.setShaderTexture(0, node.image());
+            float u0 = 0;
+            float u1 = 1;
+            float v0 = (float) frame / node.animationFrames();
+            float v1 = (float) (frame + 1) / node.animationFrames();
+            blitCustom(g, x, x + imgSize, y, y + imgSize, u0, u1, v0, v1);
+        } else {
+            g.blit(node.image(), x, y, 0, 0, imgSize, imgSize, imgSize, imgSize);
+        }
+    }
+
+    @Override public boolean mouseReleased(double mouseX, double mouseY, int button) { isDragging = false; return super.mouseReleased(mouseX, mouseY, button); }
+    @Override public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) { if (isDragging) { scrollX += dx / zoom; scrollY += dy / zoom; return true; } return super.mouseDragged(mouseX, mouseY, button, dx, dy); }
+    @Override public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) { double zoomFactor = 0.1; if (scrollY > 0) zoom += zoomFactor; else zoom -= zoomFactor; zoom = Math.clamp(zoom, MIN_ZOOM, MAX_ZOOM); return true; }
+
+    public enum NodeStatus {
+        NONE,
+        IN_PROGRESS,
+        DONE
+    }
+
     public record RoadmapNode(
             ResourceLocation id,
             int x, int y,
             ItemStack icon,
             Component title,
             Component description,
-            ResourceLocation image,
+            @Nullable ResourceLocation image,
             int animationFrames,
-            List<ResourceLocation> parents
+            List<ResourceLocation> parents,
+            int lineColor,
+            boolean overlayImageFrame,
+            int overlayImageSize,
+            int overlayImageX,
+            int overlayImageY,
+            int overlayTitleX,
+            int overlayTitleY,
+            int overlayDescX,
+            int overlayDescY,
+            int overlayDescWidth
     ) {}
 }
