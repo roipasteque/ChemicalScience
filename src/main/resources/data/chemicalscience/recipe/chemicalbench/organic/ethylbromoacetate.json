@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:ethanol"
+    },
+    {
+      "amount": 100,
+      "tag": "c:bromoacetic_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 250,
+    "id": "chemicalscience:ethylbromoacetate"
+  },
+  "fluidbi": [
+    {
+      "amount": 50,
+      "chance": 1.0,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

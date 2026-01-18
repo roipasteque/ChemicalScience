@@ -1,0 +1,31 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:clay"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:sands"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:water"
+    }
+  ],
+  "itemoutput": {
+    "count": 2,
+    "id": "electrodynamics:ceramicwet"
+  },
+  "experience": 0.0,
+  "ticks": 50,
+  "usagepertick": 100.0
+}

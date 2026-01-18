@@ -1,0 +1,53 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 6,
+      "ingredient": {
+        "tag": "c:dusts/salt"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/redstone"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:sodiumhydroxide"
+  },
+  "gasoutput": {
+    "amount": 5000,
+    "gas": "chemicalscience:chlorine",
+    "pressure": 1,
+    "temp": 293
+  },
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:sodiumperchlorate"
+    }
+  ],
+  "gasbi": [
+    {
+      "amount": 2500,
+      "chance": 1.0,
+      "gas": "electrodynamics:hydrogen",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 500.0
+}

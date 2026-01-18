@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "fluid": "chemicalscience:impurepraseodymiumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 35,
+    "id": "chemicalscience:impuregadoliniumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 15,
+      "chance": 1.0,
+      "fluid": "chemicalscience:purepraseodymiumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

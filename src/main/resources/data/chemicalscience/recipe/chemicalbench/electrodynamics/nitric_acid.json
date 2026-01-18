@@ -1,0 +1,25 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "fluidinputs": [
+    {
+      "amount": 3000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 1000,
+      "pressure": 4,
+      "tag": "c:ammonia",
+      "temp": 700
+    }
+  ],
+  "fluidoutput": {
+    "amount": 500,
+    "id": "electrodynamics:fluidnitricacid"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 1000.0
+}

@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 1200,
+      "fluid": "chemicalscience:organicuraniumsolution"
+    },
+    {
+      "amount": 800,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1900,
+    "id": "chemicalscience:uraniumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:plutoniumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

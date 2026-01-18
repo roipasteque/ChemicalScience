@@ -1,0 +1,52 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:raw_materials/tungsten"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:sulfuric_acid"
+    },
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_tungsten"
+  },
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_scandium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
+      }
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

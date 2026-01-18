@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 140,
+      "fluid": "chemicalscience:impurelanthanumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 70,
+    "id": "chemicalscience:impuresamariumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 70,
+      "chance": 1.0,
+      "fluid": "chemicalscience:purelanthanumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

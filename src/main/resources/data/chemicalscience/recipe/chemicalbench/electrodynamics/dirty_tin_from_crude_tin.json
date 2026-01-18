@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "fluid": "electrodynamics:fluidcrudemineraltin"
+    },
+    {
+      "amount": 500,
+      "tag": "c:sulfuric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 200,
+    "id": "electrodynamics:fluiddirtymineraltin"
+  },
+  "fluidbi": [
+    {
+      "amount": 200,
+      "chance": 0.25,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 600.0
+}

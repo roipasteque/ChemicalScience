@@ -1,0 +1,25 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:sodium_perchlorate"
+    },
+    {
+      "amount": 100,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "electrodynamics:dustsalt"
+  },
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:perchloricacid"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

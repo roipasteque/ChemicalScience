@@ -1,0 +1,27 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_phosphorus"
+      }
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 500,
+      "pressure": 1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_phosphoruschloride"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

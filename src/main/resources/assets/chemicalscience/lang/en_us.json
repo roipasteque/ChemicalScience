@@ -181,6 +181,8 @@
   "block.chemicalscience.fuelcell": "Fuel Cell",
   "block.chemicalscience.circuitmaker": "Circuit Maker",
 
+  "item.chemicalscience.roadmap": "Chemist's roadmap",
+
   "item.chemicalscience.rawore_silicon": "Raw Silicon Ore",
   "item.chemicalscience.rawore_arsenopyrite": "Raw Arsenopyrite Ore",
   "item.chemicalscience.rawore_wolframite": "Raw Wolframite Ore",
@@ -694,6 +696,7 @@
   "guidebook.chemicalscience.chapter.molecules.urea": "White powder",
   "guidebook.chemicalscience.chapter.molecules.vinylchloride": "White plastic",
 
+  "container.roadmap": "Chemist's roadmap",
   "container.organicsolarpanel": "Organic Solar Panel",
   "container.fuelcell": "Fuel Cell",
   "container.rackm": "§cManganese Rack",
@@ -711,6 +714,9 @@
 
   "jei.circuit_maker_recipe": "Circuits",
   "jei.catalyst": "Catalyst",
+
+  "tooltip.chemicalscience.info.roadmapuse": "Right-Click to open",
+  "tooltip.chemicalscience.roadmapname": "Chemical Science's road map",
 
   "advancement.chemicalscience.root.title": "Chemical Science",
   "advancement.chemicalscience.root.desc": "Craft a Chemical Reactor, and start some real chemistry!",

@@ -1,0 +1,33 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "iteminputs": [
+    {
+      "count": 5,
+      "ingredient": {
+        "tag": "c:dusts/salt"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 1000,
+      "pressure": 8,
+      "tag": "c:hydrogen",
+      "temp": 500
+    }
+  ],
+  "fluidoutput": {
+    "amount": 500,
+    "id": "electrodynamics:fluidhydrochloricacid"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 700.0
+}

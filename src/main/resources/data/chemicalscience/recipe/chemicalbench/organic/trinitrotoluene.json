@@ -1,0 +1,21 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:nitric_acid"
+    },
+    {
+      "amount": 100,
+      "tag": "c:toluene"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:trinitrotoluene"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

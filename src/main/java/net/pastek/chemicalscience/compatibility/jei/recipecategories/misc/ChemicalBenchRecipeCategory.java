@@ -80,8 +80,8 @@ public class ChemicalBenchRecipeCategory extends AbstractRecipeCategory<Chemical
 
     public static final ArrowAnimatedObject ANIM_ARROW = new ArrowAnimatedObject(ScreenComponentProgress.ProgressBars.PROGRESS_ARROW_RIGHT, 78, 75, IDrawableAnimated.StartDirection.LEFT);
 
-    public static final PowerLabelWrapperElectroRecipe POWER_LABEL = new PowerLabelWrapperElectroRecipe(8, 150, 240);
-    public static final TimeLabelWrapperElectroRecipe TIME_LABEL = new TimeLabelWrapperElectroRecipe(126, 150);
+    public static final PowerLabelWrapperElectroRecipe POWER_LABEL = new PowerLabelWrapperElectroRecipe(9, 150, 240);
+    public static final TimeLabelWrapperElectroRecipe TIME_LABEL = new TimeLabelWrapperElectroRecipe(167, 150);
 
     public static final int ANIM_TIME = 50;
 

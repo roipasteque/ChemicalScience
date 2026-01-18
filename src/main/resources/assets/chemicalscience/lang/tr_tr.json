@@ -181,6 +181,8 @@
   "block.chemicalscience.fuelcell": "Yakıt Hücresi",
   "block.chemicalscience.circuitmaker": "Devre Üretici",
 
+  "item.chemicalscience.roadmap": "Kimyagerin yol haritası",
+
   "item.chemicalscience.rawore_silicon": "Ham Silikon Cevheri",
   "item.chemicalscience.rawore_arsenopyrite": "Ham Arsenopirit Cevheri",
   "item.chemicalscience.rawore_wolframite": "Ham Volframit Cevheri",

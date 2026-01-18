@@ -1,0 +1,59 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 3,
+      "ingredient": {
+        "tag": "c:raw_materials/lepidolite"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 400,
+      "tag": "c:sulfuric_acid"
+    },
+    {
+      "amount": 200,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "electrodynamics:fluidsulfatelithium"
+  },
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:dustsilica"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustaluminum"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    }
+  ],
+  "fluidbi": [
+    {
+      "amount": 800,
+      "chance": 0.5,
+      "fluid": "chemicalscience:boricacid"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

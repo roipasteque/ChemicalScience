@@ -1,0 +1,33 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "fluidinputs": [
+    {
+      "amount": 2000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 1000,
+      "pressure": 4,
+      "tag": "c:nitrogen",
+      "temp": 500
+    },
+    {
+      "amount": 1000,
+      "pressure": 4,
+      "tag": "c:hydrogen",
+      "temp": 500
+    }
+  ],
+  "gasoutput": {
+    "amount": 1000,
+    "gas": "electrodynamics:ammonia",
+    "pressure": 1,
+    "temp": 293
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 1000.0
+}

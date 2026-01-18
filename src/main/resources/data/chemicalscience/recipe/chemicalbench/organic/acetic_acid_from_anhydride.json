@@ -1,0 +1,25 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:crystal_aceticanhydride"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "tag": "minecraft:water"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 10,
+    "id": "chemicalscience:aceticacid"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

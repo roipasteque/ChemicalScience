@@ -1,0 +1,314 @@
+package net.pastek.chemicalscience.client.roadmap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.inventory.container.ContainerRoadMap;
+import org.jetbrains.annotations.NotNull;
+import org.joml.Matrix4f;
+import voltaic.prefab.screen.GenericScreen;
+
+import java.util.List;
+
+public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
+
+    private static final ResourceLocation TEXTURE_BG = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/background.png");
+    private static final ResourceLocation TEXTURE_NODE_FRAME = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/node_frame.png");
+    private static final ResourceLocation TEXTURE_OVERLAY = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/node_overlay.png");
+    private static final ResourceLocation TEXTURE_WINDOW_FRAME = ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "textures/screen/roadmap/window_frame.png");
+
+    private double scrollX = 0;
+    private double scrollY = 0;
+    private double zoom = 1.0;
+    private static final double MIN_ZOOM = 0.5;
+    private static final double MAX_ZOOM = 3.0;
+
+    private boolean isDragging = false;
+    private static final int NODE_SIZE = 32;
+
+    private int winX, winY, winW, winH;
+    private static final float ASPECT_RATIO = 4f / 3f;
+
+    private RoadmapNode selectedNode = null;
+
+    public ScreenRoadMap(ContainerRoadMap container, Inventory inv, Component title) {
+        super(container, inv, title);
+    }
+
+    @Override
+    protected void init() {
+        this.winW = (int) (this.width * 0.8f);
+        this.winH = (int) (this.winW / ASPECT_RATIO);
+
+        if (this.winH > this.height * 0.85f) {
+            this.winH = (int) (this.height * 0.85f);
+            this.winW = (int) (this.winH * ASPECT_RATIO);
+        }
+
+        this.winX = (this.width - this.winW) / 2;
+        this.winY = (this.height - this.winH) / 2;
+
+        this.imageWidth = this.winW;
+        this.imageHeight = this.winH;
+
+        super.init();
+    }
+
+    @Override
+    protected void initializeComponents() {
+        for (net.minecraft.world.inventory.Slot slot : this.menu.slots) {
+            this.addComponent(this.createScreenSlot(slot));
+        }
+
+        this.guiTitle = new voltaic.prefab.screen.component.types.ScreenComponentSimpleLabel(0, 0, 0, voltaic.prefab.utilities.math.Color.BLACK, Component.empty());
+        this.playerInvLabel = new voltaic.prefab.screen.component.types.ScreenComponentSimpleLabel(0, 0, 0, voltaic.prefab.utilities.math.Color.BLACK, Component.empty());
+    }
+
+    @Override
+    public void render(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
+
+        g.fill(0, 0, this.width, this.height, 0x11000000);
+
+        g.fill(winX, winY, winX + winW, winY + winH, 0xEE101010);
+
+        g.enableScissor(winX, winY, winX + winW, winY + winH);
+        g.pose().pushPose();
+
+        double winCenterX = winX + (winW / 2.0);
+        double winCenterY = winY + (winH / 2.0);
+
+        g.pose().translate(winCenterX, winCenterY, 0);
+        g.pose().scale((float) zoom, (float) zoom, 1f);
+        g.pose().translate(scrollX, scrollY, 0);
+
+        double worldMouseX = (mouseX - winCenterX) / zoom - scrollX;
+        double worldMouseY = (mouseY - winCenterY) / zoom - scrollY;
+
+        renderInfiniteBackground(g);
+
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            for (ResourceLocation parentId : node.parents()) {
+                RoadmapNode parent = RoadMapNodes.NODE_MAP.get(parentId);
+                if (parent != null) {
+                    renderConnection(g, parent, node);
+                }
+            }
+        }
+
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            renderNode(g, node, worldMouseX, worldMouseY);
+        }
+
+        g.pose().popPose();
+        g.disableScissor();
+
+        renderWindowFrame(g);
+
+        if (selectedNode != null) {
+            renderDetailOverlay(g, mouseX, mouseY);
+        } else {
+            renderNodeTooltips(g, mouseX, mouseY, worldMouseX, worldMouseY);
+        }
+
+        super.render(g, mouseX, mouseY, partialTick);
+    }
+
+    @Override
+    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
+    }
+
+    @Override
+    public void renderBackground(@NotNull GuiGraphics g, int mouseX, int mouseY, float partialTick) {
+    }
+
+    @Override
+    protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
+    }
+
+    private void renderWindowFrame(GuiGraphics g) {
+        RenderSystem.enableBlend();
+        g.blit(TEXTURE_WINDOW_FRAME, winX - 2, winY - 2, 0, 0, winW + 4, winH + 4, winW + 4, winH + 4);
+    }
+
+    private void renderInfiniteBackground(GuiGraphics g) {
+        int bgSize = 2048;
+        RenderSystem.setShaderTexture(0, TEXTURE_BG);
+        g.blit(TEXTURE_BG, -bgSize / 2, -bgSize / 2, 0, 0, bgSize, bgSize, 256, 256);
+    }
+
+    private void renderConnection(GuiGraphics g, RoadmapNode parent, RoadmapNode child) {
+        drawLine(g,
+                parent.x() + NODE_SIZE / 2f, parent.y() + NODE_SIZE / 2f,
+                child.x() + NODE_SIZE / 2f, child.y() + NODE_SIZE / 2f,
+                0xFF555555);
+    }
+
+    private void drawLine(GuiGraphics g, float x1, float y1, float x2, float y2, int color) {
+        float dx = x2 - x1;
+        float dy = y2 - y1;
+        float length = (float) Math.sqrt(dx * dx + dy * dy);
+        float angle = (float) Math.atan2(dy, dx);
+
+        g.pose().pushPose();
+        g.pose().translate(x1, y1, 0);
+        g.pose().mulPose(com.mojang.math.Axis.ZP.rotation(angle));
+        g.fill(0, 0, (int)length, 1, color);
+        g.pose().popPose();
+    }
+
+    private void renderNode(GuiGraphics g, RoadmapNode node, double mx, double my) {
+        boolean hovered = isMouseOverNode(node, mx, my);
+
+        g.pose().pushPose();
+        g.pose().translate(node.x() + NODE_SIZE/2f, node.y() + NODE_SIZE/2f, 0);
+        if (hovered) {
+            float scale = 1.1f + (float)Math.sin(System.currentTimeMillis() / 100.0) * 0.05f;
+            g.pose().scale(scale, scale, 1f);
+        }
+        g.pose().translate(-NODE_SIZE/2f, -NODE_SIZE/2f, 0);
+
+        g.blit(TEXTURE_NODE_FRAME, 0, 0, 0, 0, NODE_SIZE, NODE_SIZE, 32, 32);
+
+        int offset = (NODE_SIZE - 16) / 2;
+        g.renderItem(node.icon(), offset, offset);
+
+        g.pose().popPose();
+    }
+
+    private void renderNodeTooltips(GuiGraphics g, int screenX, int screenY, double worldX, double worldY) {
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            if (isMouseOverNode(node, worldX, worldY)) {
+                g.renderTooltip(font, node.title(), screenX, screenY);
+                break;
+            }
+        }
+    }
+
+    private boolean isMouseOverNode(RoadmapNode node, double wx, double wy) {
+        return wx >= node.x() && wx <= node.x() + NODE_SIZE &&
+                wy >= node.y() && wy <= node.y() + NODE_SIZE;
+    }
+
+    @Override
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        boolean insideWindow = mouseX >= winX && mouseX <= winX + winW &&
+                mouseY >= winY && mouseY <= winY + winH;
+
+        if (selectedNode != null) {
+            selectedNode = null;
+            return true;
+        }
+
+        if (!insideWindow) return super.mouseClicked(mouseX, mouseY, button);
+
+        double winCenterX = winX + (winW / 2.0);
+        double winCenterY = winY + (winH / 2.0);
+        double worldX = (mouseX - winCenterX) / zoom - scrollX;
+        double worldY = (mouseY - winCenterY) / zoom - scrollY;
+
+        if (button == 0) {
+            for (RoadmapNode node : RoadMapNodes.NODES) {
+                if (isMouseOverNode(node, worldX, worldY)) {
+                    selectedNode = node;
+                    return true;
+                }
+            }
+            isDragging = true;
+            return true;
+        }
+        return super.mouseClicked(mouseX, mouseY, button);
+    }
+
+    @Override
+    public boolean mouseReleased(double mouseX, double mouseY, int button) {
+        isDragging = false;
+        return super.mouseReleased(mouseX, mouseY, button);
+    }
+
+    @Override
+    public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) {
+        if (isDragging) {
+            scrollX += dx / zoom;
+            scrollY += dy / zoom;
+            return true;
+        }
+        return super.mouseDragged(mouseX, mouseY, button, dx, dy);
+    }
+
+    @Override
+    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
+        double zoomFactor = 0.1;
+        if (scrollY > 0) zoom += zoomFactor;
+        else zoom -= zoomFactor;
+        zoom = Math.clamp(zoom, MIN_ZOOM, MAX_ZOOM);
+        return true;
+    }
+
+    private void renderDetailOverlay(GuiGraphics g, int mouseX, int mouseY) {
+        g.pose().pushPose();
+        g.pose().translate(0, 0, 400);
+
+        g.fillGradient(0, 0, width, height, 0x22000000, 0x22000000);
+
+        int panelWidth = 128;
+        int panelHeight = 128;
+        int px = (width - panelWidth) / 2;
+        int py = (height - panelHeight) / 2;
+
+        g.blit(TEXTURE_OVERLAY, px, py, 0, 0, panelWidth, panelHeight, 128, 128);
+
+        g.drawCenteredString(font, selectedNode.title(), width / 2, py + 10, 0xFFFFFF);
+        renderNodeImage(g, selectedNode, px + 25, py + 30);
+        g.drawWordWrap(font, selectedNode.description(), px + 10, py + 110, panelWidth - 20, 0xDDDDDD);
+
+        g.pose().popPose();
+    }
+
+    private void renderNodeImage(GuiGraphics g, RoadmapNode node, int x, int y) {
+        if (node.image() == null) return;
+        int imgSize = 64;
+
+        if (node.animationFrames() > 1) {
+            assert Minecraft.getInstance().level != null;
+            long tick = Minecraft.getInstance().level.getGameTime();
+            int frame = (int) ((tick / 2) % node.animationFrames());
+            RenderSystem.setShaderTexture(0, node.image());
+
+            float u0 = 0;
+            float u1 = 1;
+            float v0 = (float) frame / node.animationFrames();
+            float v1 = (float) (frame + 1) / node.animationFrames();
+
+            blitCustom(g, x, x + imgSize, y, y + imgSize, u0, u1, v0, v1);
+        } else {
+            g.blit(node.image(), x, y, 0, 0, imgSize, imgSize, imgSize, imgSize);
+        }
+    }
+
+    private void blitCustom(GuiGraphics g, int x1, int x2, int y1, int y2, float u0, float u1, float v0, float v1) {
+        Matrix4f matrix = g.pose().last().pose();
+        BufferBuilder bufferbuilder = Tesselator.getInstance().begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX);
+        bufferbuilder.addVertex(matrix, x1, y2, 0).setUv(u0, v1);
+        bufferbuilder.addVertex(matrix, x2, y2, 0).setUv(u1, v1);
+        bufferbuilder.addVertex(matrix, x2, y1, 0).setUv(u1, v0);
+        bufferbuilder.addVertex(matrix, x1, y1, 0).setUv(u0, v0);
+        BufferUploader.drawWithShader(bufferbuilder.buildOrThrow());
+    }
+
+    public record RoadmapNode(
+            ResourceLocation id,
+            int x, int y,
+            ItemStack icon,
+            Component title,
+            Component description,
+            ResourceLocation image,
+            int animationFrames,
+            List<ResourceLocation> parents
+    ) {}
+}

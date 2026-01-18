@@ -1,0 +1,48 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:fuel_rods/spent"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:impureuraniumsolution"
+  },
+  "itembi": [
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_ruthenium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_rhodium"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_palladium"
+      }
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

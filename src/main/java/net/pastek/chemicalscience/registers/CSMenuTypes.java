@@ -27,6 +27,7 @@ public class CSMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerFractionatingColumn>> CONTAINER_FRACTIONATING_COLUMN = register("fractionatingcolumn", ContainerFractionatingColumn::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerChemicalBench>> CONTAINER_CHEMICAL_BENCH = register("chemicalbench", ContainerChemicalBench::new);
 
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerRoadMap>> CONTAINER_ROADMAP = register("roadmap", ContainerRoadMap::new);
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>,MenuType<T>> register(String id, MenuType.MenuSupplier<T> supplier) {
         return MENU_TYPES.register(id, () -> new MenuType<>(supplier, FeatureFlags.DEFAULT_FLAGS));

@@ -16,6 +16,9 @@ public class CSCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ChemicalScience.MOD_ID);
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHEMICAL_SCIENCE_TAB = CREATIVE_MODE_TAB.register("chemicalscience_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(CSBlocks.ORGANIC_SOLAR_PANEL.get())).title(Component.translatable("creativetab.chemicalscience")).displayItems((itemDisplayParameters, output) -> {
 
+        /** Road Map */
+        output.accept(CSItems.ROAD_MAP);
+
         /** BLOCKS */
         /** Ores */
         // Overworld

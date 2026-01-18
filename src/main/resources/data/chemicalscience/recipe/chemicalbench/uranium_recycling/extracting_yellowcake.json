@@ -1,0 +1,29 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "chemicalscience:dust_uraniumoxide"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:sodium_hydroxide"
+    },
+    {
+      "amount": 1800,
+      "tag": "minecraft:water"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "nuclearscience:yellowcake"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 200.0
+}

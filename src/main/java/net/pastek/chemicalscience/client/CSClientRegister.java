@@ -21,6 +21,7 @@ import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
 import net.pastek.chemicalscience.client.render.tile.*;
+import net.pastek.chemicalscience.client.roadmap.ScreenRoadMap;
 import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
@@ -49,6 +50,8 @@ public class CSClientRegister {
 
     @SubscribeEvent
     public static void registerMenus(RegisterMenuScreensEvent event) {
+        event.register(CSMenuTypes.CONTAINER_ROADMAP.get(), ScreenRoadMap::new);
+
         event.register(CSMenuTypes.CONTAINER_SOLARPANEL.get(), ScreenSolarPanel::new);
         event.register(CSMenuTypes.CONTAINER_FUELCELL.get(), ScreenFuelCell::new);
         event.register(CSMenuTypes.CONTAINER_CIRCUIT_MAKER.get(), ScreenCircuitMaker::new);

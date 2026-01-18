@@ -1,0 +1,52 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:raw_materials/arsenopyrite"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 8,
+    "id": "electrodynamics:dustsulfur"
+  },
+  "fluidoutput": {
+    "amount": 200,
+    "id": "electrodynamics:fluidsulfuricacid"
+  },
+  "itembi": [
+    {
+      "chance": 0.9,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 4,
+        "id": "chemicalscience:impuredust_arsenic"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_bismuth"
+      }
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

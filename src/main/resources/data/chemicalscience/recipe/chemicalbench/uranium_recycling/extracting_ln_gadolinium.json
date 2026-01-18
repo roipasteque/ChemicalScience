@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 35,
+      "fluid": "chemicalscience:impuregadoliniumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 25,
+    "id": "chemicalscience:impureeuropiumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 10,
+      "chance": 1.0,
+      "fluid": "chemicalscience:puregadoliniumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

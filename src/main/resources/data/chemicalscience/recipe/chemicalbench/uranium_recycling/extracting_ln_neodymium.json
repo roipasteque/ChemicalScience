@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 300,
+      "fluid": "chemicalscience:organiclanthanidesolution"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 210,
+    "id": "chemicalscience:impureceriumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 90,
+      "chance": 1.0,
+      "fluid": "chemicalscience:pureneodymiumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

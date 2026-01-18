@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.item.food.ItemSoda;
 import net.pastek.chemicalscience.common.item.gear.CSToolTiers;
+import net.pastek.chemicalscience.common.item.gear.ItemRoadMap;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemBulletProofVest;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemOrganicNightVisionGoggles;
 import voltaic.common.item.ItemVoltaic;
@@ -219,4 +220,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     // Armor
     public static final DeferredItem<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
     public static final DeferredItem<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));
+
+    /** Chemists Road Map */
+    public static final DeferredItem<Item> ROAD_MAP = ITEMS.register("roadmap", () -> new ItemRoadMap(new Item.Properties(), null));
 }

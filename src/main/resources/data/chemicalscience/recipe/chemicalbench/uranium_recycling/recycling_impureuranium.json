@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:impureuraniumsolution"
+    },
+    {
+      "amount": 200,
+      "tag": "c:tributylphosphate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1200,
+    "id": "chemicalscience:organicuraniumsolution"
+  },
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "chemicalscience:fissionwastesolution"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

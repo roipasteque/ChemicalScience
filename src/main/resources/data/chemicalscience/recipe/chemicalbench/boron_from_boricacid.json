@@ -1,0 +1,25 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/magnesium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:boric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:impuredust_boron"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

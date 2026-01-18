@@ -1,0 +1,21 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "tag": "c:hydrochloric_acid"
+    },
+    {
+      "amount": 1000,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "electrodynamics:fluidaquaregia"
+  },
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 500.0
+}

@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 25,
+      "fluid": "chemicalscience:impureeuropiumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 20,
+    "id": "chemicalscience:impuredysprosiumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 5,
+      "chance": 1.0,
+      "fluid": "chemicalscience:pureeuropiumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

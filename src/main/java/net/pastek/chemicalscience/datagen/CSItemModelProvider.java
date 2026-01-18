@@ -17,6 +17,10 @@ public class CSItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        // Road map
+        withExistingParent(CSItems.ROAD_MAP.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/misc/road_map");
+
         // Raw ores
         withExistingParent(CSItems.RAW_ORE_SILICON.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/rawore/rawore_silicon");
         withExistingParent(CSItems.RAW_ORE_ARSENOPYRITE.getId().toString(), mcLoc("item/generated")).texture("layer0", "item/rawore/rawore_arsenopyrite");

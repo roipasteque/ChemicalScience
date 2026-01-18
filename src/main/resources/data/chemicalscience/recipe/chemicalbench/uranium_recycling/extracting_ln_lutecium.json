@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 2,
+      "fluid": "chemicalscience:impureluteciumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1,
+    "id": "chemicalscience:pureluteciumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 1,
+      "chance": 0.8,
+      "fluid": "chemicalscience:purepromethiumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

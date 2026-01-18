@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 6,
+      "fluid": "chemicalscience:impurethuliumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 4,
+    "id": "chemicalscience:impureytterbiumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 2,
+      "chance": 1.0,
+      "fluid": "chemicalscience:purethuliumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

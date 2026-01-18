@@ -1,0 +1,24 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 70,
+      "fluid": "chemicalscience:impuresamariumnitrate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 50,
+    "id": "chemicalscience:impurepraseodymiumnitrate"
+  },
+  "fluidbi": [
+    {
+      "amount": 20,
+      "chance": 1.0,
+      "fluid": "chemicalscience:puresamariumnitrate"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "electrodynamics",
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "fluid": "electrodynamics:fluidroyalmineralgold"
+    },
+    {
+      "amount": 1000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 200,
+    "id": "electrodynamics:fluidcrudemineralgold"
+  },
+  "fluidbi": [
+    {
+      "amount": 50,
+      "chance": 1.0,
+      "fluid": "electrodynamics:fluidaquaregia"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 800.0
+}

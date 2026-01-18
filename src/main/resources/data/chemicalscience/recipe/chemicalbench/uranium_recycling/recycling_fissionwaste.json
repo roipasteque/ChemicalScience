@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:fissionwastesolution"
+    },
+    {
+      "amount": 300,
+      "tag": "c:dibutylphosphate"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 300,
+    "id": "chemicalscience:organiclanthanidesolution"
+  },
+  "fluidbi": [
+    {
+      "amount": 700,
+      "chance": 1.0,
+      "fluid": "chemicalscience:clearfissionwastesolution"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 200,
+  "usagepertick": 200.0
+}

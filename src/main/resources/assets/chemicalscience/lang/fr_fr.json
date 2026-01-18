@@ -181,6 +181,8 @@
   "block.chemicalscience.fuelcell": "Pile à combustible",
   "block.chemicalscience.circuitmaker": "Développeur de circuits",
 
+  "item.chemicalscience.roadmap": "Feuille de route du chimiste",
+
   "item.chemicalscience.rawore_silicon": "Silicium brut",
   "item.chemicalscience.rawore_arsenopyrite": "Arsénopyrite brut",
   "item.chemicalscience.rawore_wolframite": "Wolframite brut",

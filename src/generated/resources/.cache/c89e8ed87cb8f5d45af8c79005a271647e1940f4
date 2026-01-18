@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-04T15:09:49.4274535	Item Models: chemicalscience
+// 1.21.1	2026-01-17T23:58:22.2014497	Item Models: chemicalscience
 85ce0f4d901b7d5ce390287f58697c98f4f7457a assets/chemicalscience/models/item/asphalt.json
 3de7a144c067791a1e30ebe6aba9d58dabdfd6b1 assets/chemicalscience/models/item/axe_tungstencarbide.json
 60952a3cd8380329e882dfa52fb8ec362ce8d5c3 assets/chemicalscience/models/item/boroncompositeplating.json
@@ -173,6 +173,7 @@ c282cfee35e2829bf9371f784c0a579693cd1d29 assets/chemicalscience/models/item/rawo
 f9373f74bb2cf7abc9f6e27e51207e19fa2d1fab assets/chemicalscience/models/item/rawore_silicon.json
 31dc1bbd481d96c0c1ad27ea9ef3e735538bfd18 assets/chemicalscience/models/item/rawore_wolframite.json
 e46df4452f9c0f5c5a827490a4a8e1b21c0d5c44 assets/chemicalscience/models/item/rhodium_manganese_bromine_catalyst.json
+41bf4272814a3436e00c0385d9956d015b8b2986 assets/chemicalscience/models/item/roadmap.json
 860a0d82dcc94c4cd969120d0a6ee8e0202d704c assets/chemicalscience/models/item/ruthenium_sulfur_catalyst.json
 8ac860a60013cfee3c84f19431850950ee4db2d2 assets/chemicalscience/models/item/shovel_tungstencarbide.json
 7419dc66271dd279cf17fd16cb9dcaacaabe2fd2 assets/chemicalscience/models/item/silica_alumina_catalyst.json
