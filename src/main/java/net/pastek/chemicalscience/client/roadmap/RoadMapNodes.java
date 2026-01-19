@@ -3,9 +3,9 @@ package net.pastek.chemicalscience.client.roadmap;
 import electrodynamics.common.block.subtype.SubtypeMachine;
 import electrodynamics.common.block.subtype.SubtypeWire;
 import electrodynamics.common.item.subtype.SubtypeDust;
+import electrodynamics.common.item.subtype.SubtypeImpureDust;
 import electrodynamics.common.item.subtype.SubtypeIngot;
 import electrodynamics.common.item.subtype.SubtypePlate;
-import electrodynamics.registers.ElectrodynamicsBlocks;
 import electrodynamics.registers.ElectrodynamicsItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -189,7 +189,7 @@ public class RoadMapNodes {
                     Component.translatable("roadmap.chemicalscience.node.batterybox.desc"),
                     null,
                     1,
-                    List.of(rl("battery"), rl("coalgenerator")),
+                    List.of(rl("battery"), rl("coalgenerator"), rl("thermoelectricgenerator")),
                     colorWiretin,
                     true,
                     96, -112, 16, 10, 8, 10, 48, 110
@@ -247,6 +247,286 @@ public class RoadMapNodes {
                     1,
                     List.of(rl("grinder")),
                     colorWiretin,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("thermoelectricgenerator"),
+                    128, -64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.thermoelectricgenerator)),
+                    Component.translatable("roadmap.chemicalscience.node.thermoelectricgenerator.title"),
+                    Component.translatable("roadmap.chemicalscience.node.thermoelectricgenerator.desc"),
+                    null,
+                    1,
+                    List.of(rl("platesteel")),
+                    colorWiretin,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("upgradetransformer"),
+                    320, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.upgradetransformer)),
+                    Component.translatable("roadmap.chemicalscience.node.upgradetransformer.title"),
+                    Component.translatable("roadmap.chemicalscience.node.upgradetransformer.desc"),
+                    null,
+                    1,
+                    List.of(rl("grinder")),
+                    colorWiretin,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("downgradetransformer"),
+                    320, 64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.downgradetransformer)),
+                    Component.translatable("roadmap.chemicalscience.node.downgradetransformer.title"),
+                    Component.translatable("roadmap.chemicalscience.node.downgradetransformer.desc"),
+                    null,
+                    1,
+                    List.of(rl("upgradetransformer")),
+                    colorWiretin,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("crusher"),
+                    384, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.mineralcrusher)),
+                    Component.translatable("roadmap.chemicalscience.node.crusher.title"),
+                    Component.translatable("roadmap.chemicalscience.node.crusher.desc"),
+                    null,
+                    1,
+                    List.of(rl("upgradetransformer")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("crusherdouble"),
+                    384, 64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.mineralcrusherdouble)),
+                    Component.translatable("roadmap.chemicalscience.node.crusherdouble.title"),
+                    Component.translatable("roadmap.chemicalscience.node.crusherdouble.desc"),
+                    null,
+                    1,
+                    List.of(rl("crusher")),
+                    colorWiregold,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("crushertriple"),
+                    384, 128,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.mineralcrushertriple)),
+                    Component.translatable("roadmap.chemicalscience.node.crushertriple.title"),
+                    Component.translatable("roadmap.chemicalscience.node.crushertriple.desc"),
+                    null,
+                    1,
+                    List.of(rl("crusherdouble")),
+                    colorWiresuperconductive,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("impuredustcopper"),
+                    384, -64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_IMPUREDUST.getValue(SubtypeImpureDust.copper)),
+                    Component.translatable("roadmap.chemicalscience.node.impuredustcopper.title"),
+                    Component.translatable("roadmap.chemicalscience.node.impuredustcopper.desc"),
+                    null,
+                    1,
+                    List.of(rl("crusher")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("furnace"),
+                    448, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricfurnace)),
+                    Component.translatable("roadmap.chemicalscience.node.furnace.title"),
+                    Component.translatable("roadmap.chemicalscience.node.furnace.desc"),
+                    null,
+                    1,
+                    List.of(rl("crusher")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("furnacedouble"),
+                    448, 64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricfurnacedouble)),
+                    Component.translatable("roadmap.chemicalscience.node.furnacedouble.title"),
+                    Component.translatable("roadmap.chemicalscience.node.furnacedouble.desc"),
+                    null,
+                    1,
+                    List.of(rl("furnace")),
+                    colorWiresilver,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("furnacetriple"),
+                    448, 128,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricarcfurnacetriple)),
+                    Component.translatable("roadmap.chemicalscience.node.furnacetriple.title"),
+                    Component.translatable("roadmap.chemicalscience.node.furnacetriple.desc"),
+                    null,
+                    1,
+                    List.of(rl("furnacedouble")),
+                    colorWiregold,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("arcfurnace"),
+                    512, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricarcfurnace)),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnace.title"),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnace.desc"),
+                    null,
+                    1,
+                    List.of(rl("furnace")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("arcfurnacedouble"),
+                    512, 64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricarcfurnacedouble)),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnacedouble.title"),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnacedouble.desc"),
+                    null,
+                    1,
+                    List.of(rl("arcfurnace")),
+                    colorWiresilver,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("arcfurnacetriple"),
+                    512, 128,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.electricarcfurnacetriple)),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnacetriple.title"),
+                    Component.translatable("roadmap.chemicalscience.node.arcfurnacetriple.desc"),
+                    null,
+                    1,
+                    List.of(rl("arcfurnacedouble")),
+                    colorWiregold,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("wiremill"),
+                    576, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.wiremill)),
+                    Component.translatable("roadmap.chemicalscience.node.wiremill.title"),
+                    Component.translatable("roadmap.chemicalscience.node.wiremill.desc"),
+                    null,
+                    1,
+                    List.of(rl("arcfurnace")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("wiremilldouble"),
+                    576, 64,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.wiremilldouble)),
+                    Component.translatable("roadmap.chemicalscience.node.wiremilldouble.title"),
+                    Component.translatable("roadmap.chemicalscience.node.wiremilldouble.desc"),
+                    null,
+                    1,
+                    List.of(rl("wiremill")),
+                    colorWiresilver,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("wiremilltriple"),
+                    576, 128,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.wiremilltriple)),
+                    Component.translatable("roadmap.chemicalscience.node.wiremilltriple.title"),
+                    Component.translatable("roadmap.chemicalscience.node.wiremilltriple.desc"),
+                    null,
+                    1,
+                    List.of(rl("wiremilldouble")),
+                    colorWiregold,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("oxidationfurnace"),
+                    640, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.oxidationfurnace)),
+                    Component.translatable("roadmap.chemicalscience.node.oxidationfurnace.title"),
+                    Component.translatable("roadmap.chemicalscience.node.oxidationfurnace.desc"),
+                    null,
+                    1,
+                    List.of(rl("wiremill")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("alloyer"),
+                    704, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.energizedalloyer)),
+                    Component.translatable("roadmap.chemicalscience.node.alloyer.title"),
+                    Component.translatable("roadmap.chemicalscience.node.alloyer.desc"),
+                    null,
+                    1,
+                    List.of(rl("oxidationfurnace")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("lithiumbattery"),
+                    768, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEM_LITHIUMBATTERY),
+                    Component.translatable("roadmap.chemicalscience.node.lithiumbattery.title"),
+                    Component.translatable("roadmap.chemicalscience.node.lithiumbattery.desc"),
+                    null,
+                    1,
+                    List.of(rl("alloyer")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("lithiumbatterybox"),
+                    832, 0,
+                    new ItemStack(ElectrodynamicsItems.ITEMS_MACHINE.getValue(SubtypeMachine.lithiumbatterybox)),
+                    Component.translatable("roadmap.chemicalscience.node.lithiumbatterybox.title"),
+                    Component.translatable("roadmap.chemicalscience.node.lithiumbatterybox.desc"),
+                    null,
+                    1,
+                    List.of(rl("lithiumbattery")),
+                    colorWirecopper,
                     true,
                     96, -112, 16, 10, 8, 10, 48, 110
             )

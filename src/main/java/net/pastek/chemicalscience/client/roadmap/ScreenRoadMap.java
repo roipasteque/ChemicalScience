@@ -115,7 +115,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         renderControlsLegend(g);
 
         if (selectedNode != null) {
-            renderDetailOverlay(g, mouseX, mouseY);
+            renderDetailOverlay(g);
         } else {
             renderNodeTooltips(g, mouseX, mouseY, worldMouseX, worldMouseY);
         }
@@ -134,7 +134,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     }
 
     private void renderInfiniteBackground(GuiGraphics g) {
-        int bgSize = 2048;
+        int bgSize = 4096;
         RenderSystem.setShaderTexture(0, TEXTURE_BG);
         g.blit(TEXTURE_BG, -bgSize / 2, -bgSize / 2, 0, 0, bgSize, bgSize, 32, 32);
     }
@@ -237,6 +237,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             if (isMouseOverNode(node, worldX, worldY)) {
                 if (button == 0) {
                     selectedNode = node;
+                    Minecraft.getInstance().getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(net.minecraft.sounds.SoundEvents.UI_BUTTON_CLICK, 1.0F));
                     return true;
                 } else if (button == 1) {
                     toggleNodeStatus(node);
@@ -288,7 +289,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
                 wy >= node.y() && wy <= node.y() + NODE_SIZE;
     }
 
-    private void renderDetailOverlay(GuiGraphics g, int mouseX, int mouseY) {
+    private void renderDetailOverlay(GuiGraphics g) {
         g.pose().pushPose();
         g.pose().translate(0, 0, 400);
 
@@ -309,8 +310,17 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             }
         }
 
-        g.drawString(font, selectedNode.title(), px + selectedNode.overlayTitleX(), py + selectedNode.overlayTitleY(), 0xFFFFFF, false);
-        g.drawWordWrap(font, selectedNode.description(), px + selectedNode.overlayDescX(), py + selectedNode.overlayDescY(), selectedNode.overlayDescWidth(), 0xDDDDDD);
+        g.drawWordWrap(font, selectedNode.title(),
+                px + selectedNode.overlayTitleX(),
+                py + selectedNode.overlayTitleY(),
+                selectedNode.overlayTextWidth(),
+                0xFFFFFF);
+
+        g.drawWordWrap(font, selectedNode.description(),
+                px + selectedNode.overlayDescX(),
+                py + selectedNode.overlayDescY(),
+                selectedNode.overlayTextWidth(),
+                0xDDDDDD);
 
         g.pose().popPose();
     }
@@ -362,6 +372,6 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             int overlayTitleY,
             int overlayDescX,
             int overlayDescY,
-            int overlayDescWidth
+            int overlayTextWidth
     ) {}
 }

@@ -18,7 +18,6 @@ import net.minecraft.world.level.Level;
 import net.pastek.chemicalscience.common.inventory.container.ContainerRoadMap;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import voltaic.common.item.ItemVoltaic;
-import voltaic.prefab.utilities.VoltaicTextUtils;
 
 public class ItemRoadMap extends ItemVoltaic {
 
