@@ -167,7 +167,9 @@
     "chemicalscience:hds_unit",
     "chemicalscience:steam_cracker",
     "chemicalscience:catalytic_reformer",
+    "chemicalscience:spincoater",
     "chemicalscience:fractionating_column",
-    "chemicalscience:chemical_bench_controller"
+    "chemicalscience:chemical_bench_controller",
+    "chemicalscience:redox_furnace_controller"
   ]
 }

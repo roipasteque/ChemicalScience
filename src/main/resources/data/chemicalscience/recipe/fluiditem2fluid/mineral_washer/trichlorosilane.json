@@ -3,7 +3,7 @@
   "fluidinputs": [
     {
       "amount": 1000,
-      "tag": "c:potassium_chloride"
+      "tag": "c:hydrochloric_acid"
     }
   ],
   "group": "chemicalscience",
@@ -17,7 +17,7 @@
   ],
   "output": {
     "amount": 250,
-    "id": "chemicalscience:siliciumtetrachloride"
+    "id": "chemicalscience:trichlorosilane"
   },
   "ticks": 200,
   "usagepertick": 400.0

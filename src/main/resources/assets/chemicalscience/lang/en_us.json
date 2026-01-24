@@ -385,7 +385,7 @@
   "item.minecraft.tipped_arrow.effect.sedative": "Arrow of Sedation",
 
   "fluid.chemicalscience.potassiumchloride": "Potassium Chloride",
-  "fluid.chemicalscience.siliciumtetrachloride": "Silicium Tetrachloride",
+  "fluid.chemicalscience.trichlorosilane": "Trichlorosilane",
   "fluid.chemicalscience.sulfatemagnesium": "Magnesium Sulfate",
   "fluid.chemicalscience.phosphoricacid": "Phosphoric Acid",
   "fluid.chemicalscience.calciumhydroxide": "Calcium Hydroxide",
@@ -719,6 +719,7 @@
 
   "tooltip.chemicalscience.info.roadmapuse": "Right-Click to open",
   "tooltip.chemicalscience.info.roadmapcraft": "Craft with a copper ingot and paper",
+  "tooltip.chemicalscience.info.organic": "Organic",
 
   "roadmap.chemicalscience.controls.clickleft": "§6Left Click§r : View Details",
   "roadmap.chemicalscience.controls.clickright": "§eRight Click§r : Cycle Progress",

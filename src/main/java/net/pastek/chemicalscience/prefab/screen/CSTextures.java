@@ -29,7 +29,7 @@ public enum CSTextures implements ITexture {
 
     CIRCUIT_MAKER_JEI(
             0, 0,
-            176, 125,
+            176, 126,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/circuitmaker.png")
     ),
@@ -55,18 +55,32 @@ public enum CSTextures implements ITexture {
             ChemicalScience.rl("textures/screen/jei/background/catalyticreformer.png")
     ),
 
+    SPIN_COATER_JEI(
+            0, 0,
+            176, 80,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/spincoater.png")
+    ),
+
     FRACTIONATING_COLUMN_JEI(
             0, 0,
-            176, 125,
+            176, 126,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/fractionatingcolumn.png")
     ),
 
     CHEMICAL_BENCH_JEI(
             0, 0,
-            176, 160,
+            176, 161,
             256, 256,
             ChemicalScience.rl("textures/screen/jei/background/chemicalbench.png")
+    ),
+
+    REDOX_FURNACE_JEI(
+            0, 0,
+            176, 80,
+            256, 256,
+            ChemicalScience.rl("textures/screen/jei/background/redoxfurnace.png")
     );
 
     private final int u;

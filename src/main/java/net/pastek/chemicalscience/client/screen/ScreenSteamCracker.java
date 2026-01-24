@@ -78,7 +78,7 @@ public class ScreenSteamCracker extends GenericMaterialScreen<ContainerSteamCrac
                 0,
                 0,
                 176,
-                200
+                201
         );
     }
 }

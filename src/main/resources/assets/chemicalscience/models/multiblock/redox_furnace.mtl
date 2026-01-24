@@ -1,0 +1,4 @@
+# Made in Blockbench 5.0.7
+newmtl redox_furnace
+map_Kd chemicalscience:block/multiblock/redox_furnace/redox_furnace
+newmtl none

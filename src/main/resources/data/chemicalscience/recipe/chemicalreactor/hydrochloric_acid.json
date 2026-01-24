@@ -1,0 +1,35 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 200,
+      "tag": "c:water"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 70,
+      "pressure":1,
+      "tag": "c:chlorine",
+      "temp": 293
+    },
+
+    {
+      "amount": 70,
+      "pressure":1,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 200,
+    "id": "electrodynamics:fluidhydrochloricacid"
+  },
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

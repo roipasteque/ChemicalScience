@@ -5,6 +5,7 @@ import java.util.concurrent.CompletableFuture;
 
 import electrodynamics.common.block.states.ElectrodynamicsBlockStates;
 import electrodynamics.common.block.subtype.SubtypeMachine;
+import electrodynamics.common.block.subtype.SubtypeResourceBlock;
 import electrodynamics.registers.ElectrodynamicsBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Vec3i;
@@ -17,6 +18,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.tile.TileChemicalBench;
 import net.pastek.chemicalscience.common.tile.TileFractionatingColumn;
+import net.pastek.chemicalscience.common.tile.TileRedoxFurnace;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import voltaic.api.multiblock.assemblybased.MultiblockSlaveNode;
 import voltaic.common.block.states.VoltaicBlockStates;
@@ -205,21 +207,37 @@ public class CSMultiblockProvider extends BaseMultiblockProvider {
         addMultiblock(TileChemicalBench.ID, List.of(
 
                 //Layer 0
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 0, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_STORAGE.get().defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SINK.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SINK.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(0, 0, -1), Shapes.block(), empty),
 
                 //Layer 1
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
 
                 //Layer 2
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, 0), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, -1), Shapes.block(), empty),
-                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, 0), Shapes.block(), empty)
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false), MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false), MultiblockSlaveNode.NOTAG, new Vec3i(0, 2, 0), Shapes.block(), empty)
+        ));
+
+        /** Redox furnace */
+        addMultiblock(TileRedoxFurnace.ID, List.of(
+
+                //Layer 0
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, 0), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_RESOURCE.getValue(SubtypeResourceBlock.steel).defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 0, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_RESOURCE.getValue(SubtypeResourceBlock.steel).defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(0, 0, -1), Shapes.block(), empty),
+
+                //Layer 1
+                new MultiblockSlaveNode(slave, CSBlocks.TUNGSTEN_BLOCK.get().defaultBlockState(), MultiblockSlaveNode.NOTAG, new Vec3i(-1, 1, -1), Shapes.block(), empty),
+                new MultiblockSlaveNode(slave, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.oxidationfurnace).defaultBlockState().setValue(VoltaicBlockStates.WATERLOGGED, false).setValue(VoltaicBlockStates.LIT, false), MultiblockSlaveNode.NOTAG, new Vec3i(0, 1, 0), Shapes.block(), empty),
+
+                //Layer 2
+                new MultiblockSlaveNode(slave, scaffold_steel, MultiblockSlaveNode.NOTAG, new Vec3i(-1, 2, -1), Shapes.block(), empty)
         ));
     }
 

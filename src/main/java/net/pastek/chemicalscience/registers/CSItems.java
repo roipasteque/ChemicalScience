@@ -1,10 +1,14 @@
 package net.pastek.chemicalscience.registers;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.item.CSTooltipItem;
 import net.pastek.chemicalscience.common.item.food.ItemSoda;
 import net.pastek.chemicalscience.common.item.gear.CSToolTiers;
 import net.pastek.chemicalscience.common.item.gear.ItemRoadMap;
@@ -91,17 +95,6 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_URANIUMOXIDE = ITEMS.register("dust_uraniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMOXIDE = ITEMS.register("dust_plutoniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMHYDROXIDE = ITEMS.register("dust_plutoniumhydroxide", () -> new Item(new Item.Properties()));
-    // Organic
-    public static final DeferredItem<Item> DUST_AMMONIUMDIURANATE = ITEMS.register("dust_ammoniumdiuranate", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_UREA = ITEMS.register("dust_urea", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_DIMETHYLUREA = ITEMS.register("dust_dimethylurea", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_CAFFEINE = ITEMS.register("dust_caffeine", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_SUCCINIMIDE = ITEMS.register("dust_succinimide", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_NBROMOSUCCINIMIDE = ITEMS.register("dust_nbromosuccinimide", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_AMMONIUMCARBONATE = ITEMS.register("dust_ammoniumcarbonate", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_TEREPHTHALOYLCHLORIDE = ITEMS.register("dust_terephthaloylchloride", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_NITROCHLOROBENZENE = ITEMS.register("dust_nitrochlorobenzene", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_PARAPHENYLENEDIAMINE = ITEMS.register("dust_paraphenylenediamine", () -> new Item(new Item.Properties()));
 
     // Impure dust
     public static final DeferredItem<Item> IMPURE_DUST_BORON = ITEMS.register("impuredust_boron", () -> new Item(new Item.Properties()));
@@ -126,6 +119,18 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> IMPURE_DUST_PALLADIUM = ITEMS.register("impuredust_palladium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_IODINE = ITEMS.register("impuredust_iodine", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_TANTALUM = ITEMS.register("impuredust_tantalum", () -> new Item(new Item.Properties()));
+
+    /** Organic */
+    public static final DeferredItem<Item> DUST_AMMONIUMDIURANATE = ITEMS.register("dust_ammoniumdiuranate", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_UREA = ITEMS.register("dust_urea", () -> new CSTooltipItem(new Item.Properties(), Component.translatable("tooltip.chemicalscience.info.organic").withStyle(ChatFormatting.DARK_PURPLE), ChemicalScience.rl("textures/screen/tooltip/molecules/urea.png"), 64, 64));
+    public static final DeferredItem<Item> DUST_DIMETHYLUREA = ITEMS.register("dust_dimethylurea", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_CAFFEINE = ITEMS.register("dust_caffeine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_SUCCINIMIDE = ITEMS.register("dust_succinimide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_NBROMOSUCCINIMIDE = ITEMS.register("dust_nbromosuccinimide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_AMMONIUMCARBONATE = ITEMS.register("dust_ammoniumcarbonate", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_TEREPHTHALOYLCHLORIDE = ITEMS.register("dust_terephthaloylchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_NITROCHLOROBENZENE = ITEMS.register("dust_nitrochlorobenzene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_PARAPHENYLENEDIAMINE = ITEMS.register("dust_paraphenylenediamine", () -> new Item(new Item.Properties()));
 
     /** Ingots */
     public static final DeferredItem<Item> INGOT_BORON= ITEMS.register("ingot_boron", () -> new Item(new Item.Properties()));

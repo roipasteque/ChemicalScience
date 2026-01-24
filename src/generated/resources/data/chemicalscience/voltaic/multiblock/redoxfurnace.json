@@ -1,0 +1,752 @@
+{
+  "members": {
+    "east": [
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          0,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          0,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          0,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          1,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "chemicalscience:block_tungsten"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:oxidationfurnace",
+          "Properties": {
+            "facing": "east",
+            "lit": "false",
+            "waterlogged": "false"
+          }
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          2,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "east",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "north": [
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          0,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          0,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          0,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          1,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "chemicalscience:block_tungsten"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:oxidationfurnace",
+          "Properties": {
+            "facing": "north",
+            "lit": "false",
+            "waterlogged": "false"
+          }
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          2,
+          -1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "north",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "south": [
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          0,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          0,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          0,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          1,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "chemicalscience:block_tungsten"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:oxidationfurnace",
+          "Properties": {
+            "facing": "south",
+            "lit": "false",
+            "waterlogged": "false"
+          }
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          1,
+          2,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "south",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "west": [
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          0,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          0,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          0,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:resourceblocksteel"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          1,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "chemicalscience:block_tungsten"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:oxidationfurnace",
+          "Properties": {
+            "facing": "west",
+            "lit": "false",
+            "waterlogged": "false"
+          }
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "model": "chemicalscience:multiblock/empty",
+        "offset": [
+          -1,
+          2,
+          1
+        ],
+        "placestate": {
+          "Name": "voltaic:multiblockslave",
+          "Properties": {
+            "facing": "west",
+            "waterlogged": "false"
+          }
+        },
+        "replacestate": {
+          "Name": "electrodynamics:steelscaffold"
+        },
+        "voxelshape": {
+          "aabbs": [
+            {
+              "xMax": 1.0,
+              "xMin": 0.0,
+              "yMax": 1.0,
+              "yMin": 0.0,
+              "zMax": 1.0,
+              "zMin": 0.0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

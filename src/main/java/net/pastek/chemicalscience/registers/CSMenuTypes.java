@@ -24,8 +24,11 @@ public class CSMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerHDSUnit>> CONTAINER_HDS_UNIT = register("hdsunit", ContainerHDSUnit::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerSteamCracker>> CONTAINER_STEAM_CRACKER = register("steamcracker", ContainerSteamCracker::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerCatalyticReformer>> CONTAINER_CATALYTIC_REFORMER = register("catalyticreformer", ContainerCatalyticReformer::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerSpinCoater>> CONTAINER_SPIN_COATER = register("spincoater", ContainerSpinCoater::new);
+
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerFractionatingColumn>> CONTAINER_FRACTIONATING_COLUMN = register("fractionatingcolumn", ContainerFractionatingColumn::new);
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerChemicalBench>> CONTAINER_CHEMICAL_BENCH = register("chemicalbench", ContainerChemicalBench::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<ContainerRedoxFurnace>> CONTAINER_REDOX_FURNACE = register("redoxfurnace", ContainerRedoxFurnace::new);
 
     public static final DeferredHolder<MenuType<?>, MenuType<ContainerRoadMap>> CONTAINER_ROADMAP = register("roadmap", ContainerRoadMap::new);
 

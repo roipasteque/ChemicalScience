@@ -10,9 +10,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 public class CSFluidTypes {
     public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, ChemicalScience.MOD_ID);
 
-    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_POTASSIUMCHLORIDE = FLUID_TYPES.register("potassiumchloride", () -> CSFluids.FLUID_POTASSIUMCHLORIDE.get().getFluidType());
-    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_SILICIUMTETRACHLORIDE = FLUID_TYPES.register("siliciumtetrachloride", () -> CSFluids.FLUID_SILICIUMTETRACHLORIDE.get().getFluidType());
-    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_MAGNESIUMSULFATE = FLUID_TYPES.register("sulfatemagnesium", () -> CSFluids.FLUID_MAGNESIUMSULFATE.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_POTASSIUMCHLORIDE = FLUID_TYPES.register("potassiumchloride", () -> CSFluids.FLUID_POTASSIUMCHLORIDE.get().getFluidType());public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_MAGNESIUMSULFATE = FLUID_TYPES.register("sulfatemagnesium", () -> CSFluids.FLUID_MAGNESIUMSULFATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PHOSPHORICACID = FLUID_TYPES.register("phosphoricacid", () -> CSFluids.FLUID_PHOSPHORICACID.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_CALCIUMHYDROXIDE = FLUID_TYPES.register("calciumhydroxide", () -> CSFluids.FLUID_CALCIUMHYDROXIDE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_SODIUMHYDROXIDE = FLUID_TYPES.register("sodiumhydroxide", () -> CSFluids.FLUID_SODIUMHYDROXIDE.get().getFluidType());

@@ -64,7 +64,7 @@ public class ScreenCircuitMaker extends GenericMaterialScreen<ContainerCircuitMa
                 0,
                 0,
                 176,
-                200
+                201
         );
     }
 }

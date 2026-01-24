@@ -117,6 +117,7 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         horrRotatedBlock(CSBlocks.HDS_UNIT, existingBlock(CSBlocks.HDS_UNIT), true);
         horrRotatedBlock(CSBlocks.STEAM_CRACKER, existingBlock(CSBlocks.STEAM_CRACKER), true);
         horrRotatedBlock(CSBlocks.CATALYTIC_REFORMER, existingBlock(CSBlocks.CATALYTIC_REFORMER), true);
+        horrRotatedLitBlock(CSBlocks.SPIN_COATER, existingBlock(CSBlocks.SPIN_COATER), existingBlock(blockLoc("spincoaterlit")), true);
         horrRotatedBlock(CSBlocks.RACK_MANGANESE, existingBlock(CSBlocks.RACK_MANGANESE), true);
         horrRotatedBlock(CSBlocks.RACK_STEEL, existingBlock(CSBlocks.RACK_STEEL), true);
         horrRotatedBlock(CSBlocks.LABORATORY_BENCH, existingBlock(CSBlocks.LABORATORY_BENCH), true);
@@ -124,29 +125,18 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         blockItem(CSBlocks.LABORATORY_SUPPORT);
         blockItem(CSBlocks.LABORATORY_SINK);
 
-        horrRotatedBlock(CSBlocks.FRACTIONATING_COLUMN,
-                //
-                models().cube(
-                                //
-                                name(CSBlocks.FRACTIONATING_COLUMN.get()),
-                                //
+        horrRotatedBlock(CSBlocks.FRACTIONATING_COLUMN, models().cube(name(CSBlocks.FRACTIONATING_COLUMN.get()),
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller_top"),
-                                //
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller_top"),
-                                //
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller"),
-                                //
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller_side"),
-                                //
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller_side"),
-                                //
                                 blockLoc("multiblock/fractionatingcolumn/frac_controller_side"))
-                        //
                         .texture("particle", Voltaic.rl("block/steelcasing")),
-                //
                 90, 0, true);
 
         horrRotatedLitBlock(CSBlocks.CHEMICAL_BENCH, existingBlock(CSBlocks.CHEMICAL_BENCH), existingBlock(blockLoc("chemical_bench_controller_lit")), true);
+        horrRotatedLitBlock(CSBlocks.REDOX_FURNACE, existingBlock(CSBlocks.REDOX_FURNACE), existingBlock(blockLoc("redox_furnace_controller_lit")), true);
 
         // Periodic table
         blockWithItem(CSBlocks.ELEMENT_H);

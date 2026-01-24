@@ -358,10 +358,13 @@ public class CSBlocks {
     public static final DeferredBlock<Block> HDS_UNIT = registerBlock("hds_unit", () -> new BlockMachine(SubtypeChemicalMachine.hdsunit));
     public static final DeferredBlock<Block> STEAM_CRACKER = registerBlock("steam_cracker", () -> new BlockMachine(SubtypeChemicalMachine.steamcracker));
     public static final DeferredBlock<Block> CATALYTIC_REFORMER = registerBlock("catalytic_reformer", () -> new BlockMachine(SubtypeChemicalMachine.catalyticreformer));
+    public static final DeferredBlock<Block> SPIN_COATER = registerBlock("spincoater", () -> new BlockMachine(SubtypeChemicalMachine.spincoater));
+
 
     // Multiblock Machine
     public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new BlockMachine(SubtypeChemicalMachine.fractionatingcolumn));
     public static final DeferredBlock<Block> CHEMICAL_BENCH = registerBlock("chemical_bench_controller", () -> new BlockMachine(SubtypeChemicalMachine.chemicalbench));
+    public static final DeferredBlock<Block> REDOX_FURNACE = registerBlock("redox_furnace_controller", () -> new BlockMachine(SubtypeChemicalMachine.redoxfurnace));
 
 
 

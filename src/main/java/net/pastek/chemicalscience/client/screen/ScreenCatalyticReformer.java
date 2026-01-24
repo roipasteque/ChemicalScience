@@ -81,7 +81,7 @@ public class ScreenCatalyticReformer extends GenericMaterialScreen<ContainerCata
                 0,
                 0,
                 176,
-                200
+                201
         );
     }
 }

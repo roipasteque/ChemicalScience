@@ -24,8 +24,11 @@ public class CSTiles {
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileHDSUnit>> TILE_HDS_UNIT = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.hdsunit.tag(), () -> new BlockEntityType<>(TileHDSUnit::new, Sets.newHashSet(CSBlocks.HDS_UNIT.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileSteamCracker>> TILE_STEAM_CRACKER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.steamcracker.tag(), () -> new BlockEntityType<>(TileSteamCracker::new, Sets.newHashSet(CSBlocks.STEAM_CRACKER.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileCatalyticReformer>> TILE_CATALYTIC_REFORMER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.catalyticreformer.tag(), () -> new BlockEntityType<>(TileCatalyticReformer::new, Sets.newHashSet(CSBlocks.CATALYTIC_REFORMER.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileSpinCoater>> TILE_SPIN_COATER = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.spincoater.tag(), () -> new BlockEntityType<>(TileSpinCoater::new, Sets.newHashSet(CSBlocks.SPIN_COATER.get()), null));
 
 
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileFractionatingColumn>> TILE_FRACTIONATING_COLUMN = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.fractionatingcolumn.tag(), () -> new BlockEntityType<>(TileFractionatingColumn::new, Sets.newHashSet(CSBlocks.FRACTIONATING_COLUMN.get()), null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileChemicalBench>> TILE_CHEMICAL_BENCH = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.chemicalbench.tag(), () -> new BlockEntityType<>(TileChemicalBench::new, Sets.newHashSet(CSBlocks.CHEMICAL_BENCH.get()), null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileRedoxFurnace>> TILE_REDOX_FURNACE = BLOCK_ENTITY_TYPES.register(SubtypeChemicalMachine.redoxfurnace.tag(), () -> new BlockEntityType<>(TileRedoxFurnace::new, Sets.newHashSet(CSBlocks.REDOX_FURNACE.get()), null));
+
 }

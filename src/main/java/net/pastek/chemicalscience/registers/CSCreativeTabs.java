@@ -120,10 +120,13 @@ public class CSCreativeTabs {
         output.accept(CSBlocks.ORGANIC_SOLAR_PANEL);
         /* output.accept(CSBlocks.FUEL_CELL); */
         output.accept(CSBlocks.CIRCUIT_MAKER);
+        output.accept(CSBlocks.REDOX_FURNACE);
         output.accept(CSBlocks.FRACTIONATING_COLUMN);
         output.accept(CSBlocks.HDS_UNIT);
         output.accept(CSBlocks.STEAM_CRACKER);
         output.accept(CSBlocks.CATALYTIC_REFORMER);
+        output.accept(CSBlocks.STEAM_CRACKER);
+        output.accept(CSBlocks.SPIN_COATER);
         output.accept(CSBlocks.CHEMICAL_BENCH);
 
         /** ITEMS */

@@ -74,7 +74,7 @@ public class ScreenFractionatingColumn extends GenericMaterialScreen<ContainerFr
                 0,
                 0,
                 176,
-                200
+                201
         );
     }
 }

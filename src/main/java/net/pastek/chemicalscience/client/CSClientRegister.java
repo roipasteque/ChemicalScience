@@ -10,10 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.client.event.ModelEvent;
-import net.neoforged.neoforge.client.event.RegisterClientReloadListenersEvent;
-import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -23,6 +20,8 @@ import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
 import net.pastek.chemicalscience.client.render.tile.*;
 import net.pastek.chemicalscience.client.roadmap.ScreenRoadMap;
 import net.pastek.chemicalscience.client.screen.*;
+import net.pastek.chemicalscience.client.tooltip.CSTooltipRenderer;
+import net.pastek.chemicalscience.common.item.CSTooltipItem;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.CSTiles;
@@ -42,7 +41,8 @@ public class CSClientRegister {
             ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/fractionating_column"));
     public static final ModelResourceLocation CHEMICALBENCH_MODEL =
             ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/chemical_bench"));
-
+    public static final ModelResourceLocation REDOXFURNACE_MODEL =
+            ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/redox_furnace"));
 
     public static void setup() {
         ScreenGuidebook.addGuidebookModule(new ModuleChemicalScience());
@@ -58,8 +58,10 @@ public class CSClientRegister {
         event.register(CSMenuTypes.CONTAINER_HDS_UNIT.get(), ScreenHDSUnit::new);
         event.register(CSMenuTypes.CONTAINER_STEAM_CRACKER.get(), ScreenSteamCracker::new);
         event.register(CSMenuTypes.CONTAINER_CATALYTIC_REFORMER.get(), ScreenCatalyticReformer::new);
+        event.register(CSMenuTypes.CONTAINER_SPIN_COATER.get(), ScreenSpinCoater::new);
         event.register(CSMenuTypes.CONTAINER_FRACTIONATING_COLUMN.get(), ScreenFractionatingColumn::new);
         event.register(CSMenuTypes.CONTAINER_CHEMICAL_BENCH.get(), ScreenChemicalBench::new);
+        event.register(CSMenuTypes.CONTAINER_REDOX_FURNACE.get(), ScreenRedoxFurnace::new);
         event.register(CSMenuTypes.CONTAINER_RACK_M.get(), ScreenRackM::new);
         event.register(CSMenuTypes.CONTAINER_RACK_S.get(), ScreenRackS::new);
         event.register(CSMenuTypes.CONTAINER_LAB_BENCH.get(), ScreenLabBench::new);
@@ -110,11 +112,19 @@ public class CSClientRegister {
         event.registerBlockEntityRenderer(CSTiles.TILE_LAB_STORAGE.get(), RenderLabStorage::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_FRACTIONATING_COLUMN.get(), RenderFractionatingColumn::new);
         event.registerBlockEntityRenderer(CSTiles.TILE_CHEMICAL_BENCH.get(), RenderChemicalBench::new);
+        event.registerBlockEntityRenderer(CSTiles.TILE_REDOX_FURNACE.get(), RenderRedoxFurnace::new);
     }
 
     @SubscribeEvent
     public static void registerModels(ModelEvent.RegisterAdditional event) {
         event.register(FRACTIONATINGCOLUMN_MODEL);
         event.register(CHEMICALBENCH_MODEL);
+        event.register(REDOXFURNACE_MODEL);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterTooltipFactories(RegisterClientTooltipComponentFactoriesEvent event) {
+        event.register(CSTooltipItem.ImageTooltipComponent.class,
+                CSTooltipRenderer::new);
     }
 }
