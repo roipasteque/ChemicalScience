@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/coal"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:sands"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "electrodynamics:coalcoke"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:dustsulfur"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 2,
+        "id": "electrodynamics:impuredustaluminum"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_arsenic"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_mercury"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 1300.0
+}

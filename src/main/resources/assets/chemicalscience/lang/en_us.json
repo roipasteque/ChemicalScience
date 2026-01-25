@@ -135,6 +135,17 @@
   "block.chemicalscience.scaffolding_grate_manganese_hollow": "Hollow Grated Manganese Scaffolding",
   "block.chemicalscience.scaffolding_glass_manganese_hollow": "Hollow Clear Manganese Scaffolding",
 
+  "block.chemicalscience.ladder_steel": "Steel Ladder",
+  "block.chemicalscience.grate_steel": "Steel Grate",
+  "block.chemicalscience.scaffolding_grate_steel": "Grated Steel Scaffolding",
+  "block.chemicalscience.scaffolding_glass_steel": "Clear Steel Scaffolding",
+  "block.chemicalscience.slab_scaffolding_steel": "Steel Scaffolding Slab",
+  "block.chemicalscience.slab_scaffolding_grate_steel": "Grated Steel Scaffolding Slab",
+  "block.chemicalscience.slab_scaffolding_glass_steel": "Clear Steel Scaffolding Slab",
+  "block.chemicalscience.scaffolding_steel_hollow": "Hollow Steel Scaffolding",
+  "block.chemicalscience.scaffolding_grate_steel_hollow": "Hollow Grated Steel Scaffolding",
+  "block.chemicalscience.scaffolding_glass_steel_hollow": "Hollow Clear Steel Scaffolding",
+
   "block.chemicalscience.metalhalidelamp_mw": "White Manganese Lamp",
   "block.chemicalscience.metalhalidelamp_mr": "Red Manganese Lamp",
   "block.chemicalscience.metalhalidelamp_mg": "Green Manganese Lamp",
@@ -144,7 +155,7 @@
   "block.chemicalscience.metalhalidelamp_sg": "Green Steel Lamp",
   "block.chemicalscience.metalhalidelamp_sb": "Blue Steel Lamp",
 
-  "block.chemicalscience.symbol_biohazard": "Bio hazard",
+  "block.chemicalscience.symbol_biohazard": "Bio Hazard",
   "block.chemicalscience.symbol_radiation": "Radiation Hazard",
   "block.chemicalscience.symbol_electrical": "Electrical Hazard",
   "block.chemicalscience.symbol_danger": "Danger",
@@ -180,6 +191,13 @@
   "block.chemicalscience.organicsolarpanel": "Organic Solar Panel",
   "block.chemicalscience.fuelcell": "Fuel Cell",
   "block.chemicalscience.circuitmaker": "Circuit Maker",
+  "block.chemicalscience.redox_furnace_controller": "Redox Furnace",
+  "block.chemicalscience.fractionating_column": "Fractionating Column",
+  "block.chemicalscience.hds_unit": "HDS Unit",
+  "block.chemicalscience.steam_cracker": "Steam Cracker",
+  "block.chemicalscience.catalytic_reformer": "Catalytic Reformer",
+  "block.chemicalscience.spincoater": "Spin Coater",
+  "block.chemicalscience.chemical_bench_controller": "Fume Hood",
 
   "item.chemicalscience.roadmap": "Chemist's roadmap",
 
@@ -707,6 +725,12 @@
   "container.chemicalbench": "Chemical Bench",
   "container.chemicalbench.inputfluids": "Input",
   "container.chemicalbench.outputfluids": "Output",
+  "container.redoxfurnace": "Redox Furnace",
+  "container.fractionatingcolumn": "Fractionating Column",
+  "container.hdsunit": "HDS Unit",
+  "container.steamcracker": "Steam Cracker",
+  "container.catalyticreformer": "Redox Furnace",
+  "container.spincoater": "Spin Coater",
 
   "gui.chemicalscience.machine.current": "Current: %s",
   "gui.chemicalscience.machine.output": "Output: %s",
@@ -714,6 +738,13 @@
 
   "jei.circuit_maker_recipe": "Circuits",
   "jei.catalyst": "Catalyst",
+  "jei.redox_furnace_recipe": "Redox Furnace",
+  "jei.fractionating_column_recipe": "Fractionating Column",
+  "jei.hds_unit_recipe": "Hydrodesulfurization",
+  "jei.steam_cracker_recipe": "Steam Cracking",
+  "jei.catalytic_reformer_recipe": "Catalytic Reforming",
+  "jei.spin_coater_recipe": "Spin Coater",
+  "jei.chemical_bench_recipe": "Fume Hood",
 
   "chat.chemicalscience.roadmapclick": "Click here to open Electrodynamics Wiki",
 

@@ -12,6 +12,7 @@ import mezz.jei.api.registration.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
@@ -60,14 +61,14 @@ public class CSJEIPlugin implements IModPlugin {
         Minecraft mc = Minecraft.getInstance();
         ClientLevel world = Objects.requireNonNull(mc.level);
         RecipeManager recipeManager = world.getRecipeManager();
-        registration.addRecipes(CircuitMakerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CIRCUIT_MAKER_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(FractionatingColumnRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.FRACTIONATING_COLUMN_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(HDSUnitRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.HDS_UNIT_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(SteamCrackerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.STEAM_CRACKER_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(CatalyticReformerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CATALYTIC_REFORMER_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(ChemicalBenchRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CHEMICAL_BENCH_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(SpinCoaterRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.SPIN_COATER_TYPE.get()).stream().map((val) -> val.value()).toList());
-        registration.addRecipes(RedoxFurnaceRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.REDOX_FURNACE_TYPE.get()).stream().map((val) -> val.value()).toList());
+        registration.addRecipes(CircuitMakerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CIRCUIT_MAKER_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(FractionatingColumnRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.FRACTIONATING_COLUMN_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(HDSUnitRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.HDS_UNIT_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(SteamCrackerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.STEAM_CRACKER_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(CatalyticReformerRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CATALYTIC_REFORMER_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(ChemicalBenchRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.CHEMICAL_BENCH_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(SpinCoaterRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.SPIN_COATER_TYPE.get()).stream().map(RecipeHolder::value).toList());
+        registration.addRecipes(RedoxFurnaceRecipeCategory.RECIPE_TYPE, recipeManager.getAllRecipesFor(CSRecipies.REDOX_FURNACE_TYPE.get()).stream().map(RecipeHolder::value).toList());
 
     }
 
@@ -94,8 +95,8 @@ public class CSJEIPlugin implements IModPlugin {
         registry.addRecipeClickArea(ScreenRedoxFurnace.class, 57, 46, 22, 16, RedoxFurnaceRecipeCategory.RECIPE_TYPE);
     }
 
-        @Override
-    public void registerExtraIngredients(IExtraIngredientRegistration registration) {
+    @Override
+    public void registerExtraIngredients(@NotNull IExtraIngredientRegistration registration) {
         List<FluidStack> fluids = new ArrayList<>();
         for (DeferredHolder<Fluid, ? extends Fluid> fluid : CSFluids.FLUIDS.getEntries()) {
             fluids.add(new FluidStack(fluid.get(), 1000));

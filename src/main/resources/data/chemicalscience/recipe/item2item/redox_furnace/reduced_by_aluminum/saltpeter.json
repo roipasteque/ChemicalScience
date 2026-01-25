@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/saltpeter"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ingots/aluminum"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_potassium"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_sodium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_magnesium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_calcium"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_rubidium"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cesium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 200.0
+}

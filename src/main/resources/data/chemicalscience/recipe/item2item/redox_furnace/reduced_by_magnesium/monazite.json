@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/monazite"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ingots/magnesium"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_cerium"
+  },
+
+  "itembi": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 2,
+        "id": "chemicalscience:dust_phosphorus"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_thorium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_samarium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:dust_neodymium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_calcium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 1000.0
+}

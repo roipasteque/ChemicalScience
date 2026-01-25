@@ -15,13 +15,13 @@
     {
       "count": 1,
       "ingredient": {
-        "tag": "c:ores/arsenopyrite"
+        "tag": "c:raw_materials/arsenopyrite"
       }
     }
   ],
   "output": {
     "count": 3,
-    "id": "chemicalscience:impuredust_arsenopyrite"
+    "id": "chemicalscience:impuredust_arsenic"
   },
   "ticks": 200,
   "usagepertick": 450.0

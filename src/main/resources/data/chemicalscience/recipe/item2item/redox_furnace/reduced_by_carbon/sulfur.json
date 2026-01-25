@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/sulfur"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 6,
+    "id": "electrodynamics:dustsulfur"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_selenium"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 2,
+        "id": "chemicalscience:impuredust_arsenic"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustlead"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustcopper"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 1000.0
+}

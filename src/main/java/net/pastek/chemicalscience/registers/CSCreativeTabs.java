@@ -177,6 +177,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_GALLIUM);
         output.accept(CSItems.DUST_GERMANIUM);
         output.accept(CSItems.DUST_ARSENIC);
+        output.accept(CSItems.DUST_SELENIUM);
         output.accept(CSItems.DUST_STRONTIUM);
         output.accept(CSItems.DUST_YTTRIUM);
         output.accept(CSItems.DUST_NIOBIUM);
@@ -185,6 +186,8 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_RHODIUM);
         output.accept(CSItems.DUST_PALLADIUM);
         output.accept(CSItems.DUST_INDIUM);
+        output.accept(CSItems.DUST_CADMIUM);
+        output.accept(CSItems.DUST_TELLURIUM);
         output.accept(CSItems.DUST_IODINE);
         output.accept(CSItems.DUST_BARIUM);
         output.accept(CSItems.DUST_LANTHANUM);
@@ -206,6 +209,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_TUNGSTEN);
         output.accept(CSItems.DUST_PLATINUM);
         output.accept(CSItems.DUST_BISMUTH);
+        output.accept(CSItems.DUST_URANIUM);
         // Impure Dust
         output.accept(CSItems.IMPURE_DUST_BORON);
         output.accept(CSItems.IMPURE_DUST_BERYLLIUM);
@@ -214,21 +218,24 @@ public class CSCreativeTabs {
         output.accept(CSItems.IMPURE_DUST_POTASSIUM);
         output.accept(CSItems.IMPURE_DUST_CALCIUM);
         output.accept(CSItems.IMPURE_DUST_SCANDIUM);
-        output.accept(CSItems.IMPURE_DUST_MANGANESEOXIDE);
+        output.accept(CSItems.IMPURE_DUST_MANGANESE);
         output.accept(CSItems.IMPURE_DUST_COBALT);
         output.accept(CSItems.IMPURE_DUST_NICKEL);
         output.accept(CSItems.IMPURE_DUST_ZINC);
         output.accept(CSItems.IMPURE_DUST_GALLIUM);
         output.accept(CSItems.IMPURE_DUST_ARSENIC);
-        output.accept(CSItems.IMPURE_DUST_ARSENOPYRITE);
+        output.accept(CSItems.IMPURE_DUST_SELENIUM);
         output.accept(CSItems.IMPURE_DUST_NIOBIUM);
         output.accept(CSItems.IMPURE_DUST_PALLADIUM);
+        output.accept(CSItems.IMPURE_DUST_CADMIUM);
+        output.accept(CSItems.IMPURE_DUST_TELLURIUM);
         output.accept(CSItems.IMPURE_DUST_IODINE);
         output.accept(CSItems.IMPURE_DUST_CERIUM);
         output.accept(CSItems.IMPURE_DUST_TANTALUM);
         output.accept(CSItems.IMPURE_DUST_TUNGSTEN);
         output.accept(CSItems.IMPURE_DUST_PLATINUM);
         output.accept(CSItems.IMPURE_DUST_BISMUTH);
+        output.accept(CSItems.IMPURE_DUST_URANIUM);
         /** Crystals */
         output.accept(CSItems.CRYSTAL_MAGNESIUM);
         output.accept(CSItems.CRYSTAL_MAGNESIUMCHLORIDE);
@@ -237,7 +244,7 @@ public class CSCreativeTabs {
         /** Compound Dust */
         // Oxides
         output.accept(CSItems.DUST_CALCIUMOXIDE);
-        output.accept(CSItems.DUST_MANGANESEOXIDE);
+        output.accept(CSItems.DUST_MANGANESE);
         output.accept(CSItems.DUST_IRONOXIDE);
         output.accept(CSItems.DUST_IRONTETROXIDE);
         output.accept(CSItems.DUST_URANIUMOXIDE);

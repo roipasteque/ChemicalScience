@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:raw_materials/fluorite"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ingots/aluminum"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_calcium"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
+        "id": "chemicalscience:impuredust_yttrium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_magnesium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
+        "id": "chemicalscience:impuredust_strontium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_barium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cerium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 2100.0
+}

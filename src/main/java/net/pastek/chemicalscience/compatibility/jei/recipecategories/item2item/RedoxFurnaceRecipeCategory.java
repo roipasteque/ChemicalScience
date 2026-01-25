@@ -36,7 +36,7 @@ public class RedoxFurnaceRecipeCategory extends Item2ItemRecipeCategory<RedoxFur
     public static final RecipeType<RedoxFurnaceRecipe> RECIPE_TYPE;
 
     public RedoxFurnaceRecipeCategory(IGuiHelper guiHelper) {
-        super(guiHelper, CSTextUtils.jeiTranslated("circuit_maker_recipe"), INPUT_MACHINE, BACK_WRAP, RECIPE_TYPE, 50);
+        super(guiHelper, CSTextUtils.jeiTranslated("redox_furnace_recipe"), INPUT_MACHINE, BACK_WRAP, RECIPE_TYPE, 50);
         this.setInputSlots(guiHelper,INPUT_SLOT_1, INPUT_SLOT_2);
         this.setOutputSlots(guiHelper, OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6);
         this.setAnimatedArrows(guiHelper, ANIM_RIGHT_ARROW);

@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/arsenopyrite"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_arsenic"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.9,
+      "item": {
+        "count": 2,
+        "id": "electrodynamics:dustsulfur"
+      }
+    },
+    {
+      "chance": 0.9,
+      "item": {
+        "count": 2,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_bismuth"
+      }
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cobalt"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustgold"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 1000.0
+}

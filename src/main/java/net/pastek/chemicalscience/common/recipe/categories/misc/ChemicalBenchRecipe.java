@@ -2,7 +2,6 @@ package net.pastek.chemicalscience.common.recipe.categories.misc;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +28,7 @@ import voltaic.prefab.tile.components.type.ComponentProcessor;
 
 public class ChemicalBenchRecipe extends AbstractMaterialRecipe {
 
-    public static final String RECIPE_GROUP = "chemical_reactor_recipe";
+    public static final String RECIPE_GROUP = "chemical_bench_recipe";
     public static final ResourceLocation RECIPE_ID = ChemicalScience.rl(RECIPE_GROUP);
 
     private List<CSCountableIngredient> itemIngredients;

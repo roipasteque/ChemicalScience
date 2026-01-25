@@ -9,7 +9,7 @@
   "group": "chemicalscience",
   "output": {
     "count": 1,
-    "id": "chemicalscience:dust_ceriumoxide"
+    "id": "chemicalscience:dust_cerium"
   },
   "ticks": 200,
   "usagepertick": 800.0

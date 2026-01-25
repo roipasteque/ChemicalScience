@@ -1,0 +1,69 @@
+{
+  "neoforge:conditions": [{
+    "type": "neoforge:not",
+    "value": {
+      "type": "neoforge:tag_empty",
+      "tag": "c:ores/nickel"}
+  }],
+
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/nickel"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_nickel"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.9,
+      "item": {
+        "count": 2,
+        "id": "chemicalscience:impuredust_magnesium"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cobalt"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustchromium"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_manganese"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 1000.0
+}
