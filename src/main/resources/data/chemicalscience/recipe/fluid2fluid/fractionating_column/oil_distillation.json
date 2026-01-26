@@ -9,13 +9,19 @@
   "group": "chemicalscience",
 
   "output": {
-    "amount": 200,
+    "amount": 150,
     "id": "chemicalscience:impureheavyoil"
   },
 
   "fluidbi": [
     {
-      "amount": 200,
+      "amount": 230,
+      "chance": 1.0,
+      "fluid": "chemicalscience:lubricant"
+    },
+
+    {
+      "amount": 270,
       "chance": 1.0,
       "fluid": "chemicalscience:impurediesel"
     },
@@ -27,18 +33,12 @@
     },
 
     {
-      "amount": 200,
+      "amount": 70,
       "chance": 1.0,
-      "fluid": "chemicalscience:naphta"
-    },
-
-    {
-      "amount": 200,
-      "chance": 1.0,
-      "fluid": "chemicalscience:impurepetroleumgas"
+      "fluid": "chemicalscience:impurelpg"
     }
   ],
 
-  "ticks": 100,
+  "ticks": 400,
   "usagepertick": 400.0
 }

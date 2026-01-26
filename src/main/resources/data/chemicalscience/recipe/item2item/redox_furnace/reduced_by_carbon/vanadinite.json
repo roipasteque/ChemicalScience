@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/vanadium"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "electrodynamics:impuredustvanadium"
+  },
+
+  "itembi": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 4,
+        "id": "electrodynamics:impuredustlead"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_calcium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustcopper"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_zinc"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_arsenic"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 5100.0
+}

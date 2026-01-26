@@ -1,5 +1,6 @@
 package net.pastek.chemicalscience.registers;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,6 +10,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.block.CSBlockMachine;
 import net.pastek.chemicalscience.common.block.decoration.*;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import voltaic.common.block.BlockMachine;
@@ -190,10 +192,10 @@ public class CSBlocks {
     public static final DeferredBlock<Block> RACK_STEEL = registerBlock("rack_steel", () -> new BlockMachine(SubtypeChemicalMachine.racks));
 
     //Laboratory
-    public static final DeferredBlock<Block> LABORATORY_BENCH = registerBlock("laboratory_bench", () -> new BlockMachine(SubtypeChemicalMachine.labbench));
+    public static final DeferredBlock<Block> LABORATORY_BENCH = registerBlock("laboratory_bench", () ->  new CSBlockMachine(SubtypeChemicalMachine.labbench, 0, null));
     public static final DeferredBlock<Block> LABORATORY_SUPPORT = registerBlock("laboratory_support", () -> new CSLabSupport(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f)));
     public static final DeferredBlock<Block> LABORATORY_SINK = registerBlock("laboratory_sink", () -> new CSLabSink(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f).noOcclusion()));
-    public static final DeferredBlock<Block> LABORATORY_STORAGE = registerBlock("laboratory_storage", () -> new BlockMachine(SubtypeChemicalMachine.labstorage));
+    public static final DeferredBlock<Block> LABORATORY_STORAGE = registerBlock("laboratory_storage", () ->  new CSBlockMachine(SubtypeChemicalMachine.labstorage, 0, null));
 
     //Asphalt
     public static final DeferredBlock<Block> ASPHALT_BLOCK = registerBlock("block_asphalt", () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -350,23 +352,21 @@ public class CSBlocks {
                 /* ====================================================================== */
 
     // Energy
-    public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new BlockMachine(SubtypeChemicalMachine.organicsolarpanel));
-    public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new BlockMachine(SubtypeChemicalMachine.fuelcell));
+    public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new CSBlockMachine(SubtypeChemicalMachine.organicsolarpanel, 240, null));
+    public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new CSBlockMachine(SubtypeChemicalMachine.fuelcell, 240, null));
 
     // Simple Machine
-    public static final DeferredBlock<Block> CIRCUIT_MAKER = registerBlock("circuitmaker", () -> new BlockMachine(SubtypeChemicalMachine.circuitmaker));
-    public static final DeferredBlock<Block> HDS_UNIT = registerBlock("hds_unit", () -> new BlockMachine(SubtypeChemicalMachine.hdsunit));
-    public static final DeferredBlock<Block> STEAM_CRACKER = registerBlock("steam_cracker", () -> new BlockMachine(SubtypeChemicalMachine.steamcracker));
-    public static final DeferredBlock<Block> CATALYTIC_REFORMER = registerBlock("catalytic_reformer", () -> new BlockMachine(SubtypeChemicalMachine.catalyticreformer));
-    public static final DeferredBlock<Block> SPIN_COATER = registerBlock("spincoater", () -> new BlockMachine(SubtypeChemicalMachine.spincoater));
+    public static final DeferredBlock<Block> CIRCUIT_MAKER = registerBlock("circuitmaker", () -> new CSBlockMachine(SubtypeChemicalMachine.circuitmaker, 480, null));
+    public static final DeferredBlock<Block> HDS_UNIT = registerBlock("hds_unit", () -> new CSBlockMachine(SubtypeChemicalMachine.hdsunit, 480, null));
+    public static final DeferredBlock<Block> STEAM_CRACKER = registerBlock("steam_cracker", () -> new CSBlockMachine(SubtypeChemicalMachine.steamcracker, 480, null));
+    public static final DeferredBlock<Block> CATALYTIC_REFORMER = registerBlock("catalytic_reformer", () -> new CSBlockMachine(SubtypeChemicalMachine.catalyticreformer, 480, null));
+    public static final DeferredBlock<Block> SPIN_COATER = registerBlock("spincoater", () -> new CSBlockMachine(SubtypeChemicalMachine.spincoater, 120, null));
 
 
     // Multiblock Machine
-    public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new BlockMachine(SubtypeChemicalMachine.fractionatingcolumn));
-    public static final DeferredBlock<Block> CHEMICAL_BENCH = registerBlock("chemical_bench_controller", () -> new BlockMachine(SubtypeChemicalMachine.chemicalbench));
-    public static final DeferredBlock<Block> REDOX_FURNACE = registerBlock("redox_furnace_controller", () -> new BlockMachine(SubtypeChemicalMachine.redoxfurnace));
-
-
+    public static final DeferredBlock<Block> FRACTIONATING_COLUMN = registerBlock("fractionating_column", () -> new CSBlockMachine(SubtypeChemicalMachine.fractionatingcolumn, 480, Component.literal("multiblock")));
+    public static final DeferredBlock<Block> CHEMICAL_BENCH = registerBlock("chemical_bench_controller", () -> new CSBlockMachine(SubtypeChemicalMachine.chemicalbench, 240, Component.literal("multiblock")));
+    public static final DeferredBlock<Block> REDOX_FURNACE = registerBlock("redox_furnace_controller", () -> new CSBlockMachine(SubtypeChemicalMachine.redoxfurnace, 960, Component.literal("multiblock")));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

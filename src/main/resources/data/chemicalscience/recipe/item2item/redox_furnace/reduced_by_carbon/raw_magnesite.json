@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:raw_materials/magnesium"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_magnesium"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_calcium"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_manganese"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_strontium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 6900.0
+}

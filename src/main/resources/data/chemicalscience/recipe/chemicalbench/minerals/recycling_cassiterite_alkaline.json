@@ -6,7 +6,8 @@
       "count": 1,
       "ingredient": {
         "item": "chemicalscience:sulfonated_polystyrene_catalyst"
-      }
+      },
+      "catalyst": true
     }
   ],
   "fluidinputs": [
@@ -17,7 +18,7 @@
   ],
   "itemoutput": {
     "count": 1,
-    "id": "chemicalscience:sulfonated_polystyrene_catalyst"
+    "id": "electrodynamics:dusttin"
   },
   "itembi": [
     {

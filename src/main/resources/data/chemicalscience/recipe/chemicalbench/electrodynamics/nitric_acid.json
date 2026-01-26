@@ -1,6 +1,7 @@
 {
   "type": "chemicalscience:chemical_bench_recipe",
   "group": "electrodynamics",
+
   "fluidinputs": [
     {
       "amount": 3000,

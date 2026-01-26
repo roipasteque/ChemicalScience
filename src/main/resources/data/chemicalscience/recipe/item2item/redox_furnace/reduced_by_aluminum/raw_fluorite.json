@@ -37,7 +37,7 @@
     {
       "chance": 0.5,
       "item": {
-        "count": 2,
+        "count": 1,
         "id": "chemicalscience:impuredust_strontium"
       }
     },

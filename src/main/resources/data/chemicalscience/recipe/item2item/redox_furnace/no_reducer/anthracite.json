@@ -30,7 +30,7 @@
     {
       "chance": 0.2,
       "item": {
-        "count": 2,
+        "count": 1,
         "id": "electrodynamics:impuredustaluminum"
       }
     },

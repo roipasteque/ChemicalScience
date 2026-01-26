@@ -22,8 +22,11 @@ public class CSGases {
     public static final DeferredHolder<Gas, Gas> BUTANE = GASES.register("butane", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("butane"), 272, new Color(255, 255, 255, 180), CSFluids.FLUID_BUTANE));
 
     /** Petroleum */
-    public static final DeferredHolder<Gas, Gas> IMPUREPETROLEUMGAS = GASES.register("impurepetroleumgas", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("impurepetroleumgas"), 310, new Color(155, 155, 155, 180), CSFluids.FLUID_IMPUREPETROLEUMGAS));
+    public static final DeferredHolder<Gas, Gas> IMPUREPETROLEUMGAS = GASES.register("impurelpg", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("impurepetroleumgas"), 310, new Color(155, 155, 155, 180), CSFluids.FLUID_IMPUREPETROLEUMGAS));
     public static final DeferredHolder<Gas, Gas> IMPURENAPHTA = GASES.register("impurenaphta", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("impurenaphta"), 447, new Color(155, 155, 155, 180), CSFluids.FLUID_IMPURENAPHTA));
+    public static final DeferredHolder<Gas, Gas> NAPHTA = GASES.register("naphta", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("naphta"), 447, new Color(155, 155, 100, 180), CSFluids.FLUID_NAPHTA));
+    public static final DeferredHolder<Gas, Gas> LPG = GASES.register("lpg", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("lpg"), 310, new Color(185, 155, 100, 180), CSFluids.FLUID_PETROLEUMGAS));
+
 
     /** Misc */
     public static final DeferredHolder<Gas, Gas> CARBON_MONOXIDE = GASES.register("carbonmonoxide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("carbonmonoxide"), 81, new Color(255, 255, 255, 180), CSFluids.FLUID_CARBONMONOXIDE));

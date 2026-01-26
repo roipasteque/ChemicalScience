@@ -34,10 +34,10 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
 
         // Ores
         // Overworld
-        add(CSBlocks.ORE_MAGNESIUM.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 2, 5));
-        add(CSBlocks.ORE_DEEPSLATE_MAGNESIUM.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_MAGNESIUM.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 2, 5));
-        add(CSBlocks.ORE_SILICON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_SILICON.get(), CSItems.RAW_ORE_SILICON.get(), 1, 2));
-        add(CSBlocks.ORE_DEEPSLATE_SILICON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_SILICON.get(), CSItems.RAW_ORE_SILICON.get(), 1, 2));
+        add(CSBlocks.ORE_MAGNESIUM.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_DEEPSLATE_MAGNESIUM.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_MAGNESIUM.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_SILICON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_SILICON.get(), CSItems.RAW_ORE_SILICON.get(), 1, 1));
+        add(CSBlocks.ORE_DEEPSLATE_SILICON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_SILICON.get(), CSItems.RAW_ORE_SILICON.get(), 1, 1));
         add(CSBlocks.ORE_ARSENOPYRITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_ARSENOPYRITE.get(), CSItems.RAW_ORE_ARSENOPYRITE.get(), 1, 1));
         add(CSBlocks.ORE_DEEPSLATE_ARSENOPYRITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_DEEPSLATE_ARSENOPYRITE.get(), CSItems.RAW_ORE_ARSENOPYRITE.get(), 1, 1));
         add(CSBlocks.ORE_WOLFRAMITE.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
@@ -62,10 +62,10 @@ public class CSBlockLootTableProvider extends BaseLootTablesProvider {
         add(CSBlocks.ORE_WOLFRAMITE_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_MARS.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_WOLFRAMITE_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_VENUS.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
         add(CSBlocks.ORE_WOLFRAMITE_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_WOLFRAMITE_MERCURY.get(), CSItems.RAW_ORE_WOLFRAMITE.get(), 1, 1));
-        add(CSBlocks.ORE_MAGNESIUM_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MOON.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
-        add(CSBlocks.ORE_MAGNESIUM_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MARS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
-        add(CSBlocks.ORE_MAGNESIUM_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_VENUS.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
-        add(CSBlocks.ORE_MAGNESIUM_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MERCURY.get(), CSItems.IMPURE_DUST_MAGNESIUM.get(), 1, 6));
+        add(CSBlocks.ORE_MAGNESIUM_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MOON.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_MAGNESIUM_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MARS.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_MAGNESIUM_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_VENUS.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
+        add(CSBlocks.ORE_MAGNESIUM_MERCURY.get(),block -> createMultipleOreDrops(CSBlocks.ORE_MAGNESIUM_MERCURY.get(), CSItems.RAW_ORE_MAGNESIUM.get(), 1, 1));
         add(CSBlocks.ORE_PYROLUSITE_MOON.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_MOON.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
         add(CSBlocks.ORE_PYROLUSITE_MARS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_MARS.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));
         add(CSBlocks.ORE_PYROLUSITE_VENUS.get(),block -> createMultipleOreDrops(CSBlocks.ORE_PYROLUSITE_VENUS.get(), CSItems.RAW_ORE_PYROLUSITE.get(), 1, 1));

@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/platinum"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_platinum"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_palladium"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustcopper"
+      }
+    },
+    {
+      "chance": 0.05,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_rhodium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 300.0
+}

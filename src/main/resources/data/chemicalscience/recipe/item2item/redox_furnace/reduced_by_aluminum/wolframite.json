@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/wolframite"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ingots/aluminum"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_tungsten"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.9,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustmolybdenum"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_manganese"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_scandium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 2100.0
+}

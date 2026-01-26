@@ -114,4 +114,5 @@ public enum SubtypeChemicalMachine implements ISubtype, IMachine {
     public boolean showInItemGroup() {
         return showInItemGroup;
     }
+
 }

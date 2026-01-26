@@ -6,12 +6,17 @@ import electrodynamics.common.item.subtype.SubtypeDust;
 import electrodynamics.common.item.subtype.SubtypeImpureDust;
 import electrodynamics.common.item.subtype.SubtypeIngot;
 import electrodynamics.common.item.subtype.SubtypePlate;
+import electrodynamics.registers.ElectrodynamicsBlocks;
 import electrodynamics.registers.ElectrodynamicsItems;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.registers.CSBlocks;
+
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -38,7 +43,8 @@ public class RoadMapNodes {
                     List.of(),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -52,7 +58,8 @@ public class RoadMapNodes {
                     List.of(rl("wirecopper")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+            null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -66,7 +73,8 @@ public class RoadMapNodes {
                     List.of(rl("ingotsteel")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -80,7 +88,8 @@ public class RoadMapNodes {
                     List.of(rl("electrodynamics")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -94,7 +103,8 @@ public class RoadMapNodes {
                     List.of(rl("wirecopper")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -108,7 +118,8 @@ public class RoadMapNodes {
                     List.of(rl("wirecopper")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -122,7 +133,8 @@ public class RoadMapNodes {
                     List.of(rl("insulation")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -136,7 +148,8 @@ public class RoadMapNodes {
                     List.of(rl("coil"), rl("platesteel"), rl("insulatedwire")),
                     colorWireiron,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -150,7 +163,8 @@ public class RoadMapNodes {
                     List.of(rl("motor")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -164,7 +178,8 @@ public class RoadMapNodes {
                     List.of(rl("coalgenerator")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -178,7 +193,8 @@ public class RoadMapNodes {
                     List.of(rl("tiningot")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -192,7 +208,8 @@ public class RoadMapNodes {
                     List.of(rl("battery"), rl("coalgenerator"), rl("thermoelectricgenerator")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -206,7 +223,8 @@ public class RoadMapNodes {
                     List.of(rl("batterybox")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -220,7 +238,8 @@ public class RoadMapNodes {
                     List.of(rl("grinder")),
                     colorWiresilver,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -234,7 +253,8 @@ public class RoadMapNodes {
                     List.of(rl("grinderdouble")),
                     colorWiregold,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -248,7 +268,8 @@ public class RoadMapNodes {
                     List.of(rl("grinder")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -262,7 +283,8 @@ public class RoadMapNodes {
                     List.of(rl("platesteel")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -276,7 +298,8 @@ public class RoadMapNodes {
                     List.of(rl("grinder")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -290,7 +313,8 @@ public class RoadMapNodes {
                     List.of(rl("upgradetransformer")),
                     colorWiretin,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -304,7 +328,8 @@ public class RoadMapNodes {
                     List.of(rl("upgradetransformer")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -318,7 +343,8 @@ public class RoadMapNodes {
                     List.of(rl("crusher")),
                     colorWiregold,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -332,7 +358,8 @@ public class RoadMapNodes {
                     List.of(rl("crusherdouble")),
                     colorWiresuperconductive,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -346,7 +373,8 @@ public class RoadMapNodes {
                     List.of(rl("crusher")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -360,7 +388,8 @@ public class RoadMapNodes {
                     List.of(rl("crusher")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -374,7 +403,8 @@ public class RoadMapNodes {
                     List.of(rl("furnace")),
                     colorWiresilver,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -388,7 +418,8 @@ public class RoadMapNodes {
                     List.of(rl("furnacedouble")),
                     colorWiregold,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -402,7 +433,8 @@ public class RoadMapNodes {
                     List.of(rl("furnace")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -416,7 +448,8 @@ public class RoadMapNodes {
                     List.of(rl("arcfurnace")),
                     colorWiresilver,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -430,7 +463,8 @@ public class RoadMapNodes {
                     List.of(rl("arcfurnacedouble")),
                     colorWiregold,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -444,7 +478,8 @@ public class RoadMapNodes {
                     List.of(rl("arcfurnace")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -458,7 +493,8 @@ public class RoadMapNodes {
                     List.of(rl("wiremill")),
                     colorWiresilver,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -472,7 +508,8 @@ public class RoadMapNodes {
                     List.of(rl("wiremilldouble")),
                     colorWiregold,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -486,7 +523,8 @@ public class RoadMapNodes {
                     List.of(rl("wiremill")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -500,7 +538,8 @@ public class RoadMapNodes {
                     List.of(rl("oxidationfurnace")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -514,7 +553,8 @@ public class RoadMapNodes {
                     List.of(rl("alloyer")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
             ),
 
             new ScreenRoadMap.RoadmapNode(
@@ -528,7 +568,35 @@ public class RoadMapNodes {
                     List.of(rl("lithiumbattery")),
                     colorWirecopper,
                     true,
-                    96, -112, 16, 10, 8, 10, 48, 110
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    null
+            ),
+
+            new ScreenRoadMap.RoadmapNode(
+                    rl("chemicalbench"),
+                    896, 0,
+                    new ItemStack(CSBlocks.CHEMICAL_BENCH),
+                    Component.translatable("roadmap.chemicalscience.node.chemicalbench.title"),
+                    Component.translatable("roadmap.chemicalscience.node.chemicalbench.desc"),
+                    null,
+                    1,
+                    List.of(rl("lithiumbatterybox")),
+                    colorWirecopper,
+                    true,
+                    96, -112, 16, 10, 8, 10, 48, 110,
+                    new MultiblockVisualizer()
+                            .addBlock(0, 0, 0, CSBlocks.CHEMICAL_BENCH.get().defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH))
+                            .addBlock(-1, 0, 0, CSBlocks.LABORATORY_STORAGE.get().defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH))
+                            .addBlock(-1, 0, -1, CSBlocks.LABORATORY_SINK.get().defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH))
+                            .addBlock(0, 0, -1, CSBlocks.LABORATORY_SINK.get().defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH))
+                            .addBlock(0, 1, -1, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState())
+                            .addBlock(-1, 1, -1, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState())
+                            .addBlock(-1, 1, 0, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState())
+                            .addBlock(0, 1, 0, CSBlocks.LABORATORY_SUPPORT.get().defaultBlockState())
+                            .addBlock(0, 2, 0, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState())
+                            .addBlock(-1, 2, 0, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState())
+                            .addBlock(-1, 2, -1, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState())
+                            .addBlock(0, 2, -1, ElectrodynamicsBlocks.BLOCKS_MACHINE.getValue(SubtypeMachine.gasvent).defaultBlockState())
             )
     );
 

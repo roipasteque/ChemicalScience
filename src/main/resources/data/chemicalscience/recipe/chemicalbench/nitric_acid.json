@@ -1,0 +1,34 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:platinum_thorium_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 3000,
+      "tag": "minecraft:water"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 1000,
+      "pressure": 1,
+      "tag": "c:ammonia",
+      "temp": 293
+    }
+  ],
+  "fluidoutput": {
+    "amount": 500,
+    "id": "electrodynamics:fluidnitricacid"
+  },
+  "experience": 0.0,
+  "ticks": 50,
+  "usagepertick": 1000.0
+}

@@ -6,7 +6,8 @@
       "count": 1,
       "ingredient": {
         "item": "chemicalscience:copper_aluminate_catalyst"
-      }
+      },
+      "catalyst": true
     }
   ],
   "gasinputs": [
@@ -23,10 +24,6 @@
       "temp": 293
     }
   ],
-  "itemoutput": {
-    "count": 1,
-    "id": "chemicalscience:copper_aluminate_catalyst"
-  },
   "fluidoutput": {
     "amount": 200,
     "id": "chemicalscience:methanol"

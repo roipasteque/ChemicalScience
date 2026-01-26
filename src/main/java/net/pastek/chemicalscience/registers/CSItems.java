@@ -24,6 +24,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
 
 
     /** Raw ores */
+    public static final DeferredItem<Item> RAW_ORE_MAGNESIUM= ITEMS.register("rawore_magnesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ORE_SILICON= ITEMS.register("rawore_silicon", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ORE_ARSENOPYRITE= ITEMS.register("rawore_arsenopyrite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ORE_WOLFRAMITE= ITEMS.register("rawore_wolframite", () -> new Item(new Item.Properties()));
@@ -103,11 +104,11 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_THULIUM = ITEMS.register("dust_thulium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_YTTERBIUM = ITEMS.register("dust_ytterbium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_LUTECIUM = ITEMS.register("dust_lutecium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_THORIUM = ITEMS.register("dust_thorium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_URANIUM = ITEMS.register("dust_uranium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_URANIUMOXIDE = ITEMS.register("dust_uraniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMOXIDE = ITEMS.register("dust_plutoniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMHYDROXIDE = ITEMS.register("dust_plutoniumhydroxide", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_THORIUM = ITEMS.register("dust_thorium", () -> new Item(new Item.Properties()));
 
     // Impure dust
     public static final DeferredItem<Item> IMPURE_DUST_BORON = ITEMS.register("impuredust_boron", () -> new Item(new Item.Properties()));
@@ -124,6 +125,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> IMPURE_DUST_NICKEL = ITEMS.register("impuredust_nickel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_ZINC = ITEMS.register("impuredust_zinc", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_GALLIUM = ITEMS.register("impuredust_gallium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_GERMANIUM = ITEMS.register("impuredust_germanium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_ARSENIC = ITEMS.register("impuredust_arsenic", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_SELENIUM = ITEMS.register("impuredust_selenium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_RUBIDIUM = ITEMS.register("impuredust_rubidium", () -> new Item(new Item.Properties()));
@@ -137,6 +139,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> IMPURE_DUST_PLATINUM = ITEMS.register("impuredust_platinum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_MERCURY = ITEMS.register("impuredust_mercury", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_BISMUTH = ITEMS.register("impuredust_bismuth", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_RHODIUM = ITEMS.register("impuredust_rhodium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_PALLADIUM = ITEMS.register("impuredust_palladium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_CADMIUM = ITEMS.register("impuredust_cadmium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_ANTIMONY = ITEMS.register("impuredust_antimony", () -> new Item(new Item.Properties()));
@@ -145,8 +148,8 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> IMPURE_DUST_CESIUM = ITEMS.register("impuredust_cesium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_BARIUM = ITEMS.register("impuredust_barium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_TANTALUM = ITEMS.register("impuredust_tantalum", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> IMPURE_DUST_URANIUM = ITEMS.register("impuredust_uranium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_DUST_THORIUM = ITEMS.register("impuredust_thorium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPURE_DUST_URANIUM = ITEMS.register("impuredust_uranium", () -> new Item(new Item.Properties()));
 
     /** Organic */
     public static final DeferredItem<Item> DUST_AMMONIUMDIURANATE = ITEMS.register("dust_ammoniumdiuranate", () -> new Item(new Item.Properties()));
@@ -202,6 +205,9 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> TITANIUM_MAGNESIUM_CATALYST= ITEMS.register("titanium_magnesium_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SULFONATED_POLYSTYRENE_CATALYST= ITEMS.register("sulfonated_polystyrene_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RHODIUM_MANGANESE_BROMINE_CATALYST= ITEMS.register("rhodium_manganese_bromine_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATINUM_THORIUM_CATALYST= ITEMS.register("platinum_thorium_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATINUM_SILICA_CATALYST= ITEMS.register("platinum_silica_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RHODIUM_SILICA_CATALYST= ITEMS.register("rhodium_silica_catalyst", () -> new Item(new Item.Properties()));
     /** Materials */
     // Chromatography Cards
     public static final DeferredItem<Item> CHROMOTOGRAPHYCARD_CARBONMONOXIDE= ITEMS.register("chromotographycardcarbonmonoxide", () -> new Item(new Item.Properties()));

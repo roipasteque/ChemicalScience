@@ -1,0 +1,57 @@
+
+{
+  "type": "chemicalscience:catalytic_reformer_recipe",
+  "group": "chemicalscience",
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:butane"
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:platinum_silica_catalyst"
+      }
+    }
+  ],
+
+  "output": {
+    "amount": 30,
+    "id": "chemicalscience:propane"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.05,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:coalcoke"
+      }
+    }
+  ],
+
+  "fluidbi": [
+    {
+      "amount": 20,
+      "chance": 1.0,
+      "fluid": "chemicalscience:methane"
+    }
+  ],
+
+  "gasbi": [
+    {
+      "amount": 5,
+      "chance": 1.0,
+      "gas": "electrodynamics:hydrogen",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 400.0
+}

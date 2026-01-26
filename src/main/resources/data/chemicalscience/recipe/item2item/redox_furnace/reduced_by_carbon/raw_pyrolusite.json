@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:raw_materials/manganese"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "chemicalscience:impuredust_manganese"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.6,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_silicon"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_barium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_cobalt"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_nickel"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 5700.0
+}

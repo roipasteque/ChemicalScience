@@ -751,6 +751,10 @@
   "tooltip.chemicalscience.info.roadmapuse": "Right-Click to open",
   "tooltip.chemicalscience.info.roadmapcraft": "Craft with a copper ingot and paper",
   "tooltip.chemicalscience.info.organic": "Organic",
+  "tooltip.chemicalscience.machine.voltage": "Voltage: ",
+  "tooltip.chemicalscience.machine.desc.circuitmaker": "Test",
+  "tooltip.chemicalscience.machine.multiblock.info": "Multiblock machine",
+  "tooltip.chemicalscience.machine.multiblock.help": "Check the VEC or the Chemist's Roadmap",
 
   "roadmap.chemicalscience.controls.clickleft": "§6Left Click§r : View Details",
   "roadmap.chemicalscience.controls.clickright": "§eRight Click§r : Cycle Progress",
@@ -828,6 +832,8 @@
   "roadmap.chemicalscience.node.lithiumbattery.desc": "Craft a lithium battery.",
   "roadmap.chemicalscience.node.lithiumbatterybox.title": "Better energy storage",
   "roadmap.chemicalscience.node.lithiumbatterybox.desc": "Craft a lithium battery box.",
+  "roadmap.chemicalscience.node.chemicalbench.title": "Chemical Science",
+  "roadmap.chemicalscience.node.chemicalbench.desc": "Build a laboratory fume hood. Right-click on the controller block with a key to build the multiblock.",
 
   "advancement.chemicalscience.root.title": "Chemical Science",
   "advancement.chemicalscience.root.desc": "Craft a Chemical Reactor, and start some real chemistry!",

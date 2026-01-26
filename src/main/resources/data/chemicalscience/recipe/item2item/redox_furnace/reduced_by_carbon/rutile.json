@@ -1,0 +1,62 @@
+{
+  "type": "chemicalscience:redox_furnace_recipe",
+  "experience": 0.10000000149011612,
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {"tag": "c:ores/titanium"}
+    },
+    {
+      "count": 1,
+      "ingredient": {"tag": "minecraft:coals"}
+    }
+  ],
+
+  "output": {
+    "count": 4,
+    "id": "electrodynamics:impuredusttitanium"
+  },
+
+  "itembi": [
+    {
+      "chance": 0.8,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustiron"
+      }
+    },
+    {
+      "chance": 0.4,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustvanadium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "electrodynamics:impuredustchromium"
+      }
+    },
+    {
+      "chance": 0.2,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_niobium"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "chemicalscience:impuredust_tantalum"
+      }
+    }
+  ],
+
+  "ticks": 100,
+  "usagepertick": 7500.0
+}

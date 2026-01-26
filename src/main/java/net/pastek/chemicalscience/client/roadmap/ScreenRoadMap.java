@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerRoadMap;
 import org.jetbrains.annotations.NotNull;
@@ -44,6 +45,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     private int winX, winY, winW, winH;
     private static final float ASPECT_RATIO = 4f / 3f;
 
+    private final Map<ResourceLocation, MultiblockVisualizer> VISUALIZERS = new HashMap<>();
     private RoadmapNode selectedNode = null;
 
     public ScreenRoadMap(ContainerRoadMap container, Inventory inv, Component title) {
@@ -237,6 +239,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             if (isMouseOverNode(node, worldX, worldY)) {
                 if (button == 0) {
                     selectedNode = node;
+                    if (selectedNode.visualizer() != null) {selectedNode.visualizer().resetAnimation();}
                     Minecraft.getInstance().getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(net.minecraft.sounds.SoundEvents.UI_BUTTON_CLICK, 1.0F));
                     return true;
                 } else if (button == 1) {
@@ -301,13 +304,36 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
 
         g.blit(TEXTURE_OVERLAY, px, py, 0, 0, panelSize, panelSize, 128, 128);
 
-        if (selectedNode.image() != null) {
+        if (VISUALIZERS.containsKey(selectedNode.id())) {
+            int renderX = px + selectedNode.overlayImageX() + (selectedNode.overlayImageSize() / 2);
+            int renderY = py + selectedNode.overlayImageY() + (selectedNode.overlayImageSize() / 2) + 20;
+
+            VISUALIZERS.get(selectedNode.id()).render(g, renderX, renderY, 20.0f);
+
+            RenderSystem.enableBlend();
+            if (selectedNode.overlayImageFrame()) {
+                g.pose().pushPose();
+                g.pose().translate(0, 0, 100);
+                g.blit(TEXTURE_IMAGE_FRAME, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY(), 0, 0, 96, 96, 96, 96);
+                g.pose().popPose();
+            }
+        }
+        else if (selectedNode.image() != null) {
             renderNodeImage(g, selectedNode, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY());
 
             RenderSystem.enableBlend();
             if (selectedNode.overlayImageFrame()) {
                 g.blit(TEXTURE_IMAGE_FRAME, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY(), 0, 0, 96, 96, 96, 96);
             }
+        }
+
+        if (selectedNode.visualizer() != null) {
+            int renderX = px + selectedNode.overlayImageX() + (selectedNode.overlayImageSize() / 2);
+            int renderY = py + selectedNode.overlayImageY() + (selectedNode.overlayImageSize() / 2) + 10;
+
+            selectedNode.visualizer().render(g, renderX, renderY, 25.0f);
+        } else if (selectedNode.image() != null) {
+            renderNodeImage(g, selectedNode, px + selectedNode.overlayImageX(), py + selectedNode.overlayImageY());
         }
 
         g.drawWordWrap(font, selectedNode.title(),
@@ -344,6 +370,23 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         }
     }
 
+    private void loadVisualizers() {
+        MultiblockVisualizer blastFurnace = new MultiblockVisualizer();
+
+        for(int x=0; x<3; x++) for(int z=0; z<3; z++)
+            blastFurnace.addBlock(x, 0, z, Blocks.BRICKS.defaultBlockState());
+
+        blastFurnace.addBlock(0, 1, 0, Blocks.BRICKS.defaultBlockState());
+        blastFurnace.addBlock(2, 1, 0, Blocks.BRICKS.defaultBlockState());
+        blastFurnace.addBlock(0, 1, 2, Blocks.BRICKS.defaultBlockState());
+        blastFurnace.addBlock(2, 1, 2, Blocks.BRICKS.defaultBlockState());
+
+        for(int x=0; x<3; x++) for(int z=0; z<3; z++)
+            blastFurnace.addBlock(x, 2, z, Blocks.BRICKS.defaultBlockState());
+
+        VISUALIZERS.put(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "node_blast_furnace"), blastFurnace);
+    }
+
     @Override public boolean mouseReleased(double mouseX, double mouseY, int button) { isDragging = false; return super.mouseReleased(mouseX, mouseY, button); }
     @Override public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) { if (isDragging) { scrollX += dx / zoom; scrollY += dy / zoom; return true; } return super.mouseDragged(mouseX, mouseY, button, dx, dy); }
     @Override public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) { double zoomFactor = 0.1; if (scrollY > 0) zoom += zoomFactor; else zoom -= zoomFactor; zoom = Math.clamp(zoom, MIN_ZOOM, MAX_ZOOM); return true; }
@@ -372,6 +415,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
             int overlayTitleY,
             int overlayDescX,
             int overlayDescY,
-            int overlayTextWidth
+            int overlayTextWidth,
+            @Nullable MultiblockVisualizer visualizer
     ) {}
 }

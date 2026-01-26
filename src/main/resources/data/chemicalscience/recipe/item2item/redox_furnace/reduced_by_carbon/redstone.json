@@ -30,7 +30,7 @@
     {
       "chance": 0.8,
       "item": {
-        "count": 2,
+        "count": 1,
         "id": "chemicalscience:impuredust_antimony"
       }
     },

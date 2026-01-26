@@ -1,0 +1,46 @@
+{
+  "type": "chemicalscience:hds_unit_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "fluid": "chemicalscience:impureheavyoil"
+    }
+  ],
+
+  "gasinputs": [
+    {
+      "amount": 20,
+      "pressure":1,
+      "tag": "c:hydrogen",
+      "temp": 293
+    }
+  ],
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:molybdenum_sulfur_catalyst"
+      }
+    }
+  ],
+
+  "output": {
+    "amount": 40,
+    "id": "chemicalscience:heavyoil"
+  },
+
+  "gasbi": [
+    {
+      "amount": 10,
+      "chance": 0.9,
+      "gas": "chemicalscience:hydrogensulfide",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+
+  "ticks": 200,
+  "usagepertick": 400.0
+}

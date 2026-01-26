@@ -131,6 +131,7 @@ public class CSCreativeTabs {
 
         /** ITEMS */
         /** Raw Materials */
+        output.accept(CSItems.RAW_ORE_MAGNESIUM);
         output.accept(CSItems.RAW_ORE_ARSENOPYRITE);
         output.accept(CSItems.RAW_ORE_SILICON);
         output.accept(CSItems.RAW_ORE_WOLFRAMITE);
@@ -165,6 +166,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_BORON);
         output.accept(CSItems.DUST_BERYLLIUM);
         output.accept(CSItems.DUST_ACTIVATEDCARBON);
+        output.accept(CSItems.DUST_SODIUM);
         output.accept(CSItems.DUST_MAGNESIUM);
         output.accept(CSItems.DUST_SILICON);
         output.accept(CSItems.DUST_PHOSPHORUS);
@@ -178,6 +180,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_GERMANIUM);
         output.accept(CSItems.DUST_ARSENIC);
         output.accept(CSItems.DUST_SELENIUM);
+        output.accept(CSItems.DUST_RUBIDIUM);
         output.accept(CSItems.DUST_STRONTIUM);
         output.accept(CSItems.DUST_YTTRIUM);
         output.accept(CSItems.DUST_NIOBIUM);
@@ -189,6 +192,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_CADMIUM);
         output.accept(CSItems.DUST_TELLURIUM);
         output.accept(CSItems.DUST_IODINE);
+        output.accept(CSItems.DUST_CESIUM);
         output.accept(CSItems.DUST_BARIUM);
         output.accept(CSItems.DUST_LANTHANUM);
         output.accept(CSItems.DUST_CERIUM);
@@ -205,14 +209,20 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_THULIUM);
         output.accept(CSItems.DUST_YTTERBIUM);
         output.accept(CSItems.DUST_LUTECIUM);
+        output.accept(CSItems.DUST_HAFNIUM);
         output.accept(CSItems.DUST_TANTALUM);
         output.accept(CSItems.DUST_TUNGSTEN);
+        output.accept(CSItems.DUST_RHENIUM);
+        output.accept(CSItems.DUST_OSMIUM);
         output.accept(CSItems.DUST_PLATINUM);
         output.accept(CSItems.DUST_BISMUTH);
+        output.accept(CSItems.DUST_THORIUM);
         output.accept(CSItems.DUST_URANIUM);
+
         // Impure Dust
         output.accept(CSItems.IMPURE_DUST_BORON);
         output.accept(CSItems.IMPURE_DUST_BERYLLIUM);
+        output.accept(CSItems.IMPURE_DUST_SODIUM);
         output.accept(CSItems.IMPURE_DUST_MAGNESIUM);
         output.accept(CSItems.IMPURE_DUST_SILICON);
         output.accept(CSItems.IMPURE_DUST_POTASSIUM);
@@ -223,17 +233,28 @@ public class CSCreativeTabs {
         output.accept(CSItems.IMPURE_DUST_NICKEL);
         output.accept(CSItems.IMPURE_DUST_ZINC);
         output.accept(CSItems.IMPURE_DUST_GALLIUM);
+        output.accept(CSItems.IMPURE_DUST_GERMANIUM);
         output.accept(CSItems.IMPURE_DUST_ARSENIC);
         output.accept(CSItems.IMPURE_DUST_SELENIUM);
+        output.accept(CSItems.IMPURE_DUST_RUBIDIUM);
+        output.accept(CSItems.IMPURE_DUST_STRONTIUM);
+        output.accept(CSItems.IMPURE_DUST_YTTRIUM);
         output.accept(CSItems.IMPURE_DUST_NIOBIUM);
+        output.accept(CSItems.IMPURE_DUST_RHODIUM);
         output.accept(CSItems.IMPURE_DUST_PALLADIUM);
         output.accept(CSItems.IMPURE_DUST_CADMIUM);
         output.accept(CSItems.IMPURE_DUST_TELLURIUM);
         output.accept(CSItems.IMPURE_DUST_IODINE);
+        output.accept(CSItems.IMPURE_DUST_CESIUM);
+        output.accept(CSItems.IMPURE_DUST_BARIUM);
         output.accept(CSItems.IMPURE_DUST_CERIUM);
+        output.accept(CSItems.IMPURE_DUST_HAFNIUM);
         output.accept(CSItems.IMPURE_DUST_TANTALUM);
         output.accept(CSItems.IMPURE_DUST_TUNGSTEN);
+        output.accept(CSItems.IMPURE_DUST_RHENIUM);
+        output.accept(CSItems.IMPURE_DUST_OSMIUM);
         output.accept(CSItems.IMPURE_DUST_PLATINUM);
+        output.accept(CSItems.IMPURE_DUST_MERCURY);
         output.accept(CSItems.IMPURE_DUST_BISMUTH);
         output.accept(CSItems.IMPURE_DUST_URANIUM);
         /** Crystals */
@@ -287,6 +308,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.TITANIUM_MAGNESIUM_CATALYST);
         output.accept(CSItems.SULFONATED_POLYSTYRENE_CATALYST);
         output.accept(CSItems.RHODIUM_MANGANESE_BROMINE_CATALYST);
+        output.accept(CSItems.PLATINUM_THORIUM_CATALYST);
         /** Materials */
         // Chromatography Cards
         output.accept(CSItems.CHROMOTOGRAPHYCARD_CARBONMONOXIDE);
