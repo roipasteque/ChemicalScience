@@ -755,6 +755,12 @@
   "tooltip.chemicalscience.machine.desc.circuitmaker": "Test",
   "tooltip.chemicalscience.machine.multiblock.info": "Multiblock machine",
   "tooltip.chemicalscience.machine.multiblock.help": "Check the VEC or the Chemist's Roadmap",
+  "tooltip.chemicalscience.onvg.mode": "Mode : ",
+  "component.chemicalscience.onvg.mode.off": "OFF",
+  "component.chemicalscience.onvg.mode.nv": "ON",
+  "component.chemicalscience.onvg.mode.entity": "IR RADAR",
+  "component.chemicalscience.onvg.mode.ore": "XRAY DIFFRACTION",
+  "component.chemicalscience.onvg.mode.ore.nosignal": "> - - -",
 
   "roadmap.chemicalscience.controls.clickleft": "§6Left Click§r : View Details",
   "roadmap.chemicalscience.controls.clickright": "§eRight Click§r : Cycle Progress",

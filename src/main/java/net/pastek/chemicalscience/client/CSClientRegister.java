@@ -1,5 +1,7 @@
 package net.pastek.chemicalscience.client;
 
+import com.mojang.blaze3d.platform.InputConstants;
+import net.minecraft.client.KeyMapping;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.resources.model.ModelResourceLocation;
@@ -13,6 +15,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
@@ -22,11 +25,13 @@ import net.pastek.chemicalscience.client.roadmap.ScreenRoadMap;
 import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.client.tooltip.CSTooltipRenderer;
 import net.pastek.chemicalscience.common.item.CSTooltipItem;
+import net.pastek.chemicalscience.common.packet.PacketToggleNightVisionMode;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.CSTiles;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import org.jetbrains.annotations.NotNull;
+import org.lwjgl.glfw.GLFW;
 import voltaic.client.guidebook.ScreenGuidebook;
 import voltaic.client.misc.SWBFClientExtensions;
 import voltaic.common.fluid.SimpleWaterBasedFluidType;
@@ -126,5 +131,24 @@ public class CSClientRegister {
     public static void onRegisterTooltipFactories(RegisterClientTooltipComponentFactoriesEvent event) {
         event.register(CSTooltipItem.ImageTooltipComponent.class,
                 CSTooltipRenderer::new);
+    }
+
+    public static final KeyMapping TOGGLE_MODE_KEY = new KeyMapping(
+            "key.chemicalscience.toggle_goggles",
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_N,
+            "category.chemicalscience.keys"
+    );
+
+    @SubscribeEvent
+    public static void RegisterKeyMapingsEvent(RegisterKeyMappingsEvent event) {
+        event.register(TOGGLE_MODE_KEY);
+    }
+
+    @SubscribeEvent
+    public static void onKeyInput(InputEvent.Key event) {
+        if (TOGGLE_MODE_KEY.consumeClick()) {
+            PacketDistributor.sendToServer(new PacketToggleNightVisionMode());
+        }
     }
 }
