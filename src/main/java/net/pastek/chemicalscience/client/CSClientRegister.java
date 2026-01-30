@@ -16,6 +16,8 @@ import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
@@ -26,6 +28,7 @@ import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.client.tooltip.CSTooltipRenderer;
 import net.pastek.chemicalscience.common.item.CSTooltipItem;
 import net.pastek.chemicalscience.common.packet.PacketToggleNightVisionMode;
+import net.pastek.chemicalscience.common.packet.PacketTransparencyTogglePayload;
 import net.pastek.chemicalscience.registers.CSItems;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import net.pastek.chemicalscience.registers.CSTiles;
@@ -150,5 +153,15 @@ public class CSClientRegister {
         if (TOGGLE_MODE_KEY.consumeClick()) {
             PacketDistributor.sendToServer(new PacketToggleNightVisionMode());
         }
+    }
+
+    @SubscribeEvent
+    public static void register(final RegisterPayloadHandlersEvent event) {
+        final PayloadRegistrar registrar = event.registrar(ChemicalScience.MOD_ID);
+        registrar.playToServer(
+                PacketTransparencyTogglePayload.TYPE,
+                PacketTransparencyTogglePayload.STREAM_CODEC,
+                PacketTransparencyTogglePayload::handleData
+        );
     }
 }

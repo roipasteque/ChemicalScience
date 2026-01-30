@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,transparency=opaque": {
       "model": "chemicalscience:block/organicsolarpanel"
     },
-    "facing=north": {
+    "facing=east,transparency=transparent": {
+      "model": "chemicalscience:block/organicsolarpaneltransparent"
+    },
+    "facing=north,transparency=opaque": {
       "model": "chemicalscience:block/organicsolarpanel",
       "y": 270
     },
-    "facing=south": {
+    "facing=north,transparency=transparent": {
+      "model": "chemicalscience:block/organicsolarpaneltransparent",
+      "y": 270
+    },
+    "facing=south,transparency=opaque": {
       "model": "chemicalscience:block/organicsolarpanel",
       "y": 90
     },
-    "facing=west": {
+    "facing=south,transparency=transparent": {
+      "model": "chemicalscience:block/organicsolarpaneltransparent",
+      "y": 90
+    },
+    "facing=west,transparency=opaque": {
       "model": "chemicalscience:block/organicsolarpanel",
+      "y": 180
+    },
+    "facing=west,transparency=transparent": {
+      "model": "chemicalscience:block/organicsolarpaneltransparent",
       "y": 180
     }
   }

@@ -1,16 +1,28 @@
 package net.pastek.chemicalscience.datagen;
 
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.StringRepresentable;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.VariantBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.pastek.chemicalscience.ChemicalScience;
+import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
 import net.pastek.chemicalscience.registers.CSBlocks;
 import voltaic.Voltaic;
+import voltaic.common.block.states.VoltaicBlockStates;
 import voltaic.datagen.utils.client.BaseBlockstateProvider;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CSBlockStateProvider extends BaseBlockstateProvider {
 
@@ -111,7 +123,24 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
         simpleBlockCustomRenderType(CSBlocks.GLASS_SHIELDING.get(), modLoc("block/radiationshielding_glass"), Voltaic.vanillarl("translucent"), true);
         simpleBlockCustomRenderType(CSBlocks.ADVANCED_GLASS_SHIELDING.get(), modLoc("block/radiationshielding_advancedglass"), Voltaic.vanillarl("translucent"), true);
 
-        horrRotatedBlock(CSBlocks.ORGANIC_SOLAR_PANEL, existingBlock(CSBlocks.ORGANIC_SOLAR_PANEL), true);
+        Map<TileOrganicSolarPanel.TransparencyLevel, ModelFile> solarModels = new HashMap<>();
+
+        ModelFile opaqueModel = models().getExistingFile(modLoc("block/organicsolarpanel"));
+        ModelFile transparentModel = models().getExistingFile(modLoc("block/organicsolarpaneltransparent"));
+
+        solarModels.put(TileOrganicSolarPanel.TransparencyLevel.OPAQUE, opaqueModel);
+        solarModels.put(TileOrganicSolarPanel.TransparencyLevel.TRANSPARENT, transparentModel);
+
+        horrRotatedStateBlock(
+                CSBlocks.ORGANIC_SOLAR_PANEL.get(),
+                solarModels,
+                opaqueModel,
+                0,
+                0,
+                true,
+                TileOrganicSolarPanel.TRANSPARENCY
+        );
+
         horrRotatedBlock(CSBlocks.FUEL_CELL, existingBlock(CSBlocks.FUEL_CELL), true);
         horrRotatedLitBlock(CSBlocks.CIRCUIT_MAKER, existingBlock(CSBlocks.CIRCUIT_MAKER), existingBlock(blockLoc("circuitmakerlit")), true);
         horrRotatedBlock(CSBlocks.HDS_UNIT, existingBlock(CSBlocks.HDS_UNIT), true);
@@ -290,6 +319,49 @@ public class CSBlockStateProvider extends BaseBlockstateProvider {
     }
     private void blockItem(DeferredBlock<?> deferredBlock, String loc, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("chemicalscience:" + loc + deferredBlock.getId().getPath() + appendix));
+    }
+
+    public <T extends Enum<T> & StringRepresentable> void horrRotatedStateBlock(
+            Block block,
+            Map<T, ModelFile> modelMap,
+            ModelFile itemModel,
+            int yRotationOffset,
+            int xRotation,
+            boolean registerItem,
+            EnumProperty<T> additionalProperty
+    ) {
+        VariantBlockStateBuilder builder = this.getVariantBuilder(block);
+
+        for (Direction facing : Direction.Plane.HORIZONTAL) {
+            for (T value : additionalProperty.getPossibleValues()) {
+                ModelFile file = modelMap.get(value);
+
+                if (file == null) {
+                    throw new IllegalArgumentException("Missing model for property value: " + value);
+                }
+
+                int yRot = switch (facing) {
+                    case NORTH -> (270 + yRotationOffset) % 360;
+                    case EAST -> (0 + yRotationOffset) % 360;
+                    case SOUTH -> (90 + yRotationOffset) % 360;
+                    case WEST -> (180 + yRotationOffset) % 360;
+                    default -> yRotationOffset;
+                };
+
+                builder.partialState()
+                        .with(VoltaicBlockStates.FACING, facing)
+                        .with(additionalProperty, value)
+                        .modelForState()
+                        .modelFile(file)
+                        .rotationY(yRot)
+                        .rotationX(xRotation)
+                        .addModel();
+            }
+        }
+
+        if (registerItem) {
+            this.blockItem(block, itemModel);
+        }
     }
 
 }

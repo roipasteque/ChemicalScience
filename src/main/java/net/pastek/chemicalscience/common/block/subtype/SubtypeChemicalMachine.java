@@ -1,11 +1,8 @@
 package net.pastek.chemicalscience.common.block.subtype;
 
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockState;
 import net.pastek.chemicalscience.common.block.voxelshapes.CSVoxelShapes;
 import net.pastek.chemicalscience.common.tile.*;
 import voltaic.api.ISubtype;
@@ -13,8 +10,6 @@ import voltaic.api.multiblock.subnodebased.parent.IMultiblockParentBlock;
 import voltaic.api.tile.IMachine;
 import voltaic.api.tile.MachineProperties;
 import voltaic.common.block.voxelshapes.VoxelShapeProvider;
-
-import javax.annotation.Nullable;
 
 public enum SubtypeChemicalMachine implements ISubtype, IMachine {
 

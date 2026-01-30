@@ -5,8 +5,10 @@ import electrodynamics.prefab.utilities.ElectricityUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.Mth;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.settings.CSConstants;
@@ -53,16 +55,31 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
             output.update(worldPosition.relative(Direction.DOWN));
             generating.setValue(level.canSeeSky(worldPosition.offset(0, 1, 0)));
         }
-        if (level.isDay() && generating.getValue() && output.valid()) {
+        if (generating.getValue() && output.valid()) {
             ElectricityUtils.receivePower(output.getSafe(), Direction.UP, getProduced(), false);
         }
     }
 
     public TransferPack getProduced() {
-        double mod = 1.0f - Mth.clamp(1.0F - (Mth.cos(level.getTimeOfDay(1f) * ((float) Math.PI * 2f)) * 2.0f + 0.2f), 0.0f, 1.0f);
+        double daylight = 1.0f - Mth.clamp(
+                1.0F - (Mth.cos(level.getTimeOfDay(1f) * ((float) Math.PI * 2f)) * 2.0f + 0.2f),
+                0.0f,
+                1.0f
+        );
+
+        double mod = 0.2 + 0.8 * daylight;
+
         double temp = level.getBiomeManager().getBiome(getBlockPos()).value().getBaseTemperature();
         double lerped = Mth.lerp((temp + 1) / 3.0, 1.5, 3) / 3.0;
-        return TransferPack.ampsVoltage(getMultiplier() * CSConstants.ORGANICSOLARPANEL_AMPERAGE * lerped * mod * (level.isRaining() || level.isThundering() ? 0.8f : 1), this.<ComponentElectrodynamic>getComponent(IComponentType.Electrodynamic).getVoltage());
+
+        return TransferPack.ampsVoltage(
+                getMultiplier()
+                        * CSConstants.ORGANICSOLARPANEL_AMPERAGE
+                        * lerped
+                        * mod
+                        * (level.isRaining() || level.isThundering() ? 0.8f : 1),
+                this.<ComponentElectrodynamic>getComponent(IComponentType.Electrodynamic).getVoltage()
+        );
     }
 
     public double getMultiplier() {
@@ -76,4 +93,18 @@ public class TileOrganicSolarPanel extends GenericGeneratorTile {
     public int getComparatorSignal() {
         return generating.getValue() ? 15 : 0;
     }
+
+    public enum TransparencyLevel implements StringRepresentable {
+        OPAQUE("opaque"),
+        TRANSPARENT("transparent");
+
+        private final String name;
+
+        TransparencyLevel(String name) { this.name = name; }
+
+        @Override
+        public String getSerializedName() { return name; }
+    }
+
+    public static final EnumProperty<TransparencyLevel> TRANSPARENCY = EnumProperty.create("transparency", TransparencyLevel.class);
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-24T00:01:54.6825173	Block States: chemicalscience
+// 1.21.1	2026-01-30T02:58:14.1173823	Block States: chemicalscience
 b1ee8a8a95d9605309af720223eb45bd77e8d6d9 assets/chemicalscience/blockstates/block_asphalt.json
 df675d88634ae23c1829044db00b292a3b759b2c assets/chemicalscience/blockstates/block_element_ac.json
 4fe58f4852c17675ba4a63a38d34419704b41802 assets/chemicalscience/blockstates/block_element_ag.json
@@ -245,7 +245,7 @@ fa0f4ba1a1320b702bd7af89ee4876c665940c5b assets/chemicalscience/blockstates/ore_
 6e9a715e499410e032a35ac4bd092cf51c0c233e assets/chemicalscience/blockstates/ore_wolframite_mercury.json
 8485b19f000baea7a2547ed69e20d54f1c6c9a6f assets/chemicalscience/blockstates/ore_wolframite_moon.json
 98df694b5460a15d968ba1c234b8488f9ce88518 assets/chemicalscience/blockstates/ore_wolframite_venus.json
-76446b5de95039fe8ddb2bde896fae410af6a5fc assets/chemicalscience/blockstates/organicsolarpanel.json
+444705b34d94d343215e1b9e817404284af2387e assets/chemicalscience/blockstates/organicsolarpanel.json
 79688dc255239b51134f08438ec7337895b6916e assets/chemicalscience/blockstates/rack_manganese.json
 67478ea7b276b7c2014d2bfda135fe2317749a9f assets/chemicalscience/blockstates/rack_steel.json
 2cdb0b287f8a8addcbc9e69c662dc050f7f065c9 assets/chemicalscience/blockstates/radiationshielding_advancedglass.json

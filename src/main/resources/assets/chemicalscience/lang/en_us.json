@@ -747,6 +747,8 @@
   "jei.chemical_bench_recipe": "Fume Hood",
 
   "chat.chemicalscience.roadmapclick": "Click here to open Electrodynamics Wiki",
+  "key.chemicalscience.toggle_goggles": "Toggle night vision goggles mode",
+  "category.chemicalscience.keys": "Chemical Science",
 
   "tooltip.chemicalscience.info.roadmapuse": "Right-Click to open",
   "tooltip.chemicalscience.info.roadmapcraft": "Craft with a copper ingot and paper",
@@ -761,6 +763,7 @@
   "component.chemicalscience.onvg.mode.entity": "IR RADAR",
   "component.chemicalscience.onvg.mode.ore": "XRAY DIFFRACTION",
   "component.chemicalscience.onvg.mode.ore.nosignal": "> - - -",
+  "component.chemicalscience.osp.transparency.toggle": "Toggle Transparency",
 
   "roadmap.chemicalscience.controls.clickleft": "§6Left Click§r : View Details",
   "roadmap.chemicalscience.controls.clickright": "§eRight Click§r : Cycle Progress",

@@ -6,7 +6,7 @@ import voltaic.api.configuration.*;
 public class CSConstants {
 
     @DoubleValue(def = 35.0)
-    public static double ORGANICSOLARPANEL_AMPERAGE = 35.0;
+    public static double ORGANICSOLARPANEL_AMPERAGE = 110.0;
 
     @DoubleValue(def = 550.0)
     public static double FUEL_CELL_JOULES_PER_TICK = 550.0;

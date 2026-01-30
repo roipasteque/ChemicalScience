@@ -6,6 +6,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -13,6 +15,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.block.CSBlockMachine;
 import net.pastek.chemicalscience.common.block.decoration.*;
 import net.pastek.chemicalscience.common.block.subtype.SubtypeChemicalMachine;
+import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
 import voltaic.common.block.BlockMachine;
 
 import java.util.function.Supplier;
@@ -352,7 +355,16 @@ public class CSBlocks {
                 /* ====================================================================== */
 
     // Energy
-    public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () -> new CSBlockMachine(SubtypeChemicalMachine.organicsolarpanel, 240, null));
+    public static final DeferredBlock<Block> ORGANIC_SOLAR_PANEL = registerBlock("organicsolarpanel", () ->
+            new CSBlockMachine(SubtypeChemicalMachine.organicsolarpanel, 240, null) {
+
+                @Override
+                protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+                    super.createBlockStateDefinition(builder);
+                    builder.add(TileOrganicSolarPanel.TRANSPARENCY);
+                }
+            }
+    );
     public static final DeferredBlock<Block> FUEL_CELL = registerBlock("fuelcell", () -> new CSBlockMachine(SubtypeChemicalMachine.fuelcell, 240, null));
 
     // Simple Machine
