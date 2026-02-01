@@ -10,6 +10,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.pastek.chemicalscience.common.recipe.CSCountableIngredient;
+import org.jetbrains.annotations.NotNull;
 import voltaic.api.gas.GasStack;
 import voltaic.common.recipe.VoltaicRecipeSerializer;
 import voltaic.common.recipe.recipeutils.FluidIngredient;
@@ -35,8 +36,7 @@ public class ChemicalBenchRecipeSerializer extends VoltaicRecipeSerializer<Chemi
                     ProbableItem.LIST_CODEC.optionalFieldOf(ITEM_BIPRODUCTS, ProbableItem.NONE).forGetter(ChemicalBenchRecipe::getItemBiproducts),
                     ProbableFluid.LIST_CODEC.optionalFieldOf(FLUID_BIPRODUCTS, ProbableFluid.NONE).forGetter(ChemicalBenchRecipe::getFluidBiproducts),
                     ProbableGas.LIST_CODEC.optionalFieldOf(GAS_BIPRODUCTS, ProbableGas.NONE).forGetter(ChemicalBenchRecipe::getGasBiproducts)
-            )
-            .apply(instance, ChemicalBenchRecipe::new));
+            ).apply(instance, ChemicalBenchRecipe::new));
 
     private static final StreamCodec<RegistryFriendlyByteBuf, ChemicalBenchRecipe> STREAM_CODEC = CodecUtils.composite(
             ByteBufCodecs.STRING_UTF8, ChemicalBenchRecipe::getGroup,
@@ -56,12 +56,12 @@ public class ChemicalBenchRecipeSerializer extends VoltaicRecipeSerializer<Chemi
     );
 
     @Override
-    public MapCodec<ChemicalBenchRecipe> codec() {
+    public @NotNull MapCodec<ChemicalBenchRecipe> codec() {
         return CODEC;
     }
 
     @Override
-    public StreamCodec<RegistryFriendlyByteBuf, ChemicalBenchRecipe> streamCodec() {
+    public @NotNull StreamCodec<RegistryFriendlyByteBuf, ChemicalBenchRecipe> streamCodec() {
         return STREAM_CODEC;
     }
 }

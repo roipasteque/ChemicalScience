@@ -1,0 +1,23 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:ethylhexanol"
+    },
+    {
+      "amount": 100,
+      "tag": "c:hydrobromic_acid"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:ethylhexylbromide"
+  },
+
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

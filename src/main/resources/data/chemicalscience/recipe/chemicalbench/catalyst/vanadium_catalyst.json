@@ -1,0 +1,26 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:support_catalyst"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:oxides/vanadium"
+      }
+    }
+  ],
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:vanadium_catalyst"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

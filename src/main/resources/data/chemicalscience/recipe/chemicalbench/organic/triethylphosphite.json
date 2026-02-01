@@ -1,0 +1,29 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_phosphoruschloride"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:ethanol"
+    },
+    {
+      "amount": 10,
+      "fluid": "chemicalscience:pyridine"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:triethylphosphite"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

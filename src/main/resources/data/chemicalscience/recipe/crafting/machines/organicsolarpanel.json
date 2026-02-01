@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "chemicalscience:organicsolarpanelplate"
+    },
+    "S": {
+      "tag": "c:plastic"
+    },
+    "G": {
+      "tag": "c:glass_panes/colorless"
+    },
+    "P": {
+      "tag": "c:plates/aluminum"
+    },
+    "W": {
+      "item": "electrodynamics:wiresuperconductive"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "SOS",
+    "PWP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:organicsolarpanel"
+  }
+}

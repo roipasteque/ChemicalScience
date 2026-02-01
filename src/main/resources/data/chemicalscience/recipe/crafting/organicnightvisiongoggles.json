@@ -6,19 +6,19 @@
       "tag": "c:leathers"
     },
     "G": {
-      "tag": "c:glass_panes"
+      "tag": "c:glass_panes/colorless"
     },
     "P": {
-      "item": "chemicalscience:polymer_dppdtt"
+      "item": "chemicalscience:polymer_pbdby"
     },
     "C": {
-      "item": "electrodynamics:circuitbasic"
+      "item": "chemicalscience:circuitorganic"
     },
     "T": {
-      "item": "electrodynamics:thermoelectricgenerator"
+      "item": "chemicalscience:polymer_dppdtt"
     },
     "W": {
-      "tag": "c:wires/insulated_copper"
+      "tag": "c:wires/insulated_superconductive"
     }
   },
   "pattern": [

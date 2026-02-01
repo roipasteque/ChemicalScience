@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/silica"
+    },
+    {
+      "tag": "c:dusts/alumina"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:support_catalyst"
+  }
+}

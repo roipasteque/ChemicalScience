@@ -6,7 +6,7 @@
       "item": "minecraft:red_concrete"
     },
     "E": {
-      "item": "minecraft:prismarine_shard"
+      "item": "chemicalscience:dust_rubidium"
     }
   },
   "pattern": [

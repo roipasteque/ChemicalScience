@@ -1,0 +1,29 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:dimethylamine"
+    },
+    {
+      "amount": 10,
+      "tag": "c:phosphoric_acid"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "tag": "c:carbonmonoxide",
+      "temp": 293
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:dmf"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

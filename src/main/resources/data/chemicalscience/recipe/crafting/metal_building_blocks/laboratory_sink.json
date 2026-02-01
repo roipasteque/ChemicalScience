@@ -6,7 +6,7 @@
       "tag": "c:ingots/stainlesssteel"
     },
     "N": {
-      "tag": "c:nuggets/manganesealuminum"
+      "tag": "c:rods/manganesealuminum"
     },
     "C": {
       "item": "electrodynamics:pipesteel"

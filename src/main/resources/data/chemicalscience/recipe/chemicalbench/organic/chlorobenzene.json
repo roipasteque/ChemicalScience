@@ -5,7 +5,7 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:iron_carbon_catalyst"
+        "item": "chemicalscience:iron_chloride_catalyst"
       },
       "catalyst": true
     }
@@ -18,7 +18,7 @@
   ],
   "gasinputs": [
     {
-      "amount": 100,
+      "amount": 200,
       "pressure": 1,
       "tag": "c:chlorine",
       "temp": 293

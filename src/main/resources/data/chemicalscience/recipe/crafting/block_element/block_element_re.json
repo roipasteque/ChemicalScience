@@ -6,7 +6,7 @@
       "item": "minecraft:brown_concrete"
     },
     "E": {
-      "item": "minecraft:sugar"
+      "item": "chemicalscience:dust_rhenium"
     }
   },
   "pattern": [

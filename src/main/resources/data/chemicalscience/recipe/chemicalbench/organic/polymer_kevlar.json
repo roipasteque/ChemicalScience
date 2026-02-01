@@ -5,13 +5,13 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:dust_paraphenylenediamine"
+        "item": "chemicalscience:paraphenylenediamine"
       }
     },
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:dust_terephthaloylchloride"
+        "item": "chemicalscience:terephthaloylchloride"
       }
     }
   ],

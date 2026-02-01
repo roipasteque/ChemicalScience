@@ -6,7 +6,7 @@
       "item": "minecraft:gray_concrete"
     },
     "E": {
-      "item": "minecraft:mud"
+      "item": "chemicalscience:dust_tellurium"
     }
   },
   "pattern": [

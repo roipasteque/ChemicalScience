@@ -2,32 +2,35 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "E": {
-      "tag": "c:plastic"
-    },
-    "G": {
-      "tag": "c:glass_panes"
-    },
-    "P": {
-      "item": "chemicalscience:polymer_dppdtt"
-    },
-    "A": {
-      "tag": "c:plates/aluminum"
+    "Z": {
+      "tag": "c:dusts/zinc"
     },
     "T": {
-      "tag": "c:dusts/tin"
+      "tag": "c:oxides/dititanium"
     },
-    "M": {
-      "tag": "c:ingots/magnesiumaluminum"
+    "P": {
+      "item": "chemicalscience:polymer_pbdby"
+    },
+    "S": {
+      "item": "chemicalscience:sulfonated_polystyrene_catalyst"
+    },
+    "G": {
+      "tag": "c:glass_panes/colorless"
+    },
+    "W": {
+      "tag": "c:dusts/superconductive"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
     }
   },
   "pattern": [
-    "GPG",
-    "AEA",
-    "MTM"
+    "GSG",
+    "ZPT",
+    "QWQ"
   ],
   "result": {
-    "count": 4,
+    "count": 1,
     "id": "chemicalscience:organicsolarpanelplate"
   }
 }

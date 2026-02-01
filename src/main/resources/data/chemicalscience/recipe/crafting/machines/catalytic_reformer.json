@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "electrodynamics:pressuregauge"
+    },
+    "C": {
+      "tag": "c:circuits/advanced"
+    },
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "T": {
+      "item": "electrodynamics:titaniumheatcoil"
+    },
+    "G": {
+      "item": "electrodynamics:tanksteel"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "GMG",
+    "PCP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:catalytic_reformer"
+  }
+}

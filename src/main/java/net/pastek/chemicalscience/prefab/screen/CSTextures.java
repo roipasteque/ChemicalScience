@@ -13,6 +13,13 @@ public enum CSTextures implements ITexture {
             ChemicalScience.rl("textures/screen/component/icon/catalyst.png")
     ),
 
+    OSP_ICON(
+            0, 0,
+            18, 18,
+            18, 18,
+            ChemicalScience.rl("textures/screen/component/icon/organicsolarpanel_transparent.png")
+    ),
+
     FLUID_INFO(
             0, 0,
             36, 9,

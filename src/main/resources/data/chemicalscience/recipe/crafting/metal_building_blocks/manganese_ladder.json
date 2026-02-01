@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "I": {
-      "tag": "c:ingots/manganesealuminum"
+      "tag": "c:rods/manganesealuminum"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "I I"
   ],
   "result": {
-    "count": 6,
+    "count": 24,
     "id": "chemicalscience:ladder_manganese"
   }
 }

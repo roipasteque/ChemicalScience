@@ -6,7 +6,7 @@
       "item": "minecraft:red_concrete"
     },
     "E": {
-      "item": "minecraft:sand"
+      "item": "chemicalscience:dust_cesium"
     }
   },
   "pattern": [

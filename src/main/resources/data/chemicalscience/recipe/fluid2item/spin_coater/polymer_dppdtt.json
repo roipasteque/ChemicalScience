@@ -1,0 +1,18 @@
+{
+  "type": "chemicalscience:spin_coater_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:dppdtt_chlorobenzene"
+    }
+  ],
+
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:polymer_dppdtt"
+  },
+
+  "ticks": 200,
+  "usagepertick": 100.0
+}

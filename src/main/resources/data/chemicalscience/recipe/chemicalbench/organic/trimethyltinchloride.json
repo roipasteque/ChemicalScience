@@ -1,0 +1,34 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/tin"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "temp": 293,
+      "tag": "c:methane"
+    }
+  ],
+  "itemoutput":
+    {
+      "count": 8,
+      "id": "chemicalscience:trimethyltinchloride"
+    }
+}

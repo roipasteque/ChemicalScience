@@ -5,7 +5,7 @@
     {
       "count": 1,
       "ingredient": {
-        "item": "chemicalscience:dust_dimethylurea"
+        "item": "chemicalscience:dimethylurea"
       }
     },
     {
@@ -31,7 +31,7 @@
   ],
   "itemoutput": {
     "count": 1,
-    "id": "chemicalscience:dust_caffeine"
+    "id": "chemicalscience:caffeine"
   },
   "experience": 0.0,
   "ticks": 800,

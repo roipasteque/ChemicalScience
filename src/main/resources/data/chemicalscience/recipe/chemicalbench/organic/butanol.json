@@ -3,33 +3,34 @@
   "group": "chemicalscience",
   "fluidinputs": [
     {
-      "amount": 200,
-      "tag": "c:butane"
+      "amount": 100,
+      "tag": "c:propylene"
     },
     {
-      "amount": 1000,
+      "amount": 100,
       "tag": "minecraft:water"
     }
   ],
   "gasinputs": [
     {
-      "amount": 200,
+      "amount": 100,
       "pressure": 1,
       "tag": "c:carbonmonoxide",
       "temp": 293
     }
   ],
   "fluidoutput": {
-    "amount": 200,
+    "amount": 100,
     "id": "chemicalscience:butanol"
   },
+
   "gasoutput": {
-    "amount": 200,
+    "amount": 100,
     "gas": "electrodynamics:carbondioxide",
     "pressure": 1,
     "temp": 293
   },
   "experience": 0.0,
-  "ticks": 200,
-  "usagepertick": 200.0
+  "ticks": 100,
+  "usagepertick": 100.0
 }

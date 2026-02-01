@@ -1,6 +1,5 @@
 package net.pastek.chemicalscience.registers.fluids;
 
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -42,7 +41,7 @@ public class CSFluidTypes {
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_PALLADIUMPHOSPHATE = FLUID_TYPES.register("palladiumphosphate", () -> CSFluids.FLUID_PALLADIUMPHOSPHATE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ROYALEMINERALPLATINUM = FLUID_TYPES.register("fluidroyalmineralplatinum", () -> CSFluids.FLUID_ROYALMINERALPLATINUM.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_ROYALEMINERALPALLADIUM = FLUID_TYPES.register("fluidroyalmineralpalladium", () -> CSFluids.FLUID_ROYALMINERALPALLADIUM.get().getFluidType());
-    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_HYDROBROMICACID = FLUID_TYPES.register("hydrobromic", () -> CSFluids.FLUID_HYDROBROMIC_ACID.get().getFluidType());
+    public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_HYDROBROMICACID = FLUID_TYPES.register("hydrobromic", () -> CSFluids.FLUID_HYDROBROMICACID.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_BROMOMETHANE = FLUID_TYPES.register("bromomethane", () -> CSFluids.FLUID_BROMOMETHANE.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_MALONICACID = FLUID_TYPES.register("malonicacid", () -> CSFluids.FLUID_MALONICACID.get().getFluidType());
     public static final DeferredHolder<FluidType, FluidType> FLUID_TYPE_CHLOROACETICACID = FLUID_TYPES.register("chloroaceticacid", () -> CSFluids.FLUID_CHLOROACETICACID.get().getFluidType());

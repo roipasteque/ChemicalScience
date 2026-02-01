@@ -1,0 +1,21 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:benzaldehyde"
+    },
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:malonicacid"
+    }
+  ],
+  "itemoutput": {
+    "count": 8,
+    "id": "chemicalscience:cinnamicacid"
+  }
+}

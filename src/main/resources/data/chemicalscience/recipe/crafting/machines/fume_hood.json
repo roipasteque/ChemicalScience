@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:glass_panes/colorless"
+    },
+    "G": {
+      "tag": "c:plates/stainlesssteel"
+    },
+    "C": {
+      "tag": "c:circuits/elite"
+    },
+    "L": {
+      "item": "electrodynamics:pipesteel"
+    },
+    "V": {
+      "item": "electrodynamics:gaspipeuninsulatedsteel"
+    },
+    "W": {
+      "item": "electrodynamics:wirecopper"
+    }
+  },
+  "pattern": [
+    "GPG",
+    "LWV",
+    "GCG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:chemical_bench_controller"
+  }
+}

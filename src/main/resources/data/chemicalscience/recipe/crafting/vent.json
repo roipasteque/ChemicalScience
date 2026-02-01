@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "M": {
+      "item": "electrodynamics:motor"
+    }
+  },
+  "pattern": [
+    "PIP",
+    "IMI",
+    "PIP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrodynamics:gasvent"
+  }
+}

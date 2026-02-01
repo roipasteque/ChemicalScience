@@ -1,0 +1,41 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "chemicalscience:fluoroethylhexylthiophene"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:benzodithiophendione"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_tinchloride"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 20,
+      "fluid": "chemicalscience:butyllithium"
+    },
+    {
+      "amount": 10,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:bdt"
+  }
+}

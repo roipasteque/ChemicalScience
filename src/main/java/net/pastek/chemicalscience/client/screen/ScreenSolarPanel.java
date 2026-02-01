@@ -1,13 +1,16 @@
 package net.pastek.chemicalscience.client.screen;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.inventory.container.ContainerOrganicSolarPanel;
 import net.pastek.chemicalscience.common.packet.PacketTransparencyTogglePayload;
 import net.pastek.chemicalscience.common.tile.TileOrganicSolarPanel;
+import net.pastek.chemicalscience.prefab.screen.CSTextures;
 import net.pastek.chemicalscience.prefab.utils.CSTextUtils;
 import voltaic.api.electricity.formatting.ChatFormatter;
 import voltaic.api.electricity.formatting.DisplayUnits;
@@ -26,6 +29,9 @@ public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> 
 
     public ScreenSolarPanel(ContainerOrganicSolarPanel container, Inventory playerInventory, Component title) {
         super(container, playerInventory, title);
+
+        this.defaultResource = ChemicalScience.rl("textures/screen/gui/organicsolarpanel_gui.png");
+
         addComponent(new ScreenComponentElectricInfo(-AbstractScreenComponentInfo.SIZE + 1, 2));
         addComponent(new ScreenComponentMultiLabel(0, 0, graphics -> {
             TileOrganicSolarPanel panel = menu.getSafeHost();
@@ -40,8 +46,7 @@ public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> 
 
 
 
-        addComponent(new ScreenComponentButton<>(75, 20, 40, 20)
-                .setLabel(Component.translatable("component.chemicalscience.osp.transparency.toggle"))
+        addComponent(new ScreenComponentButton<>(25, 18, 18, 18)
                 .setOnPress(button -> {
                     TileOrganicSolarPanel panel = menu.getSafeHost();
                     if (panel != null) {
@@ -49,7 +54,25 @@ public class ScreenSolarPanel extends GenericScreen<ContainerOrganicSolarPanel> 
                                 .send(new PacketTransparencyTogglePayload(panel.getBlockPos()));
                     }
                 })
+                .setIcon(CSTextures.OSP_ICON)
+
         );
 
+    }
+
+    @Override
+    protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
+        int left = this.leftPos;
+        int top  = this.topPos;
+
+        graphics.blit(
+                this.defaultResource,
+                left,
+                top,
+                0,
+                0,
+                176,
+                166
+        );
     }
 }

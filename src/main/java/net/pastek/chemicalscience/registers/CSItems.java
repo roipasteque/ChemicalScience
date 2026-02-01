@@ -2,9 +2,7 @@ package net.pastek.chemicalscience.registers;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pastek.chemicalscience.ChemicalScience;
@@ -109,6 +107,10 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DUST_URANIUMOXIDE = ITEMS.register("dust_uraniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMOXIDE = ITEMS.register("dust_plutoniumoxide", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DUST_PLUTONIUMHYDROXIDE = ITEMS.register("dust_plutoniumhydroxide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_SILVERFLUORIDE = ITEMS.register("dust_silverfluoride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_TINCHLORIDE = ITEMS.register("dust_tinchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_POTASSIUMCARBONATE = ITEMS.register("dust_potassiumcarbonate", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUST_ALUMINA = ITEMS.register("dust_alumina", () -> new Item(new Item.Properties()));
 
     // Impure dust
     public static final DeferredItem<Item> IMPURE_DUST_BORON = ITEMS.register("impuredust_boron", () -> new Item(new Item.Properties()));
@@ -152,16 +154,54 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> IMPURE_DUST_URANIUM = ITEMS.register("impuredust_uranium", () -> new Item(new Item.Properties()));
 
     /** Organic */
-    public static final DeferredItem<Item> DUST_AMMONIUMDIURANATE = ITEMS.register("dust_ammoniumdiuranate", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_UREA = ITEMS.register("dust_urea", () -> new CSTooltipItem(new Item.Properties(), Component.translatable("tooltip.chemicalscience.info.organic").withStyle(ChatFormatting.DARK_PURPLE), ChemicalScience.rl("textures/screen/tooltip/molecules/urea.png"), 64, 64));
-    public static final DeferredItem<Item> DUST_DIMETHYLUREA = ITEMS.register("dust_dimethylurea", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_CAFFEINE = ITEMS.register("dust_caffeine", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_SUCCINIMIDE = ITEMS.register("dust_succinimide", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_NBROMOSUCCINIMIDE = ITEMS.register("dust_nbromosuccinimide", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_AMMONIUMCARBONATE = ITEMS.register("dust_ammoniumcarbonate", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_TEREPHTHALOYLCHLORIDE = ITEMS.register("dust_terephthaloylchloride", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_NITROCHLOROBENZENE = ITEMS.register("dust_nitrochlorobenzene", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUST_PARAPHENYLENEDIAMINE = ITEMS.register("dust_paraphenylenediamine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMMONIUMDIURANATE = ITEMS.register("ammoniumdiuranate", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UREA = ITEMS.register("urea", () -> new CSTooltipItem(new Item.Properties(), Component.translatable("tooltip.chemicalscience.info.organic").withStyle(ChatFormatting.DARK_PURPLE), ChemicalScience.rl("textures/screen/tooltip/molecules/urea.png"), 64, 64));
+    public static final DeferredItem<Item> DIMETHYLUREA = ITEMS.register("dimethylurea", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CAFFEINE = ITEMS.register("caffeine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SUCCINIMIDE = ITEMS.register("succinimide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NBROMOSUCCINIMIDE = ITEMS.register("nbromosuccinimide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMMONIUMCARBONATE = ITEMS.register("ammoniumcarbonate", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TEREPHTHALOYLCHLORIDE = ITEMS.register("terephthaloylchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NITROCHLOROBENZENE = ITEMS.register("nitrochlorobenzene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PARAPHENYLENEDIAMINE = ITEMS.register("paraphenylenediamine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LI_DIISOPROPYLAMIDE = ITEMS.register("lithium_diisopropylamide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BENZODITHIOPHENEDIONE = ITEMS.register("benzodithiophendione", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIMETHYLTINCHLORIDE = ITEMS.register("trimethyltinchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOTHIOPHENEDICARBOXYLICACID = ITEMS.register("dibromothiophenedicarboxylicacid", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BISETHYLHEXYLTHIOPHENE = ITEMS.register("bisethylhexylthiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIMETHYLTHIOPHENESTANNANE = ITEMS.register("trimethylthiophenestannane", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BENZOTHIADIAZOLE = ITEMS.register("benzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIFLUOROPHENYLPROPIONICACID = ITEMS.register("difluorophenylpropionicacid", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MALONITRILE = ITEMS.register("malonitrile", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> OXALICACID = ITEMS.register("oxalicacid", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIPHENYLPHOSPHINE = ITEMS.register("triphenylphosphine", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SODIUM_CYANIDE = ITEMS.register("sodium_cyanide", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CINNAMICACID = ITEMS.register("cinnamicacid", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PHENYLPROPANOICACID = ITEMS.register("phenylpropanoicacid", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOBENZODITHIOPHENDIONE = ITEMS.register("dibromobenzodithiophendione", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BROMOETHYLHEXYLTHIOPHENE = ITEMS.register("bromoethylhexylthiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BROMOETHYLHEXYLTRIMETHYLSILYLTHIOPHENE = ITEMS.register("bromoethylhexyltrimethylsilylthiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUOROETHYLHEXYLTRIMETHYLSILYLTHIOPHENE = ITEMS.register("fluoroethylhexyltrimethylsilylthiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUOROETHYLHEXYLTHIOPHENE = ITEMS.register("fluoroethylhexylthiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BDT = ITEMS.register("bdt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIMETHYLSTANNANEBDT = ITEMS.register("trimethylstannanebdt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOTHIOPHENEDIACYLCHLORIDE = ITEMS.register("dibromothiophenediacylchloride", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOETHYLHEXYLTHIENOTHIOPHENEDIKETONE = ITEMS.register("dibromoethylhexylthienothiophenediketone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BDD = ITEMS.register("bdd", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOBDD = ITEMS.register("dibromobdd", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMOBENZOTHIADIAZOLE = ITEMS.register("dibromobenzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIBROMODINITROBENZOTHIADIAZOLE = ITEMS.register("dibromodinitrobenzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> THIENOTHIOPHENE = ITEMS.register("thienothiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNDECYLTHIENOTHIOPHENE = ITEMS.register("undecylthienothiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIMETHYLSTANNYLUNDECYLTHIENOTHIOPHENE = ITEMS.register("trimethylstannylundecylthienothiophene", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DINITROUNDECYLTHIENOTHIOPHENEBENZOTHIADIAZOLE = ITEMS.register("dinitroundecylthienothiophenebenzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ETHYLHEXYLUNDECYLTHIENOTHIOPHENEPYRROLOBENZOTHIADIAZOLE = ITEMS.register("ethylhexylundecylthienothiophenepyrrolobenzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ETHYLHEXYLUNDECYLOXOTHIENOTHIOPHENEPYRROLOBENZOTHIADIAZOLE = ITEMS.register("ethylhexylundecyloxothienothiophenepyrrolobenzothiadiazole", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIFLUOROINDANONE = ITEMS.register("difluoroindanone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIFLUORODICYANOMETHYLIDIENEINDANONE = ITEMS.register("difluorodicyanomethylidieneindanone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PBDBTF = ITEMS.register("pbdbtf", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> YBTPF = ITEMS.register("ybtpf", () -> new Item(new Item.Properties()));
+
 
     /** Ingots */
     public static final DeferredItem<Item> INGOT_BORON= ITEMS.register("ingot_boron", () -> new Item(new Item.Properties()));
@@ -194,8 +234,13 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> PLATE_NIOBIUM= ITEMS.register("plate_niobium", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_TANTALUM= ITEMS.register("plate_tantalum", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_TUNGSTEN= ITEMS.register("plate_tungsten", () -> new Item(new Item.Properties()));
+    /** Circuits */
+    public static final DeferredItem<Item> CIRCUIT_ORGANIC= ITEMS.register("circuitorganic", () -> new Item(new Item.Properties()));
+    /** Rods */
+    public static final DeferredItem<Item> ROD_MANGANESEALUMINUM= ITEMS.register("rod_manganesealuminum", () -> new Item(new Item.Properties()));
 
     /** Catalysts */
+    public static final DeferredItem<Item> SUPPORT_CATALYST= ITEMS.register("support_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COPPER_ZINC_ALUMINATE_CATALYST= ITEMS.register("copper_aluminate_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_ON_CARBON_CATALYST= ITEMS.register("iron_carbon_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PALLADIUM_ON_CARBON_CATALYST= ITEMS.register("palladium_carbon_catalyst", () -> new Item(new Item.Properties()));
@@ -208,6 +253,15 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> PLATINUM_THORIUM_CATALYST= ITEMS.register("platinum_thorium_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATINUM_SILICA_CATALYST= ITEMS.register("platinum_silica_catalyst", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RHODIUM_SILICA_CATALYST= ITEMS.register("rhodium_silica_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TRIPHENYLPHOSPHINE_PALLADIUM_CATALYST= ITEMS.register("tripph_palladium_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PYRIDINE_NICKEL_CATALYST= ITEMS.register("pyridine_nickel_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PALLADIUM_CHLORIDE_CATALYST= ITEMS.register("palladium_chloride_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PALLADIUM_PHOSPHATE_CATALYST= ITEMS.register("palladium_phosphate_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VANADIUM_CATALYST= ITEMS.register("vanadium_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_FLUORIDE_CATALYST= ITEMS.register("iron_fluoride_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_CHLORIDE_CATALYST= ITEMS.register("iron_chloride_catalyst", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_BROMIDE_CATALYST= ITEMS.register("iron_bromide_catalyst", () -> new Item(new Item.Properties()));
+
     /** Materials */
     // Chromatography Cards
     public static final DeferredItem<Item> CHROMOTOGRAPHYCARD_CARBONMONOXIDE= ITEMS.register("chromotographycardcarbonmonoxide", () -> new Item(new Item.Properties()));
@@ -228,6 +282,7 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> DPP_POLYMER= ITEMS.register("polymer_dpp", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DTT_POLYMER= ITEMS.register("polymer_dtt", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DPPDTT_POLYMER= ITEMS.register("polymer_dppdtt", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PBDBY_POLYMER= ITEMS.register("polymer_pbdby", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POLYPROPYLENE= ITEMS.register("polymer_propylene", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POLYSTYRENE= ITEMS.register("polymer_styrene", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PVC= ITEMS.register("polymer_vinylchloride", () -> new Item(new Item.Properties()));

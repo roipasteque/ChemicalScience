@@ -1,0 +1,32 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:copper_aluminate_catalyst"
+      },
+      "catalyst": true
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dust_silicon"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:tetrachloromethane"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:chlorotrimethylsilane"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

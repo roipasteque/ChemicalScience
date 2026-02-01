@@ -1,0 +1,34 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:iron_chloride_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:ethylene"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "tag": "c:chlorine",
+      "temp": 293
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:vinylchloride"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

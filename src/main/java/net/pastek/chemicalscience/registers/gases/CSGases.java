@@ -33,6 +33,7 @@ public class CSGases {
     public static final DeferredHolder<Gas, Gas> HYDROGENSULFIDE = GASES.register("hydrogensulfide", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("hydrogensulfide"), 213, new Color(255, 255, 225, 180), CSFluids.FLUID_HYDROGENSULFIDE));
 
     /** Halides */
+    public static final DeferredHolder<Gas, Gas> FLUORINE = GASES.register("fluorine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("fluorine"), 54, new Color(0, 255, 175, 180), CSFluids.FLUID_FLUORINE));
     public static final DeferredHolder<Gas, Gas> CHLORINE = GASES.register("chlorine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("chlorine"), 239, new Color(225, 255, 0, 180), CSFluids.FLUID_CHLORINE));
     public static final DeferredHolder<Gas, Gas> VINYLCHLORIDE = GASES.register("vinylchloride", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("vinylchloride"), 260, new Color(255, 255, 255, 180), CSFluids.FLUID_VINYLCHLORIDE));
     public static final DeferredHolder<Gas, Gas> BROMINE = GASES.register("bromine", () -> new Gas(ElectrodynamicsItems.ITEM_PORTABLECYLINDER, CSTextUtils.gas("bromine"), 331, new Color(255, 0, 30, 180), CSFluids.FLUID_BROMINE));

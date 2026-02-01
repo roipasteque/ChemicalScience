@@ -1,0 +1,49 @@
+{
+  "type": "chemicalscience:circuit_maker_recipe",
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:chlorobenzene"
+    }
+  ],
+
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:polymer_dppdtt"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:glass_panes/colorless"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:plastic"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/cesium"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/molybdenum"
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:circuitorganic"
+  },
+  "ticks": 200,
+  "usagepertick": 400.0
+}

@@ -1,0 +1,22 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:impuredusts/mercury"
+      }
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:mercury"
+  },
+
+
+  "ticks": 200,
+  "usagepertick": 200.0
+}

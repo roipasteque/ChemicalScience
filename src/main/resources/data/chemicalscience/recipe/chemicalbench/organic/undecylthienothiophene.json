@@ -1,0 +1,32 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:thienothiophene"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:pyridine_nickel_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "fluid": "chemicalscience:ethylhexylbromide"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:undecylthienothiophene"
+  }
+}

@@ -6,7 +6,7 @@
       "item": "minecraft:brown_concrete"
     },
     "E": {
-      "item": "minecraft:stone"
+      "item": "chemicalscience:dust_osmium"
     }
   },
   "pattern": [

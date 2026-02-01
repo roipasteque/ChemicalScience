@@ -108,7 +108,7 @@ public class ItemOrganicNightVisionGoggles extends ItemVoltaicArmor implements I
     public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flagIn) {
         super.appendHoverText(stack, context, tooltip, flagIn);
         ScannerMode mode = getMode(stack);
-        tooltip.add(CSTextUtils.tooltip("onvg.mode").withStyle(ChatFormatting.GRAY)
+        tooltip.add(CSTextUtils.tooltip("onvg.mode").withStyle(ChatFormatting.DARK_GRAY)
                 .append(Component.translatable(mode.key).withStyle(mode.color)));
     }
 

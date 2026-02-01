@@ -1,0 +1,30 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:silica_alumina_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:benzene"
+    },
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:ethylene"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:ethylbenzene"
+  }
+}

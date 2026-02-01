@@ -1,0 +1,38 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 1000,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:bdt"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:bdd"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:tripph_palladium_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:toluene"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:pbdbtf_toluene"
+  }
+}

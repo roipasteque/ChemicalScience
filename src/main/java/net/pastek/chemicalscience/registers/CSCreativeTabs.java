@@ -5,7 +5,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -189,6 +188,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_RHODIUM);
         output.accept(CSItems.DUST_PALLADIUM);
         output.accept(CSItems.DUST_INDIUM);
+        output.accept(CSItems.DUST_ANTIMONY);
         output.accept(CSItems.DUST_CADMIUM);
         output.accept(CSItems.DUST_TELLURIUM);
         output.accept(CSItems.DUST_IODINE);
@@ -242,6 +242,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.IMPURE_DUST_NIOBIUM);
         output.accept(CSItems.IMPURE_DUST_RHODIUM);
         output.accept(CSItems.IMPURE_DUST_PALLADIUM);
+        output.accept(CSItems.IMPURE_DUST_ANTIMONY);
         output.accept(CSItems.IMPURE_DUST_CADMIUM);
         output.accept(CSItems.IMPURE_DUST_TELLURIUM);
         output.accept(CSItems.IMPURE_DUST_IODINE);
@@ -256,6 +257,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.IMPURE_DUST_PLATINUM);
         output.accept(CSItems.IMPURE_DUST_MERCURY);
         output.accept(CSItems.IMPURE_DUST_BISMUTH);
+        output.accept(CSItems.IMPURE_DUST_THORIUM);
         output.accept(CSItems.IMPURE_DUST_URANIUM);
         /** Crystals */
         output.accept(CSItems.CRYSTAL_MAGNESIUM);
@@ -268,29 +270,73 @@ public class CSCreativeTabs {
         output.accept(CSItems.DUST_MANGANESE);
         output.accept(CSItems.DUST_IRONOXIDE);
         output.accept(CSItems.DUST_IRONTETROXIDE);
+        output.accept(CSItems.DUST_ALUMINA);
         output.accept(CSItems.DUST_URANIUMOXIDE);
         output.accept(CSItems.DUST_PLUTONIUMOXIDE);
         // Other
         output.accept(CSItems.DUST_MONAZITE);
         output.accept(CSItems.DUST_PLUTONIUMHYDROXIDE);
+        output.accept(CSItems.DUST_POTASSIUMCARBONATE);
         output.accept(CSItems.DUST_TUNGSTEN_CARBIDE);
+        output.accept(CSItems.DUST_SILVERFLUORIDE);
         output.accept(CSItems.DUST_PHOSPHORUS_CHLORIDE);
+        output.accept(CSItems.DUST_TINCHLORIDE);
         output.accept(CSItems.DUST_PALLADIUM_CHLORIDE);
         output.accept(CSItems.DUST_PLATINUM_CHLORIDE);
         output.accept(CSItems.DUST_IRONARSENIDE);
         output.accept(CSItems.DUST_CHROMIUM_BROMIDE);
 
         // Organic
-        output.accept(CSItems.DUST_UREA);
-        output.accept(CSItems.DUST_DIMETHYLUREA);
-        output.accept(CSItems.DUST_CAFFEINE);
-        output.accept(CSItems.DUST_AMMONIUMCARBONATE);
-        output.accept(CSItems.DUST_AMMONIUMDIURANATE);
-        output.accept(CSItems.DUST_SUCCINIMIDE);
-        output.accept(CSItems.DUST_NBROMOSUCCINIMIDE);
-        output.accept(CSItems.DUST_TEREPHTHALOYLCHLORIDE);
-        output.accept(CSItems.DUST_NITROCHLOROBENZENE);
-        output.accept(CSItems.DUST_PARAPHENYLENEDIAMINE);
+        output.accept(CSItems.UREA);
+        output.accept(CSItems.DIMETHYLUREA);
+        output.accept(CSItems.CAFFEINE);
+        output.accept(CSItems.AMMONIUMCARBONATE);
+        output.accept(CSItems.AMMONIUMDIURANATE);
+        output.accept(CSItems.SUCCINIMIDE);
+        output.accept(CSItems.NBROMOSUCCINIMIDE);
+        output.accept(CSItems.TEREPHTHALOYLCHLORIDE);
+        output.accept(CSItems.NITROCHLOROBENZENE);
+        output.accept(CSItems.PARAPHENYLENEDIAMINE);
+
+        output.accept(CSItems.LI_DIISOPROPYLAMIDE);
+        output.accept(CSItems.BENZODITHIOPHENEDIONE);
+        output.accept(CSItems.TRIMETHYLTINCHLORIDE);
+        output.accept(CSItems.DIBROMOTHIOPHENEDICARBOXYLICACID);
+        output.accept(CSItems.BISETHYLHEXYLTHIOPHENE);
+        output.accept(CSItems.TRIMETHYLTHIOPHENESTANNANE);
+        output.accept(CSItems.BENZOTHIADIAZOLE);
+        output.accept(CSItems.DIFLUOROPHENYLPROPIONICACID);
+        output.accept(CSItems.MALONITRILE);
+        output.accept(CSItems.OXALICACID);
+        output.accept(CSItems.TRIPHENYLPHOSPHINE);
+        output.accept(CSItems.SODIUM_CYANIDE);
+        output.accept(CSItems.CINNAMICACID);
+        output.accept(CSItems.PHENYLPROPANOICACID);
+        output.accept(CSItems.DIBROMOBENZODITHIOPHENDIONE);
+        output.accept(CSItems.BROMOETHYLHEXYLTHIOPHENE);
+        output.accept(CSItems.BROMOETHYLHEXYLTRIMETHYLSILYLTHIOPHENE);
+        output.accept(CSItems.FLUOROETHYLHEXYLTRIMETHYLSILYLTHIOPHENE);
+        output.accept(CSItems.FLUOROETHYLHEXYLTHIOPHENE);
+        output.accept(CSItems.BDT);
+        output.accept(CSItems.TRIMETHYLSTANNANEBDT);
+        output.accept(CSItems.DIBROMOTHIOPHENEDIACYLCHLORIDE);
+        output.accept(CSItems.DIBROMOETHYLHEXYLTHIENOTHIOPHENEDIKETONE);
+        output.accept(CSItems.BDD);
+        output.accept(CSItems.DIBROMOBDD);
+        output.accept(CSItems.DIBROMOBENZOTHIADIAZOLE);
+        output.accept(CSItems.DIBROMODINITROBENZOTHIADIAZOLE);
+        output.accept(CSItems.THIENOTHIOPHENE);
+        output.accept(CSItems.UNDECYLTHIENOTHIOPHENE);
+        output.accept(CSItems.TRIMETHYLSTANNYLUNDECYLTHIENOTHIOPHENE);
+        output.accept(CSItems.DINITROUNDECYLTHIENOTHIOPHENEBENZOTHIADIAZOLE);
+        output.accept(CSItems.ETHYLHEXYLUNDECYLTHIENOTHIOPHENEPYRROLOBENZOTHIADIAZOLE);
+        output.accept(CSItems.ETHYLHEXYLUNDECYLOXOTHIENOTHIOPHENEPYRROLOBENZOTHIADIAZOLE);
+        output.accept(CSItems.DIFLUOROINDANONE);
+        output.accept(CSItems.DIFLUORODICYANOMETHYLIDIENEINDANONE);
+        output.accept(CSItems.YBTPF);
+        output.accept(CSItems.PBDBTF);
+
+
         /** Plates */
         output.accept(CSItems.PLATE_BORONCARBIDE);
         output.accept(CSItems.PLATE_BERYLLIUM);
@@ -298,7 +344,12 @@ public class CSCreativeTabs {
         output.accept(CSItems.PLATE_NIOBIUM);
         output.accept(CSItems.PLATE_TANTALUM);
         output.accept(CSItems.PLATE_TUNGSTEN);
+        /** Circuits */
+        output.accept(CSItems.CIRCUIT_ORGANIC);
+        /** Rods */
+        output.accept(CSItems.ROD_MANGANESEALUMINUM);
         /** Catalysts */
+        output.accept(CSItems.SUPPORT_CATALYST);
         output.accept(CSItems.COPPER_ZINC_ALUMINATE_CATALYST);
         output.accept(CSItems.IRON_ON_CARBON_CATALYST);
         output.accept(CSItems.PALLADIUM_ON_CARBON_CATALYST);
@@ -309,6 +360,17 @@ public class CSCreativeTabs {
         output.accept(CSItems.SULFONATED_POLYSTYRENE_CATALYST);
         output.accept(CSItems.RHODIUM_MANGANESE_BROMINE_CATALYST);
         output.accept(CSItems.PLATINUM_THORIUM_CATALYST);
+        output.accept(CSItems.PLATINUM_SILICA_CATALYST);
+        output.accept(CSItems.RHODIUM_SILICA_CATALYST);
+        output.accept(CSItems.TRIPHENYLPHOSPHINE_PALLADIUM_CATALYST);
+        output.accept(CSItems.PYRIDINE_NICKEL_CATALYST);
+        output.accept(CSItems.PALLADIUM_CHLORIDE_CATALYST);
+        output.accept(CSItems.PALLADIUM_PHOSPHATE_CATALYST);
+        output.accept(CSItems.VANADIUM_CATALYST);
+        output.accept(CSItems.IRON_FLUORIDE_CATALYST);
+        output.accept(CSItems.IRON_CHLORIDE_CATALYST);
+        output.accept(CSItems.IRON_BROMIDE_CATALYST);
+
         /** Materials */
         // Chromatography Cards
         output.accept(CSItems.CHROMOTOGRAPHYCARD_CARBONMONOXIDE);
@@ -329,6 +391,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.DPP_POLYMER);
         output.accept(CSItems.DTT_POLYMER);
         output.accept(CSItems.DPPDTT_POLYMER);
+        output.accept(CSItems.PBDBY_POLYMER);
         output.accept(CSItems.POLYPROPYLENE);
         output.accept(CSItems.POLYSTYRENE);
         output.accept(CSItems.PVC);

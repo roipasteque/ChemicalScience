@@ -1,0 +1,21 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:aceticacid"
+    },
+    {
+      "amount": 100,
+      "tag": "c:hydrofluoric_acid"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:trifluoroaceticacid"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

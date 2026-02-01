@@ -1,0 +1,30 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:lithium_diisopropylamide"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:ethylhexylbromide"
+    },
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:bromothiophene"
+    }
+  ],
+  "itemoutput": {
+    "count": 8,
+    "id": "chemicalscience:bromoethylhexylthiophene"
+  }
+}

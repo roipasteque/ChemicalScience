@@ -11,8 +11,8 @@
   ],
   "fluidinputs": [
     {
-      "amount": 100,
-      "tag": "c:sodium_hydroxide"
+      "amount": 1000,
+      "tag": "c:sulfuric_acid"
     }
   ],
   "group": "chemicalscience",

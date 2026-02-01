@@ -6,7 +6,7 @@
       "item": "minecraft:gray_concrete"
     },
     "E": {
-      "item": "minecraft:snowball"
+      "item": "chemicalscience:dust_antimony"
     }
   },
   "pattern": [

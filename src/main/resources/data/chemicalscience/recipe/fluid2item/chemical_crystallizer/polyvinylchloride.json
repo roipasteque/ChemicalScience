@@ -1,0 +1,16 @@
+{
+  "type": "electrodynamics:chemical_crystallizer_recipe",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:vinylchloride"
+    }
+  ],
+  "group": "chemicalscience",
+  "output": {
+    "count": 1,
+    "id": "chemicalscience:polymer_vinylchloride"
+  },
+  "ticks": 50,
+  "usagepertick": 800.0
+}

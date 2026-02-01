@@ -9,7 +9,7 @@
   "group": "chemicalscience",
   "output": {
     "count": 1,
-    "id": "chemicalscience:dust_succinimide"
+    "id": "chemicalscience:succinimide"
   },
   "ticks": 200,
   "usagepertick": 800.0

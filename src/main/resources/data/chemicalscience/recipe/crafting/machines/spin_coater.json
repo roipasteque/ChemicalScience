@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "c:plates/silicon"
+    },
+    "M": {
+      "item": "electrodynamics:motor"
+    },
+    "G": {
+      "tag": "c:plates/stainlesssteel"
+    },
+    "C": {
+      "tag": "c:circuits/basic"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    "GSG",
+    "IMI",
+    "ICI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:spincoater"
+  }
+}

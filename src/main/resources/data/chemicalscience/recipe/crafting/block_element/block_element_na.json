@@ -6,7 +6,7 @@
       "item": "minecraft:red_concrete"
     },
     "E": {
-      "item": "electrodynamics:dustsalt"
+      "item": "chemicalscience:dust_sodium"
     }
   },
   "pattern": [

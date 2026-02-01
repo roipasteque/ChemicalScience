@@ -1,0 +1,33 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "group": "chemicalscience",
+
+
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/tin"
+      }
+    }
+  ],
+
+  "fluidinputs": [
+    {
+      "amount": 50,
+      "tag": "c:hydrochloric_acid"
+    }
+  ],
+
+
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dust_tinchloride"
+  },
+
+
+
+
+  "ticks": 300,
+  "usagepertick": 1000.0
+}

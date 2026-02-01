@@ -1,0 +1,21 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "fluidinputs": [
+    {
+      "amount": 1000,
+      "fluid": "chemicalscience:pbdbtf_toluene"
+    },
+    {
+      "amount": 1000,
+      "tag": "c:methanol"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 1000,
+    "id": "chemicalscience:pbdbtf_methanol"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 1000,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:ethylhexylundecyloxothienothiophenepyrrolobenzothiadiazole"
+      }
+    },
+    {
+      "count": 2,
+      "ingredient": {
+        "item": "chemicalscience:difluorodicyanomethylidieneindanone"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:pyridine"
+    }
+  ],
+  "itemoutput": {
+    "count": 10,
+    "id": "chemicalscience:ybtpf"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:dibromobenzothiadiazole"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 10,
+      "tag": "c:sulfuric_acid"
+    },
+    {
+      "amount": 10,
+      "tag": "c:nitric_acid"
+    }
+  ],
+  "itemoutput": {
+    "count": 1,
+    "id": "chemicalscience:dibromodinitrobenzothiadiazole"
+  }
+}

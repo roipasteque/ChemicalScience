@@ -1,0 +1,26 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "c:dusts/lithium"
+      }
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:diisopropylamine"
+    }
+  ],
+  "itemoutput": 
+    {
+      "count": 8,
+      "id": "chemicalscience:lithium_diisopropylamide"
+    }
+}

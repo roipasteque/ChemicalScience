@@ -1,0 +1,28 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 300.0,
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:hydrofluoric_acid"
+    }
+  ],
+  "gasoutput": {
+    "amount": 50,
+    "gas": "chemicalscience:fluorine",
+    "pressure": 1,
+    "temp": 293
+  },
+  "gasbi": [
+    {
+      "amount": 50,
+      "gas": "electrodynamics:hydrogen",
+      "pressure": 1,
+      "temp": 293,
+      "chance": 1.0
+    }
+  ]
+}

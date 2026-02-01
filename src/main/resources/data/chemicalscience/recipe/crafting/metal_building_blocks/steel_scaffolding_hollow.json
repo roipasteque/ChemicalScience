@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "electrodynamics:steelscaffold"
+    },
+    {
+      "item": "chemicalscience:ladder_steel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:scaffolding_steel_hollow"
+  }
+}

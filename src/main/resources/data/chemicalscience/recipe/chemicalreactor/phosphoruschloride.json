@@ -13,7 +13,7 @@
 
   "gasinputs": [
     {
-      "amount": 500,
+      "amount": 25,
       "pressure":1,
       "tag": "c:chlorine",
       "temp": 293

@@ -38,15 +38,10 @@ public class ChemicalBenchRecipe extends AbstractMaterialRecipe {
     private FluidStack fluidOutput;
     private GasStack gasOutput;
 
+    private final boolean isRecipeValid;
+
     public ChemicalBenchRecipe(String recipeGroup, List<CSCountableIngredient> inputItems, List<FluidIngredient> inputFluids, List<GasIngredient> inputGases, ItemStack itemOutput, FluidStack fluidOutput, GasStack gasOutput, double experience, int ticks, double usagePerTick, List<ProbableItem> itemBiproducts, List<ProbableFluid> fluidBiproducts, List<ProbableGas> gasBiproducts) {
         super(recipeGroup, experience, ticks, usagePerTick, itemBiproducts, fluidBiproducts, gasBiproducts);
-
-        if (inputItems.isEmpty() && inputGases.isEmpty() && inputFluids.isEmpty()) {
-            throw new RuntimeException("You have created a chemical bench recipe with no inputs");
-        }
-        if (itemOutput.isEmpty() && fluidOutput.isEmpty() && gasOutput.isEmpty()) {
-            throw new RuntimeException("You have created a chemical bench recipe with no outputs");
-        }
 
         this.itemIngredients = inputItems;
         this.fluidIngredients = inputFluids;
@@ -54,10 +49,45 @@ public class ChemicalBenchRecipe extends AbstractMaterialRecipe {
         this.itemOutput = itemOutput;
         this.fluidOutput = fluidOutput;
         this.gasOutput = gasOutput;
+
+        this.isRecipeValid = validateAndReport();
+    }
+
+    private boolean validateAndReport() {
+        boolean hasInput = !itemIngredients.isEmpty() || !fluidIngredients.isEmpty() || !gasIngredients.isEmpty();
+        boolean hasOutput = !itemOutput.isEmpty() || !fluidOutput.isEmpty() || !gasOutput.isEmpty();
+
+        if (hasInput && hasOutput) {
+            return true;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n[Chemical Science] Broken chemical bench recipe");
+        sb.append("\n  - Issue: ").append(!hasInput ? "No inputs " : "").append(!hasOutput ? "No outputs" : "");
+
+        if (!itemIngredients.isEmpty()) {
+            try {
+                sb.append("\n    * Item Input: ").append(itemIngredients.getFirst().ingredient().getItems());
+            } catch (Exception e) { sb.append("\n    * Item Input: [Complex/Tag]"); }
+        }
+        if (!fluidIngredients.isEmpty()) {
+            sb.append("\n    * Fluid Input: ").append(fluidIngredients.getFirst().getFluidStack().getFluidType().getDescriptionId());
+        }
+        if (!itemOutput.isEmpty()) {
+            sb.append("\n    * Item Output: ").append(itemOutput.getItem());
+        }
+
+        ChemicalScience.LOGGER.error(sb.toString());
+
+        return false;
     }
 
     @Override
     public boolean matchesRecipe(ComponentProcessor pr, int index) {
+        if (!isRecipeValid) {
+            return false;
+        }
+
         int valid = 0b000;
         ComponentInventory inv = pr.getHolder().getComponent(IComponentType.Inventory);
 

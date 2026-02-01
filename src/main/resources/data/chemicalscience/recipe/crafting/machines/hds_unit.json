@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "electrodynamics:pressuregauge"
+    },
+    "C": {
+      "tag": "c:circuits/advanced"
+    },
+    "P": {
+      "tag": "c:plates/steel"
+    },
+    "V": {
+      "item": "electrodynamics:mechanicalvalve"
+    },
+    "T": {
+      "item": "electrodynamics:tanksteel"
+    },
+    "G": {
+      "item": "electrodynamics:compressoraddontank"
+    }
+  },
+  "pattern": [
+    "PVP",
+    "TMG",
+    "PCP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:hds_unit"
+  }
+}

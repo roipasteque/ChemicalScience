@@ -1,0 +1,37 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0,
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:iron_bromide_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:thiophene"
+    },
+    {
+      "amount": 200,
+      "fluid": "chemicalscience:bromine"
+    }
+  ],
+  "fluidoutput": {
+    "amount": 30,
+    "id": "chemicalscience:bromothiophene"
+  },
+  "fluidbi": [
+    {
+      "amount": 70,
+      "chance": 1.0,
+      "fluid": "chemicalscience:dibromothiophene"
+    }
+  ]
+}

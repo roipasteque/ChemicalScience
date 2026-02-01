@@ -2,20 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "I": {
-      "tag": "c:ingots/manganesealuminum"
-    },
-    "N": {
-      "tag": "c:nuggets/manganesealuminum"
+    "R": {
+      "tag": "c:rods/manganesealuminum"
     }
   },
   "pattern": [
-    "III",
-    " N ",
-    "N N"
+    "RRR",
+    "R R",
+    "RRR"
   ],
   "result": {
-    "count": 8,
+    "count": 32,
     "id": "chemicalscience:scaffolding_manganese"
   }
 }

@@ -5,13 +5,19 @@
     {
       "count": 1,
       "ingredient": {
+        "item": "chemicalscience:support_catalyst"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
         "tag": "c:dusts/rhodium"
       }
     },
     {
       "count": 1,
       "ingredient": {
-        "tag": "c:oxides/manganese"
+        "tag": "c:dusts/manganese"
       }
     }
   ],
@@ -21,11 +27,12 @@
       "tag": "c:bromine"
     }
   ],
+
   "itemoutput": {
     "count": 1,
     "id": "chemicalscience:rhodium_manganese_bromine_catalyst"
   },
   "experience": 0.0,
-  "ticks": 200,
-  "usagepertick": 200.0
+  "ticks": 100,
+  "usagepertick": 100.0
 }

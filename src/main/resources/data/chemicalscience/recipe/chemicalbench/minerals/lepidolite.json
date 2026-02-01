@@ -20,7 +20,7 @@
     }
   ],
   "fluidoutput": {
-    "amount": 1000,
+    "amount": 400,
     "id": "electrodynamics:fluidsulfatelithium"
   },
   "itembi": [
