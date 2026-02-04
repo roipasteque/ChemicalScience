@@ -1,7 +1,12 @@
 package net.pastek.chemicalscience;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.pastek.chemicalscience.client.CSClientRegister;
+import net.pastek.chemicalscience.common.reloadlistener.FlamethrowerFuelManager;
+import net.pastek.chemicalscience.registers.CSEntities;
 import net.pastek.chemicalscience.registers.UnifiedCSRegister;
 
 import net.neoforged.api.distmarker.Dist;
@@ -23,8 +28,10 @@ public class ChemicalScience {
 
     public ChemicalScience(IEventBus EventBus) {
         EventBus.addListener(this::commonSetup);
+        EventBus.addListener(this::registerRenderers);
         NeoForge.EVENT_BUS.register(this);
         UnifiedCSRegister.register(EventBus);
+        NeoForge.EVENT_BUS.addListener(this::onAddReloadListeners);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -33,6 +40,14 @@ public class ChemicalScience {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
+    }
+
+    private void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(CSEntities.ENTITY_FLAMESTREAM.get(), ThrownItemRenderer::new);
+    }
+
+    private void onAddReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(FlamethrowerFuelManager.INSTANCE);
     }
 
     @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)

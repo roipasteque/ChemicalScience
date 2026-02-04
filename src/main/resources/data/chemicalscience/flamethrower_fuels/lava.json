@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:lava",
+  "color": 16729600,
+  "damage": 3.0,
+  "mB_per_drain": 1,
+  "ticks_per_drain": 2
+}

@@ -15,14 +15,17 @@ public class UnifiedCSRegister {
         CSItems.ITEMS.register(eventBus);
         CSFluids.FLUIDS.register(eventBus);
         CSFluidTypes.FLUID_TYPES.register(eventBus);
+        CSEntities.ENTITIES.register(eventBus);
         CSGases.GASES.register(eventBus);
         CSPotions.POTIONS.register(eventBus);
         CSMenuTypes.MENU_TYPES.register(eventBus);
+        CSSounds.SOUNDS.register(eventBus);
         CSCreativeTabs.CREATIVE_MODE_TAB.register(eventBus);
         CSRecipies.RECIPE_TYPES.register(eventBus);
         CSRecipies.RECIPE_SERIALIZER.register(eventBus);
         CSDataComponentTypes.DATA_COMPONENT_TYPES.register(eventBus);
         CSArmor.ARMOR_MATERIALS.register(eventBus);
+        CSParticles.PARTICLES.register(eventBus);
     }
 
     static {

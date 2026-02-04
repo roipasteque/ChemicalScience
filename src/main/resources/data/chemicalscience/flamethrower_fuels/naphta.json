@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:naphta",
+  "color": 15557632,
+  "damage": 5.0,
+  "mB_per_drain": 1,
+  "ticks_per_drain": 2
+}

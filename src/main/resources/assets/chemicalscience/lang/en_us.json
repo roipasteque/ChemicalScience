@@ -394,6 +394,7 @@
 
   "item.chemicalscience.organicnightvisiongoggles": "Organic Night Vision Goggles",
   "item.chemicalscience.bulletproofvest": "Bulletproof Vest",
+  "item.chemicalscience.flamethrower": "Flame Thrower",
 
 
 
@@ -758,6 +759,9 @@
   "tooltip.chemicalscience.machine.multiblock.info": "Multiblock machine",
   "tooltip.chemicalscience.machine.multiblock.help": "Check the VEC or the Chemist's Roadmap",
   "tooltip.chemicalscience.onvg.mode": "Mode : ",
+  "tooltip.chemicalscience.flamethrower.fluid": "Fluid : ",
+  "tooltip.chemicalscience.flamethrower.damage": "Damage : ",
+  "tooltip.chemicalscience.flamethrower.usage": "Usage : ",
   "component.chemicalscience.onvg.mode.off": "OFF",
   "component.chemicalscience.onvg.mode.nv": "ON",
   "component.chemicalscience.onvg.mode.entity": "IR RADAR",

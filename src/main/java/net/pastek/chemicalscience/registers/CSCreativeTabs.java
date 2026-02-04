@@ -418,6 +418,7 @@ public class CSCreativeTabs {
         output.accept(CSItems.TUNGSTENCARBIDE_AXE);
         output.accept(CSItems.TUNGSTENCARBIDE_SHOVEL);
         output.accept(CSItems.TUNGSTENCARBIDE_HOE);
+        output.accept(CSItems.FLAME_THROWER);
         // Armor
         output.accept(CSItems.ORGANICNIGHTVISIONGOGGLES);
         output.accept(CSItems.BULLETPROOF_VEST);

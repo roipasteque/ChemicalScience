@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:propane",
+  "color": 16737280,
+  "damage": 3.5,
+  "mB_per_drain": 8,
+  "ticks_per_drain": 5
+}

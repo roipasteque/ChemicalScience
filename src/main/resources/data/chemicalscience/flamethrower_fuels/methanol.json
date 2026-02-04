@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:methanol",
+  "color": 50943,
+  "damage": 2.0,
+  "mB_per_drain": 7,
+  "ticks_per_drain": 5
+}

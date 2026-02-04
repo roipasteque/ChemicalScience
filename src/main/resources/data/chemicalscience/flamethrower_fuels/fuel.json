@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:fuel",
+  "color": 16737280,
+  "damage": 6.0,
+  "mB_per_drain": 2,
+  "ticks_per_drain": 5
+}

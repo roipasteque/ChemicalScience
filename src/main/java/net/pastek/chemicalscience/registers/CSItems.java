@@ -9,6 +9,7 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.common.item.CSTooltipItem;
 import net.pastek.chemicalscience.common.item.food.ItemSoda;
 import net.pastek.chemicalscience.common.item.gear.CSToolTiers;
+import net.pastek.chemicalscience.common.item.gear.ItemFlamethrower;
 import net.pastek.chemicalscience.common.item.gear.ItemRoadMap;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemBulletProofVest;
 import net.pastek.chemicalscience.common.item.gear.armor.types.ItemOrganicNightVisionGoggles;
@@ -311,6 +312,8 @@ public class CSItems { public static final DeferredRegister.Items ITEMS = Deferr
     public static final DeferredItem<Item> TUNGSTENCARBIDE_AXE = ITEMS.register("axe_tungstencarbide", () -> new AxeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 6.0F, -3.2F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_SHOVEL = ITEMS.register("shovel_tungstencarbide", () -> new ShovelItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, 2.5F, -3.2F)).fireResistant()));
     public static final DeferredItem<Item> TUNGSTENCARBIDE_HOE = ITEMS.register("hoe_tungstencarbide", () -> new HoeItem(CSToolTiers.TUNGSTENCARBIDE, new Item.Properties().attributes(SwordItem.createAttributes(CSToolTiers.TUNGSTENCARBIDE, -2.0F, -0.2F)).fireResistant()));
+    public static final DeferredItem<Item> FLAME_THROWER = ITEMS.register("flamethrower", ItemFlamethrower::new);
+
     // Armor
     public static final DeferredItem<Item> ORGANICNIGHTVISIONGOGGLES= ITEMS.register("organicnightvisiongoggles", () -> new ItemOrganicNightVisionGoggles((ElectricItemProperties) new ElectricItemProperties().capacity(1.0).extract(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).receive(TransferPack.joulesVoltage(1.0 / (120.0 * 20.0), 120)).stacksTo(1), CSCreativeTabs.CHEMICAL_SCIENCE_TAB));
     public static final DeferredItem<Item> BULLETPROOF_VEST = ITEMS.register("bulletproofvest",() -> new ItemBulletProofVest(ArmorItem.Type.CHESTPLATE));

@@ -4,8 +4,10 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
+import net.minecraft.client.renderer.entity.NoopRenderer;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -22,16 +24,16 @@ import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
 import net.pastek.chemicalscience.client.model.armor.OrganicNightVisionGoggles;
+import net.pastek.chemicalscience.client.particles.ColoredFlameParticle;
 import net.pastek.chemicalscience.client.render.tile.*;
 import net.pastek.chemicalscience.client.roadmap.ScreenRoadMap;
 import net.pastek.chemicalscience.client.screen.*;
 import net.pastek.chemicalscience.client.tooltip.CSTooltipRenderer;
 import net.pastek.chemicalscience.common.item.CSTooltipItem;
+import net.pastek.chemicalscience.common.item.gear.ItemFlamethrower;
 import net.pastek.chemicalscience.common.packet.PacketToggleNightVisionMode;
 import net.pastek.chemicalscience.common.packet.PacketTransparencyTogglePayload;
-import net.pastek.chemicalscience.registers.CSItems;
-import net.pastek.chemicalscience.registers.CSMenuTypes;
-import net.pastek.chemicalscience.registers.CSTiles;
+import net.pastek.chemicalscience.registers.*;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
@@ -106,6 +108,15 @@ public class CSClientRegister {
             }
         }, CSItems.BULLETPROOF_VEST);
 
+        event.registerItem(new IClientItemExtensions() {
+            @Override
+            public HumanoidModel.ArmPose getArmPose(LivingEntity entity, InteractionHand hand, ItemStack stack) {
+                if (stack.getItem() instanceof ItemFlamethrower && entity.isUsingItem() && entity.getUseItem() == stack) {
+                    return HumanoidModel.ArmPose.CROSSBOW_HOLD;
+                }
+                return HumanoidModel.ArmPose.EMPTY;
+            }
+        }, CSItems.FLAME_THROWER.get());
 
 
         CSFluids.FLUIDS.getEntries().forEach((fluid) -> {
@@ -128,6 +139,16 @@ public class CSClientRegister {
         event.register(FRACTIONATINGCOLUMN_MODEL);
         event.register(CHEMICALBENCH_MODEL);
         event.register(REDOXFURNACE_MODEL);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(CSEntities.ENTITY_FLAMESTREAM.get(), NoopRenderer::new);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterParticleProviders(RegisterParticleProvidersEvent event) {
+        event.registerSpriteSet(CSParticles.COLORED_FLAME.get(), ColoredFlameParticle.Provider::new);
     }
 
     @SubscribeEvent
