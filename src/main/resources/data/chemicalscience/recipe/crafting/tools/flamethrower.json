@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "tag": "c:tools/igniter"
+    },
+    "P": {
+      "item": "electrodynamics:compressoraddontank"
+    },
+    "R": {
+      "tag": "c:rods/steel"
+    },
+    "L": {
+      "tag": "c:plastic"
+    },
+    "C": {
+      "tag": "c:circuits/advanced"
+    }
+  },
+  "pattern": [
+    " C ",
+    "I L",
+    "RPR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chemicalscience:flamethrower"
+  }
+}

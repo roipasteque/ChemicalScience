@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:cyanogen",
+  "color": 12046059,
+  "damage": 6.5,
+  "mB_per_drain": 10,
+  "ticks_per_drain": 5
+}

@@ -1,0 +1,12 @@
+{
+  "flamethrower_start": {
+    "category": "player",
+    "subtitle": "subtitles.chemicalscience.flamethrower.start",
+    "sounds": [ "chemicalscience:flamethrower_start" ]
+  },
+  "flamethrower_loop": {
+    "category": "player",
+    "subtitle": "subtitles.chemicalscience.flamethrower.loop",
+    "sounds": [ "chemicalscience:flamethrower_loop" ]
+  }
+}

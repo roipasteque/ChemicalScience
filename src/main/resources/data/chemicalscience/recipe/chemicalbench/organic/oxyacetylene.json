@@ -1,0 +1,25 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:acetylene"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 100,
+      "pressure": 1,
+      "tag": "c:oxygen",
+      "temp": 293
+    }
+  ],
+  "fluidoutput": {
+    "amount": 150,
+    "id": "chemicalscience:oxyacetylene"
+  },
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 50.0
+}

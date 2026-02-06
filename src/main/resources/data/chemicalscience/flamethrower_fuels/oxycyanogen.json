@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:oxycyanogen",
+  "color": 15776767,
+  "damage": 15.0,
+  "mB_per_drain": 18,
+  "ticks_per_drain": 5
+}

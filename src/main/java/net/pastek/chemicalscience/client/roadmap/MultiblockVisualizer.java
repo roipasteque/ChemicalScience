@@ -4,7 +4,6 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
@@ -57,7 +56,6 @@ public class MultiblockVisualizer {
         return this;
     }
 
-
     public void resetAnimation() {
         this.visibleBlocks = 0;
         this.isFinished = false;
@@ -99,23 +97,27 @@ public class MultiblockVisualizer {
             pose.pushPose();
             pose.translate(pos.getX(), pos.getY(), pos.getZ());
 
-            RenderType type = ItemBlockRenderTypes.getChunkRenderType(state);
-            VertexConsumer consumer = bufferSource.getBuffer(type);
+            var model = blockRenderer.getBlockModel(state);
+            var rand = net.minecraft.util.RandomSource.create();
 
-            blockRenderer.getModelRenderer().tesselateBlock(
-                    fakeWorld,
-                    blockRenderer.getBlockModel(state),
-                    state,
-                    pos,
-                    pose,
-                    consumer,
-                    false,
-                    net.minecraft.util.RandomSource.create(),
-                    state.getSeed(pos),
-                    OverlayTexture.NO_OVERLAY,
-                    ModelData.EMPTY,
-                    RenderType.solid()
-            );
+            for (RenderType type : model.getRenderTypes(state, rand, ModelData.EMPTY)) {
+                VertexConsumer consumer = bufferSource.getBuffer(type);
+
+                blockRenderer.getModelRenderer().tesselateBlock(
+                        fakeWorld,
+                        model,
+                        state,
+                        pos,
+                        pose,
+                        consumer,
+                        false,
+                        rand,
+                        state.getSeed(pos),
+                        OverlayTexture.NO_OVERLAY,
+                        ModelData.EMPTY,
+                        type
+                );
+            }
 
             pose.popPose();
         }
@@ -148,7 +150,6 @@ public class MultiblockVisualizer {
 
         @Override public BlockState getBlockState(BlockPos pos) { return data.getOrDefault(pos, Blocks.AIR.defaultBlockState()); }
         @Override public FluidState getFluidState(BlockPos pos) { return Fluids.EMPTY.defaultFluidState(); }
-        @Override public float getShade(Direction direction, boolean shaded) { return 1.0f; }
         @Override public LevelLightEngine getLightEngine() { return null; }
         @Override public int getBlockTint(BlockPos pos, ColorResolver colorResolver) { return -1; }
         @Nullable @Override public BlockEntity getBlockEntity(BlockPos pos) { return null; }
@@ -156,5 +157,15 @@ public class MultiblockVisualizer {
         @Override public int getRawBrightness(BlockPos pos, int amount) { return 15; }
         @Override public int getHeight() { return 256; }
         @Override public int getMinBuildHeight() { return 0; }
+
+        @Override
+        public float getShade(Direction direction, boolean shaded) {
+            return switch (direction) {
+                case DOWN -> 0.5F;
+                case UP -> 1.0F;
+                case NORTH, SOUTH -> 0.8F;
+                case WEST, EAST -> 0.6F;
+            };
+        }
     }
 }

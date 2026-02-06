@@ -1,0 +1,26 @@
+{
+  "type": "electrodynamics:chemical_reactor_recipe",
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "tag": "c:cyanogen"
+    }
+  ],
+  "gasinputs": [
+    {
+      "amount": 100,
+      "tag": "c:oxygen",
+      "pressure": 1,
+      "temp": 293
+    }
+  ],
+  "group": "chemicalscience",
+
+  "fluidoutput": {
+    "amount": 150,
+    "id": "chemicalscience:oxycyanogen"
+  },
+
+  "ticks": 100,
+  "usagepertick": 50.0
+}

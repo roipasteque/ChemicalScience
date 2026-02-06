@@ -28,6 +28,7 @@ public class ModuleChemicalScience extends Module {
         chapters.add(new ChapterGeneralChemistry(this));
         chapters.add(new ChapterOrganicChemistry(this));
         chapters.add(new ChapterOres(this));
+        chapters.add(new ChapterMachines(this));
         chapters.add(new ChapterMolecules(this));
 
     }

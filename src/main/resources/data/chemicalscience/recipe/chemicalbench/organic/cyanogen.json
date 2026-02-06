@@ -1,0 +1,38 @@
+{
+  "type": "chemicalscience:chemical_bench_recipe",
+  "group": "chemicalscience",
+  "iteminputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "chemicalscience:iron_chloride_catalyst"
+      },
+      "catalyst": true
+    }
+  ],
+  "fluidinputs": [
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:cyanogenchloride"
+    },
+    {
+      "amount": 100,
+      "fluid": "chemicalscience:hydrogencyanide"
+    }
+  ],
+
+  "fluidoutput": {
+    "amount": 100,
+    "id": "chemicalscience:cyanogen"
+  },
+  "fluidbi": [
+    {
+      "amount": 100,
+      "chance": 1.0,
+      "fluid": "electrodynamics:fluidhydrochloricacid"
+    }
+  ],
+  "experience": 0.0,
+  "ticks": 100,
+  "usagepertick": 100.0
+}

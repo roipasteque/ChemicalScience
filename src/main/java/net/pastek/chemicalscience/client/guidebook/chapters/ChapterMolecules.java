@@ -22,7 +22,7 @@ import voltaic.compatibility.jei.JeiBuffer;
 
 public class ChapterMolecules extends Chapter {
 
-    private static final ItemWrapperObject LOGO = new ItemWrapperObject(7, 10, 32, 32, 32, 2.0F, CSItems.PALLADIUM_ON_CARBON_CATALYST.get());
+    private static final ItemWrapperObject LOGO = new ItemWrapperObject(7, 10, 32, 32, 32, 2.0F, CSItems.UREA.get());
 
     public ChapterMolecules(Module module) {
         super(module);

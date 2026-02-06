@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
@@ -38,6 +39,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     private double zoom = 1.0;
     private static final double MIN_ZOOM = 0.5;
     private static final double MAX_ZOOM = 3.0;
+    private static final int PAN_PADDING = 100;
 
     private boolean isDragging = false;
     private static final int NODE_SIZE = 32;
@@ -45,7 +47,7 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     private int winX, winY, winW, winH;
     private static final float ASPECT_RATIO = 4f / 3f;
 
-    private final Map<ResourceLocation, MultiblockVisualizer> VISUALIZERS = new HashMap<>();
+    private Map<ResourceLocation, MultiblockVisualizer> VISUALIZERS = new HashMap<>();
     private RoadmapNode selectedNode = null;
 
     public ScreenRoadMap(ContainerRoadMap container, Inventory inv, Component title) {
@@ -54,6 +56,14 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
 
     @Override
     protected void init() {
+        if (this.VISUALIZERS == null) {
+            this.VISUALIZERS = new HashMap<>();
+        }
+
+        if (this.VISUALIZERS.isEmpty()) {
+            loadVisualizers();
+        }
+
         this.winW = (int) (this.width * 0.8f);
         this.winH = (int) (this.winW / ASPECT_RATIO);
         if (this.winH > this.height * 0.85f) {
@@ -64,6 +74,8 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         this.winY = (this.height - this.winH) / 2;
         this.imageWidth = this.winW;
         this.imageHeight = this.winH;
+
+        clampScroll();
         super.init();
     }
 
@@ -125,20 +137,82 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
         super.render(g, mouseX, mouseY, partialTick);
     }
 
+    private void renderInfiniteBackground(GuiGraphics g) {
+        RenderSystem.setShader(net.minecraft.client.renderer.GameRenderer::getPositionTexShader);
+        RenderSystem.setShaderTexture(0, TEXTURE_BG);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+
+        double left = (-winW / 2.0) / zoom - scrollX;
+        double top = (-winH / 2.0) / zoom - scrollY;
+        double right = (winW / 2.0) / zoom - scrollX;
+        double bottom = (winH / 2.0) / zoom - scrollY;
+
+        float u0 = (float) (left / 32.0f);
+        float u1 = (float) (right / 32.0f);
+        float v0 = (float) (top / 32.0f);
+        float v1 = (float) (bottom / 32.0f);
+
+        Matrix4f matrix = g.pose().last().pose();
+
+        Tesselator tesselator = Tesselator.getInstance();
+        BufferBuilder buffer = tesselator.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX);
+
+        buffer.addVertex(matrix, (float)left, (float)bottom, 0).setUv(u0, v1);
+        buffer.addVertex(matrix, (float)right, (float)bottom, 0).setUv(u1, v1);
+        buffer.addVertex(matrix, (float)right, (float)top, 0).setUv(u1, v0);
+        buffer.addVertex(matrix, (float)left, (float)top, 0).setUv(u0, v0);
+
+        BufferUploader.drawWithShader(buffer.buildOrThrow());
+    }
+
+    private void clampScroll() {
+        if (RoadMapNodes.NODES.isEmpty()) return;
+
+        int minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE;
+        int maxX = Integer.MIN_VALUE, maxY = Integer.MIN_VALUE;
+
+        for (RoadmapNode node : RoadMapNodes.NODES) {
+            minX = Math.min(minX, node.x());
+            minY = Math.min(minY, node.y());
+            maxX = Math.max(maxX, node.x() + NODE_SIZE);
+            maxY = Math.max(maxY, node.y() + NODE_SIZE);
+        }
+
+        scrollX = Mth.clamp(scrollX, -maxX - PAN_PADDING, -minX + PAN_PADDING);
+        scrollY = Mth.clamp(scrollY, -maxY - PAN_PADDING, -minY + PAN_PADDING);
+    }
+
+    @Override
+    public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) {
+        if (isDragging) {
+            scrollX += dx / zoom;
+            scrollY += dy / zoom;
+            clampScroll();
+            return true;
+        }
+        return super.mouseDragged(mouseX, mouseY, button, dx, dy);
+    }
+
+    @Override
+    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
+        double zoomFactor = 0.1;
+        if (scrollY > 0) zoom += zoomFactor;
+        else zoom -= zoomFactor;
+
+        zoom = Mth.clamp(zoom, MIN_ZOOM, MAX_ZOOM);
+
+        clampScroll();
+
+        return true;
+    }
+
     @Override protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {}
     @Override public void renderBackground(@NotNull GuiGraphics g, int mouseX, int mouseY, float partialTick) {}
     @Override protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {}
 
-
     private void renderWindowFrame(GuiGraphics g) {
         RenderSystem.enableBlend();
         g.blit(TEXTURE_WINDOW_FRAME, winX - 2, winY - 2, 0, 0, winW + 4, winH + 4, winW + 4, winH + 4);
-    }
-
-    private void renderInfiniteBackground(GuiGraphics g) {
-        int bgSize = 4096;
-        RenderSystem.setShaderTexture(0, TEXTURE_BG);
-        g.blit(TEXTURE_BG, -bgSize / 2, -bgSize / 2, 0, 0, bgSize, bgSize, 32, 32);
     }
 
     private void renderConnection(GuiGraphics g, RoadmapNode parent, RoadmapNode child, int color) {
@@ -388,8 +462,6 @@ public class ScreenRoadMap extends GenericScreen<ContainerRoadMap> {
     }
 
     @Override public boolean mouseReleased(double mouseX, double mouseY, int button) { isDragging = false; return super.mouseReleased(mouseX, mouseY, button); }
-    @Override public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) { if (isDragging) { scrollX += dx / zoom; scrollY += dy / zoom; return true; } return super.mouseDragged(mouseX, mouseY, button, dx, dy); }
-    @Override public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) { double zoomFactor = 0.1; if (scrollY > 0) zoom += zoomFactor; else zoom -= zoomFactor; zoom = Math.clamp(zoom, MIN_ZOOM, MAX_ZOOM); return true; }
 
     public enum NodeStatus {
         NONE,

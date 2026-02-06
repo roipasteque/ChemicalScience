@@ -1,0 +1,7 @@
+{
+  "fluid": "#c:acetylene",
+  "color": 16777165,
+  "damage": 7.0,
+  "mB_per_drain": 10,
+  "ticks_per_drain": 5
+}
