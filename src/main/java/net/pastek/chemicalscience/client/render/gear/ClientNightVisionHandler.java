@@ -47,24 +47,18 @@ public class ClientNightVisionHandler {
         if (player == null || mc.level == null) return;
 
         ItemStack helmet = player.getItemBySlot(EquipmentSlot.HEAD);
-        if (!ItemOrganicNightVisionGoggles.canWork(helmet)) {
-            if (player.hasEffect(MobEffects.NIGHT_VISION)) {
-                MobEffectInstance effect = player.getEffect(MobEffects.NIGHT_VISION);
-                if (effect != null && !effect.isVisible()) player.removeEffect(MobEffects.NIGHT_VISION);
+
+        if (ItemOrganicNightVisionGoggles.canWork(helmet)) {
+            player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 210, 0, true, false, false));
+
+            if (++tickCounter >= 20) {
+                tickCounter = 0;
+                ItemOrganicNightVisionGoggles.ScannerMode mode = ItemOrganicNightVisionGoggles.getMode(helmet);
+                if (mode == ItemOrganicNightVisionGoggles.ScannerMode.BIO) updateBiometricScan(mc, player);
+                else if (mode == ItemOrganicNightVisionGoggles.ScannerMode.ORE) updateOreScan(mc, player);
             }
-            return;
-        }
-
-        player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 0, true, false, false));
-
-        if (++tickCounter >= 20) {
-            tickCounter = 0;
-            ItemOrganicNightVisionGoggles.ScannerMode mode = ItemOrganicNightVisionGoggles.getMode(helmet);
-            if (mode == ItemOrganicNightVisionGoggles.ScannerMode.BIO) updateBiometricScan(mc, player);
-            else if (mode == ItemOrganicNightVisionGoggles.ScannerMode.ORE) updateOreScan(mc, player);
         }
     }
-
     @SubscribeEvent
     public static void onRenderGuiOverlay(RenderGuiLayerEvent.Post event) {
         if (event.getName() != VanillaGuiLayers.CAMERA_OVERLAYS) return;

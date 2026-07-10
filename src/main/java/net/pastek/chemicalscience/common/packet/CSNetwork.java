@@ -18,5 +18,11 @@ public class CSNetwork {
                 PacketToggleNightVisionMode.STREAM_CODEC,
                 PacketToggleNightVisionMode::handle
         );
+
+        registrar.playToServer(
+                PacketTransparencyTogglePayload.TYPE,
+                PacketTransparencyTogglePayload.STREAM_CODEC,
+                PacketTransparencyTogglePayload::handleData
+        );
     }
 }

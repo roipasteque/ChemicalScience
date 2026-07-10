@@ -4,7 +4,7 @@
   "fluidinputs": [
     {
       "amount": 200,
-      "tag": "c:sulfates/gold"
+      "fluid": "electrodynamics:fluidsulfategold"
     },
     {
       "amount": 1000,

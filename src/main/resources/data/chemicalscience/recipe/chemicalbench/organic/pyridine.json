@@ -13,7 +13,7 @@
   "fluidinputs": [
     {
       "amount": 100,
-      "fluid": "chemicalscience:acetaldehyde"
+      "tag": "c:acetaldehyde"
     },
     {
       "amount": 100,

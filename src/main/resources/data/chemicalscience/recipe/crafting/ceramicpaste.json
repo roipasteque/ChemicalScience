@@ -6,7 +6,7 @@
       "tag": "c:sands"
     },
     {
-      "tag": "c:clay"
+      "item": "minecraft:clay_ball"
     }
   ],
   "result": {

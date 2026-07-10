@@ -4,7 +4,7 @@
   "fluidinputs": [
     {
       "amount": 200,
-      "tag": "c:sulfates/lithium"
+      "fluid": "electrodynamics:fluidsulfatelithium"
     },
     {
       "amount": 1000,

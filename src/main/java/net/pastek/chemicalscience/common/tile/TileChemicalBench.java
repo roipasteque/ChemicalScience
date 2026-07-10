@@ -1,9 +1,11 @@
 package net.pastek.chemicalscience.common.tile;
 
+import electrodynamics.registers.ElectrodynamicsSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -43,6 +45,8 @@ import voltaic.common.network.utils.GasUtilities;
 import voltaic.common.recipe.recipeutils.*;
 import voltaic.prefab.properties.types.PropertyTypes;
 import voltaic.prefab.properties.variant.SingleProperty;
+import voltaic.prefab.sound.ITickableSound;
+import voltaic.prefab.sound.SoundBarrierMethods;
 import voltaic.prefab.tile.GenericTile;
 import voltaic.prefab.tile.components.CapabilityInputType;
 import voltaic.prefab.tile.components.IComponentType;
@@ -53,13 +57,13 @@ import voltaic.registers.VoltaicCapabilities;
 import java.util.List;
 import java.util.function.BiConsumer;
 
-public class TileChemicalBench extends TileMultiblockController {
+public class TileChemicalBench extends TileMultiblockController implements ITickableSound {
     public static final ResourceLocation ID = ChemicalScience.rl("chemicalbench");
     public static final ResourceKey<Multiblock> RESOURCE_KEY = Multiblock.makeKey(ID);
     public static final int GAS_TANK_CAPACITY = 5000, FLUID_TANK_CAPACITY = 5000;
-    public static final int MAX_CONDENSED_AMOUNT = 10000;
     public final SingleProperty<FluidStack> condensedFluidFromGas;
 
+    private boolean isSoundPlaying = false;
     public final SingleProperty<Double> operatingTicks = property(new SingleProperty<>(PropertyTypes.DOUBLE, "operatingticks", 0.0));
     public final SingleProperty<Boolean> isActive = property(new SingleProperty<>(PropertyTypes.BOOLEAN, "isactive", false));
 
@@ -91,19 +95,22 @@ public class TileChemicalBench extends TileMultiblockController {
 
     private boolean canProcess(ComponentProcessor pr, int procNumber) {
         ChemicalBenchRecipe locRecipe;
+
         if (!pr.checkExistingRecipe(procNumber)) {
             pr.setShouldKeepProgress(false, procNumber);
             pr.operatingTicks.setValue(0.0, procNumber);
+
             locRecipe = (ChemicalBenchRecipe) pr.getRecipe(CSRecipies.CHEMICAL_BENCH_TYPE.get(), procNumber);
             if (locRecipe == null) return false;
+
+            pr.setRecipe(locRecipe, procNumber);
+            pr.requiredTicks.setValue((double) locRecipe.getTicks(), procNumber);
+            pr.usage.setValue(locRecipe.getUsagePerTick(), procNumber);
+
         } else {
             pr.setShouldKeepProgress(true, procNumber);
             locRecipe = (ChemicalBenchRecipe) pr.getRecipe(procNumber);
         }
-
-        pr.setRecipe(locRecipe, procNumber);
-        pr.requiredTicks.setValue((double) locRecipe.getTicks(), procNumber);
-        pr.usage.setValue(locRecipe.getUsagePerTick(), procNumber);
 
         ComponentElectrodynamic electro = getComponent(IComponentType.Electrodynamic);
         if (electro.getJoulesStored() < pr.getUsage(procNumber)) return false;
@@ -291,6 +298,25 @@ public class TileChemicalBench extends TileMultiblockController {
                 }
             }
         };
+    }
+
+    public void tickClient(ComponentTickable tickable) {
+        if (this.shouldPlaySound()) {
+
+            if (!this.isSoundPlaying) {
+                this.isSoundPlaying = true;
+                SoundBarrierMethods.playTileSound((SoundEvent) ElectrodynamicsSounds.SOUND_HUM.get(), this, true);
+            }
+
+        }
+    }
+
+    public void setNotPlaying() {
+        this.isSoundPlaying = false;
+    }
+
+    public boolean shouldPlaySound() {
+        return ((ComponentProcessor)this.getComponent(IComponentType.Processor)).isActive(0);
     }
 
     @Override public @Nullable IFluidHandler getFluidHandlerCapability(@Nullable Direction side){ return null; }

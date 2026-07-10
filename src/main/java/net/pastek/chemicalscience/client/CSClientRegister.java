@@ -18,8 +18,6 @@ import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
-import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
-import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.pastek.chemicalscience.ChemicalScience;
 import net.pastek.chemicalscience.client.guidebook.ModuleChemicalScience;
 import net.pastek.chemicalscience.client.model.armor.BulletProofVest;
@@ -32,7 +30,6 @@ import net.pastek.chemicalscience.client.tooltip.CSTooltipRenderer;
 import net.pastek.chemicalscience.common.item.CSTooltipItem;
 import net.pastek.chemicalscience.common.item.gear.ItemFlamethrower;
 import net.pastek.chemicalscience.common.packet.PacketToggleNightVisionMode;
-import net.pastek.chemicalscience.common.packet.PacketTransparencyTogglePayload;
 import net.pastek.chemicalscience.registers.*;
 import net.pastek.chemicalscience.registers.fluids.CSFluids;
 import org.jetbrains.annotations.NotNull;
@@ -46,6 +43,8 @@ public class CSClientRegister {
 
     public static final LayerDefinition ORGANIC_NIGHT_VISION_GOGGLES = OrganicNightVisionGoggles.createBodyLayer();
     public static final LayerDefinition BULLETPROOF_VEST = BulletProofVest.createBodyLayer(3, false);
+    private static OrganicNightVisionGoggles<LivingEntity> GOGGLES_MODEL;
+    private static BulletProofVest<LivingEntity> VEST_MODEL;
 
     public static final ModelResourceLocation FRACTIONATINGCOLUMN_MODEL =
             ModelResourceLocation.standalone(ResourceLocation.fromNamespaceAndPath(ChemicalScience.MOD_ID, "multiblock/fractionating_column"));
@@ -80,33 +79,41 @@ public class CSClientRegister {
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
-
-        //Organic Night Vision Goggles
         event.registerItem(new IClientItemExtensions() {
             @Override
             public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlot armorSlot, HumanoidModel<?> properties) {
-                OrganicNightVisionGoggles<LivingEntity> model = new OrganicNightVisionGoggles<>(CSClientRegister.ORGANIC_NIGHT_VISION_GOGGLES.bakeRoot());
+                if (GOGGLES_MODEL == null) {
+                    GOGGLES_MODEL = new OrganicNightVisionGoggles<>(CSClientRegister.ORGANIC_NIGHT_VISION_GOGGLES.bakeRoot());
+                }
 
-                model.crouching = properties.crouching;
-                model.riding = properties.riding;
-                model.young = properties.young;
+                ((HumanoidModel) properties).copyPropertiesTo(GOGGLES_MODEL);
 
-                return model;
+                GOGGLES_MODEL.setAllVisible(false);
+                GOGGLES_MODEL.head.visible = (armorSlot == EquipmentSlot.HEAD);
+                GOGGLES_MODEL.hat.visible = (armorSlot == EquipmentSlot.HEAD);
+
+                return GOGGLES_MODEL;
             }
         }, CSItems.ORGANICNIGHTVISIONGOGGLES);
 
-        //BulletProof Vest
         event.registerItem(new IClientItemExtensions() {
+            @Override
             public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack itemStack, EquipmentSlot armorSlot, HumanoidModel<?> properties) {
-                BulletProofVest<LivingEntity> model;
-                model = new BulletProofVest<>(CSClientRegister.BULLETPROOF_VEST.bakeRoot(), armorSlot);
+                if (VEST_MODEL == null) {
+                    VEST_MODEL = new BulletProofVest<>(CSClientRegister.BULLETPROOF_VEST.bakeRoot(), armorSlot);
+                }
 
-                model.crouching = properties.crouching;
-                model.riding = properties.riding;
-                model.young = properties.young;
-                return model;
+                ((HumanoidModel) properties).copyPropertiesTo(VEST_MODEL);
+
+                VEST_MODEL.setAllVisible(false);
+                VEST_MODEL.body.visible = (armorSlot == EquipmentSlot.CHEST);
+                VEST_MODEL.rightArm.visible = (armorSlot == EquipmentSlot.CHEST);
+                VEST_MODEL.leftArm.visible = (armorSlot == EquipmentSlot.CHEST);
+
+                return VEST_MODEL;
             }
         }, CSItems.BULLETPROOF_VEST);
+
 
         event.registerItem(new IClientItemExtensions() {
             @Override
@@ -174,15 +181,5 @@ public class CSClientRegister {
         if (TOGGLE_MODE_KEY.consumeClick()) {
             PacketDistributor.sendToServer(new PacketToggleNightVisionMode());
         }
-    }
-
-    @SubscribeEvent
-    public static void register(final RegisterPayloadHandlersEvent event) {
-        final PayloadRegistrar registrar = event.registrar(ChemicalScience.MOD_ID);
-        registrar.playToServer(
-                PacketTransparencyTogglePayload.TYPE,
-                PacketTransparencyTogglePayload.STREAM_CODEC,
-                PacketTransparencyTogglePayload::handleData
-        );
     }
 }

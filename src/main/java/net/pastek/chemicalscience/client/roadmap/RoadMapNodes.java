@@ -41,7 +41,7 @@ public class RoadMapNodes {
                     rl("electrodynamics"),
                     -128, 0,
                     new ItemStack(Items.CRAFTING_TABLE),
-                    Component.translatable("roadmap.chemicalscience.node.electrodynamics.title"),
+                    Component.translatable("roadmap.chemicalscience.node.electrodynamics.title").withStyle(ChatFormatting.YELLOW),
                     Component.translatable("roadmap.chemicalscience.node.electrodynamics.desc"),
                     rl("textures/screen/roadmap/nodes/root.png"),
                     1,

@@ -4,11 +4,14 @@
   "key": {
     "I": {
       "tag": "c:ingots/manganesealuminum"
+    },
+    "S": {
+      "item": "chemicalscience:scaffolding_manganese"
     }
   },
   "pattern": [
     " I ",
-    "I I",
+    "ISI",
     " I "
   ],
   "result": {

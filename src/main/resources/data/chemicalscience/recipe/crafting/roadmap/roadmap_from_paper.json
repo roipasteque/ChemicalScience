@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:paper"
+      "item": "minecraft:paper"
     },
     {
       "tag": "c:ingots/copper"

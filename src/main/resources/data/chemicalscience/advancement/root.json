@@ -1,10 +1,10 @@
 {
   "criteria": {
-    "HasChemReactor": {
+    "HasChemBench": {
       "conditions": {
         "items": [
           {
-            "items": "electrodynamics:chemicalreactor"
+            "items": "chemicalscience:chemical_bench_controller"
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "electrodynamics:chemicalreactor"
+      "id": "chemicalscience:chemical_bench_controller"
     },
     "title": {
       "color": "dark_green",
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "HasChemReactor"
+      "HasChemBench"
     ]
   ],
   "rewards": {

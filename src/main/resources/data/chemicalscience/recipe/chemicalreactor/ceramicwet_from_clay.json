@@ -6,7 +6,7 @@
     {
       "count": 1,
       "ingredient": {
-        "tag": "c:clay"
+        "item": "minecraft:clay_ball"
       }
     },
     {

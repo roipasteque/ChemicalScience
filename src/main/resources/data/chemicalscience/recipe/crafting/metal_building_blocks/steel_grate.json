@@ -4,11 +4,14 @@
   "key": {
     "I": {
       "tag": "c:ingots/steel"
+    },
+    "S": {
+      "item": "electrodynamics:steelscaffold"
     }
   },
   "pattern": [
     " I ",
-    "I I",
+    "ISI",
     " I "
   ],
   "result": {

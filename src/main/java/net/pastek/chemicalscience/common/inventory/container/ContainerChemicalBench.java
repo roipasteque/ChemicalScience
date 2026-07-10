@@ -9,7 +9,6 @@ import net.pastek.chemicalscience.common.tile.TileChemicalBench;
 import net.pastek.chemicalscience.registers.CSMenuTypes;
 import voltaic.common.item.subtype.SubtypeItemUpgrade;
 import voltaic.prefab.inventory.container.slot.item.SlotGeneric;
-import voltaic.prefab.inventory.container.slot.item.type.SlotFluid;
 import voltaic.prefab.inventory.container.slot.item.type.SlotRestricted;
 import voltaic.prefab.inventory.container.slot.item.type.SlotUpgrade;
 import voltaic.prefab.inventory.container.types.GenericContainerBlockEntity;

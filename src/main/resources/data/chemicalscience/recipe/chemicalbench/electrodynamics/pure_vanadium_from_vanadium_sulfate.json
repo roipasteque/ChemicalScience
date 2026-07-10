@@ -4,7 +4,7 @@
   "fluidinputs": [
     {
       "amount": 200,
-      "tag": "c:sulfates/vanadium"
+      "fluid": "electrodynamics:fluidsulfatevanadium"
     },
     {
       "amount": 1000,

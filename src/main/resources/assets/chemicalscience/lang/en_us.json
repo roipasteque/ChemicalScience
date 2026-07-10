@@ -851,6 +851,12 @@
   "guidebook.chemicalscience.chapter.machines.catalyticreformer": "The catalytic reformer uses the sulfur-free petroleum products to make usable organic compounds, using steam and a catalyst.",
   "guidebook.chemicalscience.chapter.machines.steamcracker": "The steam cracker uses the sulfur-free petroleum products to make usable organic compounds, using steam at high temperatures.",
 
+  "guidebook.chemicalscience.chapter.equipment": "Equipment",
+  "guidebook.chemicalscience.chapter.equipment.onvg": "Organic night vision goggles give the player the ability to see in the dark. They differ from inorganic versions as they do not require charging and feature special modes to highlight entities and ores near the player.",
+  "guidebook.chemicalscience.chapter.equipment.bulletproofvest": "The bulletproof vest is a sturdy piece of armor that massively reduces damage taken from projectiles. It is unbreakable.",
+  "guidebook.chemicalscience.chapter.equipment.flamethrower": "The flamethrower is a weapon that fires a stream of flames at mobs. Damage and fuel consumption vary depending on the fluid used.",
+  "guidebook.chemicalscience.chapter.equipment.tungsten": "Tungsten tools are highly durable and mine faster than netherite, though they have poor enchantability and deal slightly less damage.",
+
   "container.roadmap": "Chemist's Roadmap",
   "container.organicsolarpanel": "Organic Solar Panel",
   "container.fuelcell": "Fuel Cell",
@@ -910,7 +916,7 @@
   "roadmap.chemicalscience.controls.clickright": "§eRight Click§r: Cycle Progress",
   "roadmap.chemicalscience.controls.escape": "§7ESCAPE§r: Exit",
 
-  "roadmap.chemicalscience.node.electrodynamics.title": "§eElectrodynamics",
+  "roadmap.chemicalscience.node.electrodynamics.title": "Electrodynamics",
   "roadmap.chemicalscience.node.electrodynamics.desc": "Make a Crafting Table.",
   "roadmap.chemicalscience.node.ingotsteel.title": "Making Steel!",
   "roadmap.chemicalscience.node.ingotsteel.desc": "Make a steel ingot by smelting iron in a Blast Furnace.",
@@ -993,7 +999,7 @@
 
 
   "advancement.chemicalscience.root.title": "Chemical Science",
-  "advancement.chemicalscience.root.desc": "Craft a Chemical Reactor, and start some real chemistry!",
+  "advancement.chemicalscience.root.desc": "Craft a Fume Hood, and start some real chemistry!",
   "advancement.chemicalscience.ores.title": "Don't Need a Pickaxe Anymore",
   "advancement.chemicalscience.ores.desc": "Craft an Electric Drill.",
   "advancement.chemicalscience.orearsenopyrite.title": "Arsenopyrite Ore",
